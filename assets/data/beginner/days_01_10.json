@@ -1,0 +1,102 @@
+[
+  {
+    "day": 1, "topic": "Be동사 현재형 (am/is/are)",
+    "questions": [
+      {"korean": "나는 학생이야.", "answers": ["I am a student.", "I'm a student."], "hint": "I + am + a + 직업", "explanation": "I'm은 I am의 줄임말로 둘 다 정답", "keywords": ["student"]},
+      {"korean": "그녀는 선생님이야.", "answers": ["She is a teacher.", "She's a teacher."], "hint": "She + is + a + 직업", "explanation": "", "keywords": ["teacher"]},
+      {"korean": "우리는 친구야.", "answers": ["We are friends.", "We're friends."], "hint": "We + are + 복수명사", "explanation": "friend는 복수형 friends 사용", "keywords": ["friends"]},
+      {"korean": "그는 지금 집에 있어.", "answers": ["He is at home now.", "He's at home now."], "hint": "He + is + at home + now", "explanation": "", "keywords": ["home", "now"]},
+      {"korean": "그들은 행복해.", "answers": ["They are happy.", "They're happy."], "hint": "They + are + 형용사", "explanation": "", "keywords": ["happy"]}
+    ]
+  },
+  {
+    "day": 2, "topic": "Be동사 - 상태/감정 표현",
+    "questions": [
+      {"korean": "나는 배가 고파.", "answers": ["I am hungry.", "I'm hungry."], "hint": "I + am + 감정형용사", "explanation": "", "keywords": ["hungry"]},
+      {"korean": "그녀는 피곤해.", "answers": ["She is tired.", "She's tired."], "hint": "She + is + 감정형용사", "explanation": "", "keywords": ["tired"]},
+      {"korean": "날씨가 맑아.", "answers": ["It is sunny.", "It's sunny."], "hint": "It + is + 날씨형용사", "explanation": "날씨 표현엔 항상 It을 주어로 씁니다", "keywords": ["sunny"]},
+      {"korean": "그들은 서울 출신이야.", "answers": ["They are from Seoul.", "They're from Seoul."], "hint": "be from + 장소", "explanation": "", "keywords": ["from", "Seoul"]},
+      {"korean": "이것은 크고 빨개.", "answers": ["It is big and red.", "It's big and red."], "hint": "It + is + 형용사 + and + 형용사", "explanation": "", "keywords": ["big", "red"]}
+    ]
+  },
+  {
+    "day": 3, "topic": "일반동사 현재형 (1인칭/2인칭/복수)",
+    "questions": [
+      {"korean": "나는 커피를 좋아해.", "answers": ["I like coffee.", "I love coffee."], "hint": "I + like/love + 명사", "explanation": "love는 like보다 강한 표현", "keywords": ["like", "coffee"]},
+      {"korean": "우리는 매일 운동해.", "answers": ["We exercise every day.", "We work out every day."], "hint": "We + 동사 + every day", "explanation": "work out은 exercise보다 구어적 표현", "keywords": ["exercise", "every day"]},
+      {"korean": "나는 영어를 공부해.", "answers": ["I study English.", "I learn English."], "hint": "I + study + 과목", "explanation": "", "keywords": ["study", "English"]},
+      {"korean": "너는 음악을 들어.", "answers": ["You listen to music.", "You hear music."], "hint": "listen to + 명사 (의도적으로 듣다)", "explanation": "listen to = 의도적으로 듣다, hear = 그냥 들리다", "keywords": ["listen", "music"]},
+      {"korean": "그들은 함께 일해.", "answers": ["They work together.", "They work as a team."], "hint": "They + work + 부사", "explanation": "", "keywords": ["work", "together"]}
+    ]
+  },
+  {
+    "day": 4, "topic": "일반동사 현재형 (3인칭 단수 -s)",
+    "questions": [
+      {"korean": "그는 매일 아침 커피를 마셔.", "answers": ["He drinks coffee every morning.", "He has coffee every morning."], "hint": "3인칭 단수: drink → drinks", "explanation": "have도 '먹다/마시다' 의미로 쓸 수 있어요", "keywords": ["drinks", "coffee", "morning"]},
+      {"korean": "그녀는 학교에 걸어서 가.", "answers": ["She walks to school.", "She goes to school on foot."], "hint": "walk → walks (3인칭 단수)", "explanation": "on foot = 걸어서", "keywords": ["walks", "school"]},
+      {"korean": "그 개는 뼈다귀를 좋아해.", "answers": ["The dog likes bones.", "The dog loves bones."], "hint": "like → likes", "explanation": "", "keywords": ["likes", "bones"]},
+      {"korean": "그는 일찍 자.", "answers": ["He goes to bed early.", "He sleeps early."], "hint": "go to bed = 자다", "explanation": "go to bed가 더 자연스러운 표현", "keywords": ["bed", "early"]},
+      {"korean": "그녀는 스페인어를 해.", "answers": ["She speaks Spanish.", "She knows Spanish."], "hint": "speak → speaks", "explanation": "", "keywords": ["speaks", "Spanish"]}
+    ]
+  },
+  {
+    "day": 5, "topic": "일반동사 - 소유/존재 표현",
+    "questions": [
+      {"korean": "나는 강아지가 있어.", "answers": ["I have a dog.", "I own a dog."], "hint": "have = 가지고 있다", "explanation": "", "keywords": ["have", "dog"]},
+      {"korean": "그녀는 두 명의 자매가 있어.", "answers": ["She has two sisters.", "She has 2 sisters."], "hint": "have → has (3인칭 단수)", "explanation": "", "keywords": ["has", "sisters"]},
+      {"korean": "이 식당은 좋은 파스타가 있어.", "answers": ["This restaurant has good pasta.", "This place has great pasta."], "hint": "The restaurant + has + 음식", "explanation": "great는 good보다 강한 표현", "keywords": ["has", "pasta"]},
+      {"korean": "우리 반에는 30명의 학생이 있어.", "answers": ["Our class has 30 students.", "There are 30 students in our class."], "hint": "There are + 숫자 + 명사 또는 have 사용", "explanation": "두 표현 모두 자주 쓰임", "keywords": ["students", "class"]},
+      {"korean": "나는 질문이 있어.", "answers": ["I have a question.", "I've got a question."], "hint": "have a question = 질문이 있다", "explanation": "I've got은 구어체에서 자주 씀", "keywords": ["have", "question"]}
+    ]
+  },
+  {
+    "day": 6, "topic": "현재진행형 (be + -ing) - 기초",
+    "questions": [
+      {"korean": "나는 지금 공부하고 있어.", "answers": ["I am studying now.", "I'm studying right now."], "hint": "am + studying + now", "explanation": "", "keywords": ["studying", "now"]},
+      {"korean": "그녀는 전화 통화 중이야.", "answers": ["She is talking on the phone.", "She's on the phone."], "hint": "is + talking on the phone", "explanation": "She's on the phone도 자연스러운 표현", "keywords": ["talking", "phone"]},
+      {"korean": "우리는 점심을 먹고 있어.", "answers": ["We are having lunch.", "We're eating lunch."], "hint": "are + having/eating + lunch", "explanation": "have lunch = eat lunch, 둘 다 OK", "keywords": ["having", "lunch"]},
+      {"korean": "그는 빗속에서 뛰고 있어.", "answers": ["He is running in the rain.", "He's running in the rain."], "hint": "run → running (n 추가)", "explanation": "단모음+단자음으로 끝나면 자음 하나 추가", "keywords": ["running", "rain"]},
+      {"korean": "아이들이 공원에서 놀고 있어.", "answers": ["The kids are playing in the park.", "The children are playing at the park."], "hint": "are + playing + in the park", "explanation": "", "keywords": ["playing", "park"]}
+    ]
+  },
+  {
+    "day": 7, "topic": "현재진행형 - 확장 표현",
+    "questions": [
+      {"korean": "너 지금 뭐 해?", "answers": ["What are you doing?", "What are you up to?"], "hint": "What + are + you + doing?", "explanation": "What are you up to?는 가벼운 구어체 표현", "keywords": ["doing"]},
+      {"korean": "그들은 새 집을 짓고 있어.", "answers": ["They are building a new house.", "They're building a new house."], "hint": "are + building + a new house", "explanation": "", "keywords": ["building", "house"]},
+      {"korean": "나는 지금 영화를 보고 있어.", "answers": ["I am watching a movie.", "I'm watching a movie right now."], "hint": "am + watching + a movie", "explanation": "", "keywords": ["watching", "movie"]},
+      {"korean": "그녀는 요리하는 중이야.", "answers": ["She is cooking.", "She's in the middle of cooking."], "hint": "is + cooking", "explanation": "in the middle of doing = ~하는 중", "keywords": ["cooking"]},
+      {"korean": "비가 오고 있어.", "answers": ["It is raining.", "It's raining."], "hint": "It + is + raining", "explanation": "날씨 표현: It을 주어로 씁니다", "keywords": ["raining"]}
+    ]
+  },
+  {
+    "day": 8, "topic": "과거형 - be동사 (was/were)",
+    "questions": [
+      {"korean": "나는 어제 아팠어.", "answers": ["I was sick yesterday.", "I was ill yesterday."], "hint": "was + 형용사 + yesterday", "explanation": "sick/ill 둘 다 OK, sick이 미국식", "keywords": ["was", "sick", "yesterday"]},
+      {"korean": "그들은 파티에 있었어.", "answers": ["They were at the party.", "They were there at the party."], "hint": "were + at + 장소", "explanation": "", "keywords": ["were", "party"]},
+      {"korean": "날씨가 어제 엄청 더웠어.", "answers": ["It was really hot yesterday.", "It was so hot yesterday."], "hint": "It + was + 날씨 + yesterday", "explanation": "", "keywords": ["was", "hot", "yesterday"]},
+      {"korean": "그 영화는 정말 재미있었어.", "answers": ["The movie was really fun.", "The movie was so interesting."], "hint": "was + 형용사", "explanation": "fun = 재미있는, interesting = 흥미로운", "keywords": ["movie", "was"]},
+      {"korean": "우리는 그때 어렸어.", "answers": ["We were young back then.", "We were young at that time."], "hint": "were + young + back then", "explanation": "back then = 그때, at that time = 그 당시", "keywords": ["were", "young"]}
+    ]
+  },
+  {
+    "day": 9, "topic": "과거형 - 규칙동사 (-ed)",
+    "questions": [
+      {"korean": "나는 어제 숙제를 했어.", "answers": ["I did my homework yesterday.", "I finished my homework yesterday."], "hint": "did + my homework + yesterday", "explanation": "do→did (불규칙), finish→finished (규칙)", "keywords": ["homework", "yesterday"]},
+      {"korean": "그녀는 어제 한 시간 동안 걸었어.", "answers": ["She walked for an hour yesterday.", "She walked an hour yesterday."], "hint": "walked + for an hour", "explanation": "for + 시간 = ~동안", "keywords": ["walked", "hour"]},
+      {"korean": "우리는 지난 주말에 바비큐 파티를 열었어.", "answers": ["We had a barbecue last weekend.", "We hosted a barbecue party last weekend."], "hint": "had + a barbecue + last weekend", "explanation": "last weekend = 지난 주말", "keywords": ["barbecue", "weekend"]},
+      {"korean": "그는 그 소식을 좋아했어.", "answers": ["He liked the news.", "He loved the news."], "hint": "liked/loved + the news", "explanation": "", "keywords": ["liked", "news"]},
+      {"korean": "그들은 문을 잠갔어.", "answers": ["They locked the door.", "They locked up the door."], "hint": "locked + the door", "explanation": "lock up = 완전히 잠그다", "keywords": ["locked", "door"]}
+    ]
+  },
+  {
+    "day": 10, "topic": "과거형 - 불규칙동사",
+    "questions": [
+      {"korean": "나는 어제 친구를 만났어.", "answers": ["I met my friend yesterday.", "I saw my friend yesterday."], "hint": "meet → met (불규칙)", "explanation": "see/met 모두 '만나다'로 쓸 수 있어요", "keywords": ["met", "friend", "yesterday"]},
+      {"korean": "그는 점심으로 피자를 먹었어.", "answers": ["He ate pizza for lunch.", "He had pizza for lunch."], "hint": "eat → ate (불규칙)", "explanation": "have도 먹다 의미로 자주 사용", "keywords": ["ate", "pizza", "lunch"]},
+      {"korean": "우리는 버스를 탔어.", "answers": ["We took the bus.", "We got on the bus."], "hint": "take → took (불규칙)", "explanation": "get on = 탑승하다 (버스/기차/비행기)", "keywords": ["took", "bus"]},
+      {"korean": "그녀는 어젯밤에 잘 잤어.", "answers": ["She slept well last night.", "She had a good sleep last night."], "hint": "sleep → slept (불규칙)", "explanation": "", "keywords": ["slept", "last night"]},
+      {"korean": "나는 그 편지를 썼어.", "answers": ["I wrote the letter.", "I wrote that letter."], "hint": "write → wrote (불규칙)", "explanation": "", "keywords": ["wrote", "letter"]}
+    ]
+  }
+]

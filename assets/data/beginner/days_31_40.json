@@ -1,0 +1,102 @@
+[
+  {
+    "day": 31, "topic": "if 조건문 - 현재/미래 (1형식)",
+    "questions": [
+      {"korean": "만약 비가 오면 우산을 가져갈 거야.", "answers": ["If it rains, I will bring an umbrella.", "If it rains, I'll take an umbrella."], "hint": "If + 현재시제, will + 동사원형", "explanation": "if절은 현재시제, 주절은 will 사용", "keywords": ["if", "rains", "will", "umbrella"]},
+      {"korean": "만약 시간이 있으면 영화 보자.", "answers": ["If you have time, let's watch a movie.", "If we have time, let's watch a movie."], "hint": "If + have time, let's + 동사원형", "explanation": "let's = let us (제안)", "keywords": ["if", "time", "movie"]},
+      {"korean": "만약 열심히 공부하면 시험을 통과할 거야.", "answers": ["If you study hard, you will pass the exam.", "If you study hard, you'll pass the test."], "hint": "If + study hard, will + pass", "explanation": "", "keywords": ["if", "study", "pass", "exam"]},
+      {"korean": "만약 그가 전화하면 나한테 말해줘.", "answers": ["If he calls, tell me.", "If he calls, let me know."], "hint": "If + calls, 명령문", "explanation": "let me know = 나에게 알려줘", "keywords": ["if", "calls", "tell"]},
+      {"korean": "만약 배고프면 뭔가 먹어.", "answers": ["If you are hungry, eat something.", "If you're hungry, grab something to eat."], "hint": "If + hungry, 명령문", "explanation": "grab something to eat = 뭔가 집어 먹다 (구어체)", "keywords": ["if", "hungry", "eat"]}
+    ]
+  },
+  {
+    "day": 32, "topic": "의문사 + to부정사",
+    "questions": [
+      {"korean": "나는 무엇을 입어야 할지 모르겠어.", "answers": ["I don't know what to wear.", "I'm not sure what to wear."], "hint": "what to + 동사원형", "explanation": "", "keywords": ["what to wear"]},
+      {"korean": "그녀는 어떻게 운전하는지 알아.", "answers": ["She knows how to drive.", "She knows how to operate a car."], "hint": "know how to + 동사원형", "explanation": "", "keywords": ["how to drive"]},
+      {"korean": "나는 어디서 표를 사야 할지 모르겠어.", "answers": ["I don't know where to buy tickets.", "I'm not sure where to get tickets."], "hint": "where to + buy/get + tickets", "explanation": "", "keywords": ["where to", "tickets"]},
+      {"korean": "그들은 언제 출발해야 할지 결정했어.", "answers": ["They decided when to leave.", "They figured out when to depart."], "hint": "when to + leave/depart", "explanation": "figure out = 알아내다, 결정하다", "keywords": ["when to", "leave"]},
+      {"korean": "그는 어떻게 사과해야 할지 몰랐어.", "answers": ["He didn't know how to apologize.", "He wasn't sure how to say sorry."], "hint": "how to + apologize/say sorry", "explanation": "", "keywords": ["how to", "apologize"]}
+    ]
+  },
+  {
+    "day": 33, "topic": "시간 표현 - ago/before/after/since",
+    "questions": [
+      {"korean": "나는 두 시간 전에 점심을 먹었어.", "answers": ["I had lunch two hours ago.", "I ate lunch two hours ago."], "hint": "시간 + ago = ~전에", "explanation": "", "keywords": ["ago", "lunch"]},
+      {"korean": "수업 전에 숙제를 다 해.", "answers": ["Do your homework before class.", "Finish your homework before class."], "hint": "before + 명사/동사ing", "explanation": "", "keywords": ["before", "homework", "class"]},
+      {"korean": "저녁 식사 후에 산책을 갔어.", "answers": ["I went for a walk after dinner.", "I took a walk after dinner."], "hint": "after + dinner", "explanation": "go for a walk = take a walk = 산책하다", "keywords": ["after", "dinner", "walk"]},
+      {"korean": "나는 작년부터 여기서 일하고 있어.", "answers": ["I have been working here since last year.", "I've worked here since last year."], "hint": "since + 특정 시점 (현재완료와 함께)", "explanation": "since = ~부터 (특정 시점), for = ~동안 (기간)", "keywords": ["since", "last year"]},
+      {"korean": "수업이 끝난 후에 뭐 할 거야?", "answers": ["What are you going to do after class?", "What will you do after class?"], "hint": "after class = 수업 후에", "explanation": "", "keywords": ["after", "class"]}
+    ]
+  },
+  {
+    "day": 34, "topic": "부탁/제안 표현",
+    "questions": [
+      {"korean": "창문 좀 열어줄 수 있어?", "answers": ["Can you open the window?", "Could you open the window, please?"], "hint": "Can/Could you + 동사원형?", "explanation": "Could는 Can보다 더 공손한 표현", "keywords": ["open", "window"]},
+      {"korean": "같이 점심 먹을래?", "answers": ["Do you want to have lunch together?", "Would you like to have lunch with me?"], "hint": "Do you want to / Would you like to + 동사원형?", "explanation": "Would you like to = 더 공손한 제안", "keywords": ["lunch", "together"]},
+      {"korean": "영화 보러 갈래?", "answers": ["Do you want to go see a movie?", "Shall we go to the movies?"], "hint": "Do you want to / Shall we + 동사원형?", "explanation": "Shall we = 영국식 표현, 미국에서도 씀", "keywords": ["movie"]},
+      {"korean": "좀 조용히 해줄 수 있어요?", "answers": ["Could you please be quiet?", "Can you keep it down, please?"], "hint": "Could you please + 형용사?", "explanation": "keep it down = 소리를 낮추다 (구어체)", "keywords": ["quiet"]},
+      {"korean": "나 좀 도와줄 수 있어?", "answers": ["Can you help me out?", "Could you give me a hand?"], "hint": "Can you help me (out)?", "explanation": "give me a hand = 도와주다 (관용어)", "keywords": ["help"]}
+    ]
+  },
+  {
+    "day": 35, "topic": "동사구 - get/make/take/give",
+    "questions": [
+      {"korean": "버스를 타야 해.", "answers": ["I need to take the bus.", "I have to catch the bus."], "hint": "take the bus = 버스를 타다", "explanation": "catch the bus = 버스를 잡아타다 (구어체)", "keywords": ["take", "bus"]},
+      {"korean": "결정을 내려야 해.", "answers": ["I need to make a decision.", "I have to make up my mind."], "hint": "make a decision = 결정하다", "explanation": "make up one's mind = 마음을 정하다", "keywords": ["make", "decision"]},
+      {"korean": "그녀에게 전화해.", "answers": ["Give her a call.", "Call her."], "hint": "give + 사람 + a call", "explanation": "give someone a call = call someone (전화하다)", "keywords": ["call"]},
+      {"korean": "쉬어야 해.", "answers": ["I need to take a break.", "I should take some rest."], "hint": "take a break = 쉬다", "explanation": "", "keywords": ["take", "break"]},
+      {"korean": "실수를 했어.", "answers": ["I made a mistake.", "I messed up."], "hint": "make a mistake = 실수하다", "explanation": "mess up = 망치다, 실수하다 (구어체)", "keywords": ["made", "mistake"]}
+    ]
+  },
+  {
+    "day": 36, "topic": "감정 표현하기",
+    "questions": [
+      {"korean": "나는 정말 기뻐.", "answers": ["I am so happy.", "I'm really excited."], "hint": "I am + 감정형용사", "explanation": "happy = 행복한, excited = 신난", "keywords": ["happy", "excited"]},
+      {"korean": "그 소식에 충격받았어.", "answers": ["I was shocked by the news.", "The news shocked me."], "hint": "be shocked by + 원인", "explanation": "The news shocked me = 능동 표현", "keywords": ["shocked", "news"]},
+      {"korean": "나는 실망했어.", "answers": ["I am disappointed.", "I feel let down."], "hint": "disappointed = 실망한", "explanation": "feel let down = 실망감을 느끼다 (구어체)", "keywords": ["disappointed"]},
+      {"korean": "그 결과에 놀랐어.", "answers": ["I was surprised by the result.", "The result surprised me."], "hint": "be surprised by + 원인", "explanation": "", "keywords": ["surprised", "result"]},
+      {"korean": "그는 지루해 보여.", "answers": ["He looks bored.", "He seems bored."], "hint": "look/seem + bored", "explanation": "bored = 지루함을 느끼는, boring = 지루하게 만드는", "keywords": ["looks", "bored"]}
+    ]
+  },
+  {
+    "day": 37, "topic": "Have you ever...? (경험 묻기)",
+    "questions": [
+      {"korean": "외국에 가본 적 있어?", "answers": ["Have you ever been abroad?", "Have you ever traveled overseas?"], "hint": "Have you ever + p.p.?", "explanation": "abroad = overseas = 해외에", "keywords": ["have you ever", "abroad"]},
+      {"korean": "스카이다이빙 해본 적 있어?", "answers": ["Have you ever gone skydiving?", "Have you ever tried skydiving?"], "hint": "Have you ever + p.p.?", "explanation": "", "keywords": ["have you ever", "skydiving"]},
+      {"korean": "나는 한 번도 도미노피자를 먹어본 적이 없어.", "answers": ["I have never eaten Domino's Pizza.", "I've never tried Domino's Pizza."], "hint": "I have never + p.p.", "explanation": "", "keywords": ["have never", "pizza"]},
+      {"korean": "그녀는 혼자 여행해 본 적이 있어.", "answers": ["She has traveled alone before.", "She has been traveling solo before."], "hint": "has + p.p. + before", "explanation": "solo = alone (혼자)", "keywords": ["has traveled", "alone"]},
+      {"korean": "너 번지점프 해봤어?", "answers": ["Have you ever done bungee jumping?", "Have you tried bungee jumping?"], "hint": "Have you ever + done?", "explanation": "", "keywords": ["have you ever", "bungee"]}
+    ]
+  },
+  {
+    "day": 38, "topic": "It takes / It costs",
+    "questions": [
+      {"korean": "거기까지 30분 걸려.", "answers": ["It takes 30 minutes to get there.", "It takes about 30 minutes to get there."], "hint": "It takes + 시간 + to + 동사원형", "explanation": "", "keywords": ["takes", "minutes"]},
+      {"korean": "그 드레스는 200달러였어.", "answers": ["The dress cost 200 dollars.", "The dress was 200 dollars."], "hint": "cost + 가격", "explanation": "cost는 과거형도 cost (불규칙)", "keywords": ["cost", "dollars"]},
+      {"korean": "영어를 배우는 데 얼마나 걸려?", "answers": ["How long does it take to learn English?", "How much time does it take to learn English?"], "hint": "How long does it take to + 동사원형?", "explanation": "", "keywords": ["how long", "takes", "English"]},
+      {"korean": "이거 수리하는 데 얼마 들어?", "answers": ["How much does it cost to fix this?", "How much will it cost to repair this?"], "hint": "How much does it cost to + 동사원형?", "explanation": "fix = repair (수리하다)", "keywords": ["how much", "cost", "fix"]},
+      {"korean": "그 책을 읽는 데 사흘이 걸렸어.", "answers": ["It took three days to read that book.", "It took me three days to finish the book."], "hint": "It took + 시간 + to + 동사원형", "explanation": "", "keywords": ["took", "three days", "read"]}
+    ]
+  },
+  {
+    "day": 39, "topic": "숫자/날짜/가격 표현",
+    "questions": [
+      {"korean": "오늘은 3월 15일이야.", "answers": ["Today is March 15th.", "It's March 15th today."], "hint": "월 + 서수 (15th)", "explanation": "날짜는 서수(1st, 2nd, 3rd, 4th...)로 읽음", "keywords": ["March", "15th"]},
+      {"korean": "그는 25살이야.", "answers": ["He is 25 years old.", "He's 25."], "hint": "be + 나이 + years old", "explanation": "years old는 생략 가능", "keywords": ["25", "years old"]},
+      {"korean": "이 신발은 세일해서 50% 할인이야.", "answers": ["These shoes are 50% off.", "These shoes are on sale for 50% off."], "hint": "50% off = 50% 할인", "explanation": "on sale = 할인 중", "keywords": ["50%", "off"]},
+      {"korean": "회의는 2시간 반 동안이야.", "answers": ["The meeting is two and a half hours long.", "The meeting lasts two and a half hours."], "hint": "two and a half = 2.5", "explanation": "", "keywords": ["two and a half", "hours"]},
+      {"korean": "그 가게는 오전 9시부터 오후 9시까지 열어.", "answers": ["The store is open from 9 a.m. to 9 p.m.", "The shop is open from 9 in the morning to 9 at night."], "hint": "from + 시간 + to + 시간", "explanation": "", "keywords": ["from", "to", "open"]}
+    ]
+  },
+  {
+    "day": 40, "topic": "일상 생활 표현 종합",
+    "questions": [
+      {"korean": "오랜만이야!", "answers": ["Long time no see!", "It's been a while!"], "hint": "Long time no see! = 오랜만이야!", "explanation": "It's been a while = 한동안 못 봤다", "keywords": ["long time", "while"]},
+      {"korean": "나 지금 바빠. 나중에 얘기하자.", "answers": ["I'm busy right now. Let's talk later.", "I'm a bit busy. Can we talk later?"], "hint": "I'm busy + Let's talk later", "explanation": "", "keywords": ["busy", "later"]},
+      {"korean": "잘 됐다!", "answers": ["That's great!", "Awesome!", "Good for you!"], "hint": "That's great! / Awesome!", "explanation": "상대방에게 좋은 일이 생겼을 때: Good for you!", "keywords": ["great", "awesome"]},
+      {"korean": "그건 그렇고, 주말에 뭐 해?", "answers": ["By the way, what are you doing this weekend?", "Anyway, what are your plans for the weekend?"], "hint": "By the way = 그건 그렇고", "explanation": "by the way = 화제 전환 시 사용", "keywords": ["by the way", "weekend"]},
+      {"korean": "괜찮아, 걱정하지 마.", "answers": ["It's okay, don't worry about it.", "No worries, it's fine."], "hint": "It's okay / No worries = 괜찮아", "explanation": "No worries는 호주식이지만 미국에서도 많이 씀", "keywords": ["okay", "don't worry"]}
+    ]
+  }
+]

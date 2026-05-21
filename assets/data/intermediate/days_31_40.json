@@ -1,0 +1,102 @@
+[
+  {
+    "day": 31, "topic": "뉘앙스 차이 - say/tell/speak/talk",
+    "questions": [
+      {"korean": "그가 뭐라고 했어?", "answers": ["What did he say?", "What did he tell you?"], "hint": "say = 말하다 (내용), tell = 누군가에게 말하다 (대상)", "explanation": "say + 내용, tell + 사람 + 내용", "keywords": ["say", "tell"]},
+      {"korean": "그녀는 나에게 비밀을 말해줬어.", "answers": ["She told me a secret.", "She shared a secret with me."], "hint": "tell + 사람 + 내용", "explanation": "say me a secret → 틀림. tell me a secret이 맞음", "keywords": ["told me", "secret"]},
+      {"korean": "우리는 그 문제에 대해 이야기했어.", "answers": ["We talked about the issue.", "We discussed the problem."], "hint": "talk about = discuss = 논의하다", "explanation": "discuss 뒤엔 about 없이 바로 목적어 사용", "keywords": ["talked about", "issue"]},
+      {"korean": "그는 다섯 개 국어를 해.", "answers": ["He speaks five languages.", "He can speak five languages."], "hint": "speak a language = 언어를 하다", "explanation": "talk a language → 틀림. speak a language가 맞음", "keywords": ["speaks", "languages"]},
+      {"korean": "그녀는 항상 솔직하게 말해.", "answers": ["She always speaks her mind.", "She always tells it like it is."], "hint": "speak one's mind = 솔직하게 말하다", "explanation": "tell it like it is = 있는 그대로 말하다", "keywords": ["speaks her mind", "honest"]}
+    ]
+  },
+  {
+    "day": 32, "topic": "뉘앙스 차이 - make/do/have/get",
+    "questions": [
+      {"korean": "그 결정은 내가 했어.", "answers": ["I made the decision.", "The decision was mine."], "hint": "make a decision / choice / plan / effort", "explanation": "make = 창조, 결과를 만들어내는 행동에 사용", "keywords": ["made", "decision"]},
+      {"korean": "나는 오늘 많은 일을 했어.", "answers": ["I did a lot of work today.", "I got a lot done today."], "hint": "do + work / homework / favor / damage", "explanation": "do = 행위 자체, get done = 완료 강조", "keywords": ["did", "work", "got done"]},
+      {"korean": "그는 결국 승진했어.", "answers": ["He finally got promoted.", "He eventually received a promotion."], "hint": "get + p.p. = 수동적으로 ~하게 되다", "explanation": "get promoted = 승진하다", "keywords": ["got promoted"]},
+      {"korean": "커피 한 잔 할 수 있을까?", "answers": ["Can I get a cup of coffee?", "Could I have a coffee, please?"], "hint": "get = have = 달라고 요청할 때 사용", "explanation": "Can I get = 미국식, Could I have = 격식체", "keywords": ["get", "have", "coffee"]},
+      {"korean": "나는 그가 이해할 수 있게 설명했어.", "answers": ["I made sure he understood.", "I got him to understand."], "hint": "make sure + 절 / get + 사람 + to + 동사원형", "explanation": "get someone to do = 누군가가 ~하도록 하다", "keywords": ["made sure", "got him to understand"]}
+    ]
+  },
+  {
+    "day": 33, "topic": "회화에서 자주 쓰는 연결어",
+    "questions": [
+      {"korean": "게다가, 그는 경험도 많아.", "answers": ["Moreover, he has a lot of experience.", "On top of that, he's very experienced."], "hint": "moreover = furthermore = on top of that = 게다가", "explanation": "", "keywords": ["moreover", "on top of that", "experience"]},
+      {"korean": "다시 말하면, 우리에겐 계획 B가 필요해.", "answers": ["In other words, we need a plan B.", "That is to say, we need a backup plan."], "hint": "in other words = that is to say = 다시 말하면", "explanation": "", "keywords": ["in other words", "plan B"]},
+      {"korean": "그렇다 하더라도, 시도해볼 가치가 있어.", "answers": ["Even so, it's worth trying.", "That said, it's still worth a shot."], "hint": "even so = that said = 그렇다 하더라도", "explanation": "worth a shot = 시도해볼 가치가 있는", "keywords": ["even so", "that said", "worth trying"]},
+      {"korean": "결론적으로, 그 프로젝트는 성공이었어.", "answers": ["In conclusion, the project was a success.", "To sum up, the project went well."], "hint": "in conclusion = to sum up = 결론적으로", "explanation": "", "keywords": ["in conclusion", "to sum up", "success"]},
+      {"korean": "예를 들어, 사과나 바나나 같은 과일이야.", "answers": ["For example, fruits like apples or bananas.", "For instance, apples and bananas are good examples."], "hint": "for example = for instance = 예를 들어", "explanation": "", "keywords": ["for example", "for instance"]}
+    ]
+  },
+  {
+    "day": 34, "topic": "감정/태도 표현 고급",
+    "questions": [
+      {"korean": "나는 그 결정에 찜찜함을 느껴.", "answers": ["I feel uneasy about the decision.", "I have mixed feelings about it."], "hint": "feel uneasy / have mixed feelings = 찜찜하다, 불안하다", "explanation": "mixed feelings = 복잡한 감정", "keywords": ["feel uneasy", "mixed feelings"]},
+      {"korean": "그는 칭찬을 들었을 때 어쩔 줄을 몰랐어.", "answers": ["He didn't know how to react when he was complimented.", "He was at a loss for words when he received the compliment."], "hint": "be at a loss for words = 할 말을 잃다", "explanation": "", "keywords": ["at a loss for words", "complimented"]},
+      {"korean": "그 프레젠테이션에 대해 긴장이 됐지만, 결국 잘 됐어.", "answers": ["I was nervous about the presentation, but it turned out well.", "I had butterflies about it, but it went smoothly."], "hint": "have butterflies = 긴장하다 (관용어)", "explanation": "turn out well / go smoothly = 잘 되다", "keywords": ["nervous", "turned out well"]},
+      {"korean": "그는 그 제안에 대해 열정적이야.", "answers": ["He is enthusiastic about the proposal.", "He's really excited about the idea."], "hint": "enthusiastic about = excited about = 열정적인", "explanation": "", "keywords": ["enthusiastic", "proposal"]},
+      {"korean": "나는 그냥 무시하고 넘겼어.", "answers": ["I just let it go.", "I brushed it off."], "hint": "let it go / brush it off = 무시하다, 넘기다", "explanation": "brush off = 가볍게 무시하다", "keywords": ["let it go", "brushed off"]}
+    ]
+  },
+  {
+    "day": 35, "topic": "설득/주장 표현",
+    "questions": [
+      {"korean": "내 관점에서 보면, 그건 공정하지 않아.", "answers": ["From my perspective, that's not fair.", "As I see it, it's not right."], "hint": "from my perspective = as I see it = 내 관점에서", "explanation": "", "keywords": ["from my perspective", "not fair"]},
+      {"korean": "나는 그게 옳다고 굳게 믿어.", "answers": ["I strongly believe that it's the right thing to do.", "I'm firmly convinced that it's correct."], "hint": "strongly believe / firmly convinced = 굳게 믿다", "explanation": "", "keywords": ["strongly believe", "firmly convinced"]},
+      {"korean": "내 말은, 우리가 더 열심히 해야 한다는 거야.", "answers": ["What I mean is, we need to work harder.", "My point is that we should put in more effort."], "hint": "What I mean is / My point is = 내 말은", "explanation": "", "keywords": ["what I mean", "my point", "work harder"]},
+      {"korean": "그 점을 고려해볼 때, 좀 더 조심해야 해.", "answers": ["Given that point, we should be more careful.", "Considering that, we need to proceed with caution."], "hint": "given that / considering that = ~을 고려해볼 때", "explanation": "", "keywords": ["given that", "considering", "careful"]},
+      {"korean": "사실을 말하자면, 그건 가능하지 않아.", "answers": ["The fact of the matter is, it's not possible.", "Frankly, it just can't be done."], "hint": "The fact of the matter is = 사실은, 실제로는", "explanation": "", "keywords": ["the fact of the matter", "not possible"]}
+    ]
+  },
+  {
+    "day": 36, "topic": "자주 쓰는 두 단어 동사구",
+    "questions": [
+      {"korean": "나는 그 결정을 되돌리고 싶어.", "answers": ["I want to take back my decision.", "I wish I could undo that decision."], "hint": "take back = 취소하다, 되돌리다", "explanation": "undo = 되돌리다", "keywords": ["take back", "undo"]},
+      {"korean": "상황이 점점 손에서 벗어나고 있어.", "answers": ["Things are getting out of hand.", "The situation is spiraling out of control."], "hint": "get out of hand = 통제를 벗어나다", "explanation": "spiral out of control = 걷잡을 수 없이 나빠지다", "keywords": ["out of hand", "out of control"]},
+      {"korean": "그는 어려운 상황에 처했어.", "answers": ["He got himself into a tough spot.", "He ended up in a difficult situation."], "hint": "get into a tough spot = 어려운 상황에 처하다", "explanation": "end up in = 결국 ~에 처하다", "keywords": ["tough spot", "difficult situation"]},
+      {"korean": "나는 그 계획을 실행에 옮겼어.", "answers": ["I put the plan into action.", "I carried out the plan."], "hint": "put into action / carry out = 실행하다", "explanation": "", "keywords": ["put into action", "carried out", "plan"]},
+      {"korean": "그들은 그 문제를 서로 해결했어.", "answers": ["They worked out the problem together.", "They sorted out the issue between them."], "hint": "work out / sort out = 해결하다", "explanation": "", "keywords": ["worked out", "sorted out", "problem"]}
+    ]
+  },
+  {
+    "day": 37, "topic": "간결한 표현 vs. 원어민 표현",
+    "questions": [
+      {"korean": "정말 힘든 하루였어.", "answers": ["It's been a rough day.", "What a day it has been."], "hint": "rough = tough = hard = 힘든", "explanation": "It's been a rough/tough day = 원어민이 자주 쓰는 표현", "keywords": ["rough day", "tough day"]},
+      {"korean": "잘 됐으면 해.", "answers": ["I hope it works out.", "I'm rooting for you."], "hint": "work out = 잘 되다, root for = 응원하다", "explanation": "rooting for you = 너를 응원해", "keywords": ["hope it works out", "rooting for you"]},
+      {"korean": "그건 말이 돼.", "answers": ["That makes sense.", "That adds up."], "hint": "make sense / add up = 말이 되다, 이해가 되다", "explanation": "", "keywords": ["makes sense", "adds up"]},
+      {"korean": "나는 그냥 확인하고 싶었어.", "answers": ["I just wanted to check in.", "I was just touching base."], "hint": "check in / touch base = 안부를 묻다, 확인하다", "explanation": "touch base = 가볍게 확인하다 (비즈니스 표현)", "keywords": ["check in", "touch base"]},
+      {"korean": "나는 그게 성가셨어.", "answers": ["I found it annoying.", "It got on my nerves."], "hint": "get on one's nerves = 신경을 건드리다, 짜증나게 하다", "explanation": "", "keywords": ["found it annoying", "got on my nerves"]}
+    ]
+  },
+  {
+    "day": 38, "topic": "수량 표현 - few/a few/little/a little",
+    "questions": [
+      {"korean": "친구가 거의 없어. (부정적)", "answers": ["I have few friends.", "I don't have many friends."], "hint": "few (가산) = 거의 없는 (부정적)", "explanation": "few = 거의 없다, a few = 몇 개 있다 (차이 중요)", "keywords": ["few friends"]},
+      {"korean": "친구가 몇 명 있어. (긍정적)", "answers": ["I have a few friends.", "I have some friends."], "hint": "a few (가산) = 몇 명 있음 (긍정적)", "explanation": "", "keywords": ["a few friends"]},
+      {"korean": "시간이 거의 없어.", "answers": ["I have little time.", "I barely have any time."], "hint": "little (불가산) = 거의 없는", "explanation": "little = 거의 없다, a little = 조금 있다", "keywords": ["little time"]},
+      {"korean": "물이 조금 있어.", "answers": ["There is a little water.", "There's some water left."], "hint": "a little (불가산) = 조금 있음 (긍정적)", "explanation": "", "keywords": ["a little water"]},
+      {"korean": "많은 사람들이 그 문제를 알고 있어.", "answers": ["Quite a few people know about the issue.", "A good number of people are aware of the problem."], "hint": "quite a few = 꽤 많은", "explanation": "quite a few = 상당히 많은 수", "keywords": ["quite a few", "people"]}
+    ]
+  },
+  {
+    "day": 39, "topic": "자주 혼동되는 표현",
+    "questions": [
+      {"korean": "나는 그를 10년 전부터 알고 있어.", "answers": ["I have known him for ten years.", "I've known him for a decade."], "hint": "know는 진행형 불가 → 현재완료 사용", "explanation": "know, love, believe 등 상태동사는 진행형 사용 안 함", "keywords": ["have known", "ten years"]},
+      {"korean": "내 여권이 만료됐어.", "answers": ["My passport has expired.", "My passport is expired."], "hint": "has expired = 만료됐다 (현재완료), is expired = 만료 상태", "explanation": "둘 다 쓰지만 has expired가 더 자연스러움", "keywords": ["expired", "passport"]},
+      {"korean": "나는 그가 올지 안 올지 모르겠어.", "answers": ["I don't know if he is coming.", "I'm not sure whether he'll show up."], "hint": "if = whether (간접 의문)", "explanation": "", "keywords": ["don't know if", "whether", "coming"]},
+      {"korean": "그 회의는 3시간 동안 진행됐어.", "answers": ["The meeting lasted three hours.", "The meeting went on for three hours."], "hint": "last = go on for = ~동안 계속되다", "explanation": "take three hours = 3시간이 걸리다 (소요 시간)", "keywords": ["lasted", "three hours"]},
+      {"korean": "그는 영어를 배우고 있어.", "answers": ["He is learning English.", "He is studying English."], "hint": "learn = 배우다 (결과 포함), study = 공부하다 (과정)", "explanation": "learn English = 배워가는 중, study English = 공부 중", "keywords": ["learning", "studying", "English"]}
+    ]
+  },
+  {
+    "day": 40, "topic": "복잡한 문장 구조 연습",
+    "questions": [
+      {"korean": "네가 뭐라고 말하든, 나는 내 마음을 바꾸지 않을 거야.", "answers": ["No matter what you say, I won't change my mind.", "Whatever you say, I'm not going to change my mind."], "hint": "No matter what / Whatever = 뭐라 해도", "explanation": "", "keywords": ["no matter what", "won't change mind"]},
+      {"korean": "그는 몸이 아픈데도 불구하고 출근했어.", "answers": ["He went to work despite feeling sick.", "Even though he was sick, he showed up to work."], "hint": "despite + ~ing / even though + 절", "explanation": "", "keywords": ["despite feeling sick", "went to work"]},
+      {"korean": "내가 그를 더 잘 알았더라면, 그냥 그러려니 했을 텐데.", "answers": ["Had I known him better, I would have just let it go.", "If I had known him better, I wouldn't have taken it personally."], "hint": "Had I + p.p. = If I had + p.p. (도치 가정법)", "explanation": "Had I = 가정법 도치", "keywords": ["had I known", "would have let it go"]},
+      {"korean": "그것이 되든 안 되든, 우리는 계속 시도할 거야.", "answers": ["Whether it works or not, we'll keep trying.", "Regardless of the outcome, we're going to keep going."], "hint": "Whether A or B = A이든 B이든", "explanation": "regardless of = ~와 상관없이", "keywords": ["whether", "works or not", "keep trying"]},
+      {"korean": "지금 와서 돌이켜보면, 그 결정이 옳았어.", "answers": ["Looking back on it now, that was the right decision.", "In hindsight, it was the right call."], "hint": "looking back on = in hindsight = 돌이켜보면", "explanation": "in hindsight = 지나고 보니", "keywords": ["looking back", "in hindsight", "right decision"]}
+    ]
+  }
+]

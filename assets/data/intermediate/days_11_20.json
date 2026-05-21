@@ -1,0 +1,102 @@
+[
+  {
+    "day": 11, "topic": "구동사 (Phrasal Verbs) 심화",
+    "questions": [
+      {"korean": "그 프로젝트를 맡게 됐어.", "answers": ["I took on the project.", "I was put in charge of the project."], "hint": "take on = 맡다, 책임지다", "explanation": "be put in charge of = ~을 담당하게 되다", "keywords": ["took on", "project"]},
+      {"korean": "우리는 새 계획을 생각해냈어.", "answers": ["We came up with a new plan.", "We figured out a new plan."], "hint": "come up with = 생각해내다, 고안하다", "explanation": "figure out = 알아내다, 해결책을 찾다", "keywords": ["came up with", "plan"]},
+      {"korean": "그 행사는 나쁜 날씨 때문에 취소됐어.", "answers": ["The event was called off due to bad weather.", "The event was canceled because of bad weather."], "hint": "call off = cancel = 취소하다", "explanation": "due to = because of", "keywords": ["called off", "bad weather"]},
+      {"korean": "그녀는 그 상황을 잘 처리했어.", "answers": ["She dealt with the situation well.", "She handled the situation well."], "hint": "deal with = handle = 다루다, 처리하다", "explanation": "", "keywords": ["dealt with", "situation"]},
+      {"korean": "그는 재정적 어려움을 이겨냈어.", "answers": ["He got through the financial difficulties.", "He overcame the financial challenges."], "hint": "get through = overcome = 극복하다", "explanation": "", "keywords": ["got through", "financial difficulties"]}
+    ]
+  },
+  {
+    "day": 12, "topic": "가정법 - I wish / If only",
+    "questions": [
+      {"korean": "내가 더 키가 크면 좋겠어.", "answers": ["I wish I were taller.", "I wish I was taller."], "hint": "I wish + 주어 + were (현재 사실의 반대 소원)", "explanation": "wish 뒤엔 were가 격식체, was도 허용됨", "keywords": ["wish", "were taller"]},
+      {"korean": "더 열심히 공부했더라면 좋았을 텐데.", "answers": ["I wish I had studied harder.", "If only I had studied more."], "hint": "I wish + had + p.p. (과거 사실의 반대 소원)", "explanation": "If only = I wish보다 강한 후회 표현", "keywords": ["wish", "had studied harder"]},
+      {"korean": "그가 여기 있으면 좋겠어.", "answers": ["I wish he were here.", "If only he were here."], "hint": "I wish + 주어 + were + 장소", "explanation": "", "keywords": ["wish", "were here"]},
+      {"korean": "그때 그걸 사지 않았으면 좋았을 텐데.", "answers": ["I wish I hadn't bought it.", "I wish I hadn't gotten that."], "hint": "I wish + hadn't + p.p.", "explanation": "", "keywords": ["wish", "hadn't bought"]},
+      {"korean": "날씨가 더 좋으면 좋겠어.", "answers": ["I wish the weather were better.", "If only the weather was nicer."], "hint": "I wish + the weather + were + 비교급", "explanation": "", "keywords": ["wish", "weather", "better"]}
+    ]
+  },
+  {
+    "day": 13, "topic": "도치 구문 (Inversion) - Not only / Neither / So",
+    "questions": [
+      {"korean": "나도 그도 거기 안 갔어.", "answers": ["Neither he nor I went there.", "Neither of us went there."], "hint": "Neither A nor B = A도 B도 ~않다", "explanation": "", "keywords": ["neither", "nor", "went"]},
+      {"korean": "그녀는 영어뿐만 아니라 불어도 해.", "answers": ["She speaks not only English but also French.", "Not only does she speak English, but she also speaks French."], "hint": "not only A but also B", "explanation": "도치: Not only + 조동사 + 주어", "keywords": ["not only", "but also", "French"]},
+      {"korean": "나도 좋아.", "answers": ["So do I.", "Me too."], "hint": "So + 조동사 + 주어 = 나도 그래 (긍정 동조)", "explanation": "Me too = 구어체, So do I = 격식체", "keywords": ["so do I"]},
+      {"korean": "나도 거기 가본 적 없어.", "answers": ["Neither have I.", "Me neither."], "hint": "Neither + have + 주어 = 나도 안 그래 (부정 동조)", "explanation": "Me neither = 구어체", "keywords": ["neither have I"]},
+      {"korean": "그것뿐만 아니라, 그는 수학도 잘해.", "answers": ["Not only that, he is also good at math.", "On top of that, he's great at math."], "hint": "Not only that = 그것뿐만 아니라", "explanation": "on top of that = 게다가", "keywords": ["not only that", "math"]}
+    ]
+  },
+  {
+    "day": 14, "topic": "분사 - 현재분사/과거분사 형용사 용법",
+    "questions": [
+      {"korean": "그 영화는 정말 감동적이었어.", "answers": ["The movie was really moving.", "The film was truly touching."], "hint": "현재분사(-ing) = 감정을 유발하는", "explanation": "moving/touching = 감동적인 (감정을 만드는 대상)", "keywords": ["moving", "touching"]},
+      {"korean": "나는 그 결과에 실망했어.", "answers": ["I was disappointed with the result.", "I felt let down by the outcome."], "hint": "과거분사(-ed) = 감정을 받은 사람의 상태", "explanation": "disappointing = 실망스러운 것, disappointed = 실망한 사람", "keywords": ["disappointed", "result"]},
+      {"korean": "그 강의는 지루했어.", "answers": ["The lecture was boring.", "The class was so dull."], "hint": "boring = 지루하게 만드는, bored = 지루함을 느끼는", "explanation": "", "keywords": ["boring", "lecture"]},
+      {"korean": "그녀는 그 소식에 깜짝 놀랐어.", "answers": ["She was surprised by the news.", "She was shocked by the news."], "hint": "surprised/shocked = 과거분사 형용사", "explanation": "surprising = 놀라게 하는, surprised = 놀란 사람", "keywords": ["surprised", "news"]},
+      {"korean": "그것은 정말 흥미로운 제안이야.", "answers": ["That's a really interesting proposal.", "That's a fascinating suggestion."], "hint": "interesting/fascinating = 흥미를 일으키는", "explanation": "", "keywords": ["interesting", "proposal"]}
+    ]
+  },
+  {
+    "day": 15, "topic": "분사구문 (Participial Phrases)",
+    "questions": [
+      {"korean": "음악을 들으면서 공부했어.", "answers": ["I studied while listening to music.", "Listening to music, I studied."], "hint": "While + ~ing 또는 ~ing, 주절", "explanation": "분사구문: 접속사 생략 후 동사를 ~ing로", "keywords": ["listening to music", "studied"]},
+      {"korean": "숙제를 마치고 나서, 그녀는 게임을 했어.", "answers": ["Having finished her homework, she played games.", "After finishing her homework, she played games."], "hint": "Having + p.p. = 먼저 완료된 동작 표현", "explanation": "Having p.p. = After ~ing (선행 동작 강조)", "keywords": ["having finished", "homework"]},
+      {"korean": "왼쪽으로 돌면 은행이 보일 거야.", "answers": ["Turning left, you'll see the bank.", "If you turn left, you'll see the bank."], "hint": "~ing, 주절 = 조건/동시 동작", "explanation": "", "keywords": ["turning left", "bank"]},
+      {"korean": "그는 다리를 꼬고 바닥에 앉아 있었어.", "answers": ["He was sitting on the floor with his legs crossed.", "He sat on the floor, crossing his legs."], "hint": "with + 명사 + p.p. (부대상황)", "explanation": "with + 명사 + 분사 = 부대상황 표현", "keywords": ["sitting", "legs crossed"]},
+      {"korean": "솔직히 말하면, 나는 동의하지 않아.", "answers": ["Frankly speaking, I don't agree.", "To be honest, I disagree."], "hint": "Frankly speaking = 솔직히 말하면 (독립 분사구문)", "explanation": "", "keywords": ["frankly speaking", "don't agree"]}
+    ]
+  },
+  {
+    "day": 16, "topic": "조건문 - unless / as long as / provided that",
+    "questions": [
+      {"korean": "서두르지 않으면 늦을 거야.", "answers": ["Unless you hurry, you'll be late.", "If you don't hurry, you'll be late."], "hint": "unless = if not = ~하지 않으면", "explanation": "", "keywords": ["unless", "hurry", "late"]},
+      {"korean": "네가 허락해준다면 갈 거야.", "answers": ["I'll go as long as you allow me.", "I'll go provided that you give permission."], "hint": "as long as / provided that = ~하는 한", "explanation": "as long as = 조건을 강조, provided that = 격식체", "keywords": ["as long as", "allow"]},
+      {"korean": "신분증이 없으면 입장하지 못해.", "answers": ["You can't enter unless you have an ID.", "Without an ID, you won't be allowed in."], "hint": "unless + have ID = without an ID", "explanation": "", "keywords": ["unless", "ID", "enter"]},
+      {"korean": "규칙을 따르는 한 문제없어.", "answers": ["As long as you follow the rules, there's no problem.", "You'll be fine as long as you stick to the rules."], "hint": "as long as + follow the rules", "explanation": "stick to = 고수하다, 따르다", "keywords": ["as long as", "follow the rules"]},
+      {"korean": "비가 오지 않는다면 소풍 갈 거야.", "answers": ["We'll have a picnic unless it rains.", "We'll go on a picnic as long as it doesn't rain."], "hint": "unless it rains = if it doesn't rain", "explanation": "", "keywords": ["unless", "rain", "picnic"]}
+    ]
+  },
+  {
+    "day": 17, "topic": "비교 표현 심화",
+    "questions": [
+      {"korean": "그녀는 내가 생각한 것보다 훨씬 더 똑똑해.", "answers": ["She is much smarter than I thought.", "She's way smarter than I expected."], "hint": "much/way/far + 비교급 + than", "explanation": "much = way = far = 훨씬 (비교급 강조)", "keywords": ["much smarter", "than I thought"]},
+      {"korean": "갈수록 상황이 나빠지고 있어.", "answers": ["The situation is getting worse and worse.", "Things are getting increasingly worse."], "hint": "비교급 + and + 비교급 = 점점 더 ~해지다", "explanation": "increasingly = 점점 더", "keywords": ["worse and worse"]},
+      {"korean": "네가 더 열심히 노력할수록 결과가 더 좋아질 거야.", "answers": ["The harder you try, the better the results will be.", "The more effort you put in, the better the outcome."], "hint": "The + 비교급, the + 비교급", "explanation": "", "keywords": ["the harder", "the better"]},
+      {"korean": "이건 내가 예상했던 것과 달라.", "answers": ["This is different from what I expected.", "This isn't what I had in mind."], "hint": "different from = ~와 다른", "explanation": "have in mind = 마음속에 생각하고 있다", "keywords": ["different from", "expected"]},
+      {"korean": "그는 그의 아버지와 완전히 달라.", "answers": ["He is completely different from his father.", "He's nothing like his father."], "hint": "nothing like = 전혀 닮지 않은", "explanation": "nothing like = 완전히 다른", "keywords": ["different from", "father"]}
+    ]
+  },
+  {
+    "day": 18, "topic": "자주 쓰는 미국식 표현 (Colloquial)",
+    "questions": [
+      {"korean": "그 일을 처리할게.", "answers": ["I'll take care of it.", "I'll handle it."], "hint": "take care of = handle = 처리하다", "explanation": "", "keywords": ["take care of", "handle"]},
+      {"korean": "그것 때문에 미치겠어.", "answers": ["It's driving me crazy.", "It's driving me nuts."], "hint": "drive someone crazy/nuts = ~를 미치게 하다", "explanation": "nuts = crazy (구어체)", "keywords": ["driving me crazy"]},
+      {"korean": "그는 이미 그걸 알고 있었어.", "answers": ["He was already in the know.", "He already knew about it."], "hint": "be in the know = 알고 있다 (내부 정보)", "explanation": "", "keywords": ["already knew", "in the know"]},
+      {"korean": "그거 정말 웃겨.", "answers": ["That's hilarious.", "That's so funny."], "hint": "hilarious = extremely funny", "explanation": "hilarious > funny (강도 차이)", "keywords": ["hilarious", "funny"]},
+      {"korean": "그녀는 압박감을 잘 버텨.", "answers": ["She handles pressure well.", "She works well under pressure."], "hint": "handle pressure / work under pressure", "explanation": "under pressure = 압박 속에서", "keywords": ["handle pressure", "under pressure"]}
+    ]
+  },
+  {
+    "day": 19, "topic": "간접 의문문",
+    "questions": [
+      {"korean": "그가 어디 사는지 알아?", "answers": ["Do you know where he lives?", "Do you have any idea where he lives?"], "hint": "Do you know + 의문사 + 주어 + 동사?", "explanation": "간접 의문문은 어순이 평서문과 같음", "keywords": ["do you know", "where he lives"]},
+      {"korean": "그녀가 왜 화가 났는지 이해할 수 없어.", "answers": ["I can't understand why she got angry.", "I don't know why she got upset."], "hint": "can't understand + why + 주어 + 동사", "explanation": "", "keywords": ["can't understand", "why she got angry"]},
+      {"korean": "회의가 언제 시작하는지 알아?", "answers": ["Do you know when the meeting starts?", "Can you tell me when the meeting begins?"], "hint": "Do you know + when + 주어 + 동사?", "explanation": "", "keywords": ["when the meeting starts"]},
+      {"korean": "그가 무슨 말을 했는지 말해줄 수 있어?", "answers": ["Can you tell me what he said?", "Do you know what he told you?"], "hint": "Can you tell me + what + 주어 + 동사?", "explanation": "", "keywords": ["can you tell me", "what he said"]},
+      {"korean": "그 프로젝트가 얼마나 걸릴지 모르겠어.", "answers": ["I don't know how long the project will take.", "I'm not sure how long it'll take to finish."], "hint": "I don't know + how long + 주어 + will + 동사", "explanation": "", "keywords": ["how long", "project will take"]}
+    ]
+  },
+  {
+    "day": 20, "topic": "강조 표현 - do/does/did 강조",
+    "questions": [
+      {"korean": "나는 정말로 그를 그리워해.", "answers": ["I do miss him.", "I really do miss him."], "hint": "do + 동사원형 = 동사 강조", "explanation": "do를 동사 앞에 써서 강조", "keywords": ["do miss"]},
+      {"korean": "그는 정말로 열심히 노력했어.", "answers": ["He did try hard.", "He did make an effort."], "hint": "did + 동사원형 = 과거 동사 강조", "explanation": "", "keywords": ["did try", "hard"]},
+      {"korean": "그녀는 정말로 요리를 잘해.", "answers": ["She does cook well.", "She really does cook well."], "hint": "does + 동사원형 = 3인칭 단수 강조", "explanation": "", "keywords": ["does cook well"]},
+      {"korean": "나는 강조하고 싶은 건, 이게 중요하다는 거야.", "answers": ["What I want to emphasize is that this is important.", "The point I want to make is that this matters."], "hint": "What I want to say/emphasize is that ~", "explanation": "", "keywords": ["what I want to", "important"]},
+      {"korean": "바로 그 순간이 모든 게 바뀐 때야.", "answers": ["That was the moment when everything changed.", "It was at that exact moment that everything changed."], "hint": "It was ~ that ~ (강조 구문)", "explanation": "It is/was ~ that ~ = 강조 구문", "keywords": ["the moment", "everything changed"]}
+    ]
+  }
+]

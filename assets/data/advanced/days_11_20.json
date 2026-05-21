@@ -1,0 +1,102 @@
+[
+  {
+    "day": 11, "topic": "비즈니스 이메일/회의 표현",
+    "questions": [
+      {"korean": "회의 시간을 조정할 수 있을까요?", "answers": ["Would it be possible to reschedule the meeting?", "Could we look at finding another time for the meeting?"], "hint": "Would it be possible to / Could we = 가능할까요?", "explanation": "", "keywords": ["reschedule", "meeting", "would it be possible"]},
+      {"korean": "그 안건을 다음 회의로 미룹시다.", "answers": ["Let's table that item for the next meeting.", "Let's carry that over to the next meeting."], "hint": "table / carry over = 다음으로 미루다", "explanation": "table (미국식) = 논의를 미루다 (영국식에선 반대 의미)", "keywords": ["table", "carry over", "next meeting"]},
+      {"korean": "그 제안의 장단점을 따져봐야 해.", "answers": ["We need to weigh the pros and cons of the proposal.", "We should consider the advantages and disadvantages."], "hint": "weigh the pros and cons = 장단점을 따지다", "explanation": "", "keywords": ["pros and cons", "weigh", "proposal"]},
+      {"korean": "그것에 대한 우리 입장을 명확히 해야 해.", "answers": ["We need to clarify our stance on that.", "We should make our position clear on this matter."], "hint": "clarify our stance / make our position clear", "explanation": "stance = position = 입장", "keywords": ["clarify our stance", "position", "matter"]},
+      {"korean": "그 결정은 이사회의 승인이 필요해.", "answers": ["The decision requires board approval.", "That needs to be approved by the board of directors."], "hint": "requires board approval / approved by the board", "explanation": "board of directors = 이사회", "keywords": ["board approval", "board of directors"]}
+    ]
+  },
+  {
+    "day": 12, "topic": "언어적 뉘앙스 - 확신의 정도",
+    "questions": [
+      {"korean": "그는 분명히 그 결과를 알고 있었을 거야.", "answers": ["He must certainly have known the outcome.", "He was undoubtedly aware of the result."], "hint": "must certainly / undoubtedly = 분명히 ~임에 틀림없다", "explanation": "", "keywords": ["must certainly", "undoubtedly", "known the outcome"]},
+      {"korean": "그게 사실일 가능성은 거의 없어.", "answers": ["There is little chance that it is true.", "It's highly unlikely to be true."], "hint": "little chance / highly unlikely = 가능성이 거의 없다", "explanation": "", "keywords": ["little chance", "highly unlikely", "true"]},
+      {"korean": "아마도 그는 이미 알고 있을 거야.", "answers": ["In all likelihood, he already knows.", "Chances are he's already aware."], "hint": "in all likelihood / chances are = 아마도", "explanation": "", "keywords": ["in all likelihood", "chances are", "already knows"]},
+      {"korean": "그 주장은 어느 정도 타당성이 있어.", "answers": ["The argument has some validity.", "There is some merit to that claim."], "hint": "some validity / merit to = 어느 정도 타당성", "explanation": "", "keywords": ["some validity", "merit to", "claim"]},
+      {"korean": "그 결과는 예측 불가능해.", "answers": ["The outcome is impossible to predict.", "There's no telling what the result will be."], "hint": "impossible to predict / no telling = 예측 불가능하다", "explanation": "there's no telling = 알 수 없다, 예측 불가", "keywords": ["impossible to predict", "no telling"]}
+    ]
+  },
+  {
+    "day": 13, "topic": "원어민 슬랭/구어체 고급",
+    "questions": [
+      {"korean": "그냥 몸 풀려고 했어. (긴장 풀기)", "answers": ["I was just trying to break the ice.", "I was just loosening up."], "hint": "break the ice = 어색함을 없애다, 분위기를 풀다", "explanation": "", "keywords": ["break the ice", "loosening up"]},
+      {"korean": "그건 완전 엉터리야.", "answers": ["That's total garbage.", "That's absolute nonsense."], "hint": "total garbage / absolute nonsense = 완전 엉터리", "explanation": "garbage = 쓰레기 같은 말, nonsense = 말도 안 되는 것", "keywords": ["total garbage", "absolute nonsense"]},
+      {"korean": "솔직히, 그는 완전 잘났어. (비꼼)", "answers": ["Honestly, he thinks he's all that.", "He's so full of himself."], "hint": "think you're all that / full of himself = 잘난 척하다", "explanation": "be full of oneself = 자만하다", "keywords": ["all that", "full of himself"]},
+      {"korean": "그들은 결국 사이가 나빠졌어.", "answers": ["They ended up falling out.", "They eventually had a falling-out."], "hint": "fall out = 사이가 나빠지다", "explanation": "a falling-out = 불화, 사이가 틀어짐", "keywords": ["fell out", "falling-out"]},
+      {"korean": "그것 때문에 내 하루가 망쳤어.", "answers": ["That totally ruined my day.", "It threw off my whole day."], "hint": "ruined my day / threw off my day = 하루를 망치다", "explanation": "throw off = 흐트러뜨리다, 망치다", "keywords": ["ruined my day", "threw off"]}
+    ]
+  },
+  {
+    "day": 14, "topic": "추상적 개념 표현",
+    "questions": [
+      {"korean": "그 두 가지를 동시에 추구하는 것 사이에 긴장감이 있어.", "answers": ["There is a tension between pursuing both at the same time.", "There's an inherent conflict in trying to achieve both simultaneously."], "hint": "tension between / inherent conflict = 긴장감, 내재된 갈등", "explanation": "", "keywords": ["tension between", "inherent conflict", "simultaneously"]},
+      {"korean": "그 개념은 아직 명확하게 정의되지 않았어.", "answers": ["The concept has not yet been clearly defined.", "That notion remains vaguely articulated."], "hint": "not yet been defined / remains vaguely articulated", "explanation": "articulated = 명확히 표현된", "keywords": ["not yet defined", "vaguely articulated"]},
+      {"korean": "그것은 더 깊은 구조적 문제를 반영해.", "answers": ["It reflects a deeper structural issue.", "That points to a more fundamental underlying problem."], "hint": "reflects / points to = 반영하다, 가리키다", "explanation": "underlying = 근본적인, 내재된", "keywords": ["reflects", "structural issue", "underlying problem"]},
+      {"korean": "그 현상은 다양한 요소들이 복합적으로 작용해.", "answers": ["The phenomenon is driven by a complex interplay of factors.", "Multiple forces converge to produce that effect."], "hint": "interplay of factors / forces converge = 복합적 작용", "explanation": "interplay = 복잡한 상호 작용, converge = 수렴하다", "keywords": ["interplay of factors", "converge"]},
+      {"korean": "그 차이는 생각보다 미묘해.", "answers": ["The difference is more subtle than it appears.", "The distinction is more nuanced than one might think."], "hint": "subtle / nuanced = 미묘한", "explanation": "nuanced = 뉘앙스가 있는, 미묘한", "keywords": ["subtle", "nuanced", "distinction"]}
+    ]
+  },
+  {
+    "day": 15, "topic": "설명/부연 고급 표현",
+    "questions": [
+      {"korean": "다시 말해서, 우리는 처음부터 다시 시작해야 해.", "answers": ["In other words, we need to start from scratch.", "To rephrase it, we're back to square one."], "hint": "in other words / to rephrase = 다시 말해서", "explanation": "back to square one = 원점으로 돌아가다", "keywords": ["in other words", "to rephrase", "start from scratch"]},
+      {"korean": "이게 무슨 말이냐면, 더 많은 자원이 필요하다는 거야.", "answers": ["What this means is that we need more resources.", "The implication here is that additional resources are required."], "hint": "What this means is that / the implication is that", "explanation": "implication = 함의, 의미", "keywords": ["what this means", "implication", "more resources"]},
+      {"korean": "이 점을 더 구체적으로 설명하자면", "answers": ["To elaborate on this point", "To be more specific about this"], "hint": "to elaborate on / to be more specific = 더 구체적으로 설명하자면", "explanation": "elaborate = 자세히 설명하다", "keywords": ["to elaborate on", "to be more specific"]},
+      {"korean": "전반적으로 볼 때, 그 전략은 효과가 있어.", "answers": ["Overall, the strategy seems to be working.", "On the whole, the approach is proving effective."], "hint": "overall / on the whole = 전반적으로", "explanation": "", "keywords": ["overall", "on the whole", "strategy working"]},
+      {"korean": "달리 말하자면, 그건 시간 낭비야.", "answers": ["Put differently, it's a waste of time.", "In other words, we're spinning our wheels."], "hint": "put differently = 달리 말하자면", "explanation": "spin one's wheels = 헛바퀴를 돌리다, 헛수고하다", "keywords": ["put differently", "spinning our wheels", "waste of time"]}
+    ]
+  },
+  {
+    "day": 16, "topic": "사회 이슈 표현",
+    "questions": [
+      {"korean": "불평등 문제는 다각도로 접근해야 해.", "answers": ["The issue of inequality must be addressed from multiple angles.", "Inequality is a multifaceted issue that requires a comprehensive approach."], "hint": "from multiple angles / multifaceted = 다각도로, 다면적인", "explanation": "", "keywords": ["inequality", "multiple angles", "multifaceted"]},
+      {"korean": "그 정책은 가장 취약한 계층에 불균형적으로 영향을 미쳐.", "answers": ["The policy disproportionately affects the most vulnerable populations.", "It has an unequal impact on the most marginalized groups."], "hint": "disproportionately / unequal impact = 불균형적으로 영향을 미치다", "explanation": "marginalized = 소외된", "keywords": ["disproportionately", "vulnerable", "marginalized"]},
+      {"korean": "그 문제에 대한 인식이 높아지고 있어.", "answers": ["Awareness of the issue is growing.", "There is a rising awareness of this problem."], "hint": "awareness of / rising awareness = 인식이 높아지다", "explanation": "", "keywords": ["awareness", "growing", "rising"]},
+      {"korean": "모든 이해관계자들이 해결책 마련에 참여해야 해.", "answers": ["All stakeholders must be involved in finding a solution.", "Every party with a stake in this should participate in developing a fix."], "hint": "stakeholders / all parties = 이해관계자", "explanation": "stakeholder = 이해관계자", "keywords": ["stakeholders", "involved", "solution"]},
+      {"korean": "그것은 단기적 해결책에 불과해.", "answers": ["That is merely a short-term solution.", "It's nothing more than a temporary fix."], "hint": "merely / nothing more than = ~에 불과하다", "explanation": "", "keywords": ["merely", "nothing more than", "short-term"]}
+    ]
+  },
+  {
+    "day": 17, "topic": "고급 접속 부사",
+    "questions": [
+      {"korean": "그럼에도 불구하고, 그들은 앞으로 나아갔어.", "answers": ["Nevertheless, they pressed on.", "Nonetheless, they moved forward."], "hint": "nevertheless / nonetheless = 그럼에도 불구하고", "explanation": "press on = 계속 전진하다", "keywords": ["nevertheless", "nonetheless", "pressed on"]},
+      {"korean": "이와는 대조적으로, 두 번째 그룹은 훨씬 나은 결과를 냈어.", "answers": ["In contrast, the second group performed significantly better.", "By contrast, the other group achieved far superior results."], "hint": "in contrast / by contrast = 이와는 대조적으로", "explanation": "", "keywords": ["in contrast", "by contrast", "significantly better"]},
+      {"korean": "그 결과적으로, 전체 시스템이 재설계됐어.", "answers": ["Consequently, the entire system was redesigned.", "As a consequence, the whole framework had to be overhauled."], "hint": "consequently / as a consequence = 그 결과로", "explanation": "overhaul = 전면 재검토하다, 대폭 수정하다", "keywords": ["consequently", "as a consequence", "redesigned"]},
+      {"korean": "앞서 언급했듯이, 그 문제는 복잡해.", "answers": ["As previously mentioned, the problem is complex.", "As noted earlier, this is a complicated matter."], "hint": "as previously mentioned / as noted earlier = 앞서 언급했듯이", "explanation": "", "keywords": ["as previously mentioned", "as noted earlier", "complex"]},
+      {"korean": "이런 맥락에서, 그 결정은 이해가 돼.", "answers": ["In this context, the decision makes sense.", "Given this backdrop, the choice is understandable."], "hint": "in this context / given this backdrop = 이런 맥락에서", "explanation": "backdrop = 배경, 맥락", "keywords": ["in this context", "given this backdrop", "makes sense"]}
+    ]
+  },
+  {
+    "day": 18, "topic": "인과 관계 고급 표현",
+    "questions": [
+      {"korean": "그 변화는 여러 복합적 요인의 결과야.", "answers": ["The change is the result of multiple compounding factors.", "It stems from a combination of complex factors."], "hint": "stem from / result of = ~에서 비롯되다", "explanation": "stem from = ~에서 비롯되다, compounding = 복합적인", "keywords": ["stem from", "result of", "multiple factors"]},
+      {"korean": "그 결정은 돌이킬 수 없는 결과를 낳았어.", "answers": ["The decision led to irreversible consequences.", "That choice resulted in consequences that couldn't be undone."], "hint": "led to / resulted in = ~을 초래했다", "explanation": "irreversible = 돌이킬 수 없는", "keywords": ["led to", "resulted in", "irreversible consequences"]},
+      {"korean": "그것이 도미노 효과를 일으켰어.", "answers": ["It triggered a domino effect.", "That set off a chain reaction."], "hint": "trigger a domino effect / set off a chain reaction = 연쇄 반응을 일으키다", "explanation": "", "keywords": ["domino effect", "chain reaction", "triggered"]},
+      {"korean": "그 여러 요인들이 수렴해서 위기를 만들었어.", "answers": ["Several factors converged to create the crisis.", "A confluence of issues gave rise to the crisis."], "hint": "converge / confluence = 수렴하다, 한 점에 모이다", "explanation": "confluence = 합류, 수렴 지점", "keywords": ["converged", "confluence", "give rise to"]},
+      {"korean": "그것은 더 광범위한 패턴의 증상일 뿐이야.", "answers": ["It is merely a symptom of a broader pattern.", "This is just one manifestation of a wider trend."], "hint": "symptom of / manifestation of = ~의 증상, 표현", "explanation": "manifestation = 나타남, 표현", "keywords": ["symptom of", "manifestation", "broader pattern"]}
+    ]
+  },
+  {
+    "day": 19, "topic": "고급 가정/추측 표현",
+    "questions": [
+      {"korean": "그가 그걸 모른다는 게 말이 안 돼.", "answers": ["It doesn't make sense that he doesn't know about it.", "There's no way he's unaware of it."], "hint": "it doesn't make sense that / there's no way = 말이 안 된다", "explanation": "", "keywords": ["doesn't make sense", "no way", "unaware"]},
+      {"korean": "이 시점에서, 우리가 할 수 있는 최선은 손해를 최소화하는 거야.", "answers": ["At this point, the best we can do is minimize the damage.", "Given where we are now, damage control is the priority."], "hint": "at this point / given where we are = 이 시점에서", "explanation": "damage control = 피해 최소화", "keywords": ["at this point", "minimize the damage", "damage control"]},
+      {"korean": "설령 그게 사실이라 해도, 그건 충분한 이유가 되지 않아.", "answers": ["Even if that were true, it wouldn't be sufficient justification.", "Granted that it's true, it still doesn't justify the action."], "hint": "even if ~ were true / granted that = 설령 ~라 해도", "explanation": "granted that = 설령 ~이 사실이라 해도", "keywords": ["even if that were true", "granted that", "sufficient justification"]},
+      {"korean": "최악의 경우, 우리는 처음부터 다시 시작해야 할 수도 있어.", "answers": ["In the worst case scenario, we might have to start over.", "Worst case, we could be back to square one."], "hint": "in the worst case scenario = 최악의 경우", "explanation": "start over / back to square one = 처음부터 다시", "keywords": ["worst case scenario", "start over"]},
+      {"korean": "그게 성공한다는 보장이 없어.", "answers": ["There's no guarantee it will succeed.", "Success is far from guaranteed."], "hint": "no guarantee / far from guaranteed = 보장이 없다", "explanation": "", "keywords": ["no guarantee", "far from guaranteed", "succeed"]}
+    ]
+  },
+  {
+    "day": 20, "topic": "고급 감정/태도 표현",
+    "questions": [
+      {"korean": "나는 그 결정에 대해 양가적 감정을 느껴.", "answers": ["I have ambivalent feelings about the decision.", "I'm torn about that decision."], "hint": "ambivalent / torn = 양가적 감정을 가진", "explanation": "ambivalent = 두 가지 상반된 감정을 동시에 느끼는", "keywords": ["ambivalent", "torn", "about the decision"]},
+      {"korean": "그것은 나를 당혹스럽게 만들어.", "answers": ["It leaves me at a loss.", "It leaves me baffled."], "hint": "at a loss / baffled = 당혹스러운, 어쩔 줄 모르는", "explanation": "baffled = utterly confused and perplexed", "keywords": ["at a loss", "baffled"]},
+      {"korean": "그 소식에 나는 복잡한 심경이야.", "answers": ["The news leaves me with mixed feelings.", "I have conflicting emotions about the news."], "hint": "mixed feelings / conflicting emotions = 복잡한 심경", "explanation": "", "keywords": ["mixed feelings", "conflicting emotions"]},
+      {"korean": "나는 그것에 완전히 압도됐어.", "answers": ["I was completely overwhelmed by it.", "It left me utterly floored."], "hint": "overwhelmed / floored = 압도된", "explanation": "floored = extremely shocked or overwhelmed", "keywords": ["overwhelmed", "utterly floored"]},
+      {"korean": "그 말은 마음에 깊이 와 닿았어.", "answers": ["Those words really hit home.", "That deeply resonated with me."], "hint": "hit home / resonate with = 깊이 와 닿다", "explanation": "resonate = 공명하다, 깊이 와 닿다", "keywords": ["hit home", "resonated with"]}
+    ]
+  }
+]

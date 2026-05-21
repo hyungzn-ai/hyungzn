@@ -1,0 +1,102 @@
+[
+  {
+    "day": 11, "topic": "미래형 - will",
+    "questions": [
+      {"korean": "나는 내일 일찍 일어날 거야.", "answers": ["I will wake up early tomorrow.", "I'll wake up early tomorrow."], "hint": "will + 동사원형 + tomorrow", "explanation": "I'll은 I will의 줄임말", "keywords": ["will", "wake up", "tomorrow"]},
+      {"korean": "비가 올 것 같아.", "answers": ["It will rain.", "I think it will rain."], "hint": "It + will + rain", "explanation": "", "keywords": ["will", "rain"]},
+      {"korean": "그는 곧 돌아올 거야.", "answers": ["He will be back soon.", "He'll be back soon."], "hint": "will be back + soon", "explanation": "", "keywords": ["back", "soon"]},
+      {"korean": "그 회의는 두 시간 걸릴 거야.", "answers": ["The meeting will take two hours.", "The meeting will last two hours."], "hint": "will take/last + 시간", "explanation": "take/last 둘 다 '걸리다' 의미로 사용 가능", "keywords": ["meeting", "two hours"]},
+      {"korean": "우리는 다음 주에 그녀를 방문할 거야.", "answers": ["We will visit her next week.", "We'll see her next week."], "hint": "will + visit/see + next week", "explanation": "", "keywords": ["visit", "next week"]}
+    ]
+  },
+  {
+    "day": 12, "topic": "미래형 - be going to",
+    "questions": [
+      {"korean": "나는 오늘 밤 영화 볼 거야.", "answers": ["I am going to watch a movie tonight.", "I'm going to watch a movie tonight."], "hint": "be going to + 동사원형", "explanation": "be going to = 이미 계획된 일", "keywords": ["going to", "movie", "tonight"]},
+      {"korean": "그녀는 다음 달에 이사할 거야.", "answers": ["She is going to move next month.", "She's going to move next month."], "hint": "is going to + move", "explanation": "", "keywords": ["going to", "move", "next month"]},
+      {"korean": "우리는 해변에 갈 거야.", "answers": ["We are going to go to the beach.", "We're going to the beach."], "hint": "be going to + go to the beach", "explanation": "We're going to the beach도 자연스러운 표현", "keywords": ["beach"]},
+      {"korean": "저 구름 봐 - 비가 올 것 같아.", "answers": ["Look at those clouds - it's going to rain.", "Look at the clouds - it's going to rain."], "hint": "현재 증거 기반 예측 → be going to", "explanation": "눈에 보이는 증거로 예측할 때 be going to 사용", "keywords": ["going to", "rain", "clouds"]},
+      {"korean": "그들은 새 사업을 시작할 거야.", "answers": ["They are going to start a new business.", "They're going to launch a new business."], "hint": "be going to + start/launch", "explanation": "", "keywords": ["going to", "business"]}
+    ]
+  },
+  {
+    "day": 13, "topic": "조동사 - can/can't",
+    "questions": [
+      {"korean": "나는 수영할 수 있어.", "answers": ["I can swim.", "I know how to swim."], "hint": "can + 동사원형", "explanation": "know how to = ~하는 법을 알다", "keywords": ["can", "swim"]},
+      {"korean": "그녀는 스페인어를 할 수 없어.", "answers": ["She can't speak Spanish.", "She cannot speak Spanish."], "hint": "can't/cannot + 동사원형", "explanation": "can't = cannot의 줄임말", "keywords": ["can't", "Spanish"]},
+      {"korean": "저 좀 도와줄 수 있어요?", "answers": ["Can you help me?", "Could you help me?"], "hint": "Can you + 동사원형?", "explanation": "Could you는 더 공손한 표현", "keywords": ["help"]},
+      {"korean": "우리 내일 만날 수 있을까?", "answers": ["Can we meet tomorrow?", "Are you free to meet tomorrow?"], "hint": "Can we + 동사원형?", "explanation": "", "keywords": ["meet", "tomorrow"]},
+      {"korean": "그는 피아노를 정말 잘 쳐.", "answers": ["He can play the piano really well.", "He plays the piano really well."], "hint": "can play + 악기", "explanation": "현재시제도 능력 표현 가능", "keywords": ["play", "piano"]}
+    ]
+  },
+  {
+    "day": 14, "topic": "조동사 - should/must",
+    "questions": [
+      {"korean": "너는 더 많이 자야 해.", "answers": ["You should sleep more.", "You need to sleep more."], "hint": "should + 동사원형", "explanation": "need to는 must보다 부드러운 표현", "keywords": ["should", "sleep"]},
+      {"korean": "우리는 규칙을 따라야 해.", "answers": ["We must follow the rules.", "We have to follow the rules."], "hint": "must/have to + follow the rules", "explanation": "must = 강한 의무, have to = 규칙/외부 의무", "keywords": ["follow", "rules"]},
+      {"korean": "너 병원에 가봐야 할 것 같아.", "answers": ["You should see a doctor.", "You should go to the doctor."], "hint": "should + see a doctor", "explanation": "see a doctor = 의사에게 진찰을 받다", "keywords": ["should", "doctor"]},
+      {"korean": "거짓말하면 안 돼.", "answers": ["You must not lie.", "You shouldn't lie."], "hint": "must not/shouldn't + 동사원형", "explanation": "must not = 금지(강함), shouldn't = 권고(부드러움)", "keywords": ["lie"]},
+      {"korean": "그는 더 열심히 노력해야 해.", "answers": ["He should try harder.", "He needs to try harder."], "hint": "should + try harder", "explanation": "", "keywords": ["should", "harder"]}
+    ]
+  },
+  {
+    "day": 15, "topic": "의문문 만들기 - 현재/과거",
+    "questions": [
+      {"korean": "너는 어디서 살아?", "answers": ["Where do you live?", "Where are you from?"], "hint": "Where + do + you + 동사원형?", "explanation": "Where are you from? = 어디 출신이야?", "keywords": ["where", "live"]},
+      {"korean": "그녀는 무엇을 먹었어?", "answers": ["What did she eat?", "What did she have?"], "hint": "What + did + she + 동사원형?", "explanation": "eat과 have 둘 다 먹다로 사용 가능", "keywords": ["what", "eat"]},
+      {"korean": "그들은 언제 도착했어?", "answers": ["When did they arrive?", "When did they get here?"], "hint": "When + did + they + 동사원형?", "explanation": "get here = 여기 도착하다", "keywords": ["when", "arrive"]},
+      {"korean": "그는 왜 늦었어?", "answers": ["Why was he late?", "Why did he come late?"], "hint": "Why + was + he + 형용사?", "explanation": "", "keywords": ["why", "late"]},
+      {"korean": "너 이거 어떻게 했어?", "answers": ["How did you do this?", "How did you make this?"], "hint": "How + did + you + 동사원형?", "explanation": "", "keywords": ["how", "do"]}
+    ]
+  },
+  {
+    "day": 16, "topic": "부정문 만들기",
+    "questions": [
+      {"korean": "나는 고기를 안 먹어.", "answers": ["I don't eat meat.", "I do not eat meat."], "hint": "don't + 동사원형", "explanation": "do not의 줄임말이 don't", "keywords": ["don't", "eat", "meat"]},
+      {"korean": "그녀는 커피를 안 마셔.", "answers": ["She doesn't drink coffee.", "She does not drink coffee."], "hint": "doesn't + 동사원형 (3인칭 단수)", "explanation": "", "keywords": ["doesn't", "coffee"]},
+      {"korean": "나는 그를 몰라.", "answers": ["I don't know him.", "I don't know who he is."], "hint": "don't + know", "explanation": "", "keywords": ["don't", "know"]},
+      {"korean": "우리는 어제 거기 안 갔어.", "answers": ["We didn't go there yesterday.", "We did not go there yesterday."], "hint": "didn't + 동사원형 (과거 부정)", "explanation": "", "keywords": ["didn't", "go", "yesterday"]},
+      {"korean": "그 영화는 재미없었어.", "answers": ["The movie wasn't interesting.", "The movie was not interesting."], "hint": "wasn't + 형용사", "explanation": "", "keywords": ["wasn't", "interesting"]}
+    ]
+  },
+  {
+    "day": 17, "topic": "전치사 - 시간 (at/on/in)",
+    "questions": [
+      {"korean": "나는 오전 7시에 일어나.", "answers": ["I wake up at 7 a.m.", "I get up at 7 in the morning."], "hint": "at + 시각", "explanation": "구체적인 시각 앞엔 at 사용", "keywords": ["at", "wake up"]},
+      {"korean": "그녀는 월요일에 수업이 있어.", "answers": ["She has class on Monday.", "She has a class on Monday."], "hint": "on + 요일", "explanation": "요일 앞엔 on 사용", "keywords": ["on", "Monday", "class"]},
+      {"korean": "우리는 여름에 해변에 가.", "answers": ["We go to the beach in summer.", "We go to the beach in the summer."], "hint": "in + 계절/월/연도", "explanation": "계절, 월, 연도 앞엔 in 사용", "keywords": ["in", "summer", "beach"]},
+      {"korean": "그는 2000년에 태어났어.", "answers": ["He was born in 2000.", "He was born in the year 2000."], "hint": "in + 연도", "explanation": "", "keywords": ["born", "in", "2000"]},
+      {"korean": "회의는 정오에 있어.", "answers": ["The meeting is at noon.", "The meeting is at 12 p.m."], "hint": "at noon = 정오에", "explanation": "noon = 정오(12시), midnight = 자정(0시)", "keywords": ["meeting", "at", "noon"]}
+    ]
+  },
+  {
+    "day": 18, "topic": "전치사 - 장소 (at/on/in)",
+    "questions": [
+      {"korean": "그녀는 도서관에 있어.", "answers": ["She is at the library.", "She is in the library."], "hint": "at = 특정 장소, in = 공간 내부", "explanation": "at the library = 도서관(에 갔다는 뉘앙스), in the library = 도서관 내부에 있음", "keywords": ["library"]},
+      {"korean": "책이 테이블 위에 있어.", "answers": ["The book is on the table.", "The book is on top of the table."], "hint": "on + 표면 위", "explanation": "on = 표면에 접촉하여 위에", "keywords": ["book", "on", "table"]},
+      {"korean": "열쇠가 상자 안에 있어.", "answers": ["The key is in the box.", "The key is inside the box."], "hint": "in + 공간 내부", "explanation": "", "keywords": ["key", "in", "box"]},
+      {"korean": "나는 버스에서 음악을 들어.", "answers": ["I listen to music on the bus.", "I listen to music while on the bus."], "hint": "on the bus/train/plane (교통수단)", "explanation": "버스, 기차, 비행기 앞엔 on 사용", "keywords": ["on", "bus", "music"]},
+      {"korean": "그들은 뉴욕에 살아.", "answers": ["They live in New York.", "They live in the city of New York."], "hint": "in + 도시/나라", "explanation": "", "keywords": ["live", "in", "New York"]}
+    ]
+  },
+  {
+    "day": 19, "topic": "형용사 - 기초 묘사",
+    "questions": [
+      {"korean": "그것은 비싼 가방이야.", "answers": ["It is an expensive bag.", "It's an expensive bag."], "hint": "an + 모음 시작 형용사 + 명사", "explanation": "expensive는 e로 시작하므로 an 사용", "keywords": ["expensive", "bag"]},
+      {"korean": "그녀는 짧은 머리를 가지고 있어.", "answers": ["She has short hair.", "She has short hair."], "hint": "has + 형용사 + 명사", "explanation": "hair는 불가산명사라 a/an 없이 사용", "keywords": ["short", "hair"]},
+      {"korean": "그것은 정말 오래된 집이야.", "answers": ["It is a very old house.", "It's a really old house."], "hint": "very/really + 형용사 + 명사", "explanation": "", "keywords": ["old", "house"]},
+      {"korean": "그는 친절하고 재미있어.", "answers": ["He is kind and funny.", "He's kind and funny."], "hint": "형용사 + and + 형용사", "explanation": "", "keywords": ["kind", "funny"]},
+      {"korean": "이 수프는 너무 뜨거워.", "answers": ["This soup is too hot.", "The soup is too hot."], "hint": "too + 형용사 = 너무 ~하다", "explanation": "too = 지나치게(부정적 뉘앙스), very = 매우", "keywords": ["soup", "too", "hot"]}
+    ]
+  },
+  {
+    "day": 20, "topic": "비교급 - more/~er",
+    "questions": [
+      {"korean": "그녀는 나보다 키가 커.", "answers": ["She is taller than me.", "She is taller than I am."], "hint": "형용사 + -er + than", "explanation": "than me와 than I am 둘 다 OK", "keywords": ["taller", "than"]},
+      {"korean": "이 영화는 저것보다 더 재미있어.", "answers": ["This movie is more interesting than that one.", "This movie is more fun than that one."], "hint": "more + 긴 형용사 + than", "explanation": "2음절 이상 형용사 앞엔 more 사용", "keywords": ["more interesting", "than"]},
+      {"korean": "버스보다 지하철이 더 빨라.", "answers": ["The subway is faster than the bus.", "The metro is faster than the bus."], "hint": "fast + -er + than", "explanation": "", "keywords": ["faster", "than"]},
+      {"korean": "오늘은 어제보다 더 추워.", "answers": ["It is colder today than yesterday.", "It's colder today than it was yesterday."], "hint": "cold + -er + today + than + yesterday", "explanation": "", "keywords": ["colder", "today", "yesterday"]},
+      {"korean": "저 식당은 이것보다 더 비싸.", "answers": ["That restaurant is more expensive than this one.", "That place is pricier than this one."], "hint": "more expensive = 비교급 (3음절 이상)", "explanation": "pricier = more expensive의 구어적 표현", "keywords": ["more expensive", "than"]}
+    ]
+  }
+]

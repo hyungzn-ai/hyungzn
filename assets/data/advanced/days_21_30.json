@@ -1,0 +1,102 @@
+[
+  {
+    "day": 21, "topic": "고급 비유/은유 표현",
+    "questions": [
+      {"korean": "그건 양날의 검이야.", "answers": ["That's a double-edged sword.", "It cuts both ways."], "hint": "double-edged sword / cut both ways = 양날의 검", "explanation": "", "keywords": ["double-edged sword", "cuts both ways"]},
+      {"korean": "그들은 큰 그림을 놓치고 있어.", "answers": ["They're missing the forest for the trees.", "They're losing sight of the bigger picture."], "hint": "miss the forest for the trees = 큰 그림을 보지 못하다", "explanation": "lose sight of = ~을 놓치다", "keywords": ["forest for the trees", "bigger picture"]},
+      {"korean": "그게 밝혀졌을 때, 판도라의 상자가 열렸어.", "answers": ["When it came out, it opened a can of worms.", "That revelation opened Pandora's box."], "hint": "open a can of worms = 복잡한 문제를 일으키다", "explanation": "open Pandora's box = 판도라의 상자를 열다", "keywords": ["can of worms", "Pandora's box"]},
+      {"korean": "그건 완전히 새로운 차원의 도전이야.", "answers": ["That's a whole different ball game.", "That takes things to a whole new level."], "hint": "a whole different ball game = 완전히 다른 차원", "explanation": "", "keywords": ["whole different ball game", "whole new level"]},
+      {"korean": "우리는 같은 배를 타고 있어.", "answers": ["We're all in the same boat.", "We're going through the same thing together."], "hint": "in the same boat = 같은 처지에 있다", "explanation": "", "keywords": ["same boat", "going through together"]}
+    ]
+  },
+  {
+    "day": 22, "topic": "논리적 반박/동의 표현",
+    "questions": [
+      {"korean": "그건 순환 논리야.", "answers": ["That's circular reasoning.", "That argument is going in circles."], "hint": "circular reasoning / going in circles = 순환 논리", "explanation": "", "keywords": ["circular reasoning", "going in circles"]},
+      {"korean": "그건 핵심을 벗어난 주장이야.", "answers": ["That's beside the point.", "That argument misses the mark."], "hint": "beside the point / misses the mark = 핵심을 벗어나다", "explanation": "miss the mark = 핵심을 놓치다", "keywords": ["beside the point", "misses the mark"]},
+      {"korean": "그건 더 생각해볼 여지가 있어.", "answers": ["That deserves further consideration.", "There's room to think that through more carefully."], "hint": "deserves further consideration / room to think through", "explanation": "", "keywords": ["further consideration", "think through"]},
+      {"korean": "그 주장은 설득력이 있어.", "answers": ["That's a compelling argument.", "The logic behind that is sound."], "hint": "compelling / sound logic = 설득력 있는, 논리가 탄탄한", "explanation": "sound = 탄탄한, 근거 있는", "keywords": ["compelling argument", "sound logic"]},
+      {"korean": "그게 선례가 될 수 있어.", "answers": ["That could set a precedent.", "That might establish a standard for future cases."], "hint": "set a precedent = 선례를 남기다", "explanation": "", "keywords": ["set a precedent", "establish a standard"]}
+    ]
+  },
+  {
+    "day": 23, "topic": "리더십/동기부여 표현",
+    "questions": [
+      {"korean": "큰 그림을 보면서 세부 사항도 챙겨야 해.", "answers": ["You need to see the big picture while managing the details.", "Keep an eye on the horizon without losing track of the specifics."], "hint": "big picture + manage the details = 큰 그림과 세부 사항", "explanation": "", "keywords": ["big picture", "manage the details"]},
+      {"korean": "팀원들의 강점을 최대한 활용해야 해.", "answers": ["You need to leverage the strengths of your team members.", "Make the most of what each team member brings to the table."], "hint": "leverage strengths / make the most of = 강점을 활용하다", "explanation": "bring to the table = 기여하다", "keywords": ["leverage strengths", "make the most of"]},
+      {"korean": "그는 압박 속에서도 침착함을 유지해.", "answers": ["He remains composed under pressure.", "He keeps his cool even in high-pressure situations."], "hint": "remain composed / keep one's cool = 침착함을 유지하다", "explanation": "", "keywords": ["composed under pressure", "keeps his cool"]},
+      {"korean": "우리는 목표를 향해 한 방향으로 나아가야 해.", "answers": ["We need to align ourselves toward a common goal.", "We have to move in the same direction to achieve our objectives."], "hint": "align toward / move in the same direction = 한 방향으로", "explanation": "", "keywords": ["align", "common goal", "same direction"]},
+      {"korean": "그는 팀에게 영감을 줬어.", "answers": ["He inspired the team.", "He brought out the best in everyone."], "hint": "inspire / bring out the best in = 영감을 주다", "explanation": "bring out the best in = ~의 최선을 이끌어내다", "keywords": ["inspired", "brought out the best"]}
+    ]
+  },
+  {
+    "day": 24, "topic": "역설/아이러니 표현",
+    "questions": [
+      {"korean": "아이러니하게도, 그 해결책이 더 큰 문제를 일으켰어.", "answers": ["Ironically, the solution created a bigger problem.", "As ironic as it sounds, the fix made things worse."], "hint": "ironically / as ironic as it sounds = 아이러니하게도", "explanation": "", "keywords": ["ironically", "as ironic as it sounds", "bigger problem"]},
+      {"korean": "더 많이 가질수록 더 많이 원하게 돼.", "answers": ["The more you have, the more you want.", "Having more only makes you crave more."], "hint": "the more ~ the more = ~할수록 더 ~하다", "explanation": "", "keywords": ["the more you have", "the more you want"]},
+      {"korean": "그건 의도하지 않은 결과야.", "answers": ["That's an unintended consequence.", "That's a case of the law of unintended effects."], "hint": "unintended consequence = 의도하지 않은 결과", "explanation": "", "keywords": ["unintended consequence", "unintended effects"]},
+      {"korean": "역설적으로, 더 적게 일하면 더 생산적이 될 수도 있어.", "answers": ["Paradoxically, working less can make you more productive.", "It's a paradox, but less work sometimes leads to more output."], "hint": "paradoxically / it's a paradox = 역설적으로", "explanation": "", "keywords": ["paradoxically", "paradox", "more productive"]},
+      {"korean": "자유를 얻기 위해 규칙을 따라야 할 때도 있어.", "answers": ["Sometimes you have to follow the rules in order to be truly free.", "There's a certain irony in needing discipline to achieve freedom."], "hint": "there's a certain irony in = ~에는 아이러니가 있다", "explanation": "", "keywords": ["irony", "follow the rules", "freedom"]}
+    ]
+  },
+  {
+    "day": 25, "topic": "고급 시간/순서 표현",
+    "questions": [
+      {"korean": "그 사건이 일어나기 훨씬 전부터 문제는 있었어.", "answers": ["Long before the incident occurred, the problem was already there.", "The issues predated the incident by a significant margin."], "hint": "long before / predate = 훨씬 전부터", "explanation": "predate = ~보다 앞서다", "keywords": ["long before", "predated", "incident"]},
+      {"korean": "결국 돌아보면, 그게 전환점이었어.", "answers": ["Looking back, that turned out to be the turning point.", "In hindsight, that was the pivotal moment."], "hint": "in hindsight / looking back = 돌아보면, turning point = 전환점", "explanation": "pivotal moment = 결정적 순간", "keywords": ["in hindsight", "looking back", "turning point"]},
+      {"korean": "그 변화는 서서히 일어났지만 지속적이었어.", "answers": ["The change happened gradually but persistently.", "It was a slow but steady transformation."], "hint": "gradually but persistently / slow but steady", "explanation": "", "keywords": ["gradually", "persistently", "slow but steady"]},
+      {"korean": "지금 이 시점에서, 모든 선택지가 다 열려 있어.", "answers": ["At this juncture, all options are still on the table.", "Right now, every avenue remains open."], "hint": "at this juncture = 이 시점에서, options on the table = 선택지가 열려 있다", "explanation": "juncture = 중요한 시점", "keywords": ["at this juncture", "all options on the table"]},
+      {"korean": "그게 역사의 흐름을 바꿨어.", "answers": ["It changed the course of history.", "That altered the trajectory of history."], "hint": "change the course of / alter the trajectory = 흐름을 바꾸다", "explanation": "trajectory = 궤적, 방향", "keywords": ["course of history", "trajectory", "altered"]}
+    ]
+  },
+  {
+    "day": 26, "topic": "비교 분석 표현",
+    "questions": [
+      {"korean": "두 접근 방식 모두 장단점이 있어.", "answers": ["Both approaches have their merits and drawbacks.", "Each method comes with its own advantages and disadvantages."], "hint": "merits and drawbacks / advantages and disadvantages = 장단점", "explanation": "merits = 장점, drawbacks = 단점", "keywords": ["merits and drawbacks", "advantages and disadvantages"]},
+      {"korean": "이 두 방식의 가장 큰 차이는 비용이야.", "answers": ["The key distinction between the two is the cost.", "What sets them apart most is the price difference."], "hint": "key distinction / what sets them apart = 가장 큰 차이", "explanation": "set apart = 구별하다", "keywords": ["key distinction", "sets them apart", "cost"]},
+      {"korean": "첫 번째 옵션은 위험하지만 더 빠르고, 두 번째는 더 안전하지만 느려.", "answers": ["The first option is riskier but faster, while the second is safer but slower.", "Option one carries more risk but offers greater speed; option two is safer at the cost of efficiency."], "hint": "riskier but faster / safer but slower = 위험하지만 빠른 vs. 안전하지만 느린", "explanation": "", "keywords": ["riskier but faster", "safer but slower"]},
+      {"korean": "어떤 면에서는 비슷하지만, 근본적으로는 달라.", "answers": ["They are similar in some ways, but fundamentally different.", "On the surface they look alike, but deep down they're quite different."], "hint": "similar in some ways / fundamentally different", "explanation": "", "keywords": ["similar in some ways", "fundamentally different"]},
+      {"korean": "두 방식을 비교해보면, 두 번째가 훨씬 효율적이야.", "answers": ["Comparing the two, the second is far more efficient.", "When you put them side by side, the second clearly outperforms the first."], "hint": "comparing the two / side by side = 비교해보면", "explanation": "outperform = 더 나은 성과를 내다", "keywords": ["comparing the two", "side by side", "outperforms"]}
+    ]
+  },
+  {
+    "day": 27, "topic": "문어체 vs. 구어체 표현 비교",
+    "questions": [
+      {"korean": "그 제안을 수락하기로 했어.", "answers": ["I've decided to accept the proposal.", "I'm going to go ahead with the offer."], "hint": "decided to accept (격식) / go ahead with (구어)", "explanation": "go ahead with = ~을 진행하다 (구어체)", "keywords": ["accept the proposal", "go ahead with the offer"]},
+      {"korean": "그는 그것을 성공적으로 완수했어.", "answers": ["He successfully completed the task.", "He pulled it off without a hitch."], "hint": "successfully completed (격식) / pulled it off (구어)", "explanation": "without a hitch = 문제없이, 순조롭게", "keywords": ["successfully completed", "pulled it off", "without a hitch"]},
+      {"korean": "그 정보는 신뢰할 수 없어.", "answers": ["The information is unreliable.", "You can't trust that information."], "hint": "unreliable (격식) / can't trust (구어)", "explanation": "", "keywords": ["unreliable", "can't trust"]},
+      {"korean": "그 주장은 근거가 부족해.", "answers": ["The argument lacks substantiation.", "That claim doesn't hold up."], "hint": "lacks substantiation (격식) / doesn't hold up (구어)", "explanation": "hold up = 버티다, 유효하다", "keywords": ["lacks substantiation", "doesn't hold up"]},
+      {"korean": "나는 그 문제에 대해 깊이 고민해봤어.", "answers": ["I gave the matter considerable thought.", "I've been chewing on that problem for a while."], "hint": "gave considerable thought (격식) / chewing on (구어)", "explanation": "chew on = 곱씹다, 골똘히 생각하다", "keywords": ["considerable thought", "chewing on"]}
+    ]
+  },
+  {
+    "day": 28, "topic": "협업/팀 관련 표현",
+    "questions": [
+      {"korean": "우리는 모두 같은 목표를 향해 일해야 해.", "answers": ["We all need to be working toward the same goal.", "Everyone has to pull in the same direction."], "hint": "pull in the same direction = 같은 방향으로 힘을 모으다", "explanation": "", "keywords": ["same goal", "pull in the same direction"]},
+      {"korean": "그것은 모두의 공동 노력의 결과야.", "answers": ["It's the result of a collective effort.", "It took a team effort to make this happen."], "hint": "collective effort / team effort = 공동 노력", "explanation": "", "keywords": ["collective effort", "team effort"]},
+      {"korean": "역할 분담이 명확해야 해.", "answers": ["The division of roles needs to be clear.", "Everyone should know their responsibilities."], "hint": "division of roles / responsibilities = 역할 분담", "explanation": "", "keywords": ["division of roles", "responsibilities"]},
+      {"korean": "우리는 각자의 전문성을 활용해야 해.", "answers": ["We should leverage each person's expertise.", "We need to tap into everyone's strengths."], "hint": "leverage expertise / tap into strengths = 전문성을 활용하다", "explanation": "tap into = 활용하다", "keywords": ["leverage expertise", "tap into strengths"]},
+      {"korean": "소통의 부재가 가장 큰 문제야.", "answers": ["The lack of communication is the biggest issue.", "A breakdown in communication is at the root of the problem."], "hint": "lack of communication / breakdown in communication", "explanation": "breakdown = 고장, 붕괴, 단절", "keywords": ["lack of communication", "breakdown in communication"]}
+    ]
+  },
+  {
+    "day": 29, "topic": "가정/조건 고급 표현",
+    "questions": [
+      {"korean": "만약 처음부터 계획이 있었다면 이 지경이 되지 않았을 거야.", "answers": ["Had there been a plan from the start, it wouldn't have come to this.", "If a plan had been in place from the beginning, we wouldn't be in this situation."], "hint": "Had there been = If there had been (도치)", "explanation": "", "keywords": ["had there been", "wouldn't have come to this"]},
+      {"korean": "설령 그게 사실이라 해도, 변명은 되지 않아.", "answers": ["Even assuming that's true, it's no excuse.", "Even if that were the case, it wouldn't justify anything."], "hint": "even assuming / even if that were the case = 설령 ~이라 해도", "explanation": "", "keywords": ["even assuming", "even if that were", "no excuse"]},
+      {"korean": "그게 어떻게 됐든, 우리는 계속 전진해야 해.", "answers": ["Whatever the outcome, we have to keep moving forward.", "Regardless of how it turns out, we must press on."], "hint": "whatever the outcome / regardless of how = 어떻게 됐든", "explanation": "", "keywords": ["whatever the outcome", "regardless of how", "press on"]},
+      {"korean": "이런 상황이 아니었다면, 우리는 다른 선택을 했을 거야.", "answers": ["Were it not for these circumstances, we would have made a different choice.", "In the absence of these conditions, we would have chosen differently."], "hint": "Were it not for = If it were not for (도치)", "explanation": "in the absence of = ~가 없었다면", "keywords": ["were it not for", "in the absence of", "different choice"]},
+      {"korean": "우리가 더 빠르게 움직였더라면, 그 기회를 잡을 수 있었을 거야.", "answers": ["Had we acted more swiftly, we could have seized the opportunity.", "If we had moved faster, we would have been able to capitalize on that chance."], "hint": "had we acted more swiftly = if we had acted faster", "explanation": "capitalize on = 최대한 활용하다", "keywords": ["had we acted", "swiftly", "seize the opportunity"]}
+    ]
+  },
+  {
+    "day": 30, "topic": "고급 전반부 종합 복습",
+    "questions": [
+      {"korean": "돌이켜보면, 그것이 우리가 했던 것 중 가장 훌륭한 결정이었어.", "answers": ["In hindsight, it was the single best decision we ever made.", "Looking back on it, that stands out as our finest call."], "hint": "in hindsight / looking back = 돌이켜보면", "explanation": "", "keywords": ["in hindsight", "looking back", "best decision"]},
+      {"korean": "아이러니하게도, 그를 막으려던 노력이 오히려 그를 더 강하게 만들었어.", "answers": ["Ironically, the efforts to stop him only made him stronger.", "As it turned out, trying to hold him back had the opposite effect."], "hint": "ironically / had the opposite effect = 아이러니하게도 반대 결과를 낳다", "explanation": "", "keywords": ["ironically", "only made him stronger", "opposite effect"]},
+      {"korean": "그게 양날의 검인 것이 사실이야 - 우리에게 기회이기도 하지만 위험이기도 해.", "answers": ["It's true that it's a double-edged sword — an opportunity as much as a risk.", "It cuts both ways — it's as much a risk as it is an opportunity."], "hint": "double-edged sword / cuts both ways = 양날의 검", "explanation": "", "keywords": ["double-edged sword", "cuts both ways", "opportunity and risk"]},
+      {"korean": "갈수록 복잡해지는 세상에서, 큰 그림을 보는 능력이 더욱 중요해지고 있어.", "answers": ["In an increasingly complex world, the ability to see the big picture is becoming more important.", "As the world grows more complicated, seeing the broader picture matters more than ever."], "hint": "increasingly complex / grows more complicated + big picture", "explanation": "", "keywords": ["increasingly complex", "big picture", "becoming more important"]},
+      {"korean": "그런 상황에서도, 그들은 침착함을 유지하고 공통점을 찾았어.", "answers": ["Even in that situation, they remained composed and found common ground.", "Despite the circumstances, they kept their cool and reached a middle ground."], "hint": "remained composed / kept their cool + found common ground", "explanation": "", "keywords": ["remained composed", "kept their cool", "common ground"]}
+    ]
+  }
+]

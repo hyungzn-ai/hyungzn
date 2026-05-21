@@ -1,0 +1,102 @@
+[
+  {
+    "day": 21, "topic": "자주 쓰는 관용어 (Idioms) 심화",
+    "questions": [
+      {"korean": "나는 마감에 쫓기고 있어.", "answers": ["I'm up against a deadline.", "I'm racing against the clock."], "hint": "up against = ~에 직면한, race against the clock = 시간과 싸우다", "explanation": "", "keywords": ["deadline", "race against the clock"]},
+      {"korean": "그 소식은 너무 좋아서 믿기 힘들어.", "answers": ["The news is too good to be true.", "It sounds too good to be true."], "hint": "too good to be true = 믿기 어려울 정도로 좋은", "explanation": "", "keywords": ["too good to be true"]},
+      {"korean": "나는 그냥 둘러보고 있는 거야.", "answers": ["I'm just browsing.", "I'm just looking around."], "hint": "browse / look around = 구경하다, 둘러보다", "explanation": "쇼핑할 때 자주 쓰는 표현", "keywords": ["just browsing", "looking around"]},
+      {"korean": "그녀는 언제나 밝은 면을 봐.", "answers": ["She always looks on the bright side.", "She always sees the glass as half full."], "hint": "look on the bright side = 밝은 면을 보다", "explanation": "see the glass as half full = 낙관적으로 보다", "keywords": ["bright side", "glass half full"]},
+      {"korean": "그는 성질이 불같아.", "answers": ["He has a short temper.", "He loses his temper easily."], "hint": "short temper = 불같은 성격", "explanation": "lose one's temper = 화를 내다", "keywords": ["short temper", "loses his temper"]}
+    ]
+  },
+  {
+    "day": 22, "topic": "명사절 - that/whether/if",
+    "questions": [
+      {"korean": "나는 그가 올 것이라고 생각해.", "answers": ["I think that he will come.", "I believe he'll show up."], "hint": "think/believe + that + 절", "explanation": "that 생략 가능", "keywords": ["think that", "will come"]},
+      {"korean": "그녀가 결혼했는지 모르겠어.", "answers": ["I don't know whether she is married.", "I'm not sure if she's married."], "hint": "whether/if + 주어 + 동사 (명사절)", "explanation": "whether = if (격식 차이 있음)", "keywords": ["whether", "married"]},
+      {"korean": "그가 진실을 말하고 있는지 의심스러워.", "answers": ["I doubt whether he is telling the truth.", "I question if he's being honest."], "hint": "doubt whether/if + 주어 + 동사", "explanation": "", "keywords": ["doubt whether", "telling the truth"]},
+      {"korean": "중요한 건 우리가 최선을 다했다는 거야.", "answers": ["What matters is that we did our best.", "The important thing is that we tried our hardest."], "hint": "What matters is that ~ / The important thing is that ~", "explanation": "", "keywords": ["what matters", "that", "did our best"]},
+      {"korean": "그가 제시간에 올지 안 올지가 문제야.", "answers": ["The question is whether he will come on time.", "It's a question of whether he'll be on time."], "hint": "The question is whether + 절", "explanation": "", "keywords": ["the question is", "whether", "on time"]}
+    ]
+  },
+  {
+    "day": 23, "topic": "원인/결과 표현 심화",
+    "questions": [
+      {"korean": "교통 체증 때문에 회의에 늦었어.", "answers": ["I was late for the meeting due to traffic.", "I missed the meeting because of a traffic jam."], "hint": "due to / because of + 명사", "explanation": "due to = because of (명사 앞에 사용)", "keywords": ["due to", "traffic", "meeting"]},
+      {"korean": "결과적으로, 그들은 계약을 따냈어.", "answers": ["As a result, they won the contract.", "Consequently, they secured the deal."], "hint": "As a result = Consequently = 결과적으로", "explanation": "", "keywords": ["as a result", "contract"]},
+      {"korean": "그 폭풍으로 인해 많은 나무가 쓰러졌어.", "answers": ["The storm caused many trees to fall.", "Many trees fell due to the storm."], "hint": "cause + 목적어 + to + 동사원형", "explanation": "", "keywords": ["caused", "storm", "trees", "fall"]},
+      {"korean": "덕분에 내 일이 훨씬 쉬워졌어.", "answers": ["Thanks to you, my work became much easier.", "Because of your help, things got a lot easier."], "hint": "Thanks to + 사람/것 = ~덕분에", "explanation": "thanks to = 긍정적 원인, because of = 중립적 원인", "keywords": ["thanks to", "easier"]},
+      {"korean": "그 사고의 결과로, 그는 두 달을 쉬어야 했어.", "answers": ["As a result of the accident, he had to rest for two months.", "The accident resulted in him resting for two months."], "hint": "as a result of + 명사 = ~의 결과로", "explanation": "result in = ~을 초래하다", "keywords": ["as a result of", "accident", "two months"]}
+    ]
+  },
+  {
+    "day": 24, "topic": "양보 표현 - although/even though/despite",
+    "questions": [
+      {"korean": "피곤했음에도 불구하고 끝까지 달렸어.", "answers": ["Although I was tired, I ran to the end.", "Even though I was exhausted, I finished the race."], "hint": "Although / Even though + 절 (대조 접속사)", "explanation": "even though = although (강조)", "keywords": ["although", "tired", "ran"]},
+      {"korean": "비가 왔음에도 그들은 경기를 계속했어.", "answers": ["Despite the rain, they continued the game.", "In spite of the rain, they kept playing."], "hint": "Despite / In spite of + 명사/~ing", "explanation": "despite/in spite of 뒤엔 명사 또는 ~ing", "keywords": ["despite", "rain", "continued"]},
+      {"korean": "열심히 했지만, 그녀는 시험을 통과하지 못했어.", "answers": ["She tried hard, yet she couldn't pass the exam.", "Even though she worked hard, she failed the test."], "hint": "yet = but (문어체)", "explanation": "yet = 그러나, 그렇지만 (대조 접속사)", "keywords": ["yet", "tried hard", "couldn't pass"]},
+      {"korean": "돈이 없었지만, 그는 행복했어.", "answers": ["Despite having no money, he was happy.", "Even though he had no money, he was happy."], "hint": "despite having + 명사", "explanation": "", "keywords": ["despite", "no money", "happy"]},
+      {"korean": "오랫동안 연습했음에도 그는 여전히 서툴러.", "answers": ["Despite practicing for a long time, he is still clumsy.", "Even though he's been practicing for years, he's still not good."], "hint": "despite + ~ing + 결과절", "explanation": "", "keywords": ["despite practicing", "still", "clumsy"]}
+    ]
+  },
+  {
+    "day": 25, "topic": "추측 표현 - must/can't/might be",
+    "questions": [
+      {"korean": "그는 지금 집에 있을 거야. (확신)", "answers": ["He must be at home now.", "He has to be home right now."], "hint": "must be = ~임에 틀림없다 (강한 확신)", "explanation": "", "keywords": ["must be", "home"]},
+      {"korean": "그녀는 의사임에 틀림없어. 하얀 가운을 입고 있잖아.", "answers": ["She must be a doctor. She's wearing a white coat.", "She has to be a doctor — she's in a white coat."], "hint": "must be + 직업 (증거 기반 추측)", "explanation": "", "keywords": ["must be", "doctor", "white coat"]},
+      {"korean": "그가 벌써 집에 갔을 리가 없어.", "answers": ["He can't have gone home already.", "There's no way he's already left."], "hint": "can't be / can't have p.p. = ~일 리가 없다", "explanation": "", "keywords": ["can't have", "gone home"]},
+      {"korean": "그녀는 피곤할 것 같아. 오늘 일을 많이 했으니까.", "answers": ["She might be tired. She worked a lot today.", "She's probably tired since she worked so hard today."], "hint": "might be = 아마 ~일 것이다", "explanation": "", "keywords": ["might be", "tired"]},
+      {"korean": "그 패키지가 이미 도착했을 수도 있어.", "answers": ["The package might have already arrived.", "The package could have been delivered by now."], "hint": "might/could have + p.p.", "explanation": "", "keywords": ["might have", "arrived"]}
+    ]
+  },
+  {
+    "day": 26, "topic": "격식체 요청/제안 표현",
+    "questions": [
+      {"korean": "기다려주실 수 있으시겠어요?", "answers": ["Would you mind waiting for a moment?", "Could you please wait for a second?"], "hint": "Would you mind + ~ing? / Could you please ~?", "explanation": "", "keywords": ["would you mind", "waiting"]},
+      {"korean": "조언을 구해도 될까요?", "answers": ["May I ask for your advice?", "Could I get your input on something?"], "hint": "May I / Could I + 동사원형?", "explanation": "May I = 매우 격식체, Could I = 일반 공손체", "keywords": ["may I", "advice"]},
+      {"korean": "제가 확인해보겠습니다.", "answers": ["I'll look into it.", "Allow me to check on that."], "hint": "I'll look into it = 확인해보겠다", "explanation": "look into = 조사하다, 알아보다", "keywords": ["look into", "check"]},
+      {"korean": "그 점에 대해 더 말씀해 주실 수 있으세요?", "answers": ["Could you elaborate on that point?", "Would you mind explaining that in more detail?"], "hint": "elaborate on = ~에 대해 더 자세히 설명하다", "explanation": "", "keywords": ["elaborate on", "explain"]},
+      {"korean": "이 자리에 앉아도 될까요?", "answers": ["Is this seat taken?", "Do you mind if I sit here?"], "hint": "Is this seat taken? = 이 자리에 사람 있어요?", "explanation": "Is this taken? = 가장 자연스러운 표현", "keywords": ["seat taken", "sit here"]}
+    ]
+  },
+  {
+    "day": 27, "topic": "It is ~ that 강조 구문",
+    "questions": [
+      {"korean": "내가 사랑하는 건 바로 그 음악이야.", "answers": ["It is the music that I love.", "It's the music that I'm really into."], "hint": "It is + 강조어 + that + 나머지", "explanation": "강조 구문: 강조하고 싶은 부분을 It is ~ that 사이에 넣음", "keywords": ["it is", "that I love"]},
+      {"korean": "그를 행복하게 만든 건 바로 그 편지였어.", "answers": ["It was the letter that made him happy.", "It was that letter that brought him joy."], "hint": "It was + 강조어 + that + 결과", "explanation": "", "keywords": ["it was", "that made him happy"]},
+      {"korean": "내가 그녀를 만난 건 바로 이 도시에서야.", "answers": ["It was in this city that I met her.", "It was here in this city that I first met her."], "hint": "It was + 장소 + that + 절", "explanation": "", "keywords": ["it was", "city", "that I met"]},
+      {"korean": "그가 원하는 건 그냥 쉬는 거야.", "answers": ["What he wants is just to rest.", "All he wants is just to relax."], "hint": "What + 주어 + want is + to 부정사", "explanation": "", "keywords": ["what he wants", "rest"]},
+      {"korean": "내가 걱정하는 게 바로 그거야.", "answers": ["That's exactly what I'm worried about.", "That is precisely what concerns me."], "hint": "That's exactly what + 주어 + 동사", "explanation": "", "keywords": ["exactly what", "worried"]}
+    ]
+  },
+  {
+    "day": 28, "topic": "비즈니스/공식 영어 표현",
+    "questions": [
+      {"korean": "첨부 파일을 확인해 주세요.", "answers": ["Please find the attached file.", "Please see the attachment."], "hint": "Please find the attached = 첨부 파일 안내 이메일 표현", "explanation": "이메일에서 자주 쓰는 표현", "keywords": ["attached", "file", "attachment"]},
+      {"korean": "회신이 늦어서 죄송합니다.", "answers": ["I apologize for the late reply.", "Sorry for getting back to you so late."], "hint": "I apologize for + 명사/~ing", "explanation": "get back to someone = 답장하다", "keywords": ["apologize", "late reply"]},
+      {"korean": "추가 질문이 있으시면 알려주세요.", "answers": ["Please let me know if you have any further questions.", "Feel free to reach out if you need anything else."], "hint": "Please let me know if + 조건절", "explanation": "reach out = 연락하다", "keywords": ["let me know", "further questions"]},
+      {"korean": "미팅 일정을 잡을 수 있을까요?", "answers": ["Could we schedule a meeting?", "Would it be possible to set up a meeting?"], "hint": "Could we schedule / Would it be possible to ~?", "explanation": "", "keywords": ["schedule", "meeting"]},
+      {"korean": "이 건에 대해 검토해보겠습니다.", "answers": ["I will look into this matter.", "I'll review this and get back to you."], "hint": "look into / review this matter", "explanation": "", "keywords": ["look into", "matter", "review"]}
+    ]
+  },
+  {
+    "day": 29, "topic": "시간 관련 고급 표현",
+    "questions": [
+      {"korean": "제시간에 맞출 수 있을지 모르겠어.", "answers": ["I'm not sure if I can make it on time.", "I don't know whether I'll be there in time."], "hint": "make it on time = 제시간에 도착하다/해내다", "explanation": "in time = 제때에, on time = 정시에", "keywords": ["make it", "on time"]},
+      {"korean": "그 행사는 2주 전에 취소됐어.", "answers": ["The event was canceled two weeks ahead of time.", "The event was called off two weeks in advance."], "hint": "ahead of time = in advance = 미리, 사전에", "explanation": "call off = cancel", "keywords": ["ahead of time", "in advance", "canceled"]},
+      {"korean": "나는 항상 마감 직전에 일을 해.", "answers": ["I always work at the last minute.", "I always leave things until the last moment."], "hint": "at the last minute = 마감 직전에", "explanation": "", "keywords": ["last minute"]},
+      {"korean": "그는 자신의 시간을 효율적으로 관리해.", "answers": ["He manages his time efficiently.", "He is very good at time management."], "hint": "manage time efficiently / time management", "explanation": "", "keywords": ["manage time", "efficiently"]},
+      {"korean": "우리가 만난 지 벌써 10년이 됐어.", "answers": ["It has been ten years since we met.", "Ten years have passed since we first met."], "hint": "It has been + 기간 + since ~", "explanation": "", "keywords": ["it has been", "ten years", "since"]}
+    ]
+  },
+  {
+    "day": 30, "topic": "중급 전반부 종합 복습",
+    "questions": [
+      {"korean": "그가 왜 사직했는지 정확히 알 수 없지만, 아마 더 좋은 기회가 생겼을 거야.", "answers": ["I'm not sure exactly why he resigned, but he might have found a better opportunity.", "I don't know why he quit, but he probably got a better offer."], "hint": "might have + p.p. (과거 추측)", "explanation": "", "keywords": ["not sure why", "might have found", "better opportunity"]},
+      {"korean": "내가 더 어렸을 때 더 많은 것들을 시도했더라면 좋았을 텐데.", "answers": ["I wish I had tried more things when I was younger.", "If only I had taken more chances in my youth."], "hint": "I wish + had + p.p.", "explanation": "", "keywords": ["wish", "had tried", "younger"]},
+      {"korean": "그것 때문에 회의가 취소됐고, 결과적으로 우리는 계획을 다시 짜야 했어.", "answers": ["That caused the meeting to be canceled, and as a result, we had to redo our plans.", "Because of that, the meeting was called off, so we had to start from scratch."], "hint": "cause ~ to be canceled + as a result", "explanation": "start from scratch = 처음부터 다시 시작하다", "keywords": ["caused", "canceled", "as a result"]},
+      {"korean": "그것에도 불구하고, 그는 최선을 다했어.", "answers": ["Despite that, he did his best.", "In spite of everything, he gave it his all."], "hint": "despite/in spite of + that/everything", "explanation": "give it one's all = 최선을 다하다", "keywords": ["despite", "did his best"]},
+      {"korean": "내가 강조하고 싶은 건, 팀워크야말로 성공의 열쇠라는 거야.", "answers": ["What I want to emphasize is that teamwork is the key to success.", "The point I'm making is that teamwork is what makes us succeed."], "hint": "What I want to emphasize is that ~", "explanation": "", "keywords": ["what I want to emphasize", "teamwork", "key to success"]}
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+NONE  : C:\flutter
+NONE  : C:\src\flutter
+NONE  : C:\Users\91618\flutter
+NONE  : C:\Users\91618\AppData\Local\Programs\flutter
+NONE  : C:\Users\91618\AppData\Local\flutter
+NONE  : C:\Program Files\flutter
+NONE  : C:\Program Files (x86)\flutter
+
+flutter: 명령어 없음 (PATH에 없음)
+
+winget list: None

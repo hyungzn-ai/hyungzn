@@ -1,0 +1,102 @@
+[
+  {
+    "day": 1, "topic": "가정법 혼합/도치",
+    "questions": [
+      {"korean": "그때 그 결정을 내리지 않았다면, 지금 여기 없을 거야.", "answers": ["Had I not made that decision back then, I wouldn't be here now.", "If I hadn't made that decision, I wouldn't be where I am today."], "hint": "Had I not + p.p. (도치 가정법)", "explanation": "Had I not = If I had not (도치)", "keywords": ["had I not", "wouldn't be here now"]},
+      {"korean": "그게 사실이라면 모든 게 달라졌을 텐데.", "answers": ["Were that true, everything would have been different.", "If that were true, everything would have changed."], "hint": "Were + 주어 + 형용사 (도치 가정법 과거)", "explanation": "Were that true = If that were true (도치)", "keywords": ["were that true", "would have been different"]},
+      {"korean": "내가 그의 입장이었다면 똑같이 했을 거야.", "answers": ["Had I been in his position, I would have done the same.", "If I had been in his shoes, I'd have acted the same way."], "hint": "Had I been in his position/shoes", "explanation": "in his shoes = 그의 입장에서", "keywords": ["had I been", "his position", "same"]},
+      {"korean": "조금만 더 일찍 출발했더라면 기차를 탈 수 있었을 텐데.", "answers": ["Had we left a little earlier, we could have caught the train.", "If only we had set off a bit sooner, we would have made the train."], "hint": "Had we left earlier, could have caught", "explanation": "set off = 출발하다", "keywords": ["had we left", "could have caught", "train"]},
+      {"korean": "그런 도움이 없었더라면 절대 해내지 못했을 거야.", "answers": ["Without that help, I could never have pulled it off.", "But for that support, I would never have succeeded."], "hint": "Without ~ / But for ~ = ~가 없었더라면", "explanation": "pull it off = 해내다, but for = without", "keywords": ["without that help", "could never have", "pulled it off"]}
+    ]
+  },
+  {
+    "day": 2, "topic": "강조/도치 구문",
+    "questions": [
+      {"korean": "그제서야 나는 실수를 깨달았어.", "answers": ["Only then did I realize my mistake.", "It was only then that I became aware of my error."], "hint": "Only then + 조동사 + 주어 (도치)", "explanation": "Only then = 그제서야 (부정어 도치)", "keywords": ["only then did I", "realize my mistake"]},
+      {"korean": "결코 그런 말을 한 적이 없어.", "answers": ["Never have I said such a thing.", "At no point did I say that."], "hint": "Never + have + 주어 + p.p. (부정어 도치)", "explanation": "부정어(Never, Rarely, Seldom) + 도치", "keywords": ["never have I", "said such a thing"]},
+      {"korean": "그가 들어온 순간 모두가 조용해졌어.", "answers": ["No sooner had he entered than everyone fell silent.", "The moment he walked in, everyone went quiet."], "hint": "No sooner had + 주어 + p.p. + than", "explanation": "No sooner ~ than = ~하자마자", "keywords": ["no sooner had", "than", "fell silent"]},
+      {"korean": "그 영화가 얼마나 훌륭한지!", "answers": ["What a wonderful movie it is!", "How amazing the movie is!"], "hint": "What a + 형용사 + 명사! / How + 형용사!", "explanation": "What = 명사 강조, How = 형용사/부사 강조", "keywords": ["what a", "how amazing"]},
+      {"korean": "좀처럼 이런 기회는 오지 않아.", "answers": ["Seldom does such an opportunity arise.", "Rarely do we get a chance like this."], "hint": "Seldom/Rarely + 조동사 + 주어 (도치)", "explanation": "", "keywords": ["seldom does", "rarely do", "opportunity"]}
+    ]
+  },
+  {
+    "day": 3, "topic": "분사구문 고급",
+    "questions": [
+      {"korean": "날씨를 고려하면, 우리는 여행을 취소해야 했어.", "answers": ["Given the weather, we had to cancel the trip.", "Taking the weather into account, we had no choice but to cancel."], "hint": "Given ~ / Taking ~ into account = ~를 고려하면", "explanation": "take into account = 고려하다", "keywords": ["given the weather", "taking into account", "cancel"]},
+      {"korean": "그 프로젝트를 마무리하면서 우리는 많은 것을 배웠어.", "answers": ["Having completed the project, we learned a great deal.", "Finishing the project, we gained valuable experience."], "hint": "Having + p.p. = 먼저 완료 후 → 분사구문", "explanation": "", "keywords": ["having completed", "learned a great deal"]},
+      {"korean": "솔직히 말하자면, 그 결정은 최선이 아니었어.", "answers": ["Frankly speaking, that was not the best decision.", "To put it bluntly, it wasn't the right call."], "hint": "Frankly speaking / To put it bluntly = 솔직히 말하자면", "explanation": "to put it bluntly = 직설적으로 말하자면", "keywords": ["frankly speaking", "not the best decision"]},
+      {"korean": "두 팔을 벌리고, 그는 군중을 환영했어.", "answers": ["With his arms wide open, he welcomed the crowd.", "Arms outstretched, he embraced the crowd."], "hint": "with + 명사 + 형용사/p.p. (부대상황)", "explanation": "", "keywords": ["arms wide open", "welcomed the crowd"]},
+      {"korean": "일이 뜻대로 풀리지 않으면서, 그는 포기할 뻔했어.", "answers": ["With things not going as planned, he almost gave up.", "Things not going his way, he was on the verge of giving up."], "hint": "With things not going + as planned", "explanation": "on the verge of = ~하기 직전에", "keywords": ["not going as planned", "almost gave up"]}
+    ]
+  },
+  {
+    "day": 4, "topic": "복잡한 관계사 구문",
+    "questions": [
+      {"korean": "그가 했던 것은 모두가 그를 놀라게 했어.", "answers": ["What he did surprised everyone.", "Everything he did left everyone astonished."], "hint": "What he did = 그가 한 것 (선행사 포함 관계대명사)", "explanation": "", "keywords": ["what he did", "surprised everyone"]},
+      {"korean": "어떤 선택을 하든, 결과를 받아들여야 해.", "answers": ["Whatever choice you make, you have to accept the consequences.", "Whichever path you choose, you must be prepared for the outcome."], "hint": "Whatever / Whichever + 명사 + 주어 + 동사", "explanation": "", "keywords": ["whatever choice", "accept the consequences"]},
+      {"korean": "그가 어디를 가든 그를 따라다녔어.", "answers": ["Wherever he went, they followed him.", "He was followed wherever he went."], "hint": "wherever = 어디를 ~하든", "explanation": "", "keywords": ["wherever he went", "followed"]},
+      {"korean": "그녀가 아무리 열심히 해도 충분하지 않은 것 같았어.", "answers": ["However hard she tried, it never seemed to be enough.", "No matter how hard she worked, it felt like it was never sufficient."], "hint": "However + 형용사/부사 + 주어 + 동사 = 아무리 ~해도", "explanation": "", "keywords": ["however hard", "no matter how hard", "never enough"]},
+      {"korean": "그 이유가 무엇이든, 그는 사과를 해야 해.", "answers": ["Whatever the reason may be, he owes an apology.", "Regardless of the reason, an apology is in order."], "hint": "Whatever the reason may be = 이유가 무엇이든", "explanation": "an apology is in order = 사과가 마땅하다", "keywords": ["whatever the reason", "owes an apology"]}
+    ]
+  },
+  {
+    "day": 5, "topic": "명사 수식 심화",
+    "questions": [
+      {"korean": "그것은 결코 쉽지 않은 결정이었어.", "answers": ["It was anything but an easy decision.", "It was far from an easy choice."], "hint": "anything but = far from = 결코 ~가 아닌", "explanation": "anything but = 전혀 ~이 아닌", "keywords": ["anything but", "far from", "easy decision"]},
+      {"korean": "그건 내가 기대한 것과는 전혀 달라.", "answers": ["That's nothing like what I expected.", "That's a far cry from what I had in mind."], "hint": "nothing like / a far cry from = 전혀 다른", "explanation": "a far cry from = 큰 차이가 있는", "keywords": ["nothing like", "far cry from", "expected"]},
+      {"korean": "그 책은 읽을 가치가 있어.", "answers": ["The book is worth reading.", "It's a book worth your time."], "hint": "be worth + ~ing = ~할 가치가 있다", "explanation": "", "keywords": ["worth reading", "worth your time"]},
+      {"korean": "나는 더 이상 참을 수가 없어.", "answers": ["I can no longer put up with it.", "I've had it up to here."], "hint": "no longer = 더 이상 ~않다, put up with = 참다", "explanation": "I've had it up to here = 더 이상 못 참겠다 (구어체)", "keywords": ["no longer", "put up with", "can't take it anymore"]},
+      {"korean": "그 문제는 생각보다 훨씬 복잡해.", "answers": ["The problem is far more complex than I thought.", "The issue is a lot more complicated than it seems."], "hint": "far/a lot more + 형용사 + than I thought", "explanation": "", "keywords": ["far more complex", "than I thought"]}
+    ]
+  },
+  {
+    "day": 6, "topic": "학술 에세이 표현",
+    "questions": [
+      {"korean": "이 에세이는 기후 변화의 영향을 살펴볼 것이다.", "answers": ["This essay will examine the effects of climate change.", "This paper aims to explore the impact of climate change."], "hint": "examine / explore = 살펴보다, 탐구하다", "explanation": "", "keywords": ["examine", "explore", "climate change"]},
+      {"korean": "이 주장을 뒷받침하는 증거가 있다.", "answers": ["There is evidence to support this argument.", "The following evidence supports this claim."], "hint": "evidence to support / supports this claim", "explanation": "", "keywords": ["evidence", "support", "argument", "claim"]},
+      {"korean": "반대 의견에도 불구하고, 그 이론은 여전히 유효하다.", "answers": ["Despite opposing views, the theory remains valid.", "Notwithstanding the counterarguments, the theory holds."], "hint": "despite / notwithstanding = ~에도 불구하고", "explanation": "notwithstanding = 격식체의 despite", "keywords": ["despite", "notwithstanding", "theory remains valid"]},
+      {"korean": "이 연구의 한계점 중 하나는 표본 크기가 작다는 것이다.", "answers": ["One limitation of this study is the small sample size.", "A key constraint of this research is its limited sample size."], "hint": "one limitation / key constraint of this study is ~", "explanation": "constraint = limitation (제약, 한계)", "keywords": ["limitation", "constraint", "sample size"]},
+      {"korean": "향후 연구에서 이 주제를 더 깊이 탐구해야 한다.", "answers": ["Future research should explore this topic more deeply.", "Further investigation is needed to fully understand this subject."], "hint": "future research / further investigation = 향후 연구", "explanation": "", "keywords": ["future research", "further investigation", "explore"]}
+    ]
+  },
+  {
+    "day": 7, "topic": "뉘앙스 - used to / would / be used to",
+    "questions": [
+      {"korean": "나는 어렸을 때 매일 피아노를 치곤 했어.", "answers": ["I used to play the piano every day when I was young.", "I would play the piano every day as a child."], "hint": "used to + 동사원형 = 과거 습관 (지금은 아님)", "explanation": "used to = 과거 상태/습관, would = 과거 반복 행동", "keywords": ["used to play", "would play", "every day"]},
+      {"korean": "나는 혼자 여행하는 것에 익숙해.", "answers": ["I'm used to traveling alone.", "I'm accustomed to traveling by myself."], "hint": "be used to + ~ing = ~에 익숙하다", "explanation": "used to (동사) ≠ be used to (형용사+전치사)", "keywords": ["used to traveling", "accustomed to"]},
+      {"korean": "나는 매운 음식을 먹는 것에 익숙해지고 있어.", "answers": ["I'm getting used to eating spicy food.", "I'm becoming accustomed to spicy food."], "hint": "get used to + ~ing = 익숙해져 가고 있다", "explanation": "", "keywords": ["getting used to", "spicy food"]},
+      {"korean": "우리는 예전에 이 동네에 살곤 했어.", "answers": ["We used to live in this neighborhood.", "We used to call this neighborhood home."], "hint": "used to live = 과거에 살았다 (지금은 아님)", "explanation": "", "keywords": ["used to live", "neighborhood"]},
+      {"korean": "처음엔 그 소음이 귀찮았지만, 이제는 익숙해.", "answers": ["At first, the noise bothered me, but now I'm used to it.", "The noise used to bother me, but I've gotten used to it."], "hint": "used to bother / now I'm used to it", "explanation": "", "keywords": ["used to bother", "now I'm used to it"]}
+    ]
+  },
+  {
+    "day": 8, "topic": "수사학적 표현 / 완곡어법",
+    "questions": [
+      {"korean": "그 결정은 다소 논란의 여지가 있어.", "answers": ["The decision is somewhat controversial.", "That decision is a bit contentious, to say the least."], "hint": "somewhat controversial / a bit contentious = 다소 논란적", "explanation": "to say the least = 최소한으로 말하더라도", "keywords": ["somewhat controversial", "contentious", "to say the least"]},
+      {"korean": "그것이 항상 최선의 전략이라고 할 수는 없어.", "answers": ["It's not always the most optimal strategy.", "One might argue it's not necessarily the best approach."], "hint": "not always / not necessarily = 항상/반드시 ~이지는 않다", "explanation": "", "keywords": ["not always", "not necessarily", "best strategy"]},
+      {"korean": "조심스럽게 표현하자면, 그 발표는 썩 좋지 않았어.", "answers": ["To put it diplomatically, the presentation wasn't great.", "If I'm being gentle about it, the presentation left something to be desired."], "hint": "to put it diplomatically = 외교적으로 말하자면", "explanation": "leave something to be desired = 아쉬운 점이 있다", "keywords": ["to put it diplomatically", "left something to be desired"]},
+      {"korean": "그건 최선의 표현 방식이 아닐 수 있어.", "answers": ["That may not be the most ideal way to put it.", "It might not be the best choice of words."], "hint": "may not be the most ideal / best choice of words", "explanation": "", "keywords": ["may not be", "ideal", "best choice of words"]},
+      {"korean": "그의 행동은 다소 적절하지 않다고 볼 수 있어.", "answers": ["His behavior could be considered somewhat inappropriate.", "One could argue his conduct was less than appropriate."], "hint": "could be considered / one could argue = 볼 수 있다, 주장할 수 있다", "explanation": "", "keywords": ["could be considered", "somewhat inappropriate"]}
+    ]
+  },
+  {
+    "day": 9, "topic": "복합 시제 표현",
+    "questions": [
+      {"korean": "그가 도착했을 때, 나는 이미 두 시간 동안 기다리고 있었어.", "answers": ["When he arrived, I had already been waiting for two hours.", "By the time he showed up, I had been there for two hours."], "hint": "had been + ~ing = 과거완료 진행 (과거 특정 시점 이전부터 계속)", "explanation": "", "keywords": ["had been waiting", "two hours", "arrived"]},
+      {"korean": "그 영화가 시작할 때쯤에 우리는 이미 도착해 있을 거야.", "answers": ["By the time the movie starts, we will have already arrived.", "We'll have gotten there before the movie begins."], "hint": "By the time + 현재, will have + p.p. (미래완료)", "explanation": "미래완료: 미래 특정 시점 이전에 완료될 일", "keywords": ["by the time", "will have arrived"]},
+      {"korean": "그는 10년 동안 그 회사를 이끌어왔어.", "answers": ["He has been leading the company for ten years.", "He has led the company for a decade."], "hint": "has been leading (현재완료 진행) / has led (현재완료)", "explanation": "", "keywords": ["has been leading", "has led", "ten years"]},
+      {"korean": "그들이 발표를 끝냈을 때쯤 나는 이미 그 내용을 알고 있었어.", "answers": ["By the time they finished the announcement, I already knew the content.", "When they were done presenting, I had already found out."], "hint": "by the time + 과거, had already + p.p.", "explanation": "", "keywords": ["by the time", "already knew", "finished"]},
+      {"korean": "다음 달이면 우리는 10년째 함께 일한 게 돼.", "answers": ["By next month, we will have been working together for ten years.", "Next month marks ten years since we started working together."], "hint": "By next month, will have been + ~ing (미래완료 진행)", "explanation": "", "keywords": ["by next month", "will have been working", "ten years"]}
+    ]
+  },
+  {
+    "day": 10, "topic": "고급 관용 표현 (Advanced Idioms)",
+    "questions": [
+      {"korean": "그는 항상 장단에 맞춰.", "answers": ["He always goes with the flow.", "He tends to follow the crowd."], "hint": "go with the flow = 흐름을 따르다, 장단에 맞추다", "explanation": "follow the crowd = 대세를 따르다", "keywords": ["go with the flow", "follow the crowd"]},
+      {"korean": "그건 아직 공중에 떠 있어. (미결 상태)", "answers": ["That's still up in the air.", "It's still undecided."], "hint": "up in the air = 미결 상태, 불확실한", "explanation": "", "keywords": ["up in the air", "undecided"]},
+      {"korean": "그녀는 내 마음을 꿰뚫어 봤어.", "answers": ["She saw right through me.", "She could read me like a book."], "hint": "see right through = 꿰뚫어 보다", "explanation": "read someone like a book = 완전히 파악하다", "keywords": ["saw right through", "read me like a book"]},
+      {"korean": "이 프로젝트는 생각보다 훨씬 복잡한 작업이야.", "answers": ["This project is a much bigger undertaking than expected.", "This turned out to be a far more complex task than anticipated."], "hint": "a bigger undertaking / far more complex than expected", "explanation": "undertaking = 사업, 작업", "keywords": ["bigger undertaking", "far more complex", "than expected"]},
+      {"korean": "나는 그 일에서 손을 뗐어.", "answers": ["I washed my hands of it.", "I stepped away from the whole thing."], "hint": "wash one's hands of = ~에서 손을 떼다", "explanation": "", "keywords": ["washed my hands of", "stepped away"]}
+    ]
+  }
+]

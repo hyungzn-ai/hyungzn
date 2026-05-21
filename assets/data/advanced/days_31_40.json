@@ -1,0 +1,102 @@
+[
+  {
+    "day": 31, "topic": "고급 관계사/명사절 심화",
+    "questions": [
+      {"korean": "그가 무슨 말을 했든 상관없이, 그게 중요한 게 아니야.", "answers": ["Whatever he said is beside the point.", "It doesn't matter what he said."], "hint": "whatever he said / it doesn't matter what = 그가 무슨 말을 했든", "explanation": "", "keywords": ["whatever he said", "beside the point", "doesn't matter"]},
+      {"korean": "성공의 열쇠는 바로 일관성이야.", "answers": ["The key to success is nothing other than consistency.", "What makes the difference is consistency above all else."], "hint": "nothing other than / above all else = 바로 ~이다", "explanation": "", "keywords": ["nothing other than", "above all else", "consistency"]},
+      {"korean": "그가 왜 그런 결정을 내렸는지가 아직도 수수께끼야.", "answers": ["Why he made such a decision remains a mystery.", "The reason behind his decision is still unclear."], "hint": "why + 주어 + 동사 + remains a mystery", "explanation": "", "keywords": ["why he made", "remains a mystery", "still unclear"]},
+      {"korean": "어떤 어려움이 닥쳐와도, 그는 흔들리지 않아.", "answers": ["Whatever challenges come his way, he remains steadfast.", "No matter what obstacles he faces, he doesn't waver."], "hint": "whatever challenges / no matter what = 어떤 어려움이든", "explanation": "steadfast = 확고한, waver = 흔들리다", "keywords": ["whatever challenges", "no matter what", "steadfast", "waver"]},
+      {"korean": "그게 어떤 결과를 가져오든, 나는 내 결정에 서 있을 거야.", "answers": ["Whatever consequences it brings, I'll stand by my decision.", "Regardless of the outcome, I'm committed to my choice."], "hint": "whatever consequences / regardless of the outcome = 어떤 결과든", "explanation": "stand by = 지지하다, 고수하다", "keywords": ["whatever consequences", "regardless of outcome", "stand by"]}
+    ]
+  },
+  {
+    "day": 32, "topic": "전문적 프레젠테이션 표현",
+    "questions": [
+      {"korean": "오늘 저는 세 가지 핵심 요소를 다룰 예정입니다.", "answers": ["Today I'll be covering three key elements.", "I'm going to walk you through three main points today."], "hint": "cover / walk you through = 다루다, 설명하다", "explanation": "", "keywords": ["covering three key elements", "walk you through"]},
+      {"korean": "이 슬라이드는 주요 발견 사항을 보여줍니다.", "answers": ["This slide illustrates the main findings.", "As you can see here, the key takeaways are shown."], "hint": "illustrates / key takeaways = 보여주다, 주요 발견 사항", "explanation": "takeaway = 핵심 요점", "keywords": ["illustrates", "key takeaways", "main findings"]},
+      {"korean": "이 주제로 넘어가기 전에, 몇 가지 배경을 설명하겠습니다.", "answers": ["Before moving on to this topic, let me provide some background.", "Prior to diving in, I'd like to give some context."], "hint": "before moving on / prior to diving in = 넘어가기 전에", "explanation": "dive in = 깊이 들어가다", "keywords": ["before moving on", "prior to diving in", "background", "context"]},
+      {"korean": "요약하자면, 우리의 접근 방식은 효과가 있었습니다.", "answers": ["To summarize, our approach proved effective.", "In a nutshell, the strategy worked."], "hint": "to summarize / in a nutshell = 요약하자면", "explanation": "in a nutshell = 간단히 말해서", "keywords": ["to summarize", "in a nutshell", "approach proved effective"]},
+      {"korean": "질문이 있으시면 언제든지 말씀해 주세요.", "answers": ["Please feel free to ask if you have any questions.", "Don't hesitate to speak up if anything is unclear."], "hint": "feel free to / don't hesitate to = 언제든지 ~해주세요", "explanation": "speak up = 말하다, 의견을 내다", "keywords": ["feel free to", "don't hesitate to", "speak up"]}
+    ]
+  },
+  {
+    "day": 33, "topic": "고급 기술/과학 표현",
+    "questions": [
+      {"korean": "그 기술은 기하급수적으로 발전하고 있어.", "answers": ["The technology is advancing at an exponential rate.", "That technology is growing at an exponential pace."], "hint": "exponential rate/pace = 기하급수적인 속도", "explanation": "", "keywords": ["exponential rate", "exponential pace", "advancing"]},
+      {"korean": "그것은 기존 패러다임에 도전해.", "answers": ["It challenges the existing paradigm.", "It disrupts the established way of thinking."], "hint": "challenges / disrupts the existing paradigm = 기존 패러다임에 도전하다", "explanation": "disrupt = 방해하다, 혁신적으로 변화시키다", "keywords": ["challenges", "disrupts", "existing paradigm"]},
+      {"korean": "그 데이터는 강한 상관관계를 보여줘.", "answers": ["The data shows a strong correlation.", "The findings indicate a significant correlation."], "hint": "shows / indicates a correlation = 상관관계를 보여주다", "explanation": "", "keywords": ["data shows", "correlation", "significant"]},
+      {"korean": "우리는 그 가설을 검증할 필요가 있어.", "answers": ["We need to validate the hypothesis.", "The hypothesis needs to be put to the test."], "hint": "validate / put to the test = 검증하다", "explanation": "", "keywords": ["validate", "hypothesis", "put to the test"]},
+      {"korean": "그 실험의 결과는 재현 가능해야 해.", "answers": ["The results of the experiment must be reproducible.", "The findings should be replicable under the same conditions."], "hint": "reproducible / replicable = 재현 가능한", "explanation": "replicable = reproducible (반복 가능한)", "keywords": ["reproducible", "replicable", "results"]}
+    ]
+  },
+  {
+    "day": 34, "topic": "고급 비판적 사고 표현",
+    "questions": [
+      {"korean": "그 주장의 전제가 결함이 있어.", "answers": ["The premise of the argument is flawed.", "The underlying assumption is fundamentally flawed."], "hint": "premise / underlying assumption = 전제, flawed = 결함이 있는", "explanation": "", "keywords": ["premise", "underlying assumption", "flawed"]},
+      {"korean": "그 결론은 근거에 의해 뒷받침되지 않아.", "answers": ["The conclusion is not supported by the evidence.", "The evidence doesn't substantiate the conclusion."], "hint": "not supported by / doesn't substantiate = 뒷받침되지 않다", "explanation": "substantiate = 뒷받침하다, 입증하다", "keywords": ["not supported", "doesn't substantiate", "conclusion"]},
+      {"korean": "그 논리에는 근본적인 모순이 있어.", "answers": ["There is a fundamental contradiction in that logic.", "That reasoning contains an inherent inconsistency."], "hint": "fundamental contradiction / inherent inconsistency = 근본적인 모순", "explanation": "", "keywords": ["fundamental contradiction", "inherent inconsistency"]},
+      {"korean": "우리는 그 가정들을 당연하게 여기지 말아야 해.", "answers": ["We shouldn't take those assumptions for granted.", "We need to question those underlying assumptions."], "hint": "take for granted / question assumptions = 당연시하다, 의문을 제기하다", "explanation": "", "keywords": ["take for granted", "question assumptions"]},
+      {"korean": "그것은 표면적으로는 타당해 보이지만 사실은 그렇지 않아.", "answers": ["It appears valid on the surface, but that's not actually the case.", "It seems sound at first glance, but closer examination reveals otherwise."], "hint": "appears valid on the surface / seems sound at first glance", "explanation": "closer examination = 자세히 살펴보면", "keywords": ["on the surface", "at first glance", "reveals otherwise"]}
+    ]
+  },
+  {
+    "day": 35, "topic": "고급 감사/칭찬 표현",
+    "questions": [
+      {"korean": "당신의 통찰력 있는 피드백에 정말 감사드립니다.", "answers": ["I truly appreciate your insightful feedback.", "Your thoughtful feedback has been invaluable."], "hint": "insightful / thoughtful = 통찰력 있는, invaluable = 매우 귀중한", "explanation": "", "keywords": ["insightful feedback", "truly appreciate", "invaluable"]},
+      {"korean": "그녀의 헌신은 정말 인상 깊어.", "answers": ["Her dedication is truly commendable.", "Her level of commitment is nothing short of remarkable."], "hint": "commendable / remarkable = 칭찬할 만한, 인상 깊은", "explanation": "nothing short of = ~에 다름없는", "keywords": ["commendable", "remarkable", "dedication", "commitment"]},
+      {"korean": "그는 항상 수준 이상의 결과를 내.", "answers": ["He consistently delivers above-and-beyond results.", "He always goes above and beyond expectations."], "hint": "above and beyond = 기대 이상으로", "explanation": "", "keywords": ["above and beyond", "expectations", "delivers"]},
+      {"korean": "그녀의 섬세한 관심과 배려가 차이를 만들었어.", "answers": ["Her attention to detail and care made all the difference.", "It was her meticulous approach that truly set her apart."], "hint": "attention to detail / meticulous = 섬세한, made all the difference = 차이를 만들다", "explanation": "meticulous = 꼼꼼한", "keywords": ["attention to detail", "meticulous", "made all the difference"]},
+      {"korean": "그들의 노력은 인정받아 마땅해.", "answers": ["Their efforts deserve recognition.", "What they've accomplished is well worth acknowledging."], "hint": "deserve recognition / well worth acknowledging = 인정받아 마땅하다", "explanation": "", "keywords": ["deserve recognition", "worth acknowledging"]}
+    ]
+  },
+  {
+    "day": 36, "topic": "고급 변화/전환 표현",
+    "questions": [
+      {"korean": "그 회사는 전통적인 모델에서 디지털 중심으로 전환했어.", "answers": ["The company shifted from a traditional model to a digital-first approach.", "They pivoted from conventional methods to a digital-centric strategy."], "hint": "shifted from ~ to / pivoted = 전환하다", "explanation": "pivot = 방향을 전환하다, digital-first = 디지털 우선의", "keywords": ["shifted from", "pivoted", "digital-first"]},
+      {"korean": "그 인식의 변화는 서서히, 하지만 확실하게 이루어졌어.", "answers": ["The shift in perception happened slowly but surely.", "The change in mindset was gradual but definitive."], "hint": "slowly but surely / gradual but definitive = 서서히 하지만 확실하게", "explanation": "", "keywords": ["slowly but surely", "gradual but definitive", "shift in perception"]},
+      {"korean": "그게 패러다임의 전환을 가져왔어.", "answers": ["That brought about a paradigm shift.", "It marked a fundamental shift in the way things were done."], "hint": "paradigm shift / fundamental shift = 패러다임 전환", "explanation": "", "keywords": ["paradigm shift", "fundamental shift"]},
+      {"korean": "그 분야는 최근 급격한 변화를 겪고 있어.", "answers": ["The field has been undergoing rapid change recently.", "That sector is experiencing a dramatic transformation."], "hint": "undergoing rapid change / experiencing transformation = 급격한 변화를 겪다", "explanation": "", "keywords": ["undergoing", "rapid change", "dramatic transformation"]},
+      {"korean": "우리는 이 변화에 어떻게 적응하느냐가 중요해.", "answers": ["What matters is how we adapt to this change.", "The key is how well we can adjust to this transition."], "hint": "what matters is how / the key is how = ~하는 방법이 중요하다", "explanation": "", "keywords": ["what matters", "how we adapt", "adjust to this transition"]}
+    ]
+  },
+  {
+    "day": 37, "topic": "고급 확인/동의 표현",
+    "questions": [
+      {"korean": "그 점에 있어서는 전적으로 동의해.", "answers": ["I wholeheartedly agree on that point.", "I'm completely on board with that."], "hint": "wholeheartedly / completely on board = 전적으로 동의하다", "explanation": "", "keywords": ["wholeheartedly agree", "completely on board"]},
+      {"korean": "그건 반박할 수 없는 사실이야.", "answers": ["That's an irrefutable fact.", "That cannot be disputed."], "hint": "irrefutable / cannot be disputed = 반박할 수 없는", "explanation": "irrefutable = 반박할 수 없는", "keywords": ["irrefutable", "cannot be disputed"]},
+      {"korean": "그게 옳다는 것에는 의심의 여지가 없어.", "answers": ["There is no question that it is correct.", "It goes without saying that it's right."], "hint": "there is no question / it goes without saying = 의심할 여지가 없다", "explanation": "it goes without saying = 말할 나위도 없다", "keywords": ["no question", "goes without saying"]},
+      {"korean": "나는 그의 의견에 전적으로 공감해.", "answers": ["I strongly identify with his view.", "His perspective resonates deeply with me."], "hint": "identify with / resonate with = 공감하다", "explanation": "", "keywords": ["identify with", "resonates with", "perspective"]},
+      {"korean": "우리는 그게 올바른 방향이라는 데 동의해.", "answers": ["We're in agreement that it's the right direction.", "There's consensus that this is the way forward."], "hint": "in agreement / consensus = 동의하다, 합의", "explanation": "consensus = 합의, 공통된 의견", "keywords": ["in agreement", "consensus", "right direction"]}
+    ]
+  },
+  {
+    "day": 38, "topic": "고급 관계/갈등 표현",
+    "questions": [
+      {"korean": "그들은 서로 의견 충돌이 있었어.", "answers": ["They had a clash of opinions.", "They found themselves at odds with each other."], "hint": "clash of opinions / at odds with = 의견 충돌", "explanation": "at odds = 불화 중인", "keywords": ["clash of opinions", "at odds with"]},
+      {"korean": "그 관계는 회복하기 어려운 지점에 이르렀어.", "answers": ["The relationship reached a point of no return.", "Things got to a stage where reconciliation seemed impossible."], "hint": "point of no return = 돌아올 수 없는 지점", "explanation": "reconciliation = 화해", "keywords": ["point of no return", "reconciliation", "impossible"]},
+      {"korean": "그들은 결국 공통점을 찾았어.", "answers": ["They eventually found common ground.", "In the end, they managed to bridge the gap."], "hint": "find common ground / bridge the gap = 공통점을 찾다, 간극을 좁히다", "explanation": "bridge the gap = 간극을 줄이다", "keywords": ["common ground", "bridge the gap"]},
+      {"korean": "그것은 오랜 갈등의 정점이었어.", "answers": ["It was the culmination of a long-standing conflict.", "That was the peak of tensions that had been building for years."], "hint": "culmination of / peak of tensions = 정점", "explanation": "culmination = 정점, 절정", "keywords": ["culmination", "peak of tensions", "long-standing conflict"]},
+      {"korean": "그들은 상호 이해를 바탕으로 신뢰를 회복했어.", "answers": ["They rebuilt trust based on mutual understanding.", "Through genuine understanding, they managed to restore their relationship."], "hint": "mutual understanding / restore the relationship = 상호 이해, 관계를 회복하다", "explanation": "", "keywords": ["mutual understanding", "rebuild trust", "restore relationship"]}
+    ]
+  },
+  {
+    "day": 39, "topic": "고급 문화/철학적 표현",
+    "questions": [
+      {"korean": "그것은 더 깊은 인간 본성에 대한 질문을 제기해.", "answers": ["It raises deeper questions about human nature.", "That touches on fundamental aspects of what it means to be human."], "hint": "raises deeper questions / touches on = 더 깊은 질문을 제기하다", "explanation": "", "keywords": ["raises deeper questions", "human nature", "fundamental"]},
+      {"korean": "역사는 반복되는 경향이 있어.", "answers": ["History tends to repeat itself.", "Patterns in history have a way of cycling back."], "hint": "history repeats itself = 역사는 반복된다", "explanation": "", "keywords": ["history repeats itself", "cycling back"]},
+      {"korean": "우리가 아는 것의 한계를 인식하는 것이 지혜의 시작이야.", "answers": ["Recognizing the limits of what we know is the beginning of wisdom.", "Awareness of one's own ignorance is the first step to true knowledge."], "hint": "recognizing the limits / awareness of ignorance = 한계를 인식하다", "explanation": "", "keywords": ["limits of what we know", "awareness of ignorance", "wisdom"]},
+      {"korean": "그건 수단이 목적을 정당화할 수 없다는 걸 보여줘.", "answers": ["It shows that the ends don't always justify the means.", "It demonstrates that achieving a goal doesn't justify any method."], "hint": "the ends don't justify the means = 목적이 수단을 정당화할 수 없다", "explanation": "", "keywords": ["ends don't justify the means", "achieving a goal"]},
+      {"korean": "우리는 우리가 되고 싶은 것이 되기 위해 선택을 해야 해.", "answers": ["We must make choices to become who we want to be.", "We are defined by the choices we make, not the circumstances we face."], "hint": "make choices to become = 선택을 통해 되다, defined by our choices", "explanation": "", "keywords": ["make choices", "become who we want", "defined by choices"]}
+    ]
+  },
+  {
+    "day": 40, "topic": "고급 종합 실전 표현",
+    "questions": [
+      {"korean": "지금 당장 완벽한 해결책은 없지만, 우리는 최선을 다할 수 있어.", "answers": ["There's no perfect solution right now, but we can do the best with what we have.", "While no ideal fix exists at the moment, we can work with what's available."], "hint": "no perfect solution / best with what we have = 완벽한 해결책은 없지만 최선", "explanation": "", "keywords": ["no perfect solution", "best with what we have", "work with what's available"]},
+      {"korean": "그것은 역설적이게도, 우리의 강점이 동시에 우리의 약점이야.", "answers": ["Paradoxically, our strength is simultaneously our weakness.", "In a strange twist, what makes us strong also makes us vulnerable."], "hint": "paradoxically / in a strange twist = 역설적이게도", "explanation": "", "keywords": ["paradoxically", "strength is simultaneously weakness", "strange twist"]},
+      {"korean": "그 도전이 얼마나 크든 간에, 우리는 무너지지 않을 거야.", "answers": ["However great the challenge may be, we will not be broken.", "No matter how daunting the obstacle, we will persevere."], "hint": "however great / no matter how daunting = 얼마나 크든 간에", "explanation": "daunting = 벅찬, 위압감을 주는", "keywords": ["however great", "no matter how daunting", "persevere"]},
+      {"korean": "우리가 한 발짝 물러서서 전체적인 맥락을 보면, 완전히 다른 그림이 보여.", "answers": ["When we step back and look at the bigger context, a completely different picture emerges.", "Taking a broader view reveals a completely different story."], "hint": "step back / taking a broader view = 한 발짝 물러서서", "explanation": "", "keywords": ["step back", "bigger context", "different picture emerges"]},
+      {"korean": "결국, 말보다 행동이 더 많은 걸 말해줘.", "answers": ["In the end, actions speak louder than words.", "At the end of the day, what you do matters more than what you say."], "hint": "actions speak louder than words = 말보다 행동", "explanation": "", "keywords": ["actions speak louder than words", "what you do matters"]}
+    ]
+  }
+]

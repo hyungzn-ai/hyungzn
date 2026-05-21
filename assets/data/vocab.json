@@ -1,0 +1,512 @@
+[
+  {
+    "setNumber": 1,
+    "title": "일상 핵심 구문 1",
+    "level": "beginner",
+    "items": [
+      {"english": "be supposed to", "korean": "~하기로 되어 있다", "example": "I'm supposed to meet him at 3.", "exampleKorean": "나는 3시에 그를 만나기로 되어 있어.", "type": "구문"},
+      {"english": "used to", "korean": "예전에 ~하곤 했다", "example": "I used to live in Busan.", "exampleKorean": "나는 예전에 부산에 살았어.", "type": "구문"},
+      {"english": "be into", "korean": "~에 빠져 있다, 좋아하다", "example": "She's really into yoga these days.", "exampleKorean": "그녀는 요즘 요가에 빠져 있어.", "type": "구문"},
+      {"english": "end up ~ing", "korean": "결국 ~하게 되다", "example": "We ended up staying home.", "exampleKorean": "우리는 결국 집에 있었어.", "type": "구문"},
+      {"english": "turn out", "korean": "결국 ~으로 밝혀지다, ~이 되다", "example": "It turned out to be a great idea.", "exampleKorean": "그게 훌륭한 생각이었다는 게 밝혀졌어.", "type": "구문"},
+      {"english": "be about to", "korean": "막 ~하려고 하다", "example": "I was about to call you.", "exampleKorean": "막 너한테 전화하려던 참이었어.", "type": "구문"},
+      {"english": "be able to", "korean": "~할 수 있다", "example": "Are you able to come tomorrow?", "exampleKorean": "내일 올 수 있어?", "type": "구문"},
+      {"english": "have to", "korean": "~해야 한다", "example": "I have to finish this by tonight.", "exampleKorean": "오늘 밤까지 이걸 끝내야 해.", "type": "구문"},
+      {"english": "be going to", "korean": "~할 것이다, ~할 예정이다", "example": "It's going to rain this afternoon.", "exampleKorean": "오늘 오후에 비가 올 것 같아.", "type": "구문"},
+      {"english": "get used to", "korean": "~에 익숙해지다", "example": "I'm getting used to waking up early.", "exampleKorean": "일찍 일어나는 데 익숙해지고 있어.", "type": "구문"}
+    ]
+  },
+  {
+    "setNumber": 2,
+    "title": "일상 핵심 구문 2",
+    "level": "beginner",
+    "items": [
+      {"english": "can't help ~ing", "korean": "~하지 않을 수 없다", "example": "I can't help laughing at that.", "exampleKorean": "그걸 보면 웃지 않을 수가 없어.", "type": "구문"},
+      {"english": "look forward to ~ing", "korean": "~을 기대하다", "example": "I'm looking forward to seeing you.", "exampleKorean": "널 만나는 게 기대돼.", "type": "구문"},
+      {"english": "be worth ~ing", "korean": "~할 가치가 있다", "example": "That movie is worth watching.", "exampleKorean": "그 영화는 볼 가치가 있어.", "type": "구문"},
+      {"english": "have trouble ~ing", "korean": "~하는 데 어려움을 겪다", "example": "I had trouble falling asleep.", "exampleKorean": "잠들기가 힘들었어.", "type": "구문"},
+      {"english": "feel like ~ing", "korean": "~하고 싶다", "example": "I feel like getting some coffee.", "exampleKorean": "커피 한 잔 마시고 싶어.", "type": "구문"},
+      {"english": "be known for", "korean": "~로 알려져 있다", "example": "Korea is known for its food.", "exampleKorean": "한국은 음식으로 유명해.", "type": "구문"},
+      {"english": "be tired of", "korean": "~에 질리다, 지치다", "example": "I'm so tired of waiting.", "exampleKorean": "기다리는 데 너무 지쳤어.", "type": "구문"},
+      {"english": "be good at", "korean": "~을 잘하다", "example": "She's really good at cooking.", "exampleKorean": "그녀는 요리를 정말 잘해.", "type": "구문"},
+      {"english": "make sure", "korean": "반드시 ~하다, 확실히 하다", "example": "Make sure you lock the door.", "exampleKorean": "문을 꼭 잠가.", "type": "구문"},
+      {"english": "tend to", "korean": "~하는 경향이 있다", "example": "I tend to overthink things.", "exampleKorean": "나는 너무 많이 생각하는 경향이 있어.", "type": "구문"}
+    ]
+  },
+  {
+    "setNumber": 3,
+    "title": "빈출 동사구 1",
+    "level": "beginner",
+    "items": [
+      {"english": "figure out", "korean": "이해하다, 알아내다", "example": "I finally figured out how to fix it.", "exampleKorean": "마침내 고치는 법을 알아냈어.", "type": "동사구"},
+      {"english": "come up with", "korean": "생각해내다, 고안하다", "example": "She came up with a brilliant idea.", "exampleKorean": "그녀가 훌륭한 아이디어를 생각해냈어.", "type": "동사구"},
+      {"english": "take care of", "korean": "처리하다, 돌보다", "example": "I'll take care of the problem.", "exampleKorean": "내가 그 문제를 처리할게.", "type": "동사구"},
+      {"english": "deal with", "korean": "다루다, 처리하다", "example": "We need to deal with this issue.", "exampleKorean": "이 문제를 처리해야 해.", "type": "동사구"},
+      {"english": "work out", "korean": "운동하다 / 잘 풀리다", "example": "Everything will work out in the end.", "exampleKorean": "결국 모든 게 잘 풀릴 거야.", "type": "동사구"},
+      {"english": "find out", "korean": "알아내다, 발견하다", "example": "I need to find out what happened.", "exampleKorean": "무슨 일이 있었는지 알아봐야 해.", "type": "동사구"},
+      {"english": "give up", "korean": "포기하다", "example": "Don't give up, you're almost there.", "exampleKorean": "포기하지 마, 거의 다 왔어.", "type": "동사구"},
+      {"english": "pick up", "korean": "집어들다, 배우다, 태우다", "example": "He picked up Spanish really quickly.", "exampleKorean": "그는 스페인어를 정말 빠르게 습득했어.", "type": "동사구"},
+      {"english": "show up", "korean": "나타나다, 도착하다", "example": "He showed up an hour late.", "exampleKorean": "그는 한 시간 늦게 나타났어.", "type": "동사구"},
+      {"english": "turn on", "korean": "켜다, 작동시키다", "example": "Can you turn on the light?", "exampleKorean": "불 켜줄 수 있어?", "type": "동사구"}
+    ]
+  },
+  {
+    "setNumber": 4,
+    "title": "빈출 동사구 2",
+    "level": "beginner",
+    "items": [
+      {"english": "put off", "korean": "미루다, 연기하다", "example": "Don't put off what you can do today.", "exampleKorean": "오늘 할 수 있는 걸 미루지 마.", "type": "동사구"},
+      {"english": "look into", "korean": "조사하다, 알아보다", "example": "I'll look into the matter.", "exampleKorean": "그 문제를 알아볼게.", "type": "동사구"},
+      {"english": "keep up with", "korean": "~를 따라가다, 유지하다", "example": "It's hard to keep up with the news.", "exampleKorean": "뉴스를 따라가기 힘들어.", "type": "동사구"},
+      {"english": "run into", "korean": "우연히 만나다", "example": "I ran into an old friend yesterday.", "exampleKorean": "어제 오랜 친구를 우연히 만났어.", "type": "동사구"},
+      {"english": "bring up", "korean": "언급하다 / 키우다", "example": "Can we bring up that topic later?", "exampleKorean": "그 주제를 나중에 꺼낼 수 있을까?", "type": "동사구"},
+      {"english": "go over", "korean": "검토하다, 살펴보다", "example": "Let's go over the plan one more time.", "exampleKorean": "계획을 한 번 더 살펴보자.", "type": "동사구"},
+      {"english": "set up", "korean": "설치하다, 준비하다", "example": "Can you help me set up the printer?", "exampleKorean": "프린터 설치하는 것 도와줄 수 있어?", "type": "동사구"},
+      {"english": "catch up", "korean": "따라잡다, 근황을 나누다", "example": "Let's catch up over coffee.", "exampleKorean": "커피 마시면서 근황 나누자.", "type": "동사구"},
+      {"english": "break down", "korean": "고장나다, 무너지다", "example": "My car broke down on the way here.", "exampleKorean": "오는 길에 차가 고장났어.", "type": "동사구"},
+      {"english": "look up", "korean": "찾아보다, 조회하다", "example": "Look it up in the dictionary.", "exampleKorean": "사전에서 찾아봐.", "type": "동사구"}
+    ]
+  },
+  {
+    "setNumber": 5,
+    "title": "기초 형용사 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "exhausted", "korean": "완전히 지친", "example": "I'm completely exhausted after work.", "exampleKorean": "일하고 나서 완전히 지쳤어.", "type": "형용사"},
+      {"english": "excited", "korean": "흥분된, 설레는", "example": "I'm so excited about the trip!", "exampleKorean": "그 여행이 너무 기대돼!", "type": "형용사"},
+      {"english": "confused", "korean": "혼란스러운", "example": "I'm a bit confused about the instructions.", "exampleKorean": "설명이 좀 혼란스러워.", "type": "형용사"},
+      {"english": "disappointed", "korean": "실망한", "example": "I was disappointed with the result.", "exampleKorean": "결과에 실망했어.", "type": "형용사"},
+      {"english": "surprised", "korean": "놀란", "example": "I was surprised to see him there.", "exampleKorean": "거기서 그를 보고 놀랐어.", "type": "형용사"},
+      {"english": "nervous", "korean": "긴장된", "example": "I always get nervous before presentations.", "exampleKorean": "발표 전에는 항상 긴장해.", "type": "형용사"},
+      {"english": "proud", "korean": "자랑스러운", "example": "I'm proud of what you've accomplished.", "exampleKorean": "네가 이룬 것이 자랑스러워.", "type": "형용사"},
+      {"english": "grateful", "korean": "감사한", "example": "I'm so grateful for your help.", "exampleKorean": "도와줘서 정말 감사해.", "type": "형용사"},
+      {"english": "bored", "korean": "지루한", "example": "I'm bored — let's do something.", "exampleKorean": "지루한데 뭔가 하자.", "type": "형용사"},
+      {"english": "satisfied", "korean": "만족한", "example": "Are you satisfied with the meal?", "exampleKorean": "식사에 만족했어?", "type": "형용사"}
+    ]
+  },
+  {
+    "setNumber": 6,
+    "title": "기초 전치사 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "on time", "korean": "제시간에", "example": "The train arrived on time.", "exampleKorean": "기차가 제시간에 도착했어.", "type": "표현"},
+      {"english": "in a hurry", "korean": "서두르며, 급하게", "example": "I'm in a hurry — can we talk later?", "exampleKorean": "급한데 나중에 얘기할 수 있어?", "type": "표현"},
+      {"english": "by accident", "korean": "우연히, 실수로", "example": "I deleted the file by accident.", "exampleKorean": "실수로 파일을 지웠어.", "type": "표현"},
+      {"english": "on purpose", "korean": "의도적으로, 일부러", "example": "Did you do that on purpose?", "exampleKorean": "일부러 그런 거야?", "type": "표현"},
+      {"english": "in advance", "korean": "미리, 사전에", "example": "Please let me know in advance.", "exampleKorean": "미리 알려줘.", "type": "표현"},
+      {"english": "at least", "korean": "적어도", "example": "It takes at least an hour.", "exampleKorean": "적어도 한 시간은 걸려.", "type": "표현"},
+      {"english": "on sale", "korean": "할인 중인", "example": "These shoes are on sale this week.", "exampleKorean": "이 신발은 이번 주에 할인 중이야.", "type": "표현"},
+      {"english": "in general", "korean": "일반적으로", "example": "In general, I prefer quiet places.", "exampleKorean": "일반적으로 나는 조용한 곳을 좋아해.", "type": "표현"},
+      {"english": "for good", "korean": "영원히, 완전히", "example": "He left the company for good.", "exampleKorean": "그는 회사를 완전히 떠났어.", "type": "표현"},
+      {"english": "in charge of", "korean": "~을 담당하는, 책임지는", "example": "Who's in charge of this project?", "exampleKorean": "이 프로젝트 누가 담당해?", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 7,
+    "title": "시간·빈도 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "all the time", "korean": "항상, 언제나", "example": "She's on her phone all the time.", "exampleKorean": "그녀는 항상 폰을 하고 있어.", "type": "표현"},
+      {"english": "from time to time", "korean": "때때로, 가끔", "example": "I still think about it from time to time.", "exampleKorean": "때때로 그것에 대해 아직도 생각해.", "type": "표현"},
+      {"english": "every now and then", "korean": "이따금, 간간이", "example": "We go hiking every now and then.", "exampleKorean": "우리는 이따금 하이킹을 가.", "type": "표현"},
+      {"english": "sooner or later", "korean": "조만간, 결국에는", "example": "Sooner or later, you'll have to decide.", "exampleKorean": "조만간 결정을 내려야 할 거야.", "type": "표현"},
+      {"english": "right away", "korean": "즉시, 바로", "example": "I'll be there right away.", "exampleKorean": "바로 갈게.", "type": "표현"},
+      {"english": "in no time", "korean": "금방, 순식간에", "example": "We'll be there in no time.", "exampleKorean": "금방 도착할 거야.", "type": "표현"},
+      {"english": "for the time being", "korean": "당분간, 지금으로서는", "example": "Let's leave it like this for the time being.", "exampleKorean": "당분간은 이대로 두자.", "type": "표현"},
+      {"english": "these days", "korean": "요즘, 최근에", "example": "What have you been up to these days?", "exampleKorean": "요즘 어떻게 지내고 있어?", "type": "표현"},
+      {"english": "once in a while", "korean": "가끔, 이따금", "example": "It's okay to treat yourself once in a while.", "exampleKorean": "가끔 자신에게 선물하는 것도 괜찮아.", "type": "표현"},
+      {"english": "not anymore", "korean": "더 이상 ~하지 않다", "example": "I don't live there anymore.", "exampleKorean": "더 이상 거기 살지 않아.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 8,
+    "title": "기초 대화 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "How come?", "korean": "어째서?, 왜?", "example": "How come you didn't come yesterday?", "exampleKorean": "어째서 어제 안 왔어?", "type": "표현"},
+      {"english": "Never mind", "korean": "신경 쓰지 마, 됐어", "example": "Never mind, I'll do it myself.", "exampleKorean": "됐어, 내가 할게.", "type": "표현"},
+      {"english": "No wonder", "korean": "어쩐지, 그럴 만하다", "example": "No wonder you're tired — you've been working all day.", "exampleKorean": "어쩐지 피곤하더라 — 하루 종일 일했잖아.", "type": "표현"},
+      {"english": "Go ahead", "korean": "먼저 해, 계속해", "example": "Go ahead, I'll catch up.", "exampleKorean": "먼저 가, 내가 따라갈게.", "type": "표현"},
+      {"english": "My bad", "korean": "내 실수야, 미안해", "example": "Oh, my bad — I forgot to tell you.", "exampleKorean": "아, 내 실수야 — 말하는 걸 깜빡했어.", "type": "표현"},
+      {"english": "Fair enough", "korean": "그거 맞는 말이네, 납득이 가", "example": "Fair enough, I'll give it a try.", "exampleKorean": "그거 맞는 말이네, 한번 해볼게.", "type": "표현"},
+      {"english": "No kidding", "korean": "정말?, 농담 아니지?", "example": "No kidding? He actually did that?", "exampleKorean": "진짜? 그가 정말 그랬어?", "type": "표현"},
+      {"english": "I mean it", "korean": "진심이야, 진짜야", "example": "You did great, and I mean it.", "exampleKorean": "정말 잘했어, 진심으로.", "type": "표현"},
+      {"english": "Take it easy", "korean": "진정해, 편하게 해", "example": "Take it easy — there's no rush.", "exampleKorean": "편하게 해 — 서두를 필요 없어.", "type": "표현"},
+      {"english": "What's up?", "korean": "무슨 일이야?, 잘 지내?", "example": "Hey, what's up? Long time no see!", "exampleKorean": "야, 잘 지냈어? 오랜만이다!", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 9,
+    "title": "감정 기초 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "I feel you", "korean": "공감해, 이해해", "example": "I feel you — that must be really hard.", "exampleKorean": "공감해 — 그거 정말 힘들었겠다.", "type": "표현"},
+      {"english": "Same here", "korean": "나도 마찬가지야", "example": "I hate Mondays. — Same here!", "exampleKorean": "월요일이 싫어. — 나도 마찬가지야!", "type": "표현"},
+      {"english": "It drives me crazy", "korean": "미칠 것 같아, 짜증나 죽겠어", "example": "The noise outside drives me crazy.", "exampleKorean": "밖에 소음이 미칠 것 같아.", "type": "표현"},
+      {"english": "No big deal", "korean": "별거 아니야", "example": "It's no big deal — don't worry about it.", "exampleKorean": "별거 아니야 — 걱정하지 마.", "type": "표현"},
+      {"english": "That's too bad", "korean": "그것 참 안됐다, 아쉽다", "example": "That's too bad — I hope it gets better.", "exampleKorean": "그것 참 안됐다 — 좋아지길 바라.", "type": "표현"},
+      {"english": "I'm over it", "korean": "이미 극복했어, 이제 괜찮아", "example": "We broke up, but I'm over it now.", "exampleKorean": "헤어졌는데 이제 괜찮아.", "type": "표현"},
+      {"english": "I'm so done", "korean": "정말 지쳤어, 더 이상 못 하겠어", "example": "I'm so done with this project.", "exampleKorean": "이 프로젝트 정말 지쳤어.", "type": "표현"},
+      {"english": "It's a big deal", "korean": "그건 중요한 일이야, 대단한 거야", "example": "Getting accepted there is a big deal!", "exampleKorean": "거기 합격한 건 대단한 거야!", "type": "표현"},
+      {"english": "I couldn't care less", "korean": "전혀 상관없어, 하나도 안 궁금해", "example": "I couldn't care less what they think.", "exampleKorean": "그들이 어떻게 생각하든 전혀 상관없어.", "type": "표현"},
+      {"english": "I'm kind of busy", "korean": "좀 바빠, 약간 바쁜 상황이야", "example": "I'm kind of busy right now — can I call you back?", "exampleKorean": "지금 좀 바쁜데 — 나중에 전화해도 될까?", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 10,
+    "title": "일상 대화 연결 표현",
+    "level": "beginner",
+    "items": [
+      {"english": "Let me know", "korean": "알려줘", "example": "Let me know if you need anything.", "exampleKorean": "필요한 게 있으면 알려줘.", "type": "표현"},
+      {"english": "Keep in touch", "korean": "연락하고 지내", "example": "It was great seeing you — keep in touch!", "exampleKorean": "만나서 반가웠어 — 연락하고 지내!", "type": "표현"},
+      {"english": "I'll be right back", "korean": "금방 돌아올게", "example": "Wait here, I'll be right back.", "exampleKorean": "여기서 기다려, 금방 돌아올게.", "type": "표현"},
+      {"english": "It's up to you", "korean": "네가 결정해, 너한테 달려 있어", "example": "Where do we eat? — It's up to you.", "exampleKorean": "어디서 먹을까? — 네가 결정해.", "type": "표현"},
+      {"english": "I'm in", "korean": "나 할게, 낄게", "example": "We're going hiking Saturday — I'm in!", "exampleKorean": "토요일에 하이킹 갈 건데 — 나 낄게!", "type": "표현"},
+      {"english": "Count me in", "korean": "나도 끼워줘, 나도 할게", "example": "Are you going to the party? Count me in!", "exampleKorean": "파티 가? 나도 끼워줘!", "type": "표현"},
+      {"english": "Long time no see", "korean": "오랜만이다", "example": "Long time no see — how have you been?", "exampleKorean": "오랜만이다 — 어떻게 지냈어?", "type": "표현"},
+      {"english": "How have you been?", "korean": "어떻게 지냈어?", "example": "It's been a while! How have you been?", "exampleKorean": "오랜만이야! 어떻게 지냈어?", "type": "표현"},
+      {"english": "That's what I thought", "korean": "그럴 줄 알았어", "example": "He didn't show up. — That's what I thought.", "exampleKorean": "그가 안 나타났어. — 그럴 줄 알았어.", "type": "표현"},
+      {"english": "You're telling me", "korean": "맞아 정말, 내 말이", "example": "This traffic is terrible. — You're telling me!", "exampleKorean": "교통이 너무 심하다. — 내 말이!", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 11,
+    "title": "핵심 이디엄 1",
+    "level": "intermediate",
+    "items": [
+      {"english": "hit the nail on the head", "korean": "정확히 맞히다", "example": "You hit the nail on the head!", "exampleKorean": "정확히 맞혔어!", "type": "이디엄"},
+      {"english": "bite off more than you can chew", "korean": "감당 못 할 일을 떠맡다", "example": "I think I bit off more than I can chew.", "exampleKorean": "내가 너무 많은 걸 떠맡은 것 같아.", "type": "이디엄"},
+      {"english": "let the cat out of the bag", "korean": "비밀을 누설하다", "example": "Oops, I let the cat out of the bag.", "exampleKorean": "아, 비밀을 누설해 버렸어.", "type": "이디엄"},
+      {"english": "the ball is in your court", "korean": "이제 네 차례야, 네가 결정해", "example": "I've done my part. The ball is in your court.", "exampleKorean": "내 할 일은 다 했어. 이제 네 차례야.", "type": "이디엄"},
+      {"english": "under the weather", "korean": "몸이 좋지 않은", "example": "I'm feeling a bit under the weather.", "exampleKorean": "몸이 좀 좋지 않아.", "type": "이디엄"},
+      {"english": "break the ice", "korean": "어색함을 깨다, 분위기를 풀다", "example": "He told a joke to break the ice.", "exampleKorean": "그는 분위기를 풀려고 농담을 했어.", "type": "이디엄"},
+      {"english": "hit the sack", "korean": "잠자리에 들다", "example": "It's late — I'm going to hit the sack.", "exampleKorean": "늦었어 — 이제 자야겠어.", "type": "이디엄"},
+      {"english": "cost an arm and a leg", "korean": "엄청나게 비싸다", "example": "That bag costs an arm and a leg.", "exampleKorean": "그 가방은 엄청나게 비싸.", "type": "이디엄"},
+      {"english": "spill the beans", "korean": "비밀을 누설하다, 모두 털어놓다", "example": "Come on, spill the beans!", "exampleKorean": "어서, 다 털어놔!", "type": "이디엄"},
+      {"english": "bite the bullet", "korean": "이를 악물고 참다, 힘든 일을 해내다", "example": "Just bite the bullet and do it.", "exampleKorean": "이를 악물고 그냥 해.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 12,
+    "title": "핵심 이디엄 2",
+    "level": "intermediate",
+    "items": [
+      {"english": "burn bridges", "korean": "관계를 끊다, 돌아올 수 없게 하다", "example": "Don't burn bridges with your colleagues.", "exampleKorean": "동료들과 관계를 끊지 마.", "type": "이디엄"},
+      {"english": "cut to the chase", "korean": "핵심으로 바로 들어가다", "example": "Let's cut to the chase — what do you want?", "exampleKorean": "바로 본론으로 들어가자 — 뭘 원해?", "type": "이디엄"},
+      {"english": "on the fence", "korean": "중립을 지키는, 결정을 못 한", "example": "I'm still on the fence about it.", "exampleKorean": "아직도 그것에 대해 결정을 못 하겠어.", "type": "이디엄"},
+      {"english": "once in a blue moon", "korean": "극히 드물게", "example": "He calls me once in a blue moon.", "exampleKorean": "그는 아주 가끔씩만 전화해.", "type": "이디엄"},
+      {"english": "get out of hand", "korean": "통제를 벗어나다", "example": "The situation got out of hand quickly.", "exampleKorean": "상황이 빠르게 통제를 벗어났어.", "type": "이디엄"},
+      {"english": "a blessing in disguise", "korean": "뜻밖의 행운, 전화위복", "example": "Losing that job was a blessing in disguise.", "exampleKorean": "그 직장을 잃은 게 전화위복이었어.", "type": "이디엄"},
+      {"english": "beat around the bush", "korean": "핵심을 피해 돌려 말하다", "example": "Stop beating around the bush and tell me.", "exampleKorean": "빙빙 돌리지 말고 말해.", "type": "이디엄"},
+      {"english": "add fuel to the fire", "korean": "불에 기름을 붓다, 상황을 악화시키다", "example": "His comments only added fuel to the fire.", "exampleKorean": "그의 말은 상황을 더 악화시킬 뿐이었어.", "type": "이디엄"},
+      {"english": "the tip of the iceberg", "korean": "빙산의 일각", "example": "This problem is just the tip of the iceberg.", "exampleKorean": "이 문제는 빙산의 일각일 뿐이야.", "type": "이디엄"},
+      {"english": "go back to the drawing board", "korean": "처음부터 다시 시작하다", "example": "The plan failed — it's back to the drawing board.", "exampleKorean": "계획이 실패했어 — 처음부터 다시야.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 13,
+    "title": "감정 표현 어휘",
+    "level": "intermediate",
+    "items": [
+      {"english": "overwhelmed", "korean": "압도된, 감당하기 힘든", "example": "I feel completely overwhelmed by work.", "exampleKorean": "일에 완전히 압도된 느낌이야.", "type": "형용사"},
+      {"english": "frustrated", "korean": "좌절한, 짜증난", "example": "I'm frustrated with the slow progress.", "exampleKorean": "느린 진행 속도에 짜증이 나.", "type": "형용사"},
+      {"english": "relieved", "korean": "안도한", "example": "I'm so relieved the exam is over.", "exampleKorean": "시험이 끝나서 정말 안도돼.", "type": "형용사"},
+      {"english": "anxious", "korean": "불안한, 걱정되는", "example": "She feels anxious about the interview.", "exampleKorean": "그녀는 면접에 대해 불안해해.", "type": "형용사"},
+      {"english": "content", "korean": "만족하는", "example": "I'm content with what I have.", "exampleKorean": "나는 내가 가진 것에 만족해.", "type": "형용사"},
+      {"english": "devastated", "korean": "충격받은, 망연자실한", "example": "She was devastated by the news.", "exampleKorean": "그녀는 그 소식에 망연자실했어.", "type": "형용사"},
+      {"english": "thrilled", "korean": "매우 기쁜, 설레는", "example": "I'm thrilled to be part of this team.", "exampleKorean": "이 팀의 일원이 돼서 너무 기뻐.", "type": "형용사"},
+      {"english": "indifferent", "korean": "무관심한", "example": "He seemed indifferent to the outcome.", "exampleKorean": "그는 결과에 무관심해 보였어.", "type": "형용사"},
+      {"english": "embarrassed", "korean": "부끄러운, 당혹스러운", "example": "I was so embarrassed when I fell.", "exampleKorean": "넘어졌을 때 너무 창피했어.", "type": "형용사"},
+      {"english": "jealous", "korean": "질투하는, 부러워하는", "example": "I'm a little jealous of her lifestyle.", "exampleKorean": "그녀의 생활 방식이 좀 부러워.", "type": "형용사"}
+    ]
+  },
+  {
+    "setNumber": 14,
+    "title": "비즈니스 핵심 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "touch base", "korean": "간단히 연락하다, 확인하다", "example": "Let's touch base on Monday.", "exampleKorean": "월요일에 간단히 얘기하자.", "type": "표현"},
+      {"english": "get the ball rolling", "korean": "시작하다, 추진하다", "example": "Let's get the ball rolling on this project.", "exampleKorean": "이 프로젝트를 시작하자.", "type": "표현"},
+      {"english": "on the same page", "korean": "같은 이해를 하다, 의견이 맞다", "example": "We need to be on the same page.", "exampleKorean": "우리는 같은 이해를 가져야 해.", "type": "표현"},
+      {"english": "circle back", "korean": "나중에 다시 돌아오다", "example": "Let's circle back to this after lunch.", "exampleKorean": "점심 후에 이걸 다시 얘기하자.", "type": "표현"},
+      {"english": "leverage", "korean": "활용하다, 최대한 이용하다", "example": "We should leverage our existing network.", "exampleKorean": "기존 네트워크를 활용해야 해.", "type": "동사"},
+      {"english": "take the lead", "korean": "주도권을 잡다, 앞장서다", "example": "I'll take the lead on this one.", "exampleKorean": "이건 내가 앞장설게.", "type": "표현"},
+      {"english": "follow up", "korean": "후속 조치를 하다, 확인하다", "example": "I'll follow up with you tomorrow.", "exampleKorean": "내일 다시 확인할게.", "type": "동사구"},
+      {"english": "bring to the table", "korean": "기여하다, 제공하다", "example": "What do you bring to the table?", "exampleKorean": "넌 어떤 기여를 할 수 있어?", "type": "표현"},
+      {"english": "run the numbers", "korean": "수치를 계산하다, 분석하다", "example": "Let me run the numbers and get back to you.", "exampleKorean": "수치 계산해 보고 연락할게.", "type": "표현"},
+      {"english": "bottom line", "korean": "결론, 핵심, 최종 결과", "example": "The bottom line is we need more funding.", "exampleKorean": "결론은 우리에게 더 많은 자금이 필요하다는 거야.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 15,
+    "title": "미국식 구어체 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "hang in there", "korean": "버텨, 포기하지 마", "example": "Hang in there — it'll get better.", "exampleKorean": "버텨 — 나아질 거야.", "type": "표현"},
+      {"english": "no strings attached", "korean": "조건 없이", "example": "I'll help you, no strings attached.", "exampleKorean": "조건 없이 도와줄게.", "type": "표현"},
+      {"english": "give it a shot", "korean": "한번 해보다", "example": "Why not give it a shot?", "exampleKorean": "한번 해보는 게 어때?", "type": "표현"},
+      {"english": "call it a day", "korean": "오늘은 여기서 마치다", "example": "I'm tired. Let's call it a day.", "exampleKorean": "피곤해. 오늘은 여기서 마치자.", "type": "표현"},
+      {"english": "the last straw", "korean": "인내의 한계, 참을 수 없는 마지막 것", "example": "That was the last straw for me.", "exampleKorean": "그게 나한테는 한계였어.", "type": "표현"},
+      {"english": "get your act together", "korean": "정신 차리다, 제대로 하다", "example": "You need to get your act together.", "exampleKorean": "너 정신 좀 차려야 해.", "type": "표현"},
+      {"english": "on the house", "korean": "서비스로, 무료로", "example": "The dessert is on the house.", "exampleKorean": "디저트는 서비스야.", "type": "표현"},
+      {"english": "rain check", "korean": "다음으로 미루다, 다음 기회로", "example": "Can I take a rain check on dinner?", "exampleKorean": "저녁 식사는 다음으로 미뤄도 될까?", "type": "표현"},
+      {"english": "play it by ear", "korean": "상황을 봐가며 하다, 즉흥적으로 하다", "example": "I don't have a plan — let's play it by ear.", "exampleKorean": "계획이 없어 — 상황 봐가면서 하자.", "type": "표현"},
+      {"english": "wrap up", "korean": "마무리하다, 끝내다", "example": "Let's wrap up the meeting now.", "exampleKorean": "이제 회의를 마무리하자.", "type": "동사구"}
+    ]
+  },
+  {
+    "setNumber": 16,
+    "title": "이디엄 심화",
+    "level": "intermediate",
+    "items": [
+      {"english": "go the extra mile", "korean": "특별히 노력을 더하다", "example": "She always goes the extra mile for her clients.", "exampleKorean": "그녀는 항상 고객을 위해 특별히 더 노력해.", "type": "이디엄"},
+      {"english": "think outside the box", "korean": "창의적으로 생각하다", "example": "We need to think outside the box here.", "exampleKorean": "여기서 우리는 창의적으로 생각해야 해.", "type": "이디엄"},
+      {"english": "pull someone's leg", "korean": "농담하다, 놀리다", "example": "Are you serious? You're pulling my leg!", "exampleKorean": "진짜야? 나 놀리는 거지!", "type": "이디엄"},
+      {"english": "read between the lines", "korean": "행간을 읽다, 숨겨진 의미를 파악하다", "example": "You have to read between the lines sometimes.", "exampleKorean": "가끔은 행간을 읽어야 해.", "type": "이디엄"},
+      {"english": "see eye to eye", "korean": "의견이 같다, 동의하다", "example": "We don't always see eye to eye on things.", "exampleKorean": "우리가 항상 의견이 같지는 않아.", "type": "이디엄"},
+      {"english": "make a long story short", "korean": "간단히 말하면, 요약하자면", "example": "To make a long story short, I quit.", "exampleKorean": "간단히 말하면, 나 그만뒀어.", "type": "이디엄"},
+      {"english": "get cold feet", "korean": "겁먹다, 망설이다", "example": "He got cold feet right before the wedding.", "exampleKorean": "그는 결혼 직전에 겁을 먹었어.", "type": "이디엄"},
+      {"english": "barking up the wrong tree", "korean": "헛짚다, 잘못된 방향으로 가다", "example": "If you think I did it, you're barking up the wrong tree.", "exampleKorean": "내가 한 거라고 생각하면 헛짚은 거야.", "type": "이디엄"},
+      {"english": "not my cup of tea", "korean": "내 취향이 아니야", "example": "Horror movies are just not my cup of tea.", "exampleKorean": "공포 영화는 그냥 내 취향이 아니야.", "type": "이디엄"},
+      {"english": "two peas in a pod", "korean": "매우 닮은, 단짝인", "example": "Those two are like two peas in a pod.", "exampleKorean": "그 둘은 정말 단짝이야.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 17,
+    "title": "직장·학교 생활 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "work overtime", "korean": "야근하다, 초과 근무하다", "example": "I've been working overtime all week.", "exampleKorean": "이번 주 내내 야근했어.", "type": "표현"},
+      {"english": "meet a deadline", "korean": "마감을 지키다", "example": "We have to meet this deadline no matter what.", "exampleKorean": "무슨 일이 있어도 이 마감을 지켜야 해.", "type": "표현"},
+      {"english": "take a day off", "korean": "하루 휴가를 내다", "example": "I need to take a day off next week.", "exampleKorean": "다음 주에 하루 휴가를 내야 해.", "type": "표현"},
+      {"english": "give feedback", "korean": "피드백을 주다", "example": "Can you give me some feedback on this?", "exampleKorean": "이것에 대해 피드백을 줄 수 있어?", "type": "표현"},
+      {"english": "get promoted", "korean": "승진하다", "example": "She got promoted to manager last month.", "exampleKorean": "그녀는 지난달 매니저로 승진했어.", "type": "표현"},
+      {"english": "ahead of schedule", "korean": "일정보다 앞서", "example": "We're ahead of schedule on this project.", "exampleKorean": "이 프로젝트 일정보다 앞서 있어.", "type": "표현"},
+      {"english": "behind schedule", "korean": "일정보다 뒤처진", "example": "We're behind schedule because of the delays.", "exampleKorean": "지연 때문에 일정보다 뒤처졌어.", "type": "표현"},
+      {"english": "team player", "korean": "팀워크가 좋은 사람, 협력을 잘하는 사람", "example": "We're looking for someone who is a team player.", "exampleKorean": "팀워크가 좋은 사람을 찾고 있어.", "type": "명사"},
+      {"english": "multitask", "korean": "여러 일을 동시에 하다", "example": "I can't multitask — I need to focus.", "exampleKorean": "나는 한 번에 여러 일을 못 해 — 집중해야 해.", "type": "동사"},
+      {"english": "pull one's weight", "korean": "자기 몫을 하다, 역할을 다하다", "example": "Everyone needs to pull their weight on this team.", "exampleKorean": "이 팀에서는 모두가 자기 몫을 해야 해.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 18,
+    "title": "관계·사교 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "get along with", "korean": "~와 잘 지내다", "example": "I get along well with my coworkers.", "exampleKorean": "나는 동료들과 잘 지내.", "type": "동사구"},
+      {"english": "have a lot in common", "korean": "공통점이 많다", "example": "We have a lot in common — that's why we became friends.", "exampleKorean": "우리는 공통점이 많아 — 그래서 친구가 된 거야.", "type": "표현"},
+      {"english": "hit it off", "korean": "서로 죽이 잘 맞다, 바로 친해지다", "example": "We hit it off right away at the party.", "exampleKorean": "파티에서 우리는 바로 친해졌어.", "type": "동사구"},
+      {"english": "lose touch", "korean": "연락이 끊기다", "example": "We lost touch after high school.", "exampleKorean": "고등학교 졸업 후 연락이 끊겼어.", "type": "표현"},
+      {"english": "make up", "korean": "화해하다", "example": "They had a fight but made up the next day.", "exampleKorean": "그들은 싸웠지만 다음날 화해했어.", "type": "동사구"},
+      {"english": "grow apart", "korean": "멀어지다, 소원해지다", "example": "We grew apart after she moved away.", "exampleKorean": "그녀가 이사 간 후 우리는 멀어졌어.", "type": "표현"},
+      {"english": "stand someone up", "korean": "바람맞히다", "example": "He stood me up for our date.", "exampleKorean": "그가 데이트에서 나를 바람맞혔어.", "type": "표현"},
+      {"english": "patch things up", "korean": "관계를 회복하다, 화해하다", "example": "Have you patched things up with your sister?", "exampleKorean": "언니랑 화해했어?", "type": "표현"},
+      {"english": "keep someone in the loop", "korean": "~에게 계속 알려주다, 소식 공유하다", "example": "Keep me in the loop on this, okay?", "exampleKorean": "이것에 대해 계속 알려줘, 알겠지?", "type": "표현"},
+      {"english": "have a falling out", "korean": "사이가 나빠지다, 다투다", "example": "They had a falling out over money.", "exampleKorean": "그들은 돈 문제로 사이가 나빠졌어.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 19,
+    "title": "의견·논쟁 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "for what it's worth", "korean": "참고로, 도움이 될지 모르지만", "example": "For what it's worth, I think you made the right call.", "exampleKorean": "참고로, 나는 네가 올바른 결정을 했다고 생각해.", "type": "구문"},
+      {"english": "beg to differ", "korean": "정중히 반대하다", "example": "I beg to differ — I think the opposite is true.", "exampleKorean": "저는 다른 의견입니다 — 반대가 맞다고 생각해요.", "type": "표현"},
+      {"english": "make a valid point", "korean": "타당한 지적을 하다", "example": "You make a valid point — I hadn't thought of that.", "exampleKorean": "타당한 지적이야 — 생각 못 했던 부분이야.", "type": "표현"},
+      {"english": "take someone's side", "korean": "~의 편을 들다", "example": "I'm not taking anyone's side here.", "exampleKorean": "나는 아무 편도 들지 않을 거야.", "type": "표현"},
+      {"english": "stick to one's guns", "korean": "자신의 주장을 굽히지 않다", "example": "She stuck to her guns despite the criticism.", "exampleKorean": "그녀는 비판에도 자신의 주장을 굽히지 않았어.", "type": "이디엄"},
+      {"english": "reach a compromise", "korean": "타협에 이르다", "example": "We need to reach a compromise soon.", "exampleKorean": "우리는 빨리 타협에 이르러야 해.", "type": "표현"},
+      {"english": "weigh the pros and cons", "korean": "장단점을 따져보다", "example": "Let's weigh the pros and cons before deciding.", "exampleKorean": "결정하기 전에 장단점을 따져보자.", "type": "표현"},
+      {"english": "give the benefit of the doubt", "korean": "일단 믿어주다, 관대하게 보다", "example": "Let's give him the benefit of the doubt this time.", "exampleKorean": "이번에는 그를 일단 믿어주자.", "type": "표현"},
+      {"english": "to put it differently", "korean": "다르게 말하자면", "example": "To put it differently, we failed.", "exampleKorean": "다르게 말하자면, 우리가 실패한 거야.", "type": "구문"},
+      {"english": "come to terms with", "korean": "~을 받아들이다, 순응하다", "example": "He finally came to terms with the decision.", "exampleKorean": "그는 결국 그 결정을 받아들였어.", "type": "동사구"}
+    ]
+  },
+  {
+    "setNumber": 20,
+    "title": "시사·미디어 표현",
+    "level": "intermediate",
+    "items": [
+      {"english": "go viral", "korean": "바이럴이 되다, 급속히 퍼지다", "example": "That video went viral overnight.", "exampleKorean": "그 영상이 하룻밤 사이에 바이럴이 됐어.", "type": "표현"},
+      {"english": "break the news", "korean": "소식을 전하다, 알리다", "example": "Who's going to break the news to him?", "exampleKorean": "누가 그에게 소식을 전할 거야?", "type": "표현"},
+      {"english": "in the spotlight", "korean": "주목을 받는, 화제인", "example": "She's been in the spotlight lately.", "exampleKorean": "그녀는 최근 주목을 받고 있어.", "type": "표현"},
+      {"english": "behind the scenes", "korean": "무대 뒤에서, 비공개로", "example": "A lot happens behind the scenes.", "exampleKorean": "무대 뒤에서 많은 일이 일어나.", "type": "표현"},
+      {"english": "make headlines", "korean": "헤드라인을 장식하다, 크게 보도되다", "example": "The story made headlines worldwide.", "exampleKorean": "그 이야기는 전 세계 헤드라인을 장식했어.", "type": "표현"},
+      {"english": "take a stand", "korean": "입장을 취하다, 주장하다", "example": "It's time to take a stand on this issue.", "exampleKorean": "이 문제에 대해 입장을 취할 때야.", "type": "표현"},
+      {"english": "stir up controversy", "korean": "논란을 일으키다", "example": "His remarks stirred up a lot of controversy.", "exampleKorean": "그의 발언은 많은 논란을 일으켰어.", "type": "표현"},
+      {"english": "shed light on", "korean": "~을 밝히다, 드러내다", "example": "The report sheds light on the real problem.", "exampleKorean": "그 보고서가 진짜 문제를 밝혀줘.", "type": "동사구"},
+      {"english": "shape public opinion", "korean": "여론을 형성하다", "example": "Media has the power to shape public opinion.", "exampleKorean": "미디어는 여론을 형성하는 힘이 있어.", "type": "표현"},
+      {"english": "dig deeper", "korean": "더 깊이 파고들다, 심층적으로 조사하다", "example": "We need to dig deeper into this topic.", "exampleKorean": "이 주제를 더 깊이 파고들어야 해.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 21,
+    "title": "고급 연결 표현",
+    "level": "advanced",
+    "items": [
+      {"english": "in light of", "korean": "~을 고려하여, ~에 비추어", "example": "In light of the new evidence, we changed our decision.", "exampleKorean": "새로운 증거에 비추어, 우리는 결정을 바꿨어.", "type": "구문"},
+      {"english": "all things considered", "korean": "모든 것을 감안할 때", "example": "All things considered, it was a success.", "exampleKorean": "모든 것을 감안할 때, 성공이었어.", "type": "구문"},
+      {"english": "needless to say", "korean": "말할 필요도 없이", "example": "Needless to say, we were all shocked.", "exampleKorean": "말할 필요도 없이, 우리 모두 충격받았어.", "type": "구문"},
+      {"english": "by the same token", "korean": "마찬가지로, 같은 이유로", "example": "By the same token, this applies to you too.", "exampleKorean": "같은 이유로, 이건 너에게도 적용돼.", "type": "구문"},
+      {"english": "to that end", "korean": "그 목적을 위해", "example": "To that end, we've hired more staff.", "exampleKorean": "그 목적을 위해 직원을 더 고용했어.", "type": "구문"},
+      {"english": "with that said", "korean": "그렇긴 하지만, 그럼에도 불구하고", "example": "With that said, there are still some issues.", "exampleKorean": "그렇긴 하지만, 아직 몇 가지 문제가 있어.", "type": "구문"},
+      {"english": "by and large", "korean": "대체로, 전반적으로", "example": "By and large, the project was a success.", "exampleKorean": "대체로, 그 프로젝트는 성공이었어.", "type": "구문"},
+      {"english": "on the contrary", "korean": "반대로, 오히려", "example": "On the contrary, I think it was a good idea.", "exampleKorean": "오히려, 나는 그게 좋은 아이디어였다고 생각해.", "type": "구문"},
+      {"english": "to a certain extent", "korean": "어느 정도는, 어느 면에서는", "example": "To a certain extent, you're right.", "exampleKorean": "어느 정도는 네가 맞아.", "type": "구문"},
+      {"english": "in retrospect", "korean": "돌이켜 보면, 되돌아보면", "example": "In retrospect, I should have listened to you.", "exampleKorean": "돌이켜 보면, 네 말을 들었어야 했어.", "type": "구문"}
+    ]
+  },
+  {
+    "setNumber": 22,
+    "title": "뉘앙스 이디엄 1",
+    "level": "advanced",
+    "items": [
+      {"english": "take it with a grain of salt", "korean": "말 그대로 믿지 않다, 반신반의하다", "example": "Take what he says with a grain of salt.", "exampleKorean": "그가 하는 말을 그대로 믿지 마.", "type": "이디엄"},
+      {"english": "the elephant in the room", "korean": "모두가 알지만 언급하지 않는 문제", "example": "No one wants to address the elephant in the room.", "exampleKorean": "아무도 그 불편한 진실을 언급하지 않으려 해.", "type": "이디엄"},
+      {"english": "a catch-22", "korean": "진퇴양난, 어떻게도 풀 수 없는 상황", "example": "It's a catch-22 — I need experience to get a job, but I need a job to get experience.", "exampleKorean": "진퇴양난이야 — 취직하려면 경험이 필요하고, 경험을 쌓으려면 취직해야 해.", "type": "이디엄"},
+      {"english": "on thin ice", "korean": "위험한 상황에 처한, 조심해야 하는", "example": "You're on thin ice with the boss right now.", "exampleKorean": "지금 너 사장한테 위험한 상황이야.", "type": "이디엄"},
+      {"english": "over the moon", "korean": "매우 기쁜, 황홀한", "example": "She was over the moon when she got the offer.", "exampleKorean": "그녀는 제안을 받고 너무나 기뻐했어.", "type": "이디엄"},
+      {"english": "up in the air", "korean": "아직 결정되지 않은, 불확실한", "example": "The meeting time is still up in the air.", "exampleKorean": "회의 시간이 아직 정해지지 않았어.", "type": "이디엄"},
+      {"english": "burn the midnight oil", "korean": "밤새워 공부하다, 야근하다", "example": "I burned the midnight oil to finish the report.", "exampleKorean": "보고서를 끝내려고 밤새 일했어.", "type": "이디엄"},
+      {"english": "fall through the cracks", "korean": "간과되다, 주목받지 못하다", "example": "Some students fall through the cracks in the system.", "exampleKorean": "일부 학생들은 시스템에서 간과돼.", "type": "이디엄"},
+      {"english": "in over one's head", "korean": "감당하기 힘든 상황에 빠지다", "example": "I'm in over my head with this assignment.", "exampleKorean": "이 과제가 감당이 안 돼.", "type": "이디엄"},
+      {"english": "go off the deep end", "korean": "극단적으로 행동하다, 무모하게 굴다", "example": "Don't go off the deep end over this.", "exampleKorean": "이것 때문에 극단적으로 굴지 마.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 23,
+    "title": "뉘앙스 이디엄 2",
+    "level": "advanced",
+    "items": [
+      {"english": "walk on eggshells", "korean": "조심스럽게 행동하다, 눈치를 보다", "example": "I feel like I'm walking on eggshells around him.", "exampleKorean": "그 주변에서는 항상 눈치를 봐야 해.", "type": "이디엄"},
+      {"english": "have a chip on one's shoulder", "korean": "열등감이 있다, 항상 불만을 품다", "example": "He's always had a chip on his shoulder.", "exampleKorean": "그는 항상 불만을 품고 있어.", "type": "이디엄"},
+      {"english": "throw in the towel", "korean": "포기하다, 항복하다", "example": "After years of trying, she finally threw in the towel.", "exampleKorean": "몇 년간 노력한 끝에 그녀는 결국 포기했어.", "type": "이디엄"},
+      {"english": "cut corners", "korean": "편법을 쓰다, 수고를 아끼다", "example": "Don't cut corners when it comes to safety.", "exampleKorean": "안전 문제에서는 편법을 쓰면 안 돼.", "type": "이디엄"},
+      {"english": "bury the hatchet", "korean": "과거를 묻다, 화해하다", "example": "It's time we buried the hatchet.", "exampleKorean": "이제 과거를 묻고 화해할 때야.", "type": "이디엄"},
+      {"english": "turn a blind eye", "korean": "모른 척하다, 눈을 감다", "example": "They turned a blind eye to the corruption.", "exampleKorean": "그들은 부패를 모른 척했어.", "type": "이디엄"},
+      {"english": "miss the forest for the trees", "korean": "나무를 보다 숲을 보지 못하다, 큰 그림을 놓치다", "example": "Don't miss the forest for the trees here.", "exampleKorean": "큰 그림을 놓치지 마.", "type": "이디엄"},
+      {"english": "let sleeping dogs lie", "korean": "긁어 부스럼 만들지 마라, 과거를 건드리지 마라", "example": "Just let sleeping dogs lie — don't bring it up.", "exampleKorean": "긁어 부스럼 만들지 마 — 꺼내지 마.", "type": "이디엄"},
+      {"english": "strike while the iron is hot", "korean": "기회가 왔을 때 잡아라, 쇠는 달궈졌을 때 두드려라", "example": "Strike while the iron is hot and apply now.", "exampleKorean": "기회가 왔을 때 잡아 — 지금 지원해.", "type": "이디엄"},
+      {"english": "bite the hand that feeds you", "korean": "은혜를 원수로 갚다", "example": "Criticizing your sponsor is biting the hand that feeds you.", "exampleKorean": "후원사를 비판하는 건 은혜를 원수로 갚는 거야.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 24,
+    "title": "원어민 구어체 1",
+    "level": "advanced",
+    "items": [
+      {"english": "You're on", "korean": "좋아, 해보자 (내기·제안에 동의)", "example": "I bet I can finish first. — You're on!", "exampleKorean": "내가 먼저 끝낸다에 건다. — 좋아, 해보자!", "type": "표현"},
+      {"english": "I'm all ears", "korean": "다 들을게, 말해봐", "example": "You have something to tell me? I'm all ears.", "exampleKorean": "할 말이 있어? 다 들을게.", "type": "표현"},
+      {"english": "You've got a point", "korean": "맞는 말이야, 일리가 있어", "example": "You've got a point — maybe I was wrong.", "exampleKorean": "맞는 말이야 — 내가 틀렸을 수도 있어.", "type": "표현"},
+      {"english": "It's not rocket science", "korean": "그게 그렇게 어렵진 않아", "example": "It's not rocket science — just follow the instructions.", "exampleKorean": "그렇게 어렵진 않아 — 그냥 설명을 따라 해.", "type": "표현"},
+      {"english": "Don't push it", "korean": "너무 밀어붙이지 마, 무리하지 마", "example": "You got what you wanted — don't push it.", "exampleKorean": "원하는 걸 얻었잖아 — 너무 밀어붙이지 마.", "type": "표현"},
+      {"english": "That's a stretch", "korean": "그건 좀 억지스러운데, 무리가 있어", "example": "Calling him a genius is a bit of a stretch.", "exampleKorean": "그를 천재라고 부르는 건 좀 억지야.", "type": "표현"},
+      {"english": "I'll take your word for it", "korean": "네 말을 믿을게", "example": "I can't check right now, so I'll take your word for it.", "exampleKorean": "지금 확인할 수 없으니 네 말을 믿을게.", "type": "표현"},
+      {"english": "I could use a hand", "korean": "도움이 필요해", "example": "I could use a hand moving this furniture.", "exampleKorean": "이 가구 옮기는 데 도움이 필요해.", "type": "표현"},
+      {"english": "That's beside the point", "korean": "그건 핵심에서 벗어난 이야기야", "example": "Whether he meant it or not is beside the point.", "exampleKorean": "그가 의도했는지 여부는 핵심이 아니야.", "type": "표현"},
+      {"english": "You're preaching to the choir", "korean": "이미 아는 사람한테 설명하는 거야, 내 말이 그 말이야", "example": "You don't have to convince me — you're preaching to the choir.", "exampleKorean": "나를 설득하려 하지 않아도 돼 — 나도 같은 생각이야.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 25,
+    "title": "원어민 구어체 2",
+    "level": "advanced",
+    "items": [
+      {"english": "What's the catch?", "korean": "어디 함정이 있는 거야?, 조건이 뭐야?", "example": "It sounds too good to be true — what's the catch?", "exampleKorean": "너무 좋게 들리는데 — 뭔가 있는 거 아니야?", "type": "표현"},
+      {"english": "I'll sleep on it", "korean": "하룻밤 생각해볼게", "example": "That's a big decision — I'll sleep on it.", "exampleKorean": "큰 결정이네 — 하룻밤 생각해볼게.", "type": "표현"},
+      {"english": "Don't hold your breath", "korean": "기대하지 마, 가능성이 거의 없어", "example": "Don't hold your breath waiting for an apology.", "exampleKorean": "사과를 기다리지 마 — 가능성이 거의 없어.", "type": "표현"},
+      {"english": "It goes without saying", "korean": "말할 것도 없이, 당연히", "example": "It goes without saying that honesty matters.", "exampleKorean": "정직이 중요하다는 건 말할 것도 없어.", "type": "표현"},
+      {"english": "Get to the point", "korean": "본론으로 와, 핵심을 말해", "example": "Stop rambling and get to the point.", "exampleKorean": "쓸데없는 말 그만하고 본론으로 와.", "type": "표현"},
+      {"english": "It's a gray area", "korean": "명확하지 않은 영역이야, 애매해", "example": "Ethically, this is a gray area.", "exampleKorean": "윤리적으로 이건 애매한 영역이야.", "type": "표현"},
+      {"english": "That's a tough call", "korean": "어려운 결정이야, 판단하기 힘든 상황이야", "example": "Choosing between the two is a tough call.", "exampleKorean": "둘 중 하나를 고르는 건 정말 어려운 결정이야.", "type": "표현"},
+      {"english": "off the record", "korean": "비공식적으로, 기록에 남기지 말고", "example": "This is off the record, okay?", "exampleKorean": "이건 비공식적인 거야, 알겠지?", "type": "표현"},
+      {"english": "I'm between jobs", "korean": "현재 구직 중이야", "example": "I'm between jobs right now, looking for opportunities.", "exampleKorean": "지금 구직 중이야, 기회를 찾고 있어.", "type": "표현"},
+      {"english": "on the record", "korean": "공식적으로, 공개적으로", "example": "Let me say this on the record — I disagree.", "exampleKorean": "공식적으로 말할게 — 나는 반대야.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 26,
+    "title": "학술·논리 표현",
+    "level": "advanced",
+    "items": [
+      {"english": "elaborate on", "korean": "~에 대해 더 자세히 설명하다", "example": "Could you elaborate on that point?", "exampleKorean": "그 부분에 대해 더 자세히 설명해줄 수 있어?", "type": "동사구"},
+      {"english": "draw a conclusion", "korean": "결론을 도출하다", "example": "It's too early to draw a conclusion.", "exampleKorean": "결론을 내리기엔 너무 이르다.", "type": "표현"},
+      {"english": "take into account", "korean": "~을 고려하다", "example": "We need to take all factors into account.", "exampleKorean": "모든 요소를 고려해야 해.", "type": "동사구"},
+      {"english": "give rise to", "korean": "~을 초래하다, 야기하다", "example": "Poor communication gives rise to misunderstandings.", "exampleKorean": "소통 부재는 오해를 야기해.", "type": "동사구"},
+      {"english": "stem from", "korean": "~에서 비롯되다, 기인하다", "example": "Many of his problems stem from anxiety.", "exampleKorean": "그의 많은 문제들은 불안에서 비롯됐어.", "type": "동사구"},
+      {"english": "be attributed to", "korean": "~에 기인하다, ~덕분이다", "example": "The success was attributed to teamwork.", "exampleKorean": "그 성공은 팀워크 덕분이었어.", "type": "표현"},
+      {"english": "pave the way for", "korean": "~의 길을 열다, ~을 가능하게 하다", "example": "This research paved the way for new treatments.", "exampleKorean": "이 연구는 새로운 치료법의 길을 열었어.", "type": "동사구"},
+      {"english": "be contingent on", "korean": "~에 달려 있다, ~을 조건으로 하다", "example": "The project is contingent on funding.", "exampleKorean": "그 프로젝트는 자금 지원에 달려 있어.", "type": "표현"},
+      {"english": "in conjunction with", "korean": "~와 함께, ~와 결합하여", "example": "This drug works best in conjunction with therapy.", "exampleKorean": "이 약은 치료와 함께 쓸 때 가장 효과적이야.", "type": "구문"},
+      {"english": "back up with evidence", "korean": "증거로 뒷받침하다", "example": "You need to back up your claims with evidence.", "exampleKorean": "네 주장을 증거로 뒷받침해야 해.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 27,
+    "title": "심화 이디엄",
+    "level": "advanced",
+    "items": [
+      {"english": "a wolf in sheep's clothing", "korean": "양의 탈을 쓴 늑대, 위선자", "example": "Don't trust him — he's a wolf in sheep's clothing.", "exampleKorean": "그를 믿지 마 — 양의 탈을 쓴 늑대야.", "type": "이디엄"},
+      {"english": "the writing on the wall", "korean": "위험이나 실패의 명백한 징조", "example": "The writing was on the wall — the company was failing.", "exampleKorean": "징조가 명확했어 — 회사가 무너지고 있었어.", "type": "이디엄"},
+      {"english": "play devil's advocate", "korean": "반론을 제기하다, 일부러 반대 입장을 취하다", "example": "Let me play devil's advocate for a moment.", "exampleKorean": "잠깐 반론을 제기해볼게.", "type": "이디엄"},
+      {"english": "a double-edged sword", "korean": "양날의 검, 좋고 나쁜 두 면이 있는 것", "example": "Technology is a double-edged sword.", "exampleKorean": "기술은 양날의 검이야.", "type": "이디엄"},
+      {"english": "steal someone's thunder", "korean": "누군가의 공을 가로채다, 기선을 제압하다", "example": "He announced it early and stole her thunder.", "exampleKorean": "그가 먼저 발표해서 그녀의 공을 가로챘어.", "type": "이디엄"},
+      {"english": "a storm in a teacup", "korean": "사소한 일을 크게 부풀리다", "example": "It's just a storm in a teacup — calm down.", "exampleKorean": "그냥 별것 아닌 걸 크게 만드는 거야 — 진정해.", "type": "이디엄"},
+      {"english": "sour grapes", "korean": "신 포도 (손에 넣지 못해서 가치 없다고 하는 태도)", "example": "Saying the prize wasn't worth it sounds like sour grapes.", "exampleKorean": "상이 의미 없다고 하는 건 신 포도처럼 들려.", "type": "이디엄"},
+      {"english": "kill two birds with one stone", "korean": "일석이조, 한 번에 두 마리 토끼를 잡다", "example": "I'll exercise and walk the dog — kill two birds with one stone.", "exampleKorean": "운동도 하고 개도 산책시키고 — 일석이조야.", "type": "이디엄"},
+      {"english": "the pot calling the kettle black", "korean": "자기 잘못은 모르고 남 탓하다", "example": "You're calling me lazy? That's the pot calling the kettle black.", "exampleKorean": "나보고 게으르다고? 똥 묻은 개가 겨 묻은 개 나무라는 격이네.", "type": "이디엄"},
+      {"english": "once bitten, twice shy", "korean": "한 번 물린 사람은 두 번 조심한다, 경험으로 신중해지다", "example": "I won't invest again — once bitten, twice shy.", "exampleKorean": "다시는 투자 안 할 거야 — 한 번 당하면 조심하게 돼.", "type": "이디엄"}
+    ]
+  },
+  {
+    "setNumber": 28,
+    "title": "감정 고급 표현",
+    "level": "advanced",
+    "items": [
+      {"english": "be at a loss for words", "korean": "할 말을 잃다, 말문이 막히다", "example": "I was at a loss for words when I heard the news.", "exampleKorean": "그 소식을 들었을 때 할 말을 잃었어.", "type": "표현"},
+      {"english": "wear one's heart on one's sleeve", "korean": "감정을 솔직하게 드러내다", "example": "She wears her heart on her sleeve — you always know how she feels.", "exampleKorean": "그녀는 감정을 숨기지 않아 — 어떤 감정인지 항상 알 수 있어.", "type": "이디엄"},
+      {"english": "feel butterflies", "korean": "설레다, 긴장하다", "example": "I still feel butterflies before going on stage.", "exampleKorean": "무대에 오르기 전에는 아직도 설레.", "type": "표현"},
+      {"english": "be beside oneself", "korean": "제정신이 아닌 (너무 기쁘거나 슬프거나)", "example": "She was beside herself with joy.", "exampleKorean": "그녀는 너무 기뻐서 제정신이 아니었어.", "type": "표현"},
+      {"english": "have mixed feelings", "korean": "복잡한 감정이다, 마음이 엇갈리다", "example": "I have mixed feelings about leaving this job.", "exampleKorean": "이 직장을 떠나는 게 복잡한 감정이야.", "type": "표현"},
+      {"english": "go through the motions", "korean": "형식적으로만 하다, 마음 없이 하다", "example": "He's just going through the motions at work lately.", "exampleKorean": "그는 최근 직장에서 형식적으로만 하고 있어.", "type": "표현"},
+      {"english": "bottle up emotions", "korean": "감정을 억누르다, 속에 쌓아두다", "example": "Don't bottle up your emotions — talk to someone.", "exampleKorean": "감정을 억누르지 마 — 누군가에게 털어놔.", "type": "표현"},
+      {"english": "on edge", "korean": "신경이 날카로운, 초조한", "example": "Everyone was on edge before the announcement.", "exampleKorean": "발표 전에 모두가 초조했어.", "type": "표현"},
+      {"english": "put on a brave face", "korean": "강한 척하다, 감정을 숨기다", "example": "She put on a brave face despite the pain.", "exampleKorean": "그녀는 아픔에도 강한 척했어.", "type": "표현"},
+      {"english": "hold a grudge", "korean": "원한을 품다, 앙심을 품다", "example": "I don't hold grudges — life is too short.", "exampleKorean": "원한을 품지 않아 — 인생이 너무 짧잖아.", "type": "표현"}
+    ]
+  },
+  {
+    "setNumber": 29,
+    "title": "비즈니스 고급 표현",
+    "level": "advanced",
+    "items": [
+      {"english": "low-hanging fruit", "korean": "쉽게 얻을 수 있는 성과, 손쉬운 목표", "example": "Let's go after the low-hanging fruit first.", "exampleKorean": "우선 쉽게 달성할 수 있는 것부터 하자.", "type": "표현"},
+      {"english": "move the needle", "korean": "눈에 띄는 진전을 이루다, 상황을 변화시키다", "example": "This campaign really moved the needle for us.", "exampleKorean": "이 캠페인이 우리에게 정말 큰 진전을 만들어냈어.", "type": "표현"},
+      {"english": "drill down into", "korean": "더 깊이 파고들다, 세부 사항을 살펴보다", "example": "Let's drill down into the data.", "exampleKorean": "데이터를 더 깊이 살펴보자.", "type": "동사구"},
+      {"english": "push the envelope", "korean": "한계를 뛰어넘다, 도전하다", "example": "We need to push the envelope with this design.", "exampleKorean": "이 디자인으로 한계를 뛰어넘어야 해.", "type": "이디엄"},
+      {"english": "skin in the game", "korean": "리스크를 감수하다, 이해관계가 있다", "example": "The investors have skin in the game.", "exampleKorean": "투자자들은 자신들도 위험 부담이 있어.", "type": "표현"},
+      {"english": "pain point", "korean": "고충, 불편한 부분, 문제점", "example": "What are your biggest pain points right now?", "exampleKorean": "지금 가장 큰 고충이 뭐야?", "type": "명사"},
+      {"english": "value proposition", "korean": "가치 제안, 핵심 가치", "example": "What's your value proposition to customers?", "exampleKorean": "고객에 대한 핵심 가치가 뭐야?", "type": "명사"},
+      {"english": "scalable", "korean": "확장 가능한", "example": "Is this business model scalable?", "exampleKorean": "이 비즈니스 모델은 확장 가능해?", "type": "형용사"},
+      {"english": "boil the ocean", "korean": "불가능한 일을 시도하다, 너무 많은 걸 하려 하다", "example": "Don't try to boil the ocean — focus on one thing.", "exampleKorean": "너무 많은 걸 하려 하지 마 — 한 가지에 집중해.", "type": "이디엄"},
+      {"english": "bandwidth", "korean": "(비유) 여력, 처리 능력, 시간적 여유", "example": "I don't have the bandwidth to take on more work.", "exampleKorean": "더 많은 일을 맡을 여력이 없어.", "type": "명사"}
+    ]
+  },
+  {
+    "setNumber": 30,
+    "title": "원어민 슬랭·최신 표현",
+    "level": "advanced",
+    "items": [
+      {"english": "throw shade", "korean": "은근히 비꼬다, 무시하다", "example": "She was throwing shade at him the whole time.", "exampleKorean": "그녀는 내내 그를 은근히 비꼬고 있었어.", "type": "표현"},
+      {"english": "on point", "korean": "완벽한, 딱 맞는, 핵심을 찌르는", "example": "Your presentation was totally on point.", "exampleKorean": "네 발표 완전 완벽했어.", "type": "표현"},
+      {"english": "lowkey", "korean": "은근히, 살짝, 조용히", "example": "I'm lowkey obsessed with this show.", "exampleKorean": "나 이 드라마에 은근히 빠져있어.", "type": "부사"},
+      {"english": "no cap", "korean": "진짜로, 거짓말 없이", "example": "That was the best meal I've ever had, no cap.", "exampleKorean": "진짜로 내가 먹어본 것 중 최고의 식사였어.", "type": "표현"},
+      {"english": "slay", "korean": "대박이다, 잘 해내다, 완벽하다", "example": "She absolutely slayed that performance.", "exampleKorean": "그녀는 그 공연에서 완전 대박이었어.", "type": "동사"},
+      {"english": "hit different", "korean": "남다른 감흥을 주다, 특별히 와닿다", "example": "This song hits different late at night.", "exampleKorean": "이 노래는 늦은 밤에 들으면 특별히 와닿아.", "type": "표현"},
+      {"english": "vibe", "korean": "분위기, 느낌 / 잘 통하다", "example": "I really vibe with your energy.", "exampleKorean": "나 너랑 진짜 잘 통해.", "type": "동사/명사"},
+      {"english": "bet", "korean": "알겠어, 좋아 (동의할 때)", "example": "Can you be there at 7? — Bet.", "exampleKorean": "7시에 올 수 있어? — 알겠어.", "type": "표현"},
+      {"english": "it's giving", "korean": "~한 느낌이야, ~vibes야", "example": "This outfit is giving main character energy.", "exampleKorean": "이 옷 완전 주인공 느낌이야.", "type": "표현"},
+      {"english": "I'm dead", "korean": "너무 웃겨서 죽겠어 (informal)", "example": "He just tripped over nothing — I'm dead.", "exampleKorean": "그가 아무것도 없는 데서 넘어졌어 — 너무 웃겨.", "type": "표현"}
+    ]
+  }
+]

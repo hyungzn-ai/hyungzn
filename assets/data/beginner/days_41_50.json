@@ -1,0 +1,102 @@
+[
+  {
+    "day": 41, "topic": "관계대명사 who/which/that 기초",
+    "questions": [
+      {"korean": "저 사람이 내가 어제 만난 남자야.", "answers": ["That's the man who I met yesterday.", "That's the guy I met yesterday."], "hint": "who = 사람을 수식하는 관계대명사", "explanation": "구어체에서는 who 생략 가능", "keywords": ["who", "met", "yesterday"]},
+      {"korean": "이게 내가 찾던 책이야.", "answers": ["This is the book that I was looking for.", "This is the book I was looking for."], "hint": "that/which + I was looking for", "explanation": "목적격 관계대명사는 생략 가능", "keywords": ["book", "looking for"]},
+      {"korean": "나는 영어를 잘하는 친구가 있어.", "answers": ["I have a friend who is good at English.", "I have a friend that speaks English well."], "hint": "a friend + who + 관계절", "explanation": "", "keywords": ["friend", "who", "English"]},
+      {"korean": "저게 내가 원하던 차야.", "answers": ["That's the car that I wanted.", "That's the car I always wanted."], "hint": "the car + that + I wanted", "explanation": "", "keywords": ["car", "that", "wanted"]},
+      {"korean": "이게 내 친구가 추천한 식당이야.", "answers": ["This is the restaurant that my friend recommended.", "This is the place my friend suggested."], "hint": "the restaurant + that + 주어 + recommended", "explanation": "", "keywords": ["restaurant", "recommended"]}
+    ]
+  },
+  {
+    "day": 42, "topic": "구동사 (Phrasal Verbs) 기초",
+    "questions": [
+      {"korean": "불 좀 꺼줘.", "answers": ["Turn off the light.", "Please turn off the lights."], "hint": "turn off = 끄다", "explanation": "turn on = 켜다, turn off = 끄다", "keywords": ["turn off", "light"]},
+      {"korean": "포기하지 마.", "answers": ["Don't give up.", "Never give up."], "hint": "give up = 포기하다", "explanation": "", "keywords": ["give up"]},
+      {"korean": "그녀는 그를 닮았어.", "answers": ["She takes after him.", "She looks like him."], "hint": "take after = ~를 닮다", "explanation": "look like도 닮다는 의미지만 외모 비교에 더 많이 씀", "keywords": ["takes after"]},
+      {"korean": "미팅을 내일로 미뤄야 할 것 같아.", "answers": ["I think we need to put off the meeting until tomorrow.", "We might have to postpone the meeting to tomorrow."], "hint": "put off = postpone = 미루다", "explanation": "put off는 구어체, postpone은 격식체", "keywords": ["put off", "meeting", "tomorrow"]},
+      {"korean": "그는 갑자기 나타났어.", "answers": ["He showed up out of nowhere.", "He showed up suddenly."], "hint": "show up = 나타나다", "explanation": "out of nowhere = 갑자기, 어디선가", "keywords": ["showed up"]}
+    ]
+  },
+  {
+    "day": 43, "topic": "Would you mind...? / I'd rather...",
+    "questions": [
+      {"korean": "창문 닫아줄 수 있어요?", "answers": ["Would you mind closing the window?", "Do you mind closing the window?"], "hint": "Would you mind + ~ing?", "explanation": "mind + ~ing: Would you mind 뒤엔 반드시 -ing", "keywords": ["would you mind", "closing", "window"]},
+      {"korean": "나는 집에 있는 게 더 좋아.", "answers": ["I'd rather stay home.", "I would rather be at home."], "hint": "I'd rather + 동사원형", "explanation": "I'd = I would, rather = 차라리/더 ~하겠다", "keywords": ["rather", "stay home"]},
+      {"korean": "여기서 기다려도 될까요?", "answers": ["Would you mind if I waited here?", "Do you mind if I wait here?"], "hint": "Would you mind if I + 과거동사?", "explanation": "", "keywords": ["mind", "wait", "here"]},
+      {"korean": "나는 걷는 것보다 드라이브하는 게 더 좋아.", "answers": ["I'd rather drive than walk.", "I'd prefer to drive rather than walk."], "hint": "I'd rather + A + than + B", "explanation": "", "keywords": ["rather", "drive", "than", "walk"]},
+      {"korean": "음악 좀 낮춰주실 수 있어요?", "answers": ["Would you mind turning down the music?", "Could you turn the music down?"], "hint": "Would you mind + turning down?", "explanation": "turn down = 볼륨을 낮추다", "keywords": ["would you mind", "turn down", "music"]}
+    ]
+  },
+  {
+    "day": 44, "topic": "so ~ that / such ~ that",
+    "questions": [
+      {"korean": "너무 피곤해서 걸을 수가 없었어.", "answers": ["I was so tired that I couldn't walk.", "I was too tired to walk."], "hint": "so + 형용사 + that + 절", "explanation": "too ~ to = so ~ that ~ can't (같은 의미)", "keywords": ["so tired", "that", "couldn't"]},
+      {"korean": "영화가 너무 재미있어서 두 번 봤어.", "answers": ["The movie was so good that I watched it twice.", "The movie was so interesting that I saw it twice."], "hint": "so + 형용사 + that + 결과절", "explanation": "", "keywords": ["so", "that", "twice"]},
+      {"korean": "그는 너무 빨리 말해서 이해할 수가 없어.", "answers": ["He speaks so fast that I can't understand him.", "He talks so quickly that I can't follow him."], "hint": "so + 부사 + that + 절", "explanation": "follow = (말을) 따라가다, 이해하다", "keywords": ["so fast", "that", "understand"]},
+      {"korean": "그것은 너무 비싼 가방이어서 살 수 없었어.", "answers": ["It was such an expensive bag that I couldn't buy it.", "It was so expensive that I couldn't afford it."], "hint": "such + a/an + 형용사 + 명사 + that", "explanation": "afford = 살 여유가 있다", "keywords": ["such", "expensive", "that"]},
+      {"korean": "날씨가 너무 더워서 밖에 나가기 싫어.", "answers": ["It's so hot that I don't want to go outside.", "It's so hot that I don't feel like going out."], "hint": "so + hot + that + 결과절", "explanation": "feel like + ~ing = ~하고 싶다", "keywords": ["so hot", "that", "outside"]}
+    ]
+  },
+  {
+    "day": 45, "topic": "현재완료 진행형 - have been ~ing",
+    "questions": [
+      {"korean": "나는 두 시간 동안 공부하고 있었어.", "answers": ["I have been studying for two hours.", "I've been studying for two hours."], "hint": "have been + ~ing + for + 기간", "explanation": "현재완료 진행: 과거부터 지금까지 계속되는 동작", "keywords": ["have been studying", "two hours"]},
+      {"korean": "그는 아침부터 비디오 게임을 하고 있어.", "answers": ["He has been playing video games since morning.", "He's been gaming since morning."], "hint": "has been + ~ing + since + 시점", "explanation": "", "keywords": ["has been playing", "since morning"]},
+      {"korean": "얼마나 오래 기다리고 있었어?", "answers": ["How long have you been waiting?", "How long have you been here?"], "hint": "How long + have you been + ~ing?", "explanation": "", "keywords": ["how long", "have been waiting"]},
+      {"korean": "우리는 여기서 2년째 살고 있어.", "answers": ["We have been living here for two years.", "We've been living here for two years."], "hint": "have been living + for + 기간", "explanation": "", "keywords": ["have been living", "two years"]},
+      {"korean": "그녀는 최근에 운동을 열심히 하고 있어.", "answers": ["She has been working out a lot lately.", "She has been exercising hard recently."], "hint": "has been + ~ing + lately/recently", "explanation": "lately = recently = 최근에", "keywords": ["has been working out", "lately"]}
+    ]
+  },
+  {
+    "day": 46, "topic": "자주 쓰는 표현 - 동의/반응",
+    "questions": [
+      {"korean": "나도 그렇게 생각해.", "answers": ["I think so too.", "I agree with you."], "hint": "I think so, too. / I agree.", "explanation": "", "keywords": ["think so", "agree"]},
+      {"korean": "나는 전혀 모르겠어.", "answers": ["I have no idea.", "I don't have a clue."], "hint": "I have no idea = 전혀 모르겠어", "explanation": "don't have a clue = 단서조차 없다 (구어체)", "keywords": ["no idea"]},
+      {"korean": "말도 안 돼!", "answers": ["No way!", "That's unbelievable!"], "hint": "No way! = 말도 안 돼!", "explanation": "That can't be true! / You're kidding!도 가능", "keywords": ["no way", "unbelievable"]},
+      {"korean": "잘 됐다, 너를 위해 기뻐.", "answers": ["I'm happy for you.", "Good for you!"], "hint": "I'm happy for you = 너를 위해 기뻐", "explanation": "Good for you! = 잘 됐다 (상대방에게 좋은 일이 생겼을 때)", "keywords": ["happy for you"]},
+      {"korean": "솔직히 말하면, 나는 확신이 없어.", "answers": ["To be honest, I'm not sure.", "Honestly, I'm not certain."], "hint": "To be honest = 솔직히 말하면", "explanation": "To tell you the truth도 같은 의미", "keywords": ["to be honest", "not sure"]}
+    ]
+  },
+  {
+    "day": 47, "topic": "가정법 과거 - if + 과거동사 + would",
+    "questions": [
+      {"korean": "내가 새라면 어디든 날 수 있을 텐데.", "answers": ["If I were a bird, I could fly anywhere.", "If I were a bird, I would fly everywhere."], "hint": "If I were + 명사, I would + 동사원형", "explanation": "가정법에서 I는 was 대신 were를 씀", "keywords": ["if I were", "would", "fly"]},
+      {"korean": "돈이 더 많다면 집을 살 텐데.", "answers": ["If I had more money, I would buy a house.", "If I had more money, I could get a house."], "hint": "If I had + 비교급, I would + 동사원형", "explanation": "현실과 반대되는 상상 = 가정법 과거", "keywords": ["if I had", "would buy", "house"]},
+      {"korean": "그가 여기 있다면 좋을 텐데.", "answers": ["I wish he were here.", "If he were here, things would be better."], "hint": "I wish + 가정법 과거 (현재 사실과 반대 소원)", "explanation": "", "keywords": ["wish", "were here"]},
+      {"korean": "내가 너라면 사과할 텐데.", "answers": ["If I were you, I would apologize.", "If I were in your shoes, I'd say sorry."], "hint": "If I were you = 내가 너라면", "explanation": "in your shoes = 너의 입장이라면 (관용어)", "keywords": ["if I were you", "would apologize"]},
+      {"korean": "거기에 살지 않는다면 방문하고 싶을 텐데.", "answers": ["If I didn't live there, I would want to visit.", "If I weren't living there, I'd love to visit."], "hint": "If + didn't + 동사원형, would + want to", "explanation": "", "keywords": ["if", "didn't", "would", "visit"]}
+    ]
+  },
+  {
+    "day": 48, "topic": "자주 쓰는 관용어 (Idioms)",
+    "questions": [
+      {"korean": "그 프로젝트는 식은 죽 먹기야.", "answers": ["That project is a piece of cake.", "That project is easy as pie."], "hint": "a piece of cake = 매우 쉬운 일", "explanation": "easy as pie도 같은 의미의 이디엄", "keywords": ["piece of cake"]},
+      {"korean": "비가 억수같이 와.", "answers": ["It's raining cats and dogs.", "It's pouring outside."], "hint": "raining cats and dogs = 비가 억수같이 오다", "explanation": "It's pouring = 쏟아붓다 (더 자주 쓰임)", "keywords": ["raining cats and dogs"]},
+      {"korean": "비밀을 누설하지 마.", "answers": ["Don't spill the beans.", "Don't let the cat out of the bag."], "hint": "spill the beans = 비밀을 누설하다", "explanation": "let the cat out of the bag도 같은 의미", "keywords": ["spill the beans"]},
+      {"korean": "새 출발을 하자.", "answers": ["Let's start fresh.", "Let's turn over a new leaf."], "hint": "start fresh / turn over a new leaf = 새 출발", "explanation": "turn over a new leaf = 새 출발하다 (관용어)", "keywords": ["start fresh", "new leaf"]},
+      {"korean": "그는 고집이 세.", "answers": ["He is set in his ways.", "He is very stubborn."], "hint": "set in one's ways = 고집이 세다", "explanation": "stubborn = 완고한, 고집스러운", "keywords": ["stubborn", "set in his ways"]}
+    ]
+  },
+  {
+    "day": 49, "topic": "간접 화법 (Reported Speech) 기초",
+    "questions": [
+      {"korean": "그는 피곤하다고 말했어.", "answers": ["He said that he was tired.", "He said he was tired."], "hint": "said + that + 시제 한 단계 과거로", "explanation": "that은 생략 가능", "keywords": ["said", "was tired"]},
+      {"korean": "그녀는 내일 올 것이라고 했어.", "answers": ["She said she would come tomorrow.", "She told me she would come the next day."], "hint": "will → would (시제 변화)", "explanation": "tomorrow → the next day로도 바뀌기도 함", "keywords": ["said", "would come"]},
+      {"korean": "그는 나에게 기다리라고 했어.", "answers": ["He told me to wait.", "He asked me to wait."], "hint": "told me to + 동사원형 (명령 → told to)", "explanation": "told to = 명령, asked to = 요청", "keywords": ["told", "to wait"]},
+      {"korean": "그녀는 거기 간 적이 있다고 했어.", "answers": ["She said she had been there.", "She told me she had visited there."], "hint": "have been → had been (과거완료)", "explanation": "직접화법의 현재완료 → 간접화법의 과거완료", "keywords": ["said", "had been"]},
+      {"korean": "그는 너를 사랑한다고 말했어.", "answers": ["He said he loved you.", "He told you that he loved you."], "hint": "loves → loved (시제 변화)", "explanation": "", "keywords": ["said", "loved"]}
+    ]
+  },
+  {
+    "day": 50, "topic": "초급 종합 복습",
+    "questions": [
+      {"korean": "나는 10년째 이 회사에서 일하고 있어.", "answers": ["I have been working at this company for 10 years.", "I've worked here for 10 years."], "hint": "현재완료 or 현재완료 진행형 + for 기간", "explanation": "", "keywords": ["have been working", "company", "10 years"]},
+      {"korean": "만약 내가 더 어렸다면 더 열심히 공부했을 텐데.", "answers": ["If I were younger, I would study harder.", "If I were younger, I'd work harder."], "hint": "가정법 과거: If + were, would + 동사원형", "explanation": "", "keywords": ["if", "were younger", "would study"]},
+      {"korean": "그가 보낸 이메일이 매우 도움이 됐어.", "answers": ["The email that he sent was very helpful.", "The email he sent was really helpful."], "hint": "관계대명사 + 수동/능동 표현", "explanation": "", "keywords": ["email", "sent", "helpful"]},
+      {"korean": "솔직히 말하면, 나는 그 영화가 좋지 않았어.", "answers": ["To be honest, I didn't like the movie.", "Honestly, I wasn't a fan of the movie."], "hint": "To be honest = 솔직히 말하면", "explanation": "wasn't a fan of = 좋아하지 않다 (구어체)", "keywords": ["to be honest", "didn't like", "movie"]},
+      {"korean": "그녀는 조용히 해달라고 부탁했지만 아무도 듣지 않았어.", "answers": ["She asked everyone to be quiet, but nobody listened.", "She told everyone to be quiet, but no one paid attention."], "hint": "asked to + be quiet + but + nobody/no one", "explanation": "pay attention = 주의를 기울이다", "keywords": ["asked", "quiet", "but", "nobody"]}
+    ]
+  }
+]

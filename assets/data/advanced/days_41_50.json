@@ -1,0 +1,102 @@
+[
+  {
+    "day": 41, "topic": "마스터리 - 원어민 자연스러운 표현",
+    "questions": [
+      {"korean": "그는 아무 말도 없이 그냥 자리를 떠났어.", "answers": ["He just up and left without saying a word.", "He walked out without so much as a goodbye."], "hint": "just up and left = 갑자기 그냥 가버리다, without so much as = ~조차 없이", "explanation": "without so much as = 심지어 ~도 없이", "keywords": ["just up and left", "without so much as"]},
+      {"korean": "그 시험이 그에게는 식은 죽 먹기였어.", "answers": ["That exam was a walk in the park for him.", "The test was a breeze for him."], "hint": "walk in the park / a breeze = 식은 죽 먹기", "explanation": "a breeze = 쉬운 일", "keywords": ["walk in the park", "a breeze"]},
+      {"korean": "나는 이미 그가 올 거라는 걸 알고 있었어.", "answers": ["I could see it coming.", "I had a feeling he was going to show up."], "hint": "could see it coming = 미리 알 수 있었다", "explanation": "see it coming = 예상하다", "keywords": ["could see it coming", "had a feeling"]},
+      {"korean": "그는 언제 그쳐야 할지를 알아.", "answers": ["He knows when to quit while he's ahead.", "He has the wisdom to stop while he's still on top."], "hint": "quit while you're ahead = 여유 있을 때 멈추다", "explanation": "quit while you're ahead = 지고 있지 않을 때 그만두다", "keywords": ["quit while ahead", "stop while on top"]},
+      {"korean": "그 말이 마음에 걸려.", "answers": ["That comment is still nagging at me.", "Those words are still ringing in my head."], "hint": "nagging at me / ringing in my head = 마음에 걸리다", "explanation": "", "keywords": ["nagging at me", "ringing in my head"]}
+    ]
+  },
+  {
+    "day": 42, "topic": "마스터리 - 미묘한 감정 표현",
+    "questions": [
+      {"korean": "그 소식을 듣고 기뻐야 할지 슬퍼야 할지 모르겠어.", "answers": ["I don't know whether to laugh or cry about the news.", "The news left me not knowing how to feel."], "hint": "don't know whether to laugh or cry = 웃어야 할지 울어야 할지", "explanation": "", "keywords": ["whether to laugh or cry", "left me not knowing"]},
+      {"korean": "그건 내 마음속에서 뭔가를 건드렸어.", "answers": ["It struck a chord with me.", "That touched something deep inside me."], "hint": "strike a chord / touch something deep = 마음속의 뭔가를 건드리다", "explanation": "strike a chord = 공감을 자아내다", "keywords": ["struck a chord", "touched something deep"]},
+      {"korean": "나는 그에 대해 애증의 감정이 있어.", "answers": ["I have a love-hate relationship with it.", "My feelings toward him are complicated."], "hint": "love-hate relationship = 애증의 감계", "explanation": "", "keywords": ["love-hate relationship", "complicated feelings"]},
+      {"korean": "그 말이 오랫동안 내 머릿속을 맴돌았어.", "answers": ["Those words kept echoing in my mind for a long time.", "That stayed with me for a long time."], "hint": "keep echoing / stay with me = 머릿속에 남다", "explanation": "", "keywords": ["echoing in my mind", "stayed with me"]},
+      {"korean": "이 상황에서 벗어나고 싶지만, 동시에 그게 두렵기도 해.", "answers": ["I want to break free from this situation, yet I'm also afraid to.", "As much as I want out, the thought of leaving is terrifying."], "hint": "break free from / want out = 벗어나고 싶다", "explanation": "break free = 탈출하다", "keywords": ["break free from", "want out", "terrifying"]}
+    ]
+  },
+  {
+    "day": 43, "topic": "마스터리 - 설득력 있는 주장",
+    "questions": [
+      {"korean": "이 주장을 뒷받침하는 세 가지 핵심 근거가 있어.", "answers": ["There are three key pieces of evidence to support this argument.", "Three compelling reasons back up this claim."], "hint": "key pieces of evidence / compelling reasons = 핵심 근거", "explanation": "", "keywords": ["evidence to support", "compelling reasons", "back up"]},
+      {"korean": "반론을 제기하는 사람들도 있겠지만, 증거는 명확해.", "answers": ["Some may argue otherwise, but the evidence is clear.", "While counterarguments exist, the data speaks for itself."], "hint": "some may argue otherwise / data speaks for itself = 반론이 있지만 증거가 명확하다", "explanation": "the data speaks for itself = 데이터가 스스로 말한다", "keywords": ["argue otherwise", "evidence is clear", "data speaks for itself"]},
+      {"korean": "그 점을 고려해볼 때, 결론은 자명해.", "answers": ["Taking that into consideration, the conclusion is self-evident.", "Given that, the conclusion practically draws itself."], "hint": "self-evident / draws itself = 자명한", "explanation": "self-evident = 증명이 필요 없을 만큼 명백한", "keywords": ["self-evident", "draws itself", "given that"]},
+      {"korean": "이것은 단순히 의견의 문제가 아니라 사실의 문제야.", "answers": ["This isn't merely a matter of opinion; it's a question of fact.", "We're not talking about perspectives here — this is about facts."], "hint": "not merely a matter of opinion / question of fact = 의견이 아닌 사실의 문제", "explanation": "", "keywords": ["matter of opinion", "question of fact"]},
+      {"korean": "그러므로, 우리는 즉각적인 조치를 취해야 한다는 결론에 이르게 돼.", "answers": ["Therefore, we are led to the conclusion that immediate action is necessary.", "It follows, then, that we must act without delay."], "hint": "therefore / it follows that = 그러므로, 따라서", "explanation": "it follows that = 따라서 ~이 된다", "keywords": ["therefore", "it follows that", "immediate action"]}
+    ]
+  },
+  {
+    "day": 44, "topic": "마스터리 - 내러티브/스토리텔링",
+    "questions": [
+      {"korean": "모든 일이 잘못될 수 있는 날이 있어. 그날이 그런 날이었어.", "answers": ["There are days when everything that can go wrong will. That was one of those days.", "Some days nothing goes right. That was definitely one of them."], "hint": "when everything that can go wrong will = 머피의 법칙", "explanation": "Murphy's Law = 잘못될 수 있는 건 다 잘못된다", "keywords": ["everything that can go wrong", "one of those days"]},
+      {"korean": "그 순간이 모든 것을 바꿨어.", "answers": ["That was the moment everything changed.", "In that instant, everything shifted."], "hint": "the moment everything changed / in that instant = 그 순간", "explanation": "", "keywords": ["moment everything changed", "in that instant"]},
+      {"korean": "이야기의 교훈은 간단해 - 인내가 성공의 열쇠야.", "answers": ["The lesson of the story is simple — perseverance is the key to success.", "What the story teaches us is this: persistence pays off."], "hint": "the lesson of the story / what the story teaches = 이야기의 교훈", "explanation": "persistence pays off = 끈기가 결실을 맺는다", "keywords": ["lesson of the story", "perseverance", "persistence pays off"]},
+      {"korean": "그는 고난을 딛고 일어선 사람이야.", "answers": ["He is someone who rose above adversity.", "He overcame every obstacle that stood in his way."], "hint": "rise above adversity / overcome every obstacle = 고난을 딛고 일어서다", "explanation": "adversity = 역경, 고난", "keywords": ["rose above adversity", "overcame every obstacle"]},
+      {"korean": "그 이야기의 반전은 아무도 예상 못 했어.", "answers": ["The twist in the story caught everyone off guard.", "Nobody saw the plot twist coming."], "hint": "caught everyone off guard / no one saw it coming = 아무도 예상 못 했다", "explanation": "catch off guard = 방심한 틈을 찌르다", "keywords": ["caught off guard", "plot twist", "nobody saw it coming"]}
+    ]
+  },
+  {
+    "day": 45, "topic": "마스터리 - 경제/금융 표현",
+    "questions": [
+      {"korean": "그 시장은 전반적으로 하락세야.", "answers": ["The market is in a general downtrend.", "The market has been trending downward across the board."], "hint": "downtrend / trending downward across the board = 전반적 하락세", "explanation": "across the board = 전반적으로", "keywords": ["downtrend", "trending downward", "across the board"]},
+      {"korean": "우리는 비용을 줄이면서 효율을 높여야 해.", "answers": ["We need to cut costs while increasing efficiency.", "The goal is to do more with less."], "hint": "cut costs / do more with less = 비용을 줄이다, 적은 것으로 더 많이 하다", "explanation": "", "keywords": ["cut costs", "increasing efficiency", "do more with less"]},
+      {"korean": "그 투자는 장기적으로 봐야 해.", "answers": ["That investment needs to be viewed with a long-term perspective.", "You have to take the long view on that investment."], "hint": "long-term perspective / take the long view = 장기적으로 보다", "explanation": "", "keywords": ["long-term perspective", "take the long view"]},
+      {"korean": "그 회사는 재정적으로 어려운 상황에 처해 있어.", "answers": ["The company is in financial distress.", "The company is struggling financially."], "hint": "financial distress / struggling financially = 재정 어려움", "explanation": "distress = 고통, 어려움", "keywords": ["financial distress", "struggling financially"]},
+      {"korean": "그것은 수익성이 높은 틈새 시장이야.", "answers": ["It's a highly profitable niche market.", "That's a lucrative niche with a lot of potential."], "hint": "profitable niche / lucrative = 수익성이 높은 틈새 시장", "explanation": "niche market = 틈새 시장", "keywords": ["profitable niche", "lucrative", "niche market"]}
+    ]
+  },
+  {
+    "day": 46, "topic": "마스터리 - 심리/행동 표현",
+    "questions": [
+      {"korean": "그는 인정받고 싶은 욕구가 강해.", "answers": ["He has a strong need for validation.", "He craves recognition."], "hint": "need for validation / craves recognition = 인정 욕구", "explanation": "validation = 인정, 확인", "keywords": ["need for validation", "craves recognition"]},
+      {"korean": "그녀는 자기 파괴적인 행동을 하고 있어.", "answers": ["She's engaging in self-destructive behavior.", "She's sabotaging herself."], "hint": "self-destructive / sabotaging herself = 자기 파괴적", "explanation": "sabotage = 방해하다, 망치다", "keywords": ["self-destructive", "sabotaging herself"]},
+      {"korean": "그는 그 사실을 직면하기를 회피하고 있어.", "answers": ["He's avoiding confronting the reality.", "He's in denial about the facts."], "hint": "avoiding confronting / in denial = 직면 회피, 부정", "explanation": "be in denial = 현실을 부정하다", "keywords": ["avoiding confronting", "in denial"]},
+      {"korean": "그 경험이 그녀의 세계관을 형성했어.", "answers": ["That experience shaped her worldview.", "That shaped how she sees the world."], "hint": "shaped her worldview / shaped how she sees = 세계관을 형성하다", "explanation": "", "keywords": ["shaped her worldview", "shaped how she sees"]},
+      {"korean": "그는 외부의 인정보다 내적 동기가 더 강해.", "answers": ["His internal motivation outweighs external validation.", "He's driven more by intrinsic motivation than outside recognition."], "hint": "intrinsic motivation / internal motivation = 내적 동기", "explanation": "intrinsic = 본질적인, 내재적인", "keywords": ["internal motivation", "intrinsic motivation", "external validation"]}
+    ]
+  },
+  {
+    "day": 47, "topic": "마스터리 - 환경/지속가능성",
+    "questions": [
+      {"korean": "우리는 탄소 발자국을 줄여야 해.", "answers": ["We need to reduce our carbon footprint.", "We must lower our environmental impact."], "hint": "carbon footprint / environmental impact = 탄소 발자국, 환경 영향", "explanation": "", "keywords": ["carbon footprint", "environmental impact"]},
+      {"korean": "지속 가능한 개발이 미래를 위한 유일한 길이야.", "answers": ["Sustainable development is the only viable path forward.", "A sustainable approach is the only way to secure our future."], "hint": "sustainable development / viable path = 지속 가능한 개발", "explanation": "viable = 실행 가능한", "keywords": ["sustainable development", "viable path"]},
+      {"korean": "그 기업은 환경 친화적인 관행을 채택했어.", "answers": ["The company has adopted eco-friendly practices.", "They've embraced environmentally sustainable operations."], "hint": "eco-friendly / environmentally sustainable = 환경 친화적", "explanation": "", "keywords": ["eco-friendly", "environmentally sustainable", "practices"]},
+      {"korean": "기후 변화의 영향은 이미 우리 삶 곳곳에 미치고 있어.", "answers": ["The effects of climate change are already making themselves felt in every aspect of our lives.", "Climate change is already touching every part of our daily lives."], "hint": "effects of climate change / making themselves felt = 영향이 느껴지다", "explanation": "", "keywords": ["effects of climate change", "making themselves felt"]},
+      {"korean": "우리는 미래 세대를 위해 지구를 보존할 책임이 있어.", "answers": ["We have a responsibility to preserve the Earth for future generations.", "It's our duty to protect the planet for those who come after us."], "hint": "responsibility to preserve / duty to protect = 보존/보호할 책임", "explanation": "", "keywords": ["responsibility to preserve", "duty to protect", "future generations"]}
+    ]
+  },
+  {
+    "day": 48, "topic": "마스터리 - 미국 문화 특유 표현",
+    "questions": [
+      {"korean": "그는 어려운 환경 속에서도 성공한 자수성가형 인물이야.", "answers": ["He's a self-made man who succeeded against all odds.", "He pulled himself up by his bootstraps."], "hint": "self-made / pulled himself up by his bootstraps = 자수성가", "explanation": "pull oneself up by the bootstraps = 자력으로 일어서다", "keywords": ["self-made", "pulled himself up by his bootstraps", "against all odds"]},
+      {"korean": "그건 미국의 꿈을 상징해.", "answers": ["It embodies the American Dream.", "That symbolizes everything the American Dream stands for."], "hint": "embodies / symbolizes the American Dream = 미국의 꿈을 상징하다", "explanation": "", "keywords": ["embodies", "American Dream", "symbolizes"]},
+      {"korean": "그는 아이비리그 출신이야.", "answers": ["He went to an Ivy League school.", "He's an Ivy League graduate."], "hint": "Ivy League school / graduate = 아이비리그 학교", "explanation": "Ivy League = Harvard, Yale, Princeton 등 명문대", "keywords": ["Ivy League", "graduate"]},
+      {"korean": "그들은 결국 합의에 도달했어. 전형적인 미국식 협상이지.", "answers": ["They eventually struck a deal — classic American-style negotiation.", "They reached a compromise in true American fashion."], "hint": "struck a deal / reached a compromise = 합의하다, 타협하다", "explanation": "", "keywords": ["struck a deal", "reached a compromise", "American-style"]},
+      {"korean": "그는 책임을 회피하려 하고 있어.", "answers": ["He's trying to pass the buck.", "He's dodging accountability."], "hint": "pass the buck / dodge accountability = 책임을 전가하다", "explanation": "pass the buck = 책임을 남에게 떠넘기다", "keywords": ["pass the buck", "dodge accountability"]}
+    ]
+  },
+  {
+    "day": 49, "topic": "마스터리 - 고급 서술/묘사",
+    "questions": [
+      {"korean": "그 도시는 현대와 전통이 공존하는 독특한 곳이야.", "answers": ["The city is a unique place where modernity and tradition coexist.", "It's a city where the old and the new exist in fascinating harmony."], "hint": "coexist / exist in harmony = 공존하다", "explanation": "", "keywords": ["coexist", "modernity and tradition", "harmony"]},
+      {"korean": "그 분위기는 말로 표현하기 어려웠어.", "answers": ["The atmosphere was hard to put into words.", "It was an ambiance that defied description."], "hint": "hard to put into words / defied description = 말로 표현하기 어려운", "explanation": "defy description = 묘사하기 어렵다", "keywords": ["hard to put into words", "defied description"]},
+      {"korean": "그 경험은 내 인생에서 두 번 다시 없을 순간이었어.", "answers": ["It was a once-in-a-lifetime experience.", "That moment was truly one of a kind."], "hint": "once-in-a-lifetime / one of a kind = 다시 없을 순간", "explanation": "", "keywords": ["once-in-a-lifetime", "one of a kind"]},
+      {"korean": "그것은 우리가 알던 세상의 모든 것을 바꿔 놓았어.", "answers": ["It changed everything we thought we knew about the world.", "It turned our entire understanding of the world on its head."], "hint": "changed everything / turned on its head = 완전히 뒤바꿔 놓다", "explanation": "turn something on its head = 완전히 뒤집다", "keywords": ["changed everything", "turned on its head", "understanding"]},
+      {"korean": "그들은 세월의 시험을 견뎌낸 우정을 쌓았어.", "answers": ["They built a friendship that has stood the test of time.", "Their bond has proven resilient across the years."], "hint": "stood the test of time / proven resilient = 세월을 이겨내다", "explanation": "stand the test of time = 시간이 지나도 변하지 않다", "keywords": ["stood the test of time", "resilient"]}
+    ]
+  },
+  {
+    "day": 50, "topic": "고급 종합 마스터리",
+    "questions": [
+      {"korean": "단순히 일어난 일을 돌아보는 것이 아니라, 우리는 그것으로부터 배워야 해.", "answers": ["Rather than simply looking back at what happened, we need to learn from it.", "Instead of dwelling on the past, we should draw lessons from it."], "hint": "rather than simply / instead of dwelling = ~하는 대신, 단순히 ~이 아니라", "explanation": "dwell on = ~에 집착하다, draw lessons from = ~에서 교훈을 얻다", "keywords": ["rather than simply", "instead of dwelling", "draw lessons"]},
+      {"korean": "아이러니하게도, 가장 간단한 해결책이 종종 가장 간과되는 법이야.", "answers": ["Ironically, the simplest solutions are often the most overlooked.", "As a rule, the most obvious fix tends to be the last thing people consider."], "hint": "ironically / as a rule = 아이러니하게도, 일반적으로", "explanation": "overlook = 간과하다", "keywords": ["ironically", "simplest solutions", "most overlooked"]},
+      {"korean": "어떤 장애물이 앞을 가로막더라도, 포기는 선택지가 아니야.", "answers": ["Whatever obstacles stand in the way, giving up is not an option.", "No matter what challenges arise, quitting is never on the table."], "hint": "whatever obstacles / no matter what = 어떤 장애물이든, giving up is not an option = 포기는 선택지가 아니다", "explanation": "", "keywords": ["whatever obstacles", "giving up is not an option", "quitting is never on the table"]},
+      {"korean": "그 복잡성과 모순 속에서도, 진실의 핵심은 찾을 수 있어.", "answers": ["Even amid the complexity and contradictions, the core truth can be found.", "Despite the nuance and ambiguity, there is a fundamental truth at the heart of it."], "hint": "amid the complexity / at the heart of it = ~의 한가운데에서, 핵심에는", "explanation": "", "keywords": ["amid the complexity", "contradictions", "at the heart of it"]},
+      {"korean": "결국, 우리가 남기는 유산은 우리가 어떻게 살았는지에 달려 있어.", "answers": ["In the end, the legacy we leave behind depends on how we lived.", "What we leave behind is a reflection of how we chose to live."], "hint": "legacy we leave behind / reflection of how we lived = 유산, 사는 방식의 반영", "explanation": "legacy = 유산", "keywords": ["legacy we leave behind", "reflection of how we lived"]}
+    ]
+  }
+]

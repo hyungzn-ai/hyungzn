@@ -1,0 +1,102 @@
+[
+  {
+    "day": 21, "topic": "최상급 - most/~est",
+    "questions": [
+      {"korean": "그는 우리 반에서 가장 키가 커.", "answers": ["He is the tallest in our class.", "He is the tallest student in our class."], "hint": "the + 형용사est + in", "explanation": "최상급엔 반드시 the를 붙임", "keywords": ["tallest", "in"]},
+      {"korean": "이게 내가 먹어본 것 중 가장 맛있는 피자야.", "answers": ["This is the most delicious pizza I've ever had.", "This is the best pizza I've ever eaten."], "hint": "the most + 형용사 + I've ever + 과거분사", "explanation": "best = most delicious의 구어적 표현", "keywords": ["most delicious", "ever"]},
+      {"korean": "그녀는 그룹에서 가장 열심히 일해.", "answers": ["She works the hardest in the group.", "She is the hardest worker in the group."], "hint": "the hardest = 최상급 부사", "explanation": "", "keywords": ["hardest", "group"]},
+      {"korean": "에베레스트는 세계에서 가장 높은 산이야.", "answers": ["Mount Everest is the highest mountain in the world.", "Everest is the tallest mountain in the world."], "hint": "the highest/tallest + in the world", "explanation": "highest = 해발 기준, tallest = 지면으로부터 높이", "keywords": ["highest", "world"]},
+      {"korean": "그게 내 인생에서 가장 어려운 결정이었어.", "answers": ["It was the hardest decision of my life.", "That was the most difficult decision of my life."], "hint": "the hardest/most difficult + decision", "explanation": "", "keywords": ["hardest", "decision", "life"]}
+    ]
+  },
+  {
+    "day": 22, "topic": "There is / There are",
+    "questions": [
+      {"korean": "테이블 위에 사과가 하나 있어.", "answers": ["There is an apple on the table.", "There's an apple on the table."], "hint": "There is + 단수명사", "explanation": "", "keywords": ["there is", "apple", "table"]},
+      {"korean": "공원에 아이들이 많이 있어.", "answers": ["There are many kids in the park.", "There are a lot of children in the park."], "hint": "There are + 복수명사", "explanation": "many = a lot of = lots of", "keywords": ["there are", "kids", "park"]},
+      {"korean": "냉장고에 우유가 없어.", "answers": ["There is no milk in the fridge.", "There isn't any milk in the fridge."], "hint": "There is no + 명사 / There isn't any", "explanation": "", "keywords": ["no milk", "fridge"]},
+      {"korean": "그 도시에는 박물관이 몇 개 있어.", "answers": ["There are a few museums in the city.", "There are several museums in the city."], "hint": "There are + a few/several + 복수명사", "explanation": "a few = 몇 개, several = 여러 개", "keywords": ["there are", "museums", "city"]},
+      {"korean": "길 끝에 카페가 하나 있어.", "answers": ["There is a cafe at the end of the street.", "There's a coffee shop at the end of the street."], "hint": "at the end of the street = 길 끝에", "explanation": "", "keywords": ["there is", "cafe", "end"]}
+    ]
+  },
+  {
+    "day": 23, "topic": "빈도 부사 (always/usually/often/sometimes/never)",
+    "questions": [
+      {"korean": "나는 항상 아침을 먹어.", "answers": ["I always eat breakfast.", "I always have breakfast."], "hint": "always + 동사원형 (be동사 뒤, 일반동사 앞)", "explanation": "빈도부사는 일반동사 앞에 위치", "keywords": ["always", "breakfast"]},
+      {"korean": "그녀는 보통 밤 11시에 자.", "answers": ["She usually goes to bed at 11 p.m.", "She usually sleeps at 11 p.m."], "hint": "usually + 일반동사", "explanation": "", "keywords": ["usually", "bed", "11"]},
+      {"korean": "우리는 종종 외식해.", "answers": ["We often eat out.", "We often go out to eat."], "hint": "often + eat out", "explanation": "eat out = 외식하다", "keywords": ["often", "eat out"]},
+      {"korean": "그는 가끔 늦게 일어나.", "answers": ["He sometimes wakes up late.", "He sometimes gets up late."], "hint": "sometimes + 동사", "explanation": "", "keywords": ["sometimes", "late"]},
+      {"korean": "나는 절대 거짓말하지 않아.", "answers": ["I never lie.", "I never tell lies."], "hint": "never + 동사원형", "explanation": "never는 그 자체로 부정 의미, don't와 함께 쓰지 않음", "keywords": ["never", "lie"]}
+    ]
+  },
+  {
+    "day": 24, "topic": "감각동사 (look/sound/smell/taste/feel)",
+    "questions": [
+      {"korean": "그녀는 피곤해 보여.", "answers": ["She looks tired.", "She seems tired."], "hint": "look + 형용사 (보어)", "explanation": "look = 보이다, seem = 느껴지다", "keywords": ["looks", "tired"]},
+      {"korean": "그 음악은 좋게 들려.", "answers": ["The music sounds good.", "That sounds great."], "hint": "sound + 형용사", "explanation": "", "keywords": ["sounds", "good"]},
+      {"korean": "이 꽃은 향기가 좋아.", "answers": ["This flower smells nice.", "These flowers smell wonderful."], "hint": "smell + 형용사", "explanation": "", "keywords": ["smells", "nice"]},
+      {"korean": "이 케이크 맛있어.", "answers": ["This cake tastes great.", "This cake tastes delicious."], "hint": "taste + 형용사", "explanation": "", "keywords": ["tastes", "cake"]},
+      {"korean": "이 소파는 정말 편해.", "answers": ["This sofa feels really comfortable.", "This couch feels so comfortable."], "hint": "feel + 형용사", "explanation": "sofa = couch (미국식)", "keywords": ["feels", "comfortable"]}
+    ]
+  },
+  {
+    "day": 25, "topic": "want to / would like to",
+    "questions": [
+      {"korean": "나는 의사가 되고 싶어.", "answers": ["I want to be a doctor.", "I would like to become a doctor."], "hint": "want to + 동사원형", "explanation": "would like to = want to의 격식체/공손한 표현", "keywords": ["want to", "doctor"]},
+      {"korean": "뭐 마시고 싶어?", "answers": ["What would you like to drink?", "What do you want to drink?"], "hint": "What would you like to + 동사원형?", "explanation": "레스토랑 등에서 격식체로 쓰임", "keywords": ["would like to", "drink"]},
+      {"korean": "그는 새 차를 원해.", "answers": ["He wants a new car.", "He would like a new car."], "hint": "want + 명사", "explanation": "", "keywords": ["wants", "car"]},
+      {"korean": "나는 지금 자고 싶어.", "answers": ["I want to sleep now.", "I feel like sleeping now."], "hint": "want to + sleep", "explanation": "feel like + ~ing = ~하고 싶다 (구어체)", "keywords": ["want to", "sleep"]},
+      {"korean": "우리는 여기서 시간을 좀 더 보내고 싶어.", "answers": ["We want to spend more time here.", "We'd like to stay here a little longer."], "hint": "want to + spend time + here", "explanation": "we'd like = we would like", "keywords": ["want to", "time", "here"]}
+    ]
+  },
+  {
+    "day": 26, "topic": "like / enjoy / love + ~ing",
+    "questions": [
+      {"korean": "나는 음악 듣는 걸 좋아해.", "answers": ["I like listening to music.", "I enjoy listening to music."], "hint": "like/enjoy + 동사ing", "explanation": "like/enjoy/love 뒤엔 -ing형 사용", "keywords": ["like", "listening", "music"]},
+      {"korean": "그는 요리하는 걸 즐겨.", "answers": ["He enjoys cooking.", "He loves to cook."], "hint": "enjoy + cooking", "explanation": "love 뒤엔 to부정사도 가능", "keywords": ["enjoys", "cooking"]},
+      {"korean": "그녀는 혼자 여행하는 걸 좋아해.", "answers": ["She loves traveling alone.", "She enjoys traveling by herself."], "hint": "loves + traveling + alone", "explanation": "by herself = alone (혼자)", "keywords": ["loves", "traveling", "alone"]},
+      {"korean": "우리는 함께 영화 보는 걸 즐겨.", "answers": ["We enjoy watching movies together.", "We like watching movies together."], "hint": "enjoy + watching movies + together", "explanation": "", "keywords": ["enjoy", "watching", "together"]},
+      {"korean": "나는 아침에 조깅하는 게 좋아.", "answers": ["I like jogging in the morning.", "I enjoy running in the morning."], "hint": "like + jogging + in the morning", "explanation": "", "keywords": ["like", "jogging", "morning"]}
+    ]
+  },
+  {
+    "day": 27, "topic": "현재완료 - have/has + p.p. 기초",
+    "questions": [
+      {"korean": "나는 이미 숙제를 다 했어.", "answers": ["I have already finished my homework.", "I've already done my homework."], "hint": "have + already + p.p.", "explanation": "already = 이미, 완료 강조", "keywords": ["have", "already", "finished"]},
+      {"korean": "그녀는 파리에 가본 적이 있어.", "answers": ["She has been to Paris.", "She has visited Paris."], "hint": "has + been to + 장소 (경험)", "explanation": "have been to = ~에 가본 적 있다", "keywords": ["has been to", "Paris"]},
+      {"korean": "나는 그 영화를 세 번 봤어.", "answers": ["I have watched that movie three times.", "I've seen that movie three times."], "hint": "have + p.p. + 횟수", "explanation": "", "keywords": ["have watched", "three times"]},
+      {"korean": "그들은 아직 오지 않았어.", "answers": ["They haven't arrived yet.", "They have not come yet."], "hint": "haven't + p.p. + yet (아직 ~안 했다)", "explanation": "yet은 부정문과 의문문에 사용", "keywords": ["haven't", "yet"]},
+      {"korean": "우리는 10년 동안 여기 살았어.", "answers": ["We have lived here for ten years.", "We've been living here for ten years."], "hint": "have + lived + for + 기간", "explanation": "for + 기간 = ~동안", "keywords": ["have lived", "for ten years"]}
+    ]
+  },
+  {
+    "day": 28, "topic": "수동태 기초 - be + p.p.",
+    "questions": [
+      {"korean": "이 편지는 영어로 쓰여 있어.", "answers": ["This letter is written in English.", "The letter is written in English."], "hint": "is + written (수동태)", "explanation": "수동태: be + 과거분사", "keywords": ["is written", "English"]},
+      {"korean": "그 다리는 1900년에 지어졌어.", "answers": ["The bridge was built in 1900.", "The bridge was constructed in 1900."], "hint": "was + built (과거 수동태)", "explanation": "", "keywords": ["was built", "1900"]},
+      {"korean": "그 케이크는 내 어머니가 만들었어.", "answers": ["The cake was made by my mother.", "The cake was baked by my mom."], "hint": "was + made + by + 행위자", "explanation": "by + 행위자 = ~에 의해", "keywords": ["was made", "by", "mother"]},
+      {"korean": "그 가게는 주말에 닫혀 있어.", "answers": ["The store is closed on weekends.", "The shop is closed on weekends."], "hint": "is + closed (상태 수동태)", "explanation": "", "keywords": ["is closed", "weekends"]},
+      {"korean": "그 소포는 오늘 배달될 거야.", "answers": ["The package will be delivered today.", "The parcel will be delivered today."], "hint": "will be + delivered (미래 수동태)", "explanation": "parcel = package (소포)", "keywords": ["will be delivered", "today"]}
+    ]
+  },
+  {
+    "day": 29, "topic": "to부정사 - want/need/plan to",
+    "questions": [
+      {"korean": "나는 영어를 잘 하고 싶어.", "answers": ["I want to speak English well.", "I want to be good at English."], "hint": "want to + 동사원형", "explanation": "be good at = ~을 잘하다", "keywords": ["want to", "English"]},
+      {"korean": "그는 새 컴퓨터를 살 필요가 있어.", "answers": ["He needs to buy a new computer.", "He has to get a new computer."], "hint": "need to + buy", "explanation": "", "keywords": ["needs to", "buy", "computer"]},
+      {"korean": "우리는 일찍 떠날 계획이야.", "answers": ["We plan to leave early.", "We are planning to leave early."], "hint": "plan to + 동사원형", "explanation": "", "keywords": ["plan to", "leave", "early"]},
+      {"korean": "그녀는 요리하는 방법을 배우고 싶어.", "answers": ["She wants to learn how to cook.", "She'd like to learn how to cook."], "hint": "want to + learn how to + 동사원형", "explanation": "learn how to = ~하는 법을 배우다", "keywords": ["wants to", "learn", "cook"]},
+      {"korean": "나는 내일 아침 일찍 일어나야 해.", "answers": ["I need to wake up early tomorrow morning.", "I have to get up early tomorrow morning."], "hint": "need to / have to + wake up", "explanation": "", "keywords": ["need to", "wake up", "tomorrow"]}
+    ]
+  },
+  {
+    "day": 30, "topic": "접속사 - and/but/so/because",
+    "questions": [
+      {"korean": "나는 피곤했지만 공부했어.", "answers": ["I was tired but I studied.", "I was tired but still studied."], "hint": "but = 그러나 (대조)", "explanation": "", "keywords": ["tired", "but", "studied"]},
+      {"korean": "비가 와서 우리는 집에 있었어.", "answers": ["It rained, so we stayed home.", "It was raining, so we stayed inside."], "hint": "so = 그래서 (결과)", "explanation": "", "keywords": ["rained", "so", "stayed"]},
+      {"korean": "나는 배고파서 피자를 주문했어.", "answers": ["I was hungry, so I ordered pizza.", "I ordered pizza because I was hungry."], "hint": "so 또는 because 사용 가능", "explanation": "because = 왜냐하면, so = 그래서 (위치 다름)", "keywords": ["hungry", "pizza"]},
+      {"korean": "그는 영리하고 열심히 해.", "answers": ["He is smart and hardworking.", "He is clever and diligent."], "hint": "형용사 + and + 형용사", "explanation": "hardworking = diligent (부지런한)", "keywords": ["smart", "and", "hardworking"]},
+      {"korean": "나는 공부하고 싶었지만 너무 졸렸어.", "answers": ["I wanted to study, but I was too sleepy.", "I wanted to study but I was too tired."], "hint": "wanted to study + but + too sleepy", "explanation": "", "keywords": ["wanted to", "but", "sleepy"]}
+    ]
+  }
+]

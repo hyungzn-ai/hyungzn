@@ -1,0 +1,102 @@
+[
+  {
+    "day": 1, "topic": "현재완료 - 결과/완료",
+    "questions": [
+      {"korean": "나는 방금 숙제를 끝냈어.", "answers": ["I have just finished my homework.", "I've just done my homework."], "hint": "have + just + p.p.", "explanation": "just = 방금, 완료 강조", "keywords": ["have just finished", "homework"]},
+      {"korean": "그는 이미 점심을 먹었어.", "answers": ["He has already eaten lunch.", "He's already had lunch."], "hint": "has + already + p.p.", "explanation": "", "keywords": ["has already eaten", "lunch"]},
+      {"korean": "그 버스는 막 떠났어.", "answers": ["The bus has just left.", "The bus just left."], "hint": "has just + left", "explanation": "현재완료: 막 떠나서 지금도 없음 강조", "keywords": ["has just left", "bus"]},
+      {"korean": "그녀는 살을 많이 뺐어.", "answers": ["She has lost a lot of weight.", "She's lost so much weight."], "hint": "has + lost + weight", "explanation": "", "keywords": ["has lost", "weight"]},
+      {"korean": "나는 열쇠를 잃어버렸어. (그래서 지금 없어)", "answers": ["I have lost my keys.", "I've lost my keys."], "hint": "have + lost → 지금도 없는 상태", "explanation": "현재완료는 과거 사건이 현재에 영향을 줄 때 사용", "keywords": ["have lost", "keys"]}
+    ]
+  },
+  {
+    "day": 2, "topic": "현재완료 - 경험 (ever/never/before)",
+    "questions": [
+      {"korean": "태국 음식을 먹어본 적 있어?", "answers": ["Have you ever tried Thai food?", "Have you ever eaten Thai food?"], "hint": "Have you ever + p.p.?", "explanation": "", "keywords": ["have you ever", "Thai food"]},
+      {"korean": "나는 한 번도 패러글라이딩을 해본 적이 없어.", "answers": ["I have never tried paragliding.", "I've never gone paragliding."], "hint": "have never + p.p.", "explanation": "", "keywords": ["have never", "paragliding"]},
+      {"korean": "전에 이런 음식 먹어봤어?", "answers": ["Have you had this kind of food before?", "Have you tried this type of food before?"], "hint": "Have you + p.p. + before?", "explanation": "", "keywords": ["have you", "before", "food"]},
+      {"korean": "그녀는 뮤지컬을 본 적이 있어.", "answers": ["She has seen a musical before.", "She has been to a musical."], "hint": "has + seen/been to + before", "explanation": "have been to = ~에 가본 적 있다", "keywords": ["has seen", "musical"]},
+      {"korean": "나는 그런 실수를 한 번도 한 적이 없어.", "answers": ["I have never made such a mistake.", "I've never done anything like that."], "hint": "have never + made + such a mistake", "explanation": "", "keywords": ["have never", "mistake"]}
+    ]
+  },
+  {
+    "day": 3, "topic": "현재완료 - for/since (계속)",
+    "questions": [
+      {"korean": "나는 5년 동안 채식주의자야.", "answers": ["I have been a vegetarian for five years.", "I've been eating vegetarian for five years."], "hint": "have been + 명사/형용사 + for + 기간", "explanation": "", "keywords": ["have been", "vegetarian", "five years"]},
+      {"korean": "그는 지난 화요일부터 아파.", "answers": ["He has been sick since last Tuesday.", "He's been ill since Tuesday."], "hint": "has been + 형용사 + since + 시점", "explanation": "since = 특정 시점부터, for = 기간 동안", "keywords": ["has been sick", "since Tuesday"]},
+      {"korean": "그들은 2015년부터 이 회사를 운영하고 있어.", "answers": ["They have been running this company since 2015.", "They've been managing this company since 2015."], "hint": "have been + ~ing + since + 연도", "explanation": "", "keywords": ["have been running", "since 2015"]},
+      {"korean": "우리는 대학교 때부터 친구야.", "answers": ["We have been friends since college.", "We've been close since our college days."], "hint": "have been friends + since + 시점", "explanation": "", "keywords": ["have been friends", "since college"]},
+      {"korean": "그녀는 얼마나 오랫동안 영어를 가르쳐 왔어?", "answers": ["How long has she been teaching English?", "How long has she taught English?"], "hint": "How long + has she been + ~ing?", "explanation": "", "keywords": ["how long", "has she been teaching"]}
+    ]
+  },
+  {
+    "day": 4, "topic": "수동태 - 다양한 시제",
+    "questions": [
+      {"korean": "그 뉴스는 매일 업데이트 돼.", "answers": ["The news is updated every day.", "The news gets updated daily."], "hint": "is + updated (현재 수동)", "explanation": "gets updated = 구어체 수동태 표현", "keywords": ["is updated", "every day"]},
+      {"korean": "그 법안은 국회에서 통과됐어.", "answers": ["The bill was passed by the National Assembly.", "The bill was approved by Congress."], "hint": "was + passed + by + 행위자", "explanation": "", "keywords": ["was passed", "bill"]},
+      {"korean": "그 보고서는 내일까지 제출되어야 해.", "answers": ["The report must be submitted by tomorrow.", "The report needs to be turned in by tomorrow."], "hint": "must be + p.p. + by + 기한", "explanation": "turn in = submit (제출하다)", "keywords": ["must be submitted", "tomorrow"]},
+      {"korean": "그 영화는 유명한 소설을 원작으로 만들어졌어.", "answers": ["The movie was based on a famous novel.", "The film was adapted from a famous novel."], "hint": "was based on = ~을 원작으로 하다", "explanation": "be adapted from = ~을 각색하다", "keywords": ["was based on", "novel"]},
+      {"korean": "그 건물은 지금 수리 중이야.", "answers": ["The building is being repaired now.", "The building is under repair."], "hint": "is being + p.p. (현재 진행 수동)", "explanation": "under repair = 수리 중인", "keywords": ["is being repaired", "building"]}
+    ]
+  },
+  {
+    "day": 5, "topic": "관계대명사 - whose/whom",
+    "questions": [
+      {"korean": "저 사람이 차가 고장난 남자야.", "answers": ["That's the man whose car broke down.", "That's the guy whose car stopped working."], "hint": "whose + 명사 = ~의 (소유 관계대명사)", "explanation": "", "keywords": ["whose car", "broke down"]},
+      {"korean": "내가 말한 사람이 그녀야.", "answers": ["She is the person whom I talked about.", "She is the person I mentioned."], "hint": "whom = 목적격 관계대명사 (생략 가능)", "explanation": "구어체에서는 whom 대신 who 또는 생략", "keywords": ["whom I talked about"]},
+      {"korean": "나는 아버지가 유명한 작가인 친구가 있어.", "answers": ["I have a friend whose father is a famous writer.", "I know someone whose dad is a famous author."], "hint": "whose father = ~의 아버지인", "explanation": "", "keywords": ["whose father", "famous writer"]},
+      {"korean": "그녀가 나한테 소개해준 남자가 실제로 나의 상사야.", "answers": ["The man whom she introduced to me is actually my boss.", "The man she introduced me to is actually my boss."], "hint": "whom she introduced", "explanation": "구어체에서 whom 생략 일반적", "keywords": ["introduced", "boss"]},
+      {"korean": "그건 내가 전혀 기대하지 않았던 결과야.", "answers": ["That's a result that I didn't expect at all.", "That's not what I expected at all."], "hint": "that I didn't expect = 관계절", "explanation": "not what I expected = 내가 기대한 것이 아닌", "keywords": ["didn't expect", "result"]}
+    ]
+  },
+  {
+    "day": 6, "topic": "관계부사 - where/when/why",
+    "questions": [
+      {"korean": "이곳이 우리가 처음 만난 장소야.", "answers": ["This is the place where we first met.", "This is where we first met."], "hint": "where = 장소 관계부사", "explanation": "", "keywords": ["where", "first met"]},
+      {"korean": "2020년은 팬데믹이 시작된 해야.", "answers": ["2020 was the year when the pandemic started.", "2020 was when the pandemic began."], "hint": "when = 시간 관계부사", "explanation": "", "keywords": ["when", "pandemic", "started"]},
+      {"korean": "그게 내가 그만둔 이유야.", "answers": ["That's the reason why I quit.", "That's why I quit."], "hint": "why = 이유 관계부사", "explanation": "That's why = 그것이 ~한 이유야", "keywords": ["reason why", "quit"]},
+      {"korean": "이게 우리가 파티를 열 장소야.", "answers": ["This is the place where we'll have the party.", "This is where we're going to hold the party."], "hint": "where we'll have/hold the party", "explanation": "", "keywords": ["where", "party"]},
+      {"korean": "나는 그가 왜 화가 났는지 이유를 알 수 없어.", "answers": ["I can't understand the reason why he got angry.", "I don't know why he got upset."], "hint": "the reason why + 절", "explanation": "", "keywords": ["reason why", "angry"]}
+    ]
+  },
+  {
+    "day": 7, "topic": "가정법 과거완료 - If had + p.p.",
+    "questions": [
+      {"korean": "더 열심히 공부했더라면 시험에 합격했을 텐데.", "answers": ["If I had studied harder, I would have passed the exam.", "If I'd studied more, I would have passed the test."], "hint": "If + had + p.p., would have + p.p.", "explanation": "가정법 과거완료: 과거 사실과 반대되는 상상", "keywords": ["if I had studied", "would have passed"]},
+      {"korean": "그 파티에 갔더라면 그녀를 만났을 텐데.", "answers": ["If I had gone to the party, I would have met her.", "If I'd been at the party, I could have met her."], "hint": "If + had gone, would have met", "explanation": "", "keywords": ["if I had gone", "would have met"]},
+      {"korean": "그가 그 충고를 들었더라면 실수를 피할 수 있었을 텐데.", "answers": ["If he had listened to the advice, he could have avoided the mistake.", "If he had taken the advice, he wouldn't have made that mistake."], "hint": "If + had listened, could/would have + p.p.", "explanation": "", "keywords": ["if had listened", "could have avoided"]},
+      {"korean": "우산을 가져왔더라면 비에 안 젖었을 텐데.", "answers": ["If I had brought an umbrella, I wouldn't have gotten wet.", "If I'd taken my umbrella, I wouldn't have been soaked."], "hint": "If + had brought, wouldn't have gotten wet", "explanation": "soaked = 흠뻑 젖은", "keywords": ["if had brought", "wouldn't have gotten wet"]},
+      {"korean": "그때 그 기회를 잡았더라면 지금 더 행복했을 텐데.", "answers": ["If I had taken that chance, I would be happier now.", "If I had seized that opportunity, I might be happier today."], "hint": "혼합 가정법: If + had + p.p., would + 현재", "explanation": "과거 조건 + 현재 결과 = 혼합 가정법", "keywords": ["if had taken", "would be happier now"]}
+    ]
+  },
+  {
+    "day": 8, "topic": "부정사 - 목적/결과 용법",
+    "questions": [
+      {"korean": "그녀는 신선한 공기를 마시러 나갔어.", "answers": ["She went out to get some fresh air.", "She stepped outside to breathe some fresh air."], "hint": "to + 동사원형 = 목적 (하기 위해)", "explanation": "", "keywords": ["went out to", "fresh air"]},
+      {"korean": "나는 그 영화를 보려고 일찍 왔어.", "answers": ["I came early to see the movie.", "I arrived early in order to watch the movie."], "hint": "to see / in order to see", "explanation": "in order to = ~하기 위해 (더 격식적)", "keywords": ["came early to", "movie"]},
+      {"korean": "그는 집을 사기 위해 돈을 모으고 있어.", "answers": ["He is saving money to buy a house.", "He's been saving up money in order to buy a home."], "hint": "to buy = 목적 부정사", "explanation": "save up = 저축하다", "keywords": ["saving money to", "buy"]},
+      {"korean": "결국 그 소식을 듣게 돼서 행복했어.", "answers": ["I was happy to hear the news.", "I was glad to finally hear the news."], "hint": "happy/glad + to + 동사원형 (감정의 원인)", "explanation": "", "keywords": ["happy to hear", "news"]},
+      {"korean": "그 책은 이해하기 너무 어려워.", "answers": ["The book is too difficult to understand.", "The book is too hard to follow."], "hint": "too + 형용사 + to + 동사원형", "explanation": "", "keywords": ["too difficult to understand"]}
+    ]
+  },
+  {
+    "day": 9, "topic": "동명사 - 주어/목적어/전치사 뒤",
+    "questions": [
+      {"korean": "아침에 운동하는 것은 건강에 좋아.", "answers": ["Exercising in the morning is good for your health.", "Working out in the morning is healthy."], "hint": "동명사(~ing) + is + 형용사", "explanation": "동명사가 문장 주어로 사용된 형태", "keywords": ["exercising", "good for health"]},
+      {"korean": "나는 새로운 언어 배우는 걸 즐겨.", "answers": ["I enjoy learning new languages.", "I love picking up new languages."], "hint": "enjoy + ~ing (목적어)", "explanation": "pick up a language = 언어를 (자연스럽게) 배우다", "keywords": ["enjoy learning", "languages"]},
+      {"korean": "그는 파티에 가는 것을 피했어.", "answers": ["He avoided going to the party.", "He managed to avoid attending the party."], "hint": "avoid + ~ing", "explanation": "avoid는 to부정사 대신 반드시 -ing 사용", "keywords": ["avoided going", "party"]},
+      {"korean": "나는 TV 보는 것을 멈추고 공부했어.", "answers": ["I stopped watching TV and studied.", "I quit watching TV to study."], "hint": "stop + ~ing = ~하는 것을 멈추다", "explanation": "stop to do = 하던 것을 멈추고 ~하다 (의미 다름)", "keywords": ["stopped watching", "TV"]},
+      {"korean": "일찍 일어나는 것에 익숙해지는 데 시간이 걸렸어.", "answers": ["It took time to get used to waking up early.", "Getting used to waking up early took some time."], "hint": "get used to + ~ing", "explanation": "be used to + ~ing = ~에 익숙하다", "keywords": ["get used to", "waking up early"]}
+    ]
+  },
+  {
+    "day": 10, "topic": "조동사 - could/might/should have + p.p.",
+    "questions": [
+      {"korean": "그 말은 안 했어야 했는데.", "answers": ["I shouldn't have said that.", "I should not have said that."], "hint": "shouldn't have + p.p. = ~하지 말았어야 했다", "explanation": "과거에 한 일에 대한 후회 표현", "keywords": ["shouldn't have said"]},
+      {"korean": "그가 일찍 떠났을지도 몰라.", "answers": ["He might have left early.", "He could have already left."], "hint": "might/could have + p.p. = ~했을 수도 있다", "explanation": "might have = 과거 가능성 추측", "keywords": ["might have left", "early"]},
+      {"korean": "나는 더 일찍 출발할 수 있었는데.", "answers": ["I could have left earlier.", "I could have departed sooner."], "hint": "could have + p.p. = ~할 수 있었는데 (하지 못한 아쉬움)", "explanation": "", "keywords": ["could have left", "earlier"]},
+      {"korean": "그녀는 그 문제를 알고 있었을 거야.", "answers": ["She must have known about the problem.", "She should have been aware of the issue."], "hint": "must have + p.p. = ~했음에 틀림없다", "explanation": "must have = 과거 확신", "keywords": ["must have known", "problem"]},
+      {"korean": "그건 더 잘 처리될 수 있었어.", "answers": ["That could have been handled better.", "It should have been dealt with better."], "hint": "could have been + p.p.", "explanation": "", "keywords": ["could have been handled"]}
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "day": 41, "topic": "학술/분석 표현",
+    "questions": [
+      {"korean": "연구 결과가 그 이론을 뒷받침해.", "answers": ["The research findings support the theory.", "The study results back up the hypothesis."], "hint": "support / back up = 뒷받침하다", "explanation": "", "keywords": ["findings support", "back up", "theory"]},
+      {"korean": "두 가지 요소가 그 결과에 영향을 미쳤어.", "answers": ["Two factors influenced the result.", "Two elements had an impact on the outcome."], "hint": "influence / have an impact on = 영향을 미치다", "explanation": "", "keywords": ["factors influenced", "impact on", "result"]},
+      {"korean": "이 데이터는 다른 방식으로 해석될 수 있어.", "answers": ["This data can be interpreted in different ways.", "There are multiple ways to interpret this data."], "hint": "be interpreted = 해석되다", "explanation": "", "keywords": ["data", "interpreted", "different ways"]},
+      {"korean": "그 증거는 결론을 뒷받침하기에 충분하지 않아.", "answers": ["The evidence is not sufficient to support the conclusion.", "There isn't enough evidence to back up the conclusion."], "hint": "sufficient / enough evidence to + 동사원형", "explanation": "", "keywords": ["evidence", "sufficient", "conclusion"]},
+      {"korean": "우리는 두 접근 방식을 비교할 필요가 있어.", "answers": ["We need to compare the two approaches.", "It's necessary to weigh the two methods against each other."], "hint": "compare / weigh against = 비교하다", "explanation": "weigh against = 비교 검토하다", "keywords": ["compare", "two approaches"]}
+    ]
+  },
+  {
+    "day": 42, "topic": "협상/타협 표현",
+    "questions": [
+      {"korean": "서로 타협점을 찾아야 할 것 같아.", "answers": ["We need to find a middle ground.", "We should meet each other halfway."], "hint": "find a middle ground / meet halfway = 타협점을 찾다", "explanation": "", "keywords": ["middle ground", "meet halfway"]},
+      {"korean": "그 조건에 동의할게.", "answers": ["I can agree to those terms.", "I'll go along with those conditions."], "hint": "agree to / go along with = 동의하다, 수락하다", "explanation": "", "keywords": ["agree to", "go along with", "terms"]},
+      {"korean": "그게 테이블 위에 올라와 있어. (논의 중)", "answers": ["That's on the table.", "That's up for discussion."], "hint": "on the table / up for discussion = 논의 대상인", "explanation": "on the table = 협상/논의 중인", "keywords": ["on the table", "up for discussion"]},
+      {"korean": "거기서 타협할 수 없어.", "answers": ["That's not negotiable.", "I can't budge on that."], "hint": "not negotiable / can't budge = 협상 불가, 양보 불가", "explanation": "budge = 조금도 움직이다, 양보하다", "keywords": ["not negotiable", "can't budge"]},
+      {"korean": "서로에게 유리한 합의를 찾아보자.", "answers": ["Let's find an agreement that works for both of us.", "Let's work toward a win-win solution."], "hint": "win-win = 서로에게 유리한", "explanation": "", "keywords": ["works for both", "win-win"]}
+    ]
+  },
+  {
+    "day": 43, "topic": "의견 제시 / 반박 표현",
+    "questions": [
+      {"korean": "그 점에서는 동의하지만, 그렇다고 해서 전부 맞는 건 아니야.", "answers": ["I agree on that point, but that doesn't mean everything is correct.", "You have a point there, but that's not the whole story."], "hint": "You have a point, but = 그 점은 맞지만", "explanation": "", "keywords": ["agree on that point", "but", "not the whole story"]},
+      {"korean": "내 생각에 당신은 요점을 놓치고 있는 것 같아.", "answers": ["I think you're missing the point.", "It seems like you're not seeing the bigger picture."], "hint": "miss the point = 요점을 놓치다", "explanation": "bigger picture = 전체적인 그림, 큰 그림", "keywords": ["missing the point", "bigger picture"]},
+      {"korean": "그건 공정한 지적이야.", "answers": ["That's a fair point.", "That's a valid argument."], "hint": "fair point / valid argument = 공정한 지적", "explanation": "", "keywords": ["fair point", "valid argument"]},
+      {"korean": "그건 내가 생각해보지 않은 부분이야.", "answers": ["That's something I hadn't considered.", "I hadn't thought about it that way."], "hint": "hadn't considered / hadn't thought about", "explanation": "", "keywords": ["hadn't considered", "hadn't thought"]},
+      {"korean": "정중하게 이의를 제기하고 싶어.", "answers": ["I'd like to respectfully disagree.", "With all due respect, I see it differently."], "hint": "respectfully disagree / with all due respect = 정중하게 반박", "explanation": "", "keywords": ["respectfully disagree", "with all due respect"]}
+    ]
+  },
+  {
+    "day": 44, "topic": "감사/사과 고급 표현",
+    "questions": [
+      {"korean": "당신의 도움에 진심으로 감사드립니다.", "answers": ["I truly appreciate your help.", "I'm deeply grateful for your assistance."], "hint": "truly appreciate / deeply grateful = 진심으로 감사하다", "explanation": "", "keywords": ["truly appreciate", "deeply grateful"]},
+      {"korean": "불편을 드려 정말 죄송합니다.", "answers": ["I sincerely apologize for the inconvenience.", "I'm truly sorry for any trouble I've caused."], "hint": "sincerely apologize / truly sorry for = 진심으로 사과하다", "explanation": "", "keywords": ["sincerely apologize", "inconvenience"]},
+      {"korean": "그건 내 책임이야. 전적으로 내 잘못이야.", "answers": ["That's on me. It was entirely my fault.", "I take full responsibility for that."], "hint": "that's on me = 내 책임이다", "explanation": "take full responsibility = 전적인 책임을 지다", "keywords": ["that's on me", "my fault", "full responsibility"]},
+      {"korean": "시간 내주셔서 감사합니다.", "answers": ["Thank you for taking the time.", "I appreciate you making time for this."], "hint": "thank you for taking the time = 시간 내주셔서 감사", "explanation": "", "keywords": ["taking the time", "making time"]},
+      {"korean": "그건 괜찮아요. 걱정하지 마세요.", "answers": ["It's no big deal. Don't worry about it.", "Think nothing of it. It's fine."], "hint": "no big deal / think nothing of it = 별거 아니에요", "explanation": "Think nothing of it = 격식체", "keywords": ["no big deal", "think nothing of it"]}
+    ]
+  },
+  {
+    "day": 45, "topic": "미국 영어 구어체 심화",
+    "questions": [
+      {"korean": "별거 아니야, 다 잘 될 거야.", "answers": ["It's not a big deal, everything will work out.", "No worries, it'll all fall into place."], "hint": "fall into place = 제자리를 잡다, 잘 풀리다", "explanation": "", "keywords": ["not a big deal", "fall into place"]},
+      {"korean": "그는 배짱이 있어.", "answers": ["He has guts.", "He's got nerve."], "hint": "have guts / have nerve = 배짱이 있다, 담대하다", "explanation": "nerve = 배짱 (구어체)", "keywords": ["guts", "nerve"]},
+      {"korean": "완전 동의해!", "answers": ["I'm totally on board with that!", "I couldn't agree more!"], "hint": "be on board = 동의하다, 찬성하다", "explanation": "Couldn't agree more = 최대한 동의한다", "keywords": ["on board", "couldn't agree more"]},
+      {"korean": "그건 한계를 넘은 거야.", "answers": ["That's crossing the line.", "That went too far."], "hint": "cross the line = 한계를 넘다", "explanation": "", "keywords": ["crossing the line", "went too far"]},
+      {"korean": "그녀는 항상 한 발짝 앞서 있어.", "answers": ["She's always one step ahead.", "She's always ahead of the curve."], "hint": "one step ahead / ahead of the curve = 앞서다", "explanation": "ahead of the curve = 시대를 앞서가다", "keywords": ["one step ahead", "ahead of the curve"]}
+    ]
+  },
+  {
+    "day": 46, "topic": "관계절 - 비제한적 용법",
+    "questions": [
+      {"korean": "내 친구 민수는, 내가 10년 전에 만난 사람인데, 지금 의사야.", "answers": ["My friend Minsu, whom I met ten years ago, is now a doctor.", "My friend Minsu, who I've known for ten years, became a doctor."], "hint": "비제한적 관계절: 쉼표 + who/whom", "explanation": "비제한적 관계절은 추가 설명을 쉼표로 삽입", "keywords": ["whom I met", "who I've known"]},
+      {"korean": "그 영화, 내가 작년에 봤는데, 정말 감동적이었어.", "answers": ["The movie, which I watched last year, was really moving.", "The film, which I saw last year, was very touching."], "hint": "which = 사물을 수식하는 비제한적 관계절", "explanation": "", "keywords": ["which I watched", "which I saw"]},
+      {"korean": "그의 집, 시내 중심에 있는데, 정말 편리해.", "answers": ["His house, which is located downtown, is very convenient.", "His apartment, which sits in the city center, is really convenient."], "hint": "which is located / which sits = 위치를 나타내는 관계절", "explanation": "", "keywords": ["which is located", "convenient"]},
+      {"korean": "그녀의 발표, 모두가 기다리던 건데, 정말 인상 깊었어.", "answers": ["Her presentation, which everyone had been waiting for, was really impressive.", "Her talk, which we'd all been anticipating, left a strong impression."], "hint": "which everyone had been waiting for", "explanation": "", "keywords": ["which everyone had been waiting", "impressive"]},
+      {"korean": "제주도는, 내가 가장 좋아하는 섬인데, 아름다운 자연을 가지고 있어.", "answers": ["Jeju Island, which is my favorite island, has beautiful nature.", "Jeju, which I love most, is known for its stunning landscapes."], "hint": "which is my favorite = 추가 설명 관계절", "explanation": "", "keywords": ["which is my favorite", "beautiful nature"]}
+    ]
+  },
+  {
+    "day": 47, "topic": "목적/결과 고급 표현",
+    "questions": [
+      {"korean": "그 목표를 달성하기 위해 모든 노력을 기울였어.", "answers": ["I made every effort to achieve the goal.", "I gave it my all to reach the target."], "hint": "make every effort / give it one's all = 최선을 다하다", "explanation": "", "keywords": ["every effort", "achieve the goal"]},
+      {"korean": "나는 실수를 반복하지 않기 위해 메모했어.", "answers": ["I took notes so that I wouldn't repeat the mistake.", "I wrote it down in order not to make the same mistake again."], "hint": "so that + 주어 + wouldn't / in order not to", "explanation": "", "keywords": ["so that", "wouldn't repeat", "in order not to"]},
+      {"korean": "결국 그들은 합의에 도달했어.", "answers": ["They eventually reached an agreement.", "They finally came to an agreement."], "hint": "reach / come to an agreement = 합의에 이르다", "explanation": "", "keywords": ["reached an agreement", "came to an agreement"]},
+      {"korean": "그 결과로 생산성이 크게 향상됐어.", "answers": ["As a result, productivity improved significantly.", "The outcome was a major improvement in productivity."], "hint": "as a result / the outcome = 그 결과로", "explanation": "", "keywords": ["as a result", "productivity", "improved significantly"]},
+      {"korean": "충분한 연습을 통해 그녀는 자신감을 얻었어.", "answers": ["Through enough practice, she gained confidence.", "With sufficient practice, she built up her confidence."], "hint": "through / with + 명사 + gained confidence", "explanation": "build up = 쌓아나가다, 키우다", "keywords": ["through practice", "gained confidence"]}
+    ]
+  },
+  {
+    "day": 48, "topic": "문화/사회 주제 표현",
+    "questions": [
+      {"korean": "그 관습은 시간이 지나면서 사라져가고 있어.", "answers": ["That custom is fading away over time.", "That tradition is gradually dying out."], "hint": "fade away / die out = 사라지다, 소멸하다", "explanation": "", "keywords": ["fading away", "dying out", "over time"]},
+      {"korean": "소셜 미디어는 사람들이 소통하는 방식을 바꿨어.", "answers": ["Social media has changed the way people communicate.", "Social media has transformed how we interact with each other."], "hint": "has changed the way + 주어 + 동사", "explanation": "", "keywords": ["has changed the way", "communicate"]},
+      {"korean": "그 두 문화 사이엔 큰 차이가 있어.", "answers": ["There is a big gap between the two cultures.", "The two cultures differ significantly from each other."], "hint": "gap between / differ from = 차이가 있다", "explanation": "", "keywords": ["gap between", "cultures", "differ from"]},
+      {"korean": "사람들은 점점 더 개인주의적이 되고 있어.", "answers": ["People are becoming more and more individualistic.", "Society is growing increasingly individualistic."], "hint": "more and more / increasingly + 형용사", "explanation": "", "keywords": ["more and more", "individualistic"]},
+      {"korean": "그것은 전 세계적으로 보편적인 문제야.", "answers": ["It is a universal problem worldwide.", "That's a global issue that affects everyone."], "hint": "universal / global = 전 세계적인", "explanation": "", "keywords": ["universal", "global", "worldwide"]}
+    ]
+  },
+  {
+    "day": 49, "topic": "고급 접속사/연결어",
+    "questions": [
+      {"korean": "비록 그가 어리지만, 매우 성숙해.", "answers": ["Although he is young, he is very mature.", "Young as he is, he is surprisingly mature."], "hint": "although + 절 / 형용사 + as + 주어 + 동사 (도치)", "explanation": "Young as he is = 비록 어리지만 (문학적 표현)", "keywords": ["although young", "mature"]},
+      {"korean": "그것뿐만 아니라 그는 스포츠도 잘해.", "answers": ["Not only that, but he is also good at sports.", "Apart from that, he excels at sports."], "hint": "not only that, but also / apart from that = 그것뿐만 아니라", "explanation": "excel at = ~에 뛰어나다", "keywords": ["not only that", "apart from that", "sports"]},
+      {"korean": "그는 아무런 불평 없이 받아들였어.", "answers": ["He accepted it without any complaint.", "He took it in stride without complaining."], "hint": "without + 명사/~ing = ~ 없이", "explanation": "take in stride = 의연하게 받아들이다", "keywords": ["without complaint", "took in stride"]},
+      {"korean": "그게 맞는 말이긴 하지만, 그래도 의구심이 생겨.", "answers": ["That may be true, but it still raises questions.", "While that's a fair point, it still leaves room for doubt."], "hint": "that may be true, but = 그게 맞긴 하지만", "explanation": "leave room for doubt = 의구심의 여지를 남기다", "keywords": ["may be true", "but", "raises questions"]},
+      {"korean": "좋든 싫든, 그 변화는 일어났어.", "answers": ["Whether we like it or not, the change has happened.", "Like it or not, the change is here to stay."], "hint": "whether we like it or not / like it or not = 좋든 싫든", "explanation": "here to stay = 영구적으로 자리잡다", "keywords": ["whether we like it or not", "change"]}
+    ]
+  },
+  {
+    "day": 50, "topic": "중급 종합 복습",
+    "questions": [
+      {"korean": "그 상황이 통제를 벗어나기 전에, 우리는 조치를 취했어야 했는데.", "answers": ["We should have taken action before the situation got out of hand.", "We ought to have stepped in before things spiraled out of control."], "hint": "should have + p.p. + before + 절", "explanation": "", "keywords": ["should have taken action", "got out of hand"]},
+      {"korean": "비록 결과가 기대했던 것과 달랐지만, 우리는 많이 배웠어.", "answers": ["Although the result was different from what we expected, we learned a lot.", "Even though it didn't go as planned, we took a lot away from it."], "hint": "although + 절 + we learned a lot", "explanation": "take away from = 배우다, 얻다", "keywords": ["although", "different from what we expected", "learned a lot"]},
+      {"korean": "한 발짝 물러서서 전체적인 그림을 볼 필요가 있어.", "answers": ["We need to take a step back and look at the bigger picture.", "It's important to step back and see the whole situation."], "hint": "take a step back = 한 발짝 물러서다, bigger picture = 전체적인 그림", "explanation": "", "keywords": ["take a step back", "bigger picture"]},
+      {"korean": "앞으로 나아가기 위해, 과거의 실수들로부터 배워야 해.", "answers": ["In order to move forward, we need to learn from past mistakes.", "To make progress, it's essential to take lessons from our failures."], "hint": "in order to move forward + learn from past mistakes", "explanation": "", "keywords": ["move forward", "learn from past mistakes"]},
+      {"korean": "결국, 중요한 건 네가 최선을 다했다는 거야.", "answers": ["At the end of the day, what matters is that you did your best.", "In the end, the important thing is that you gave it your all."], "hint": "at the end of the day = 결국, 요컨대", "explanation": "", "keywords": ["at the end of the day", "what matters", "did your best"]}
+    ]
+  }
+]
