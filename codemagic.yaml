@@ -62,7 +62,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - 91618or@gmail.com
+          - 91618p@gmail.com
         notify:
           success: true
           failure: true
