@@ -68,6 +68,14 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
+          // ── 테마 선택 ────────────────────────────────────────
+          _SectionHeader(label: '테마'),
+          _ThemePicker(
+            currentIndex: provider.themeIndex,
+            onChanged: (index) => provider.setThemeIndex(index),
+          ),
+          const SizedBox(height: 24),
+
           // ── 진행 관리 ────────────────────────────────────────
           _SectionHeader(label: '진행 관리'),
 
@@ -235,6 +243,83 @@ class SettingsScreen extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────
 // 공통 위젯
 // ─────────────────────────────────────────────────────────────
+
+class _ThemePicker extends StatelessWidget {
+  final int currentIndex;
+  final ValueChanged<int> onChanged;
+  const _ThemePicker({required this.currentIndex, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: List.generate(AppTheme.allThemes.length, (i) {
+        final t = AppTheme.allThemes[i];
+        final isSelected = i == currentIndex;
+        return Expanded(
+          child: GestureDetector(
+            onTap: () => onChanged(i),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              margin: const EdgeInsets.only(right: 8),
+              padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+              decoration: BoxDecoration(
+                color: isSelected ? t.primary.withOpacity(0.18) : AppTheme.card,
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: isSelected ? t.primary : AppTheme.card,
+                  width: isSelected ? 2 : 1,
+                ),
+              ),
+              child: Column(
+                children: [
+                  Text(t.emoji, style: const TextStyle(fontSize: 22)),
+                  const SizedBox(height: 6),
+                  Text(
+                    t.name,
+                    style: TextStyle(
+                      color: isSelected ? t.primary : AppTheme.textSecondary,
+                      fontSize: 11,
+                      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                    ),
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 6),
+                  // 색상 미리보기 도트
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      _Dot(color: t.primary),
+                      const SizedBox(width: 4),
+                      _Dot(color: t.secondary),
+                      const SizedBox(width: 4),
+                      _Dot(color: t.accent),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      }),
+    );
+  }
+}
+
+class _Dot extends StatelessWidget {
+  final Color color;
+  const _Dot({required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 8,
+      height: 8,
+      decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+    );
+  }
+}
 
 class _SectionHeader extends StatelessWidget {
   final String label;

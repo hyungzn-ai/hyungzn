@@ -6,16 +6,27 @@ import '../models/wrong_answer.dart';
 import '../services/storage_service.dart';
 import '../data/monster_data.dart';
 import '../utils/constants.dart';
+import '../utils/theme.dart';
 
 class AppProvider extends ChangeNotifier {
   late StorageService _storage;
   late UserProgress _progress;
   bool _isLoaded = false;
   bool _devMode = false;
+  int _themeIndex = 0;
 
   UserProgress get progress => _progress;
   bool get isLoaded => _isLoaded;
   bool get devMode => _devMode;
+  int get themeIndex => _themeIndex;
+  ThemeData get currentTheme => AppTheme.buildTheme(AppTheme.allThemes[_themeIndex]);
+
+  Future<void> setThemeIndex(int index) async {
+    _themeIndex = index.clamp(0, AppTheme.allThemes.length - 1);
+    AppTheme.setTheme(_themeIndex);
+    await _storage.saveThemeIndex(_themeIndex);
+    notifyListeners();
+  }
 
   void toggleDevMode() {
     _devMode = !_devMode;
@@ -47,6 +58,8 @@ class AppProvider extends ChangeNotifier {
   Future<void> init() async {
     _storage = await StorageService.create();
     _progress = await _storage.loadProgress();
+    _themeIndex = await _storage.loadThemeIndex();
+    AppTheme.setTheme(_themeIndex);
 
     // 첫 실행 시 기본 몬스터 지급
     if (_progress.monsters.isEmpty) {

@@ -18,11 +18,17 @@ class WriteMon extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => AppProvider()..init(),
-      child: MaterialApp(
-        title: '영작몬',
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.darkTheme,
-        home: const SplashScreen(),
+      child: Consumer<AppProvider>(
+        builder: (context, provider, _) {
+          return MaterialApp(
+            title: '영작몬',
+            debugShowCheckedModeBanner: false,
+            theme: provider.isLoaded
+                ? provider.currentTheme
+                : AppTheme.buildTheme(AppTheme.purpleColors),
+            home: const SplashScreen(),
+          );
+        },
       ),
     );
   }

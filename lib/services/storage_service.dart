@@ -16,6 +16,7 @@ class StorageService {
   static const _keyTotalGachaCount = 'total_gacha_count';
   static const _keyRareGachaCount = 'rare_gacha_count';
   static const _keyWrongAnswers = 'wrong_answers';
+  static const _keyThemeIndex = 'theme_index';
 
   final SharedPreferences _prefs;
 
@@ -150,6 +151,9 @@ class StorageService {
     final wrongList = progress.wrongAnswers.map((w) => w.toJson()).toList();
     await _prefs.setString(_keyWrongAnswers, jsonEncode(wrongList));
   }
+
+  Future<int> loadThemeIndex() async => _prefs.getInt(_keyThemeIndex) ?? 0;
+  Future<void> saveThemeIndex(int index) async => await _prefs.setInt(_keyThemeIndex, index);
 
   Future<void> resetAll() async => await _prefs.clear();
 }

@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../data/monster_data.dart';
 import '../models/monster.dart';
+import '../widgets/element_icon.dart';
 import '../providers/app_provider.dart';
 import '../utils/theme.dart';
 import '../widgets/monster_sprite_widget.dart';
@@ -368,7 +369,7 @@ class _MonsterPark extends StatelessWidget {
         const SizedBox(height: 8),
         Container(
           width: double.infinity,
-          height: 130,
+          height: 110,
           decoration: BoxDecoration(
             gradient: const LinearGradient(
               begin: Alignment.topCenter,
@@ -486,40 +487,48 @@ class _ParkMonsterIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          width: 54,
-          height: 54,
-          decoration: BoxDecoration(
-            color: Colors.black26,
-            shape: BoxShape.circle,
-            border: species.isHidden
-                ? Border.all(color: Colors.amber, width: 2)
-                : Border.all(color: Colors.white24, width: 1),
-          ),
-          child: Center(
-            child: MonsterSpriteWidget(
-              monsterId: species.id,
-              stage: stage,
-              size: 40,
-              fallbackEmoji: species.evolutionEmojis[stage],
+    return SizedBox(
+      width: 58,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          // 몬스터 스프라이트 원형 프레임
+          Container(
+            width: 54,
+            height: 54,
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              shape: BoxShape.circle,
+              border: species.isHidden
+                  ? Border.all(color: Colors.amber, width: 2)
+                  : Border.all(color: Colors.white24, width: 1),
+            ),
+            child: Center(
+              child: MonsterSpriteWidget(
+                monsterId: species.id,
+                stage: stage,
+                size: 42,
+                fallbackEmoji: species.evolutionEmojis[stage],
+              ),
             ),
           ),
-        ),
-        const SizedBox(height: 3),
-        Text(
-          species.evolutionNames[stage].length > 6
-              ? '${species.evolutionNames[stage].substring(0, 5)}…'
-              : species.evolutionNames[stage],
-          style: const TextStyle(
-            color: Color(0xFFB7E4C7),
-            fontSize: 9,
+          // 속성 아이콘 뱃지 (오른쪽 하단)
+          Positioned(
+            right: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.black54,
+                border: Border.all(color: Colors.white24, width: 0.5),
+              ),
+              padding: const EdgeInsets.all(1),
+              child: ElementIcon(element: species.element, size: 18),
+            ),
           ),
-          textAlign: TextAlign.center,
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
