@@ -37,11 +37,12 @@ workflows:
           pod install --repo-update
           cd ..
 
-      - name: Build iOS (서명 없음)
+     - name: Build iOS (서명 없음)
         script: |
-          # 개인 사용용이라 코드 서명 없이 빌드.
-          # 생성된 Runner.app을 Payload 폴더에 넣어 .ipa로 압축.
-          flutter build ios --release --no-codesign
+         # Xcode 프로젝트에서 팀/서명 설정 강제 제거
+         sed -i '' 's/DEVELOPMENT_TEAM = [A-Z0-9]*;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj
+         sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
+         flutter build ios --release --no-codesign
 
       - name: Package unsigned IPA
         script: |
