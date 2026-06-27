@@ -1,7 +1,6 @@
 workflows:
   ios-unsigned-build:
     name: WriteMon iOS Unsigned Build (Personal Use)
-    # 무료 macOS 인스턴스 사용 (월 500분 무료 한도)
     instance_type: mac_mini_m2
     max_build_duration: 60
 
@@ -39,9 +38,18 @@ workflows:
 
       - name: Build iOS (서명 없음)
         script: |
-          # Xcode 프로젝트에서 팀/서명 설정 강제 제거
-          sed -i '' 's/DEVELOPMENT_TEAM = [A-Z0-9]*;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj
-          sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
+          cat > /tmp/fix_signing.py << 'EOF'
+          import re
+          pbxproj = 'ios/Runner.xcodeproj/project.pbxproj'
+          with open(pbxproj) as f:
+              content = f.read()
+          content = re.sub(r'DEVELOPMENT_TEAM = [^;]*;', 'DEVELOPMENT_TEAM = "";', content)
+          content = content.replace('CODE_SIGN_STYLE = Automatic;', 'CODE_SIGN_STYLE = Manual;')
+          with open(pbxproj, 'w') as f:
+              f.write(content)
+          print('Done - DEVELOPMENT_TEAM cleared')
+          EOF
+          python3 /tmp/fix_signing.py
           flutter build ios --release --no-codesign
 
       - name: Package unsigned IPA
@@ -63,7 +71,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - 91618p@gmail.com
+          - 91618or@gmail.com
         notify:
           success: true
           failure: true
