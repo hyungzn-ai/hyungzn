@@ -175,7 +175,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const Scaffold(
+      return Scaffold(
         body: Center(child: CircularProgressIndicator(color: AppTheme.primary)),
       );
     }
@@ -198,7 +198,7 @@ class _QuizScreenState extends State<QuizScreen> {
             child: Center(
               child: Text(
                 '${_currentIndex + 1} / $total',
-                style: const TextStyle(color: AppTheme.textSecondary),
+                style: TextStyle(color: AppTheme.textSecondary),
               ),
             ),
           ),
@@ -210,7 +210,7 @@ class _QuizScreenState extends State<QuizScreen> {
           LinearProgressIndicator(
             value: progress,
             backgroundColor: AppTheme.surface,
-            valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primary),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primary),
             minHeight: 4,
           ),
 
@@ -230,7 +230,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       child: Text(
                         _dayData!.topic,
-                        style: const TextStyle(color: AppTheme.primary, fontSize: 12),
+                        style: TextStyle(color: AppTheme.primary, fontSize: 12),
                       ),
                     ),
                   ),
@@ -245,12 +245,12 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                     child: Column(
                       children: [
-                        const Text('영어로 작성하세요',
+                        Text('영어로 작성하세요',
                             style: TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
                         const SizedBox(height: 10),
                         Text(
                           _current.korean,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppTheme.textPrimary,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -276,7 +276,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     label: Text(_showHint ? '힌트 숨기기' : '힌트 보기 (-${AppConstants.pointsCorrectFirst - AppConstants.pointsCorrectWithHint}점)'),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: AppTheme.accent,
-                      side: const BorderSide(color: AppTheme.accent, width: 1),
+                      side: BorderSide(color: AppTheme.accent, width: 1),
                     ),
                   ),
 
@@ -291,7 +291,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       child: Text(
                         '💡 ${_current.hint}',
-                        style: const TextStyle(color: AppTheme.accent, fontSize: 14),
+                        style: TextStyle(color: AppTheme.accent, fontSize: 14),
                       ),
                     ).animate().fadeIn(duration: 200.ms),
                   ],
@@ -305,10 +305,10 @@ class _QuizScreenState extends State<QuizScreen> {
                     enabled: !_answered,
                     maxLines: 3,
                     minLines: 1,
-                    style: const TextStyle(color: AppTheme.textPrimary, fontSize: 16),
+                    style: TextStyle(color: AppTheme.textPrimary, fontSize: 16),
                     decoration: InputDecoration(
                       hintText: '영어로 입력하세요...',
-                      hintStyle: const TextStyle(color: AppTheme.textSecondary),
+                      hintStyle: TextStyle(color: AppTheme.textSecondary),
                       filled: true,
                       fillColor: AppTheme.card,
                       border: OutlineInputBorder(
@@ -317,7 +317,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(color: AppTheme.primary, width: 2),
+                        borderSide: BorderSide(color: AppTheme.primary, width: 2),
                       ),
                     ),
                     textInputAction: TextInputAction.done,
@@ -335,7 +335,7 @@ class _QuizScreenState extends State<QuizScreen> {
                             onPressed: _showAnswer,
                             style: OutlinedButton.styleFrom(
                               foregroundColor: AppTheme.textSecondary,
-                              side: const BorderSide(color: AppTheme.textSecondary),
+                              side: BorderSide(color: AppTheme.textSecondary),
                             ),
                             child: const Text('답 보기'),
                           ),
@@ -382,7 +382,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           const SizedBox(height: 6),
                           Text(
                             _feedback,
-                            style: const TextStyle(
+                            style: TextStyle(
                                 color: AppTheme.textPrimary, fontSize: 14, height: 1.5),
                           ),
                         ],
