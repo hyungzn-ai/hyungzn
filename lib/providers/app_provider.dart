@@ -4,6 +4,7 @@ import '../models/user_progress.dart';
 import '../models/monster.dart';
 import '../models/wrong_answer.dart';
 import '../services/storage_service.dart';
+import '../services/daily_service.dart';
 import '../data/monster_data.dart';
 import '../utils/constants.dart';
 import '../utils/theme.dart';
@@ -14,6 +15,7 @@ class AppProvider extends ChangeNotifier {
   bool _isLoaded = false;
   bool _devMode = false;
   int _themeIndex = 0;
+  late DailyService daily;
 
   UserProgress get progress => _progress;
   bool get isLoaded => _isLoaded;
@@ -59,6 +61,7 @@ class AppProvider extends ChangeNotifier {
     _storage = await StorageService.create();
     _progress = await _storage.loadProgress();
     _themeIndex = await _storage.loadThemeIndex();
+    daily = await DailyService.load();
     AppTheme.setTheme(_themeIndex);
 
     // 첫 실행 시 기본 몬스터 지급
@@ -81,8 +84,17 @@ class AppProvider extends ChangeNotifier {
   }) async {
     final alreadyCompleted = _progress.isDayCompleted(level, day);
 
-    final dayPoints = (correctCount * AppConstants.pointsCorrectFirst) +
+    int dayPoints = (correctCount * AppConstants.pointsCorrectFirst) +
         AppConstants.pointsDayComplete;
+
+    // 연속 학습 스트릭 갱신 + 보너스
+    int streakAfter = daily.currentStreak;
+    int streakBonus = 0;
+    if (!alreadyCompleted) {
+      streakAfter = daily.registerDayComplete();
+      streakBonus = (streakAfter > 10 ? 10 : streakAfter) * 2;
+      dayPoints += streakBonus;
+    }
 
     _progress.completedDays[level]!.add(day);
     if (!alreadyCompleted) {
@@ -105,6 +117,8 @@ class AppProvider extends ChangeNotifier {
       evolvedMonsterName: null,
       unlockedMonster: null,
       totalPoints: _progress.totalPoints,
+      streakAfter: streakAfter,
+      streakBonus: alreadyCompleted ? 0 : streakBonus,
     );
   }
 
@@ -267,6 +281,77 @@ class AppProvider extends ChangeNotifier {
   }
 
   // ─────────────────────────────────────────────────────────────
+  // 일일 미션 / 스트릭 훅
+  // ─────────────────────────────────────────────────────────────
+
+  Future<void> recordQuizAnswered() async {
+    daily.addCount('quiz5');
+    notifyListeners();
+  }
+
+  Future<void> recordReviewCleared() async {
+    daily.addCount('review3');
+    notifyListeners();
+  }
+
+  Future<int> claimMission(String id) async {
+    final reward = daily.claim(id);
+    if (reward > 0) {
+      _progress.totalPoints += reward;
+      await _storage.saveProgress(_progress);
+    }
+    notifyListeners();
+    return reward;
+  }
+
+  // ─────────────────────────────────────────────────────────────
+  // 오답 간격 반복 (SRS)
+  // ─────────────────────────────────────────────────────────────
+
+  /// 오늘 복습 대상 오답 목록
+  List<WrongAnswer> get dueWrongAnswers {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    return _progress.wrongAnswers.where((w) => w.nextReviewAt <= now).toList();
+  }
+
+  /// 복습 통과: 단계 승급. 3단계 통과 시 졸업(삭제). 반환값: 졸업 여부
+  Future<bool> promoteWrongAnswer(String key) async {
+    final idx = _progress.wrongAnswers.indexWhere((w) => w.key == key);
+    if (idx < 0) return false;
+    final w = _progress.wrongAnswers[idx];
+    final newBox = w.box + 1;
+    if (newBox >= 3) {
+      _progress.wrongAnswers.removeAt(idx);
+      await _storage.saveProgress(_progress);
+      notifyListeners();
+      return true;
+    }
+    final days = newBox == 1 ? 1 : 3;
+    _progress.wrongAnswers[idx] = w.copyWith(
+      box: newBox,
+      nextReviewAt:
+          DateTime.now().add(Duration(days: days)).millisecondsSinceEpoch,
+    );
+    await _storage.saveProgress(_progress);
+    notifyListeners();
+    return false;
+  }
+
+  /// 복습 실패: 단계 리셋, 내일 다시
+  Future<void> demoteWrongAnswer(String key) async {
+    final idx = _progress.wrongAnswers.indexWhere((w) => w.key == key);
+    if (idx < 0) return;
+    final w = _progress.wrongAnswers[idx];
+    _progress.wrongAnswers[idx] = w.copyWith(
+      box: 0,
+      nextReviewAt:
+          DateTime.now().add(const Duration(days: 1)).millisecondsSinceEpoch,
+    );
+    await _storage.saveProgress(_progress);
+    notifyListeners();
+  }
+
+  // ─────────────────────────────────────────────────────────────
   // 진행 초기화
   // ─────────────────────────────────────────────────────────────
   Future<void> resetProgress() async {
@@ -288,6 +373,8 @@ class DayCompleteResult {
   final String? evolvedMonsterName;
   final String? unlockedMonster;
   final int totalPoints;
+  final int streakAfter; // 완료 후 연속 학습 일수
+  final int streakBonus; // 스트릭 보너스 포인트
 
   const DayCompleteResult({
     required this.pointsEarned,
@@ -295,6 +382,8 @@ class DayCompleteResult {
     this.evolvedMonsterName,
     this.unlockedMonster,
     required this.totalPoints,
+    this.streakAfter = 0,
+    this.streakBonus = 0,
   });
 }
 
