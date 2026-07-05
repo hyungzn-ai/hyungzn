@@ -101,7 +101,7 @@ class _GachaScreenState extends State<GachaScreen>
                           const SizedBox(width: 6),
                           Text(
                             '$pts pt',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppTheme.accent,
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
@@ -183,7 +183,7 @@ class _GachaScreenState extends State<GachaScreen>
 
               const SizedBox(height: 12),
 
-              const Text(
+              Text(
                 '뽑기를 통해 새로운 몬스터를 만나세요!',
                 style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                 textAlign: TextAlign.center,
@@ -198,7 +198,7 @@ class _GachaScreenState extends State<GachaScreen>
                   color: AppTheme.surface,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const Text(
+                child: Text(
                   '✨ 히든 4종(환상·무지개·빛·어둠) 각 3%\n'
                   '일반 18종 균등 확률 (~4.9%씩)\n'
                   '중복 획득 시 💎 진화 포인트 50 지급',
@@ -377,7 +377,7 @@ class _RollCard extends StatelessWidget {
                       color: Colors.black87,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    child: const Text(
+                    child: Text(
                       'DUP',
                       style: TextStyle(
                         color: AppTheme.textSecondary,
