@@ -53,7 +53,7 @@ class _VocabScreenState extends State<VocabScreen>
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const Scaffold(
+      return Scaffold(
         body: Center(child: CircularProgressIndicator(color: AppTheme.primary)),
       );
     }
@@ -72,7 +72,7 @@ class _VocabScreenState extends State<VocabScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     '단어 암기',
                     style: TextStyle(
                       color: AppTheme.textPrimary,
@@ -82,7 +82,7 @@ class _VocabScreenState extends State<VocabScreen>
                   ),
                   Text(
                     '${completedSets.length} / ${_allSets.length} 세트 완료',
-                    style: const TextStyle(color: AppTheme.textSecondary, fontSize: 13),
+                    style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                   ),
                 ],
               ),
@@ -198,7 +198,7 @@ class _SetListView extends StatelessWidget {
                       children: [
                         Text(
                           set.title,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppTheme.textPrimary,
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
@@ -206,7 +206,7 @@ class _SetListView extends StatelessWidget {
                         ),
                         Text(
                           '${set.items.length}개 표현',
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppTheme.textSecondary,
                             fontSize: 12,
                           ),
@@ -374,7 +374,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
               const SizedBox(height: 12),
               Text(
                 widget.vocabSet.title,
-                style: const TextStyle(
+                style: TextStyle(
                   color: AppTheme.textPrimary,
                   fontWeight: FontWeight.bold,
                   fontSize: 17,
@@ -382,7 +382,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 6),
-              const Text(
+              Text(
                 '세트 완료! +15 포인트',
                 style: TextStyle(
                     color: AppTheme.accent, fontWeight: FontWeight.bold, fontSize: 15),
@@ -395,7 +395,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                 Navigator.pop(context); // dialog
                 Navigator.pop(context); // study screen
               },
-              child: const Text('확인', style: TextStyle(color: AppTheme.primary)),
+              child: Text('확인', style: TextStyle(color: AppTheme.primary)),
             ),
           ],
         ),
@@ -452,7 +452,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
             child: Center(
               child: Text(
                 '${_index + 1} / $total',
-                style: const TextStyle(color: AppTheme.textSecondary),
+                style: TextStyle(color: AppTheme.textSecondary),
               ),
             ),
           ),
@@ -464,7 +464,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
           LinearProgressIndicator(
             value: (_index + 1) / total,
             backgroundColor: AppTheme.surface,
-            valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primary),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primary),
             minHeight: 4,
           ),
 
@@ -488,7 +488,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                         ),
                         child: Text(
                           _current.type,
-                          style: const TextStyle(color: AppTheme.accent, fontSize: 12),
+                          style: TextStyle(color: AppTheme.accent, fontSize: 12),
                         ),
                       ),
                       if (isUnknown) ...[
@@ -500,7 +500,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(color: AppTheme.secondary.withOpacity(0.4)),
                           ),
-                          child: const Text(
+                          child: Text(
                             '📌 모름',
                             style: TextStyle(color: AppTheme.secondary, fontSize: 12),
                           ),
@@ -549,7 +549,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                   const SizedBox(height: 12),
 
                   // 스와이프 힌트
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('← 몰라요', style: TextStyle(color: AppTheme.secondary, fontSize: 11)),
@@ -570,7 +570,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                       label: const Text('예문 보기'),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: AppTheme.textSecondary,
-                        side: const BorderSide(color: AppTheme.textSecondary),
+                        side: BorderSide(color: AppTheme.textSecondary),
                       ),
                     ),
                     secondChild: Container(
@@ -585,7 +585,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                         children: [
                           Text(
                             _current.example,
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppTheme.textPrimary,
                               fontSize: 14,
                               fontStyle: FontStyle.italic,
@@ -594,7 +594,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                           const SizedBox(height: 4),
                           Text(
                             _current.exampleKorean,
-                            style: const TextStyle(
+                            style: TextStyle(
                                 color: AppTheme.textSecondary, fontSize: 12),
                           ),
                         ],
@@ -616,7 +616,7 @@ class _VocabStudyScreenState extends State<VocabStudyScreen>
                         onPressed: _index > 0 ? _prev : null,
                         style: OutlinedButton.styleFrom(
                           foregroundColor: AppTheme.textSecondary,
-                          side: const BorderSide(color: AppTheme.textSecondary),
+                          side: BorderSide(color: AppTheme.textSecondary),
                           minimumSize: const Size(56, 44),
                           padding: EdgeInsets.zero,
                         ),
