@@ -81,7 +81,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
         children: [
           // 배경 그라디언트
           Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -97,7 +97,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
               confettiController: _confetti,
               blastDirectionality: BlastDirectionality.explosive,
               numberOfParticles: 30,
-              colors: const [
+              colors: [
                 AppTheme.primary,
                 AppTheme.accent,
                 AppTheme.success,
@@ -124,7 +124,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                     ),
                     child: Text(
                       '${_levelName(widget.level)} · Day ${widget.day} 완료!',
-                      style: const TextStyle(color: AppTheme.primary, fontWeight: FontWeight.bold),
+                      style: TextStyle(color: AppTheme.primary, fontWeight: FontWeight.bold),
                     ),
                   ).animate().fadeIn(duration: 400.ms),
 
@@ -146,7 +146,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                   // 메시지
                   Text(
                     _gradeMessage,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontSize: 28,
                       fontWeight: FontWeight.w900,
@@ -178,7 +178,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                               const SizedBox(width: 8),
                               Text(
                                 '+${widget.result.pointsEarned} 포인트 획득!',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: AppTheme.accent,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -189,10 +189,10 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                           const SizedBox(height: 4),
                           Text(
                             '총 ${widget.result.totalPoints} 포인트',
-                            style: const TextStyle(color: AppTheme.textSecondary, fontSize: 13),
+                            style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                           ),
                         ] else
-                          const Text(
+                          Text(
                             '이미 완료한 Day입니다',
                             style: TextStyle(color: AppTheme.textSecondary),
                           ),
@@ -317,7 +317,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                       onPressed: () => Navigator.pop(context),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: AppTheme.textSecondary,
-                        side: const BorderSide(color: AppTheme.textSecondary),
+                        side: BorderSide(color: AppTheme.textSecondary),
                         padding: const EdgeInsets.symmetric(vertical: 16),
                       ),
                       child: const Text('Day 목록으로', style: TextStyle(fontSize: 16)),
@@ -367,13 +367,13 @@ class _CircleScore extends StatelessWidget {
             children: [
               Text(
                 '$correct / $total',
-                style: const TextStyle(
+                style: TextStyle(
                   color: AppTheme.textPrimary,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 '정답',
                 style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
               ),
