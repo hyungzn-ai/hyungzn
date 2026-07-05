@@ -30,7 +30,7 @@ class CollectionScreen extends StatelessWidget {
             // ── 헤더 ───────────────────────────────────────────
             Container(
               padding: const EdgeInsets.fromLTRB(20, 16, 16, 14),
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: AppTheme.surface,
                 border: Border(bottom: BorderSide(color: Color(0xFF2A2A5A), width: 1)),
               ),
@@ -40,7 +40,7 @@ class CollectionScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
+                        Text(
                           '몬스터 도감',
                           style: TextStyle(
                             color: AppTheme.textPrimary,
@@ -54,7 +54,7 @@ class CollectionScreen extends StatelessWidget {
                           children: [
                             Text(
                               '${owned.length}',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 color: AppTheme.primary,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
@@ -62,7 +62,7 @@ class CollectionScreen extends StatelessWidget {
                             ),
                             Text(
                               ' / ${allSpecies.length} 수집',
-                              style: const TextStyle(color: AppTheme.textSecondary, fontSize: 13),
+                              style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                             ),
                           ],
                         ),
@@ -120,7 +120,7 @@ class CollectionScreen extends StatelessWidget {
                 slivers: [
                   // ── 보유 몬스터 ────────────────────────────
                   if (owned.isNotEmpty) ...[
-                    const SliverToBoxAdapter(
+                    SliverToBoxAdapter(
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(20, 8, 20, 8),
                         child: Text(
@@ -170,7 +170,7 @@ class CollectionScreen extends StatelessWidget {
 
                   // ── 미보유 몬스터 (실루엣) ─────────────────
                   if (notOwned.isNotEmpty) ...[
-                    const SliverToBoxAdapter(
+                    SliverToBoxAdapter(
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(20, 20, 20, 8),
                         child: Text(
@@ -323,7 +323,7 @@ class _MonsterCard extends StatelessWidget {
                   const SizedBox(height: 5),
                   Text(
                     species.evolutionNames[stage],
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontWeight: FontWeight.bold,
                       fontSize: 11,
@@ -335,7 +335,7 @@ class _MonsterCard extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     '${stage + 1}/6단계',
-                    style: const TextStyle(color: AppTheme.textSecondary, fontSize: 9),
+                    style: TextStyle(color: AppTheme.textSecondary, fontSize: 9),
                   ),
                   const SizedBox(height: 3),
                   // 진화 단계 도트
@@ -545,7 +545,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
                 children: [
                   Text(
                     species.evolutionNames[stage],
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -593,7 +593,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
             const SizedBox(height: 4),
             Text(
               '${stage + 1}/6 단계 · 진화 포인트 $evoPoints',
-              style: const TextStyle(color: AppTheme.textSecondary, fontSize: 13),
+              style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
             ),
 
             const SizedBox(height: 12),
@@ -651,7 +651,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(
                 species.description,
-                style: const TextStyle(color: AppTheme.textSecondary, fontSize: 12),
+                style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -674,7 +674,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(color: AppTheme.success.withOpacity(0.5)),
                       ),
-                      child: const Center(
+                      child: Center(
                         child: Text(
                           '🏆 최강 진화 완료!',
                           style: TextStyle(
@@ -700,7 +700,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
                           const SizedBox(width: 6),
                           Text(
                             '진화 비용: ${AppProvider.evolutionCost}pt',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppTheme.textSecondary,
                               fontSize: 13,
                             ),
@@ -934,7 +934,7 @@ class _ActiveMonsterButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: AppTheme.success.withOpacity(0.4)),
         ),
-        child: const Center(
+        child: Center(
           child: Text(
             '✅ 현재 활성 몬스터',
             style:
