@@ -25,48 +25,38 @@ workflows:
         script: |
           flutter --version
           flutter pub get
-
-      - name: Flutter analyze (선택적, 실패해도 빌드 계속)
-        script: |
-          flutter analyze || true
-
       - name: Install CocoaPods
         script: |
           cd ios
           pod install --repo-update
           cd ..
-
-      - name: Build iOS (서명 없음)
+      - name: Build iOS (xcodebuild, unsigned)
         script: |
-          cat > /tmp/fix_signing.py << 'EOF'
-          import re
-          pbxproj = 'ios/Runner.xcodeproj/project.pbxproj'
-          with open(pbxproj) as f:
-              content = f.read()
-          content = re.sub(r'DEVELOPMENT_TEAM = [^;]*;', 'DEVELOPMENT_TEAM = "";', content)
-          content = content.replace('CODE_SIGN_STYLE = Automatic;', 'CODE_SIGN_STYLE = Manual;')
-          with open(pbxproj, 'w') as f:
-              f.write(content)
-          print('Done - DEVELOPMENT_TEAM cleared')
-          EOF
-          python3 /tmp/fix_signing.py
-          flutter build ios --release --no-codesign
-
+          set -e
+          flutter build ios --release --no-codesign --config-only
+          xcodebuild -workspace ios/Runner.xcworkspace \
+            -scheme Runner \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build/ios_dd \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
       - name: Package unsigned IPA
         script: |
           set -e
-          cd build/ios/iphoneos
-          mkdir -p Payload
-          cp -R Runner.app Payload/
-          zip -qr WriteMon-unsigned.ipa Payload
+          APP_PATH=build/ios_dd/Build/Products/Release-iphoneos/Runner.app
+          mkdir -p build/ios/iphoneos
+          rm -rf Payload && mkdir Payload
+          cp -R "$APP_PATH" Payload/
+          zip -qr build/ios/iphoneos/WriteMon-unsigned.ipa Payload
           rm -rf Payload
-          ls -lh WriteMon-unsigned.ipa
-          cd ../../..
+          ls -lh build/ios/iphoneos/WriteMon-unsigned.ipa
 
     artifacts:
       - build/ios/iphoneos/WriteMon-unsigned.ipa
-      - build/ios/iphoneos/Runner.app/**
-      - flutter_drive.log
 
     publishing:
       email:
