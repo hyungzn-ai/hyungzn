@@ -191,6 +191,34 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                             '총 ${widget.result.totalPoints} 포인트',
                             style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                           ),
+                          if (widget.result.streakAfter > 0) ...[
+                            const SizedBox(height: 12),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 14, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: AppTheme.secondary.withOpacity(0.15),
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(
+                                    color: AppTheme.secondary.withOpacity(0.4)),
+                              ),
+                              child: Text(
+                                '🔥 ' +
+                                    widget.result.streakAfter.toString() +
+                                    '일 연속 학습 중!' +
+                                    (widget.result.streakBonus > 0
+                                        ? ' (보너스 +' +
+                                            widget.result.streakBonus.toString() +
+                                            'pt)'
+                                        : ''),
+                                style: TextStyle(
+                                  color: AppTheme.secondary,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
                         ] else
                           Text(
                             '이미 완료한 Day입니다',
