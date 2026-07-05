@@ -180,7 +180,7 @@ class _HomeTabState extends State<_HomeTab> {
             titleSpacing: 20,
             title: GestureDetector(
               onTap: () => _onTitleTap(context),
-              child: const Text(
+              child: Text(
                 '영작몬',
                 style: TextStyle(
                   color: AppTheme.textPrimary,
@@ -201,7 +201,7 @@ class _HomeTabState extends State<_HomeTab> {
                   context,
                   MaterialPageRoute(builder: (_) => const SettingsScreen()),
                 ),
-                icon: const Icon(Icons.settings_rounded, color: AppTheme.textSecondary),
+                icon: Icon(Icons.settings_rounded, color: AppTheme.textSecondary),
                 tooltip: '설정',
               ),
             ],
@@ -244,7 +244,7 @@ class _HomeTabState extends State<_HomeTab> {
                 const SizedBox(height: 24),
 
                 // ── 레벨 선택 ─────────────────────────────────
-                const Text(
+                Text(
                   '학습 시작',
                   style: TextStyle(
                     color: AppTheme.textPrimary,
@@ -345,7 +345,7 @@ class _MonsterPark extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
+            Text(
               '🌿 몬스터 파크',
               style: TextStyle(
                 color: AppTheme.textPrimary,
@@ -359,7 +359,7 @@ class _MonsterPark extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => const GachaScreen()),
               ),
               icon: const Text('🥚', style: TextStyle(fontSize: 13)),
-              label: const Text(
+              label: Text(
                 '뽑기',
                 style: TextStyle(color: AppTheme.accent, fontSize: 13),
               ),
@@ -580,20 +580,20 @@ class _ReviewBanner extends StatelessWidget {
                 children: [
                   Text(
                     '틀린 문제 $wrongCount개 복습하기',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
                     ),
                   ),
-                  const Text(
+                  Text(
                     '오답 복습으로 완벽하게 마스터해요!',
                     style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
                   ),
                 ],
               ),
             ),
-            const Icon(
+            Icon(
               Icons.arrow_forward_ios_rounded,
               color: AppTheme.secondary,
               size: 16,
@@ -645,10 +645,10 @@ class _StatCard extends StatelessWidget {
           Text(icon, style: const TextStyle(fontSize: 22)),
           const SizedBox(height: 4),
           Text(value,
-              style: const TextStyle(
+              style: TextStyle(
                   color: AppTheme.textPrimary, fontWeight: FontWeight.bold, fontSize: 16)),
           Text(label,
-              style: const TextStyle(color: AppTheme.textSecondary, fontSize: 10),
+              style: TextStyle(color: AppTheme.textSecondary, fontSize: 10),
               textAlign: TextAlign.center),
         ],
       ),
@@ -694,29 +694,29 @@ class _LevelCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(title,
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: AppTheme.textPrimary,
                           fontSize: 18,
                           fontWeight: FontWeight.bold)),
                   Text(description,
-                      style: const TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
+                      style: TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
                   const SizedBox(height: 6),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
                       value: completed / 50,
                       backgroundColor: Colors.white.withOpacity(0.1),
-                      valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primary),
+                      valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primary),
                       minHeight: 4,
                     ),
                   ),
                   const SizedBox(height: 2),
                   Text('$completed / 50 day 완료',
-                      style: const TextStyle(color: AppTheme.textSecondary, fontSize: 11)),
+                      style: TextStyle(color: AppTheme.textSecondary, fontSize: 11)),
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios_rounded,
+            Icon(Icons.arrow_forward_ios_rounded,
                 color: AppTheme.textSecondary, size: 16),
           ],
         ),
