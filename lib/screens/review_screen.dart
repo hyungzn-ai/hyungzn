@@ -27,7 +27,7 @@ class ReviewScreen extends StatelessWidget {
           if (wrongs.isNotEmpty)
             TextButton(
               onPressed: () => _confirmClear(context, provider),
-              child: const Text('전체 삭제', style: TextStyle(color: AppTheme.error)),
+              child: Text('전체 삭제', style: TextStyle(color: AppTheme.error)),
             ),
         ],
       ),
@@ -68,7 +68,7 @@ class ReviewScreen extends StatelessWidget {
         children: [
           const Text('🎉', style: TextStyle(fontSize: 64)),
           const SizedBox(height: 16),
-          const Text(
+          Text(
             '틀린 문제가 없어요!',
             style: TextStyle(
               color: AppTheme.textPrimary,
@@ -77,7 +77,7 @@ class ReviewScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
+          Text(
             '퀴즈를 풀면 틀린 문제가 여기 저장돼요.',
             style: TextStyle(color: AppTheme.textSecondary, fontSize: 14),
             textAlign: TextAlign.center,
@@ -122,13 +122,13 @@ class ReviewScreen extends StatelessWidget {
                 children: [
                   Text(
                     '총 ${wrongs.length}개의 오답',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                   ),
-                  const Text(
+                  Text(
                     '복습 퀴즈를 풀고 오답을 줄여보세요!',
                     style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
                   ),
@@ -148,7 +148,7 @@ class ReviewScreen extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(
                   '${entry.value.length}개',
-                  style: const TextStyle(color: AppTheme.textSecondary, fontSize: 12),
+                  style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
                 ),
               ],
             ),
@@ -192,23 +192,23 @@ class ReviewScreen extends StatelessWidget {
       builder: (_) => AlertDialog(
         backgroundColor: AppTheme.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Text('전체 삭제',
+        title: Text('전체 삭제',
             style: TextStyle(color: AppTheme.textPrimary, fontWeight: FontWeight.bold)),
-        content: const Text(
+        content: Text(
           '저장된 오답을 모두 삭제할까요?',
           style: TextStyle(color: AppTheme.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
+            child: Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
           ),
           TextButton(
             onPressed: () async {
               Navigator.pop(context);
               await provider.clearWrongAnswers();
             },
-            child: const Text('삭제', style: TextStyle(color: AppTheme.error)),
+            child: Text('삭제', style: TextStyle(color: AppTheme.error)),
           ),
         ],
       ),
@@ -261,14 +261,14 @@ class _WrongCardState extends State<_WrongCard> {
                   ),
                   child: Text(
                     'Day ${widget.wrong.day}',
-                    style: const TextStyle(color: AppTheme.primary, fontSize: 11),
+                    style: TextStyle(color: AppTheme.primary, fontSize: 11),
                   ),
                 ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     widget.wrong.korean,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
@@ -297,19 +297,19 @@ class _WrongCardState extends State<_WrongCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('✅ 정답',
+                    Text('✅ 정답',
                         style: TextStyle(
                             color: AppTheme.success, fontSize: 11, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 4),
                     Text(
                       widget.wrong.answers[0],
-                      style: const TextStyle(color: AppTheme.textPrimary, fontSize: 13),
+                      style: TextStyle(color: AppTheme.textPrimary, fontSize: 13),
                     ),
                     if (widget.wrong.answers.length > 1) ...[
                       const SizedBox(height: 2),
                       Text(
                         '또는: ${widget.wrong.answers.skip(1).join(' / ')}',
-                        style: const TextStyle(color: AppTheme.textSecondary, fontSize: 11),
+                        style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
                       ),
                     ],
                   ],
@@ -326,7 +326,7 @@ class _WrongCardState extends State<_WrongCard> {
                   ),
                   child: Text(
                     '💡 ${widget.wrong.hint}',
-                    style: const TextStyle(color: AppTheme.accent, fontSize: 12),
+                    style: TextStyle(color: AppTheme.accent, fontSize: 12),
                   ),
                 ),
               ],
@@ -334,7 +334,7 @@ class _WrongCardState extends State<_WrongCard> {
                 const SizedBox(height: 6),
                 Text(
                   widget.wrong.explanation,
-                  style: const TextStyle(
+                  style: TextStyle(
                       color: AppTheme.textSecondary, fontSize: 12, height: 1.4),
                 ),
               ],
@@ -455,7 +455,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
             const SizedBox(height: 12),
             Text(
               '복습 완료!',
-              style: const TextStyle(
+              style: TextStyle(
                 color: AppTheme.textPrimary,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -464,14 +464,14 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
             const SizedBox(height: 8),
             Text(
               '$_clearedCount / ${_queue.length}문제 통과',
-              style: const TextStyle(color: AppTheme.accent, fontSize: 16, fontWeight: FontWeight.bold),
+              style: TextStyle(color: AppTheme.accent, fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
             Text(
               _clearedCount == _queue.length
                   ? '모든 오답을 완전히 정복했어요! 🎉'
                   : '통과한 문제는 오답에서 삭제됐어요.',
-              style: const TextStyle(color: AppTheme.textSecondary, fontSize: 12),
+              style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
               textAlign: TextAlign.center,
             ),
           ],
@@ -506,7 +506,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
             child: Center(
               child: Text(
                 '${_index + 1} / $total',
-                style: const TextStyle(color: AppTheme.textSecondary),
+                style: TextStyle(color: AppTheme.textSecondary),
               ),
             ),
           ),
@@ -518,7 +518,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
           LinearProgressIndicator(
             value: progressVal,
             backgroundColor: AppTheme.surface,
-            valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.secondary),
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.secondary),
             minHeight: 4,
           ),
 
@@ -541,7 +541,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                         ),
                         child: Text(
                           '${_current.levelName} · Day ${_current.day}',
-                          style: const TextStyle(color: AppTheme.secondary, fontSize: 12),
+                          style: TextStyle(color: AppTheme.secondary, fontSize: 12),
                         ),
                       ),
                     ],
@@ -558,12 +558,12 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                     ),
                     child: Column(
                       children: [
-                        const Text('영어로 작성하세요',
+                        Text('영어로 작성하세요',
                             style: TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
                         const SizedBox(height: 10),
                         Text(
                           _current.korean,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppTheme.textPrimary,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -585,7 +585,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                       label: Text(_showHint ? '힌트 숨기기' : '힌트 보기'),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: AppTheme.accent,
-                        side: const BorderSide(color: AppTheme.accent, width: 1),
+                        side: BorderSide(color: AppTheme.accent, width: 1),
                       ),
                     ),
                     if (_showHint) ...[
@@ -599,7 +599,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                         ),
                         child: Text(
                           '💡 ${_current.hint}',
-                          style: const TextStyle(color: AppTheme.accent, fontSize: 14),
+                          style: TextStyle(color: AppTheme.accent, fontSize: 14),
                         ),
                       ).animate().fadeIn(duration: 200.ms),
                     ],
@@ -613,10 +613,10 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                     enabled: !_answered,
                     maxLines: 3,
                     minLines: 1,
-                    style: const TextStyle(color: AppTheme.textPrimary, fontSize: 16),
+                    style: TextStyle(color: AppTheme.textPrimary, fontSize: 16),
                     decoration: InputDecoration(
                       hintText: '영어로 입력하세요...',
-                      hintStyle: const TextStyle(color: AppTheme.textSecondary),
+                      hintStyle: TextStyle(color: AppTheme.textSecondary),
                       filled: true,
                       fillColor: AppTheme.card,
                       border: OutlineInputBorder(
@@ -625,7 +625,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(color: AppTheme.secondary, width: 2),
+                        borderSide: BorderSide(color: AppTheme.secondary, width: 2),
                       ),
                     ),
                     textInputAction: TextInputAction.done,
@@ -670,7 +670,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                           ),
                           const SizedBox(height: 6),
                           Text(_feedback,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: AppTheme.textPrimary, fontSize: 14, height: 1.5)),
                         ],
                       ),
