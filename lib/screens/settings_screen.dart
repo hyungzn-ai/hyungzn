@@ -26,7 +26,7 @@ class SettingsScreen extends StatelessWidget {
                 const SizedBox(height: 8),
                 const Text('🏆', style: TextStyle(fontSize: 56)),
                 const SizedBox(height: 8),
-                const Text(
+                Text(
                   '영작몬',
                   style: TextStyle(
                     color: AppTheme.textPrimary,
@@ -37,7 +37,7 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 Text(
                   'v1.0.0',
-                  style: const TextStyle(color: AppTheme.textSecondary, fontSize: 13),
+                  style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                 ),
                 const SizedBox(height: 24),
               ],
@@ -116,7 +116,7 @@ class SettingsScreen extends StatelessWidget {
               color: AppTheme.card,
               borderRadius: BorderRadius.circular(14),
             ),
-            child: const Column(
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
@@ -153,18 +153,18 @@ class SettingsScreen extends StatelessWidget {
       builder: (_) => AlertDialog(
         backgroundColor: AppTheme.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Text(
+        title: Text(
           '틀린 문제 초기화',
           style: TextStyle(color: AppTheme.textPrimary, fontWeight: FontWeight.bold),
         ),
         content: Text(
           '저장된 오답 ${provider.progress.wrongAnswers.length}개를 모두 삭제할까요?\n이 작업은 되돌릴 수 없습니다.',
-          style: const TextStyle(color: AppTheme.textSecondary, height: 1.5),
+          style: TextStyle(color: AppTheme.textSecondary, height: 1.5),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
+            child: Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
           ),
           TextButton(
             onPressed: () async {
@@ -172,7 +172,7 @@ class SettingsScreen extends StatelessWidget {
               await provider.clearWrongAnswers();
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                  SnackBar(
                     content: Text('오답 목록이 초기화됐습니다.'),
                     backgroundColor: AppTheme.success,
                     behavior: SnackBarBehavior.floating,
@@ -180,7 +180,7 @@ class SettingsScreen extends StatelessWidget {
                 );
               }
             },
-            child: const Text('삭제', style: TextStyle(color: AppTheme.error)),
+            child: Text('삭제', style: TextStyle(color: AppTheme.error)),
           ),
         ],
       ),
@@ -193,7 +193,7 @@ class SettingsScreen extends StatelessWidget {
       builder: (_) => AlertDialog(
         backgroundColor: AppTheme.card,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Row(
+        title: Row(
           children: [
             Text('⚠️', style: TextStyle(fontSize: 22)),
             SizedBox(width: 8),
@@ -203,7 +203,7 @@ class SettingsScreen extends StatelessWidget {
             ),
           ],
         ),
-        content: const Text(
+        content: Text(
           '모든 학습 진행상황이 초기화됩니다.\n\n'
           '• 완료한 Day 기록\n'
           '• 획득한 포인트\n'
@@ -215,7 +215,7 @@ class SettingsScreen extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
+            child: Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
           ),
           ElevatedButton(
             onPressed: () async {
@@ -223,7 +223,7 @@ class SettingsScreen extends StatelessWidget {
               await provider.resetProgress();
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
+                  SnackBar(
                     content: Text('진행상황이 초기화됐습니다. 처음부터 시작해요! 💪'),
                     backgroundColor: AppTheme.primary,
                     behavior: SnackBarBehavior.floating,
@@ -331,7 +331,7 @@ class _SectionHeader extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 10),
       child: Text(
         label,
-        style: const TextStyle(
+        style: TextStyle(
           color: AppTheme.textSecondary,
           fontSize: 12,
           fontWeight: FontWeight.bold,
@@ -361,10 +361,10 @@ class _InfoRow extends StatelessWidget {
           const SizedBox(width: 12),
           Expanded(
             child: Text(label,
-                style: const TextStyle(color: AppTheme.textPrimary, fontSize: 14)),
+                style: TextStyle(color: AppTheme.textPrimary, fontSize: 14)),
           ),
           Text(value,
-              style: const TextStyle(
+              style: TextStyle(
                   color: AppTheme.textSecondary, fontSize: 13)),
         ],
       ),
@@ -425,7 +425,7 @@ class _ActionTile extends StatelessWidget {
                             fontSize: 14)),
                     const SizedBox(height: 2),
                     Text(subtitle,
-                        style: const TextStyle(
+                        style: TextStyle(
                             color: AppTheme.textSecondary, fontSize: 11)),
                   ],
                 ),
