@@ -5,6 +5,7 @@ import '../models/question.dart';
 import '../models/wrong_answer.dart';
 import '../providers/app_provider.dart';
 import '../services/question_loader.dart';
+import '../services/tts_service.dart';
 import '../utils/answer_checker.dart';
 import '../utils/constants.dart';
 import '../utils/theme.dart';
@@ -84,6 +85,7 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     });
     _focusNode.unfocus();
+    context.read<AppProvider>().recordQuizAnswered();
 
     // 틀렸으면 wrongAnswers에 저장 (비동기, 화면 블로킹 없음)
     if (!result.isCorrect) {
@@ -112,6 +114,7 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     });
     _focusNode.unfocus();
+    context.read<AppProvider>().recordQuizAnswered();
 
     // 답 보기도 틀린 것으로 처리
     context.read<AppProvider>().addWrongAnswer(
@@ -384,6 +387,24 @@ class _QuizScreenState extends State<QuizScreen> {
                             _feedback,
                             style: TextStyle(
                                 color: AppTheme.textPrimary, fontSize: 14, height: 1.5),
+                          ),
+                          const SizedBox(height: 8),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: OutlinedButton.icon(
+                              onPressed: () =>
+                                  TtsService.instance.speak(_current.answers[0]),
+                              icon: const Icon(Icons.volume_up_rounded, size: 16),
+                              label: const Text('정답 발음 듣기',
+                                  style: TextStyle(fontSize: 12)),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: AppTheme.primary,
+                                side: BorderSide(
+                                    color: AppTheme.primary.withOpacity(0.5)),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 12, vertical: 6),
+                              ),
+                            ),
                           ),
                         ],
                       ),
