@@ -43,13 +43,50 @@ class AnswerChecker {
     return keywords.every((kw) => normalized.contains(kw.toLowerCase()));
   }
 
+  static List<String> _tokens(String text) {
+    return _normalize(text).split(' ').where((w) => w.isNotEmpty).toList();
+  }
+
+  /// 오답일 때 부분 정답 피드백 생성 (어디까지 맞았는지 알려주기)
+  static String partialFeedback(String userAnswer, String bestAnswer) {
+    final u = _tokens(userAnswer);
+    final b = _tokens(bestAnswer);
+    if (u.isEmpty || b.isEmpty) return '';
+
+    final uSet = u.toSet();
+    final bSet = b.toSet();
+    final missing = bSet.difference(uSet).toList();
+    final extra = uSet.difference(bSet).toList();
+
+    if (missing.isEmpty && extra.isEmpty) {
+      return '🧩 단어는 전부 맞았어요! 어순만 다시 확인해보세요.';
+    }
+
+    final matched = bSet.length - missing.length;
+    final lines = <String>[];
+    if (matched > 0 && matched * 2 >= bSet.length) {
+      lines.add('👍 절반 이상 맞았어요! 조금만 더!');
+    }
+    if (missing.isNotEmpty && missing.length <= 3) {
+      final joined = missing.join(', ');
+      lines.add('🔍 빠진 단어: ' + joined);
+    }
+    if (extra.isNotEmpty && extra.length <= 3) {
+      final joined = extra.join(', ');
+      lines.add('✂️ 불필요한 단어: ' + joined);
+    }
+    return lines.join('\n');
+  }
+
   static AnswerResult check(String userAnswer, List<String> acceptedAnswers,
       {List<String> keywords = const [], String naturalForm = ''}) {
     if (userAnswer.trim().isEmpty) {
-      return const AnswerResult(isCorrect: false, isNatural: false, feedback: '답을 입력해 주세요.');
+      return const AnswerResult(
+          isCorrect: false, isNatural: false, feedback: '답을 입력해 주세요.');
     }
 
     final normalizedUser = _normalize(userAnswer);
+    final best = acceptedAnswers[0];
 
     // 정확히 일치하는 답 검사
     for (int i = 0; i < acceptedAnswers.length; i++) {
@@ -58,8 +95,9 @@ class AnswerChecker {
         final isNatural = i == 0; // 첫 번째 답이 가장 자연스러운 표현
         final feedback = isNatural
             ? '완벽해요! 가장 자연스러운 표현이에요. 👍'
-            : '맞아요! 참고로 더 자연스러운 표현은:\n"${acceptedAnswers[0]}"';
-        return AnswerResult(isCorrect: true, isNatural: isNatural, feedback: feedback);
+            : '맞아요! 참고로 더 자연스러운 표현은:\n"' + best + '"';
+        return AnswerResult(
+            isCorrect: true, isNatural: isNatural, feedback: feedback);
       }
     }
 
@@ -68,16 +106,19 @@ class AnswerChecker {
       return AnswerResult(
         isCorrect: true,
         isNatural: false,
-        feedback: '맞아요! 더 자연스러운 표현은:\n"${acceptedAnswers[0]}"',
+        feedback: '맞아요! 더 자연스러운 표현은:\n"' + best + '"',
       );
     }
 
-    return AnswerResult(
-      isCorrect: false,
-      isNatural: false,
-      feedback: naturalForm.isNotEmpty
-          ? '아쉬워요. 정답: "${acceptedAnswers[0]}"\n\n💡 $naturalForm'
-          : '아쉬워요. 정답: "${acceptedAnswers[0]}"',
-    );
+    // 오답 — 부분 정답 피드백 포함
+    final partial = partialFeedback(userAnswer, best);
+    var feedback = '아쉬워요. 정답: "' + best + '"';
+    if (partial.isNotEmpty) {
+      feedback = partial + '\n\n' + feedback;
+    }
+    if (naturalForm.isNotEmpty) {
+      feedback = feedback + '\n\n💡 ' + naturalForm;
+    }
+    return AnswerResult(isCorrect: false, isNatural: false, feedback: feedback);
   }
 }
