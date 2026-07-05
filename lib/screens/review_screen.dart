@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../models/wrong_answer.dart';
 import '../providers/app_provider.dart';
+import '../services/tts_service.dart';
 import '../utils/answer_checker.dart';
 import '../utils/theme.dart';
 
@@ -19,6 +20,7 @@ class ReviewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = context.watch<AppProvider>();
     final wrongs = provider.progress.wrongAnswers;
+    final due = provider.dueWrongAnswers;
 
     return Scaffold(
       appBar: AppBar(
@@ -43,7 +45,7 @@ class ReviewScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (_) => ReviewQuizScreen(
-                        wrongAnswers: List.from(wrongs),
+                        wrongAnswers: List.from(due.isNotEmpty ? due : wrongs),
                       ),
                     ),
                   ),
@@ -52,7 +54,9 @@ class ReviewScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
                   child: Text(
-                    '복습 퀴즈 시작 (${wrongs.length}문제) 🔥',
+                    due.isNotEmpty
+                        ? '오늘의 복습 시작 (' + due.length.toString() + '문제) 🔥'
+                        : '전체 복습 (' + wrongs.length.toString() + '문제)',
                     style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -282,6 +286,25 @@ class _WrongCardState extends State<_WrongCard> {
                 ),
               ],
             ),
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                Text(
+                  widget.wrong.isDue ? '🟠 오늘 복습 대상' : '⏳ 복습 대기 중',
+                  style: TextStyle(
+                    color: widget.wrong.isDue
+                        ? AppTheme.accent
+                        : AppTheme.textSecondary,
+                    fontSize: 11,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  '복습 Lv.' + widget.wrong.box.toString() + '/3',
+                  style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
+                ),
+              ],
+            ),
             if (_expanded) ...[
               const SizedBox(height: 10),
               const Divider(color: Colors.white12),
@@ -313,6 +336,17 @@ class _WrongCardState extends State<_WrongCard> {
                       ),
                     ],
                   ],
+                ),
+              ),
+              const SizedBox(height: 4),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton.icon(
+                  onPressed: () =>
+                      TtsService.instance.speak(widget.wrong.answers[0]),
+                  icon: const Icon(Icons.volume_up_rounded, size: 14),
+                  label: const Text('발음 듣기', style: TextStyle(fontSize: 12)),
+                  style: TextButton.styleFrom(foregroundColor: AppTheme.primary),
                 ),
               ),
               if (widget.wrong.hint.isNotEmpty) ...[
@@ -415,10 +449,23 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
     });
     _focusNode.unfocus();
 
-    // 맞췄으면 오답 목록에서 제거
+    // 간격 반복(SRS): 통과 시 승급, 실패 시 리셋
+    final provider = context.read<AppProvider>();
     if (result.isCorrect) {
-      context.read<AppProvider>().removeWrongAnswer(_current.key);
       _clearedCount++;
+      provider.recordReviewCleared();
+      provider.promoteWrongAnswer(_current.key).then((graduated) {
+        if (!mounted) return;
+        setState(() {
+          _feedback = (graduated
+                  ? '🎓 완전 정복! 오답 목록에서 졸업했어요.'
+                  : '⏫ 통과! 며칠 뒤 한 번 더 복습하면 졸업이에요.') +
+              '\n' +
+              _feedback;
+        });
+      });
+    } else {
+      provider.demoteWrongAnswer(_current.key);
     }
   }
 
@@ -470,7 +517,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
             Text(
               _clearedCount == _queue.length
                   ? '모든 오답을 완전히 정복했어요! 🎉'
-                  : '통과한 문제는 오답에서 삭제됐어요.',
+                  : '통과한 문제는 복습 단계가 올라가요. 3단계 통과 시 졸업!',
               style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
               textAlign: TextAlign.center,
             ),
@@ -661,7 +708,7 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            _isCorrect ? '✅ 통과! 오답에서 제거됐어요.' : '❌ 아직 더 연습이 필요해요.',
+                            _isCorrect ? '✅ 통과!' : '❌ 아직 더 연습이 필요해요. 내일 다시 만나요!',
                             style: TextStyle(
                               color: _isCorrect ? AppTheme.success : AppTheme.error,
                               fontWeight: FontWeight.bold,
@@ -672,6 +719,22 @@ class _ReviewQuizScreenState extends State<ReviewQuizScreen> {
                           Text(_feedback,
                               style: TextStyle(
                                   color: AppTheme.textPrimary, fontSize: 14, height: 1.5)),
+                          const SizedBox(height: 8),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: OutlinedButton.icon(
+                              onPressed: () =>
+                                  TtsService.instance.speak(_current.answers[0]),
+                              icon: const Icon(Icons.volume_up_rounded, size: 16),
+                              label: const Text('정답 발음 듣기',
+                                  style: TextStyle(fontSize: 12)),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: AppTheme.primary,
+                                side: BorderSide(
+                                    color: AppTheme.primary.withOpacity(0.5)),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ).animate().fadeIn(duration: 250.ms).slideY(begin: 0.08, end: 0),
