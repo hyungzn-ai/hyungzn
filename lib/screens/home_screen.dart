@@ -5,6 +5,7 @@ import '../data/monster_data.dart';
 import '../models/monster.dart';
 import '../widgets/element_icon.dart';
 import '../providers/app_provider.dart';
+import '../services/daily_service.dart';
 import '../utils/theme.dart';
 import '../widgets/monster_sprite_widget.dart';
 import 'level_select_screen.dart';
@@ -167,6 +168,7 @@ class _HomeTabState extends State<_HomeTab> {
     final provider = context.watch<AppProvider>();
     final progress = provider.progress;
     final wrongCount = progress.wrongAnswers.length;
+    final dueCount = provider.dueWrongAnswers.length;
 
     return SafeArea(
       child: CustomScrollView(
@@ -225,6 +227,12 @@ class _HomeTabState extends State<_HomeTab> {
                       label: '${progress.evolutionPoints} 진화pt',
                       color: const Color(0xFF7EC8E3),
                     ),
+                    const SizedBox(width: 10),
+                    _PointChip(
+                      icon: '🔥',
+                      label: provider.daily.currentStreak.toString() + '일 연속',
+                      color: AppTheme.secondary,
+                    ),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -233,9 +241,15 @@ class _HomeTabState extends State<_HomeTab> {
                 _MonsterPark(progress: progress),
                 const SizedBox(height: 20),
 
+                // ── 일일 미션 ─────────────────────────────────
+                _MissionsCard(provider: provider),
+                const SizedBox(height: 20),
+
                 // ── 오답 복습 배너 ────────────────────────────
                 if (wrongCount > 0)
-                  _ReviewBanner(wrongCount: wrongCount).animate().fadeIn(duration: 400.ms),
+                  _ReviewBanner(wrongCount: wrongCount, dueCount: dueCount)
+                      .animate()
+                      .fadeIn(duration: 400.ms),
 
                 if (wrongCount > 0) const SizedBox(height: 20),
 
@@ -539,7 +553,8 @@ class _ParkMonsterIcon extends StatelessWidget {
 
 class _ReviewBanner extends StatelessWidget {
   final int wrongCount;
-  const _ReviewBanner({required this.wrongCount});
+  final int dueCount;
+  const _ReviewBanner({required this.wrongCount, this.dueCount = 0});
 
   @override
   Widget build(BuildContext context) {
@@ -579,7 +594,9 @@ class _ReviewBanner extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '틀린 문제 $wrongCount개 복습하기',
+                    dueCount > 0
+                        ? '오늘 복습할 문제 ' + dueCount.toString() + '개!'
+                        : '틀린 문제 ' + wrongCount.toString() + '개 보관 중',
                     style: TextStyle(
                       color: AppTheme.textPrimary,
                       fontWeight: FontWeight.bold,
@@ -720,6 +737,127 @@ class _LevelCard extends StatelessWidget {
                 color: AppTheme.textSecondary, size: 16),
           ],
         ),
+      ),
+    );
+  }
+}
+
+
+// ─────────────────────────────────────────────────────────────
+// 일일 미션 카드
+// ─────────────────────────────────────────────────────────────
+
+class _MissionsCard extends StatelessWidget {
+  final AppProvider provider;
+  const _MissionsCard({required this.provider});
+
+  @override
+  Widget build(BuildContext context) {
+    final daily = provider.daily;
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppTheme.card,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppTheme.accent.withOpacity(0.3)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Text('📅', style: TextStyle(fontSize: 18)),
+              const SizedBox(width: 8),
+              Text(
+                '일일 미션',
+                style: TextStyle(
+                  color: AppTheme.textPrimary,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          for (final m in DailyService.missions) _missionRow(context, m, daily),
+        ],
+      ),
+    );
+  }
+
+  Widget _missionRow(BuildContext context, MissionDef m, DailyService daily) {
+    final count = daily.countOf(m.id);
+    final done = count >= m.goal;
+    final claimed = daily.isClaimed(m.id);
+    final shown = count > m.goal ? m.goal : count;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(
+        children: [
+          Text(m.emoji, style: const TextStyle(fontSize: 18)),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  m.title,
+                  style: TextStyle(
+                    color: AppTheme.textPrimary,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(3),
+                  child: LinearProgressIndicator(
+                    value: shown / m.goal,
+                    backgroundColor: Colors.white.withOpacity(0.08),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      done ? AppTheme.success : AppTheme.accent,
+                    ),
+                    minHeight: 5,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 10),
+          if (claimed)
+            const Text('✅', style: TextStyle(fontSize: 16))
+          else if (done)
+            ElevatedButton(
+              onPressed: () async {
+                final reward = await provider.claimMission(m.id);
+                if (reward > 0 && context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content:
+                          Text('🎁 미션 보상 +' + reward.toString() + 'pt 획득!'),
+                      backgroundColor: AppTheme.success,
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppTheme.accent,
+                foregroundColor: Colors.black,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                minimumSize: Size.zero,
+              ),
+              child: Text('+' + m.reward.toString() + 'pt 받기',
+                  style: const TextStyle(
+                      fontSize: 12, fontWeight: FontWeight.bold)),
+            )
+          else
+            Text(
+              shown.toString() + '/' + m.goal.toString(),
+              style: TextStyle(color: AppTheme.textSecondary, fontSize: 12),
+            ),
+        ],
       ),
     );
   }
