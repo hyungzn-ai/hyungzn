@@ -51,9 +51,10 @@ class _QuizScreenState extends State<QuizScreen> {
     if (mounted) {
       final rng = Random();
       final n = data?.questions.length ?? 0;
+      final mode = context.read<AppProvider>().quizMode;
       _arrangeFlags = List.generate(n, (_) {
-        if (widget.mode == 'arrange') return true;
-        if (widget.mode == 'mixed') return rng.nextBool();
+        if (mode == 'arrange') return true;
+        if (mode == 'mixed') return rng.nextBool();
         return false;
       });
       setState(() {
@@ -99,6 +100,91 @@ class _QuizScreenState extends State<QuizScreen> {
     setState(() {
       _pool.add(_picked.removeAt(i));
     });
+  }
+
+  void _showModeSheet() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppTheme.surface,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetCtx) {
+        final current = context.read<AppProvider>().quizMode;
+        Widget option(String mode, String emoji, String title) {
+          final selected = current == mode;
+          return ListTile(
+            leading: Text(emoji, style: const TextStyle(fontSize: 22)),
+            title: Text(title,
+                style: TextStyle(
+                    color:
+                        selected ? AppTheme.primary : AppTheme.textPrimary,
+                    fontWeight:
+                        selected ? FontWeight.bold : FontWeight.normal)),
+            trailing: selected
+                ? Icon(Icons.check_rounded, color: AppTheme.primary)
+                : null,
+            onTap: () {
+              Navigator.pop(sheetCtx);
+              _applyMode(mode);
+            },
+          );
+        }
+
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 14),
+              Text('학습 모드 변경',
+                  style: TextStyle(
+                      color: AppTheme.textPrimary,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 4),
+              Text('남은 문제부터 바로 적용돼요',
+                  style:
+                      TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
+              const SizedBox(height: 8),
+              option('write', '✍️', '직접 작문'),
+              option('arrange', '🧩', '순서 맞추기'),
+              option('mixed', '🎲', '랜덤 믹스'),
+              const SizedBox(height: 8),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  void _applyMode(String mode) {
+    context.read<AppProvider>().setQuizMode(mode);
+    if (_arrangeFlags.isEmpty) return;
+    final rng = Random();
+    final start = _answered ? _currentIndex + 1 : _currentIndex;
+    for (int i = start; i < _arrangeFlags.length; i++) {
+      _arrangeFlags[i] = mode == 'arrange'
+          ? true
+          : mode == 'mixed'
+              ? rng.nextBool()
+              : false;
+    }
+    if (!_answered) {
+      setState(() {
+        _pool = [];
+        _picked = [];
+        _inputCtrl.clear();
+      });
+      _setupArrange();
+      if (!_isArrange) {
+        Future.delayed(const Duration(milliseconds: 100),
+            () => _focusNode.requestFocus());
+      } else {
+        setState(() {});
+      }
+    } else {
+      setState(() {});
+    }
   }
 
   void _checkAnswer() {
@@ -240,6 +326,11 @@ class _QuizScreenState extends State<QuizScreen> {
       appBar: AppBar(
         title: Text('${_levelName(widget.level)} · Day ${widget.day}'),
         actions: [
+          IconButton(
+            onPressed: _showModeSheet,
+            icon: const Icon(Icons.tune_rounded),
+            tooltip: '학습 모드 변경',
+          ),
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Center(
