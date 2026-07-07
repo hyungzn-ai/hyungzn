@@ -3,11 +3,11 @@ import '../models/monster.dart';
 
 class MonsterData {
   // ─────────────────────────────────────────────────────────────
-  // 25종 몬스터 (18 common + 7 hidden)
+  // 17종 몬스터 (11 common + 6 hidden)
   // hidden 조건: 이름에 '환상', '무지개', '빛', '어둠', '혼돈', '우주', '요정' 포함
   // ─────────────────────────────────────────────────────────────
   static const List<MonsterSpecies> allSpecies = [
-    // ── Common (18종) ──────────────────────────────────────────
+    // ── Common (11종) ──────────────────────────────────────────
     MonsterSpecies(
       id: 'flameling',
       name: '플레임링',
@@ -59,26 +59,6 @@ class MonsterData {
       rarity: MonsterRarity.common,
     ),
     MonsterSpecies(
-      id: 'shadowling',
-      name: '쉐도우링',
-      element: '그림자',
-      evolutionNames: ['쉐도우링', '다크픽', '이클립스', '보이드워커', '다크로드', '암흑신'],
-      evolutionEmojis: ['🌑', '🦇', '🌚', '💀', '🔮', '🖤'],
-      description: '그림자에서 나타나는 신비로운 존재. 지식과 비밀의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
-      id: 'lightling',
-      name: '라이트링',
-      element: '광명',
-      evolutionNames: ['라이트링', '루미나', '선가드', '오로라', '솔라리스', '광명신'],
-      evolutionEmojis: ['✨', '💫', '☀️', '🌈', '🌟', '🌠'],
-      description: '광명에서 탄생한 순수한 존재. 희망과 치유의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
       id: 'frostling',
       name: '프로스트링',
       element: '얼음',
@@ -95,26 +75,6 @@ class MonsterData {
       evolutionNames: ['네이처링', '그린픽', '포레스트', '그로브가드', '월드트리', '생명의신'],
       evolutionEmojis: ['🌿', '🍀', '🌳', '🌲', '🌏', '🌺'],
       description: '자연의 기운을 품은 생명체. 생명과 번영의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
-      id: 'cosmicling',
-      name: '코스믹링',
-      element: '우주',
-      evolutionNames: ['코스믹링', '스타더스트', '네뷸라', '갤럭시가드', '유니버스', '우주창조자'],
-      evolutionEmojis: ['🌌', '⭐', '🌠', '🪐', '🔭', '🌌'],
-      description: '우주의 비밀을 담은 신비로운 존재. 무한한 가능성의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
-      id: 'blossoling',
-      name: '블러쏘링',
-      element: '꽃',
-      evolutionNames: ['블러쏘링', '플라워', '페탈가드', '블룸퀸', '사쿠라로드', '화신여왕'],
-      evolutionEmojis: ['🌸', '🌺', '💐', '🌻', '🏵️', '🌹'],
-      description: '봄바람에 피어난 꽃의 정령. 아름다움과 부드러움의 상징.',
       unlockDay: 0,
       rarity: MonsterRarity.common,
     ),
@@ -139,16 +99,6 @@ class MonsterData {
       rarity: MonsterRarity.common,
     ),
     MonsterSpecies(
-      id: 'sandling',
-      name: '샌드링',
-      element: '모래',
-      evolutionNames: ['샌드링', '듄', '사막폭풍', '피라미드가드', '파라오', '사막의신'],
-      evolutionEmojis: ['🏜️', '🌵', '🐪', '🏺', '👁️', '🌞'],
-      description: '사막의 모래 속에 잠들어 있던 고대 정령. 신비와 불굴의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
       id: 'crystaling',
       name: '크리스탈링',
       element: '광물',
@@ -168,39 +118,9 @@ class MonsterData {
       unlockDay: 0,
       rarity: MonsterRarity.common,
     ),
-    MonsterSpecies(
-      id: 'stormling',
-      name: '스톰링',
-      element: '폭풍',
-      evolutionNames: ['스톰링', '스쿼올', '허리케인', '사이클로워', '슈퍼스톰', '폭풍의신'],
-      evolutionEmojis: ['🌀', '⛈️', '🌊', '💥', '🌪️', '🌩️'],
-      description: '바다와 하늘이 맞닿는 폭풍에서 탄생. 격렬함과 돌파력의 상징.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
-    MonsterSpecies(
-      id: 'magicling',
-      name: '매직링',
-      element: '마법',
-      evolutionNames: ['매직링', '위자드', '소서러', '아케인', '마법대현자', '마법신황'],
-      evolutionEmojis: ['🪄', '✨', '🧙', '🔯', '⚗️', '🔮'],
-      description: '마법진에서 소환된 신비한 존재. 지식과 마법의 힘을 담아.',
-      unlockDay: 0,
-      rarity: MonsterRarity.common,
-    ),
 
-    // ── Hidden (4종, 각 3%) ────────────────────────────────────
+    // ── Hidden (6종, 각 3%) ────────────────────────────────────
     // 이름에 '환상', '무지개', '빛', '어둠' 포함 → 히든 몬스터
-    MonsterSpecies(
-      id: 'dragonling',
-      name: '환상드래곤',
-      element: '전설',
-      evolutionNames: ['환상드래곤', '환상드레이크', '환상와이번', '환상로드', '환상신룡', '환상신룡황'],
-      evolutionEmojis: ['🥚', '🐊', '🦎', '🐲', '🐉', '🌟'],
-      description: '✨ 히든 ✨ 환상 속에서만 존재하는 전설의 드래곤. 최고의 힘과 지혜를 겸비.',
-      unlockDay: 999,
-      rarity: MonsterRarity.hidden,
-    ),
     MonsterSpecies(
       id: 'phoenixling',
       name: '무지개피닉스',
