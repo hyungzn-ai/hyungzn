@@ -506,6 +506,7 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
     final stage = mp.evolutionStage;
     final evoPoints = progress.evolutionPoints;
     final canEvolve = provider.canEvolveMonster(widget.speciesId);
+    final canEvolvePts = provider.canEvolveWithPoints(widget.speciesId);
     final isHidden = species.isHidden;
 
     return Scaffold(
@@ -768,6 +769,54 @@ class _EvolutionScreenState extends State<EvolutionScreen> {
                               : '진화 포인트 부족 (${AppProvider.evolutionCost}pt 필요)',
                           style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 15),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton(
+                        onPressed: canEvolvePts
+                            ? () async {
+                                final success = await provider
+                                    .evolveMonsterWithPoints(widget.speciesId);
+                                if (success && mounted) {
+                                  final newStage = provider
+                                      .progress.monsters[widget.speciesId]!
+                                      .evolutionStage;
+                                  _pageCtrl.animateToPage(
+                                    newStage,
+                                    duration: const Duration(milliseconds: 500),
+                                    curve: Curves.easeOutBack,
+                                  );
+                                  if (!mounted) return;
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        '✨ ${species.evolutionNames[newStage]}으로 진화했어요!',
+                                      ),
+                                      backgroundColor: AppTheme.success,
+                                      behavior: SnackBarBehavior.fixed,
+                                      duration: const Duration(seconds: 2),
+                                    ),
+                                  );
+                                }
+                              }
+                            : null,
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppTheme.accent,
+                          side: BorderSide(
+                              color: AppTheme.accent.withOpacity(0.6)),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14)),
+                        ),
+                        child: Text(
+                          canEvolvePts
+                              ? '⭐ 일반 포인트로 진화 (${AppProvider.evolutionCostPoints}pt)'
+                              : '⭐ 일반 포인트 부족 (${AppProvider.evolutionCostPoints}pt 필요)',
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 14),
                         ),
                       ),
                     ),
