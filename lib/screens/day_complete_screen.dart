@@ -4,6 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../providers/app_provider.dart';
 import '../utils/theme.dart';
 import 'home_screen.dart';
+import 'quiz_screen.dart';
 
 class DayCompleteScreen extends StatefulWidget {
   final String level;
@@ -11,6 +12,7 @@ class DayCompleteScreen extends StatefulWidget {
   final int correctCount;
   final int totalCount;
   final DayCompleteResult result;
+  final String mode;
 
   const DayCompleteScreen({
     super.key,
@@ -19,6 +21,7 @@ class DayCompleteScreen extends StatefulWidget {
     required this.correctCount,
     required this.totalCount,
     required this.result,
+    this.mode = 'write',
   });
 
   @override
@@ -319,6 +322,36 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                   const SizedBox(height: 40),
 
                   // 버튼들
+                  if (widget.day < 50) ...[
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => QuizScreen(
+                                level: widget.level,
+                                day: widget.day + 1,
+                                mode: widget.mode,
+                              ),
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.success,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                        ),
+                        child: Text(
+                          '➡️ 다음 Day ' + (widget.day + 1).toString() + ' 바로 시작!',
+                          style: const TextStyle(
+                              fontSize: 17, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ).animate().fadeIn(delay: 350.ms),
+                    const SizedBox(height: 12),
+                  ],
+
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
