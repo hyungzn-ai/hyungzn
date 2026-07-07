@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user_progress.dart';
 import '../models/monster.dart';
 import '../models/wrong_answer.dart';
@@ -14,12 +15,14 @@ class AppProvider extends ChangeNotifier {
   late UserProgress _progress;
   bool _isLoaded = false;
   bool _devMode = false;
+  String _quizMode = 'write'; // 'write' | 'arrange' | 'mixed'
   int _themeIndex = 0;
   late DailyService daily;
 
   UserProgress get progress => _progress;
   bool get isLoaded => _isLoaded;
   bool get devMode => _devMode;
+  String get quizMode => _quizMode;
   int get themeIndex => _themeIndex;
   ThemeData get currentTheme => AppTheme.buildTheme(AppTheme.allThemes[_themeIndex]);
 
@@ -30,8 +33,21 @@ class AppProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void toggleDevMode() {
-    _devMode = !_devMode;
+  void toggleDevMode() => setDevMode(!_devMode);
+
+  /// 개발자 모드: 포인트 무한 사용 + 모든 Day 오픈
+  Future<void> setDevMode(bool on) async {
+    _devMode = on;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('dev_mode', on);
+    notifyListeners();
+  }
+
+  /// 퀴즈 학습 모드 설정
+  Future<void> setQuizMode(String mode) async {
+    _quizMode = mode;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('quiz_mode', mode);
     notifyListeners();
   }
 
@@ -62,6 +78,9 @@ class AppProvider extends ChangeNotifier {
     _progress = await _storage.loadProgress();
     _themeIndex = await _storage.loadThemeIndex();
     daily = await DailyService.load();
+    final prefs = await SharedPreferences.getInstance();
+    _devMode = prefs.getBool('dev_mode') ?? false;
+    _quizMode = prefs.getString('quiz_mode') ?? 'write';
     AppTheme.setTheme(_themeIndex);
 
     // 첫 실행 시 기본 몬스터 지급
@@ -169,9 +188,10 @@ class AppProvider extends ChangeNotifier {
 
   GachaResult? performGacha({required int count}) {
     final cost = count == 1 ? gachaCostSingle : gachaCost10x;
-    if (_progress.totalPoints < cost) return null;
-
-    _progress.totalPoints -= cost;
+    if (!_devMode) {
+      if (_progress.totalPoints < cost) return null;
+      _progress.totalPoints -= cost;
+    }
 
     final rng = Random();
     final commons = MonsterData.commonPool;
@@ -226,20 +246,45 @@ class AppProvider extends ChangeNotifier {
   // 진화 시스템 — 진화 포인트 200 소비
   // ─────────────────────────────────────────────────────────────
   static const int evolutionCost = 200;
+  static const int evolutionCostPoints = 300; // 일반 포인트 진화 비용
 
   bool canEvolveMonster(String speciesId) {
     final mp = _progress.monsters[speciesId];
     if (mp == null) return false;
-    return mp.evolutionStage < 5 && _progress.evolutionPoints >= evolutionCost;
+    return mp.evolutionStage < 5 &&
+        (_devMode || _progress.evolutionPoints >= evolutionCost);
+  }
+
+  bool canEvolveWithPoints(String speciesId) {
+    final mp = _progress.monsters[speciesId];
+    if (mp == null) return false;
+    return mp.evolutionStage < 5 &&
+        (_devMode || _progress.totalPoints >= evolutionCostPoints);
+  }
+
+  /// 일반 포인트로 진화
+  Future<bool> evolveMonsterWithPoints(String speciesId) async {
+    final mp = _progress.monsters[speciesId];
+    if (mp == null) return false;
+    if (mp.evolutionStage >= 5) return false;
+    if (!_devMode) {
+      if (_progress.totalPoints < evolutionCostPoints) return false;
+      _progress.totalPoints -= evolutionCostPoints;
+    }
+    mp.evolutionStage++;
+    await _storage.saveProgress(_progress);
+    notifyListeners();
+    return true;
   }
 
   Future<bool> evolveMonster(String speciesId) async {
     final mp = _progress.monsters[speciesId];
     if (mp == null) return false;
     if (mp.evolutionStage >= 5) return false;
-    if (_progress.evolutionPoints < evolutionCost) return false;
-
-    _progress.evolutionPoints -= evolutionCost;
+    if (!_devMode) {
+      if (_progress.evolutionPoints < evolutionCost) return false;
+      _progress.evolutionPoints -= evolutionCost;
+    }
     mp.evolutionStage++;
 
     await _storage.saveProgress(_progress);
