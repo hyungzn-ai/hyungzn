@@ -76,6 +76,48 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
+          // ── 학습 설정 ────────────────────────────────────────
+          _SectionHeader(label: '학습 설정'),
+          _QuizModePicker(
+            current: provider.quizMode,
+            onChanged: (m) => provider.setQuizMode(m),
+          ),
+          const SizedBox(height: 24),
+
+          // ── 개발자 모드 ──────────────────────────────────────
+          _SectionHeader(label: '개발자'),
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+            decoration: BoxDecoration(
+              color: AppTheme.card,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: provider.devMode
+                    ? Colors.orange.withOpacity(0.5)
+                    : Colors.transparent,
+              ),
+            ),
+            child: SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: provider.devMode,
+              onChanged: (v) => provider.setDevMode(v),
+              activeColor: Colors.orange,
+              title: Text(
+                '🔧 개발자 모드',
+                style: TextStyle(
+                    color: AppTheme.textPrimary,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14),
+              ),
+              subtitle: Text(
+                '포인트 무한 사용 + 모든 Day 오픈',
+                style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
+              ),
+            ),
+          ),
+          const SizedBox(height: 24),
+
           // ── 진행 관리 ────────────────────────────────────────
           _SectionHeader(label: '진행 관리'),
 
@@ -437,6 +479,73 @@ class _ActionTile extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+
+// ─────────────────────────────────────────────────────────────
+// 퀴즈 모드 선택
+// ─────────────────────────────────────────────────────────────
+
+class _QuizModePicker extends StatelessWidget {
+  final String current;
+  final ValueChanged<String> onChanged;
+  const _QuizModePicker({required this.current, required this.onChanged});
+
+  static const List<List<String>> _modes = [
+    ['write', '✍️', '직접 작문'],
+    ['arrange', '🧩', '순서 맞추기'],
+    ['mixed', '🎲', '랜덤 믹스'],
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        for (final m in _modes)
+          Expanded(
+            child: GestureDetector(
+              onTap: () => onChanged(m[0]),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.only(right: 8),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+                decoration: BoxDecoration(
+                  color: current == m[0]
+                      ? AppTheme.primary.withOpacity(0.18)
+                      : AppTheme.card,
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(
+                    color: current == m[0] ? AppTheme.primary : AppTheme.card,
+                    width: current == m[0] ? 2 : 1,
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Text(m[1], style: const TextStyle(fontSize: 20)),
+                    const SizedBox(height: 4),
+                    Text(
+                      m[2],
+                      style: TextStyle(
+                        color: current == m[0]
+                            ? AppTheme.primary
+                            : AppTheme.textSecondary,
+                        fontSize: 11,
+                        fontWeight: current == m[0]
+                            ? FontWeight.bold
+                            : FontWeight.normal,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 }
