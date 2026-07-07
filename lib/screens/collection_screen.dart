@@ -138,8 +138,8 @@ class CollectionScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 12),
                       sliver: SliverGrid(
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                          childAspectRatio: 0.60,
+                          crossAxisCount: 4,
+                          childAspectRatio: 0.64,
                           crossAxisSpacing: 8,
                           mainAxisSpacing: 8,
                         ),
@@ -188,8 +188,8 @@ class CollectionScreen extends StatelessWidget {
                       padding: const EdgeInsets.fromLTRB(12, 0, 12, 24),
                       sliver: SliverGrid(
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                          childAspectRatio: 0.60,
+                          crossAxisCount: 4,
+                          childAspectRatio: 0.64,
                           crossAxisSpacing: 8,
                           mainAxisSpacing: 8,
                         ),
@@ -310,14 +310,14 @@ class _MonsterCard extends StatelessWidget {
                 ),
               ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(8, 18, 8, 10),
+              padding: const EdgeInsets.fromLTRB(6, 14, 6, 8),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   MonsterSpriteWidget(
                     monsterId: species.id,
                     stage: stage,
-                    size: 160,
+                    size: 64,
                     fallbackEmoji: species.evolutionEmojis[stage],
                   ),
                   const SizedBox(height: 5),
@@ -409,7 +409,7 @@ class _SilhouetteCard extends StatelessWidget {
               ),
             ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(8, 18, 8, 10),
+            padding: const EdgeInsets.fromLTRB(6, 14, 6, 8),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -417,7 +417,7 @@ class _SilhouetteCard extends StatelessWidget {
                 MonsterSpriteWidget(
                   monsterId: species.id,
                   stage: 0,
-                  size: 108,
+                  size: 64,
                   fallbackEmoji: species.evolutionEmojis[0],
                   isGrayscale: true,
                 ),
