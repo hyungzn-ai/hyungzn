@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
@@ -14,8 +15,10 @@ import 'day_complete_screen.dart';
 class QuizScreen extends StatefulWidget {
   final String level;
   final int day;
+  final String mode; // 'write' | 'arrange' | 'mixed'
 
-  const QuizScreen({super.key, required this.level, required this.day});
+  const QuizScreen(
+      {super.key, required this.level, required this.day, this.mode = 'write'});
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -33,6 +36,9 @@ class _QuizScreenState extends State<QuizScreen> {
   int _correctCount = 0;
   final TextEditingController _inputCtrl = TextEditingController();
   final FocusNode _focusNode = FocusNode();
+  List<bool> _arrangeFlags = []; // 문제별 순서맞추기 여부
+  List<String> _pool = [];   // 남은 단어 칩
+  List<String> _picked = []; // 선택한 단어 칩
 
   @override
   void initState() {
@@ -43,19 +49,61 @@ class _QuizScreenState extends State<QuizScreen> {
   Future<void> _loadDay() async {
     final data = await QuestionLoader.loadDay(widget.level, widget.day);
     if (mounted) {
+      final rng = Random();
+      final n = data?.questions.length ?? 0;
+      _arrangeFlags = List.generate(n, (_) {
+        if (widget.mode == 'arrange') return true;
+        if (widget.mode == 'mixed') return rng.nextBool();
+        return false;
+      });
       setState(() {
         _dayData = data;
         _isLoading = false;
       });
-      Future.delayed(const Duration(milliseconds: 200), () => _focusNode.requestFocus());
+      _setupArrange();
+      if (!_isArrange) {
+        Future.delayed(const Duration(milliseconds: 200), () => _focusNode.requestFocus());
+      }
     }
   }
 
   Question get _current => _dayData!.questions[_currentIndex];
 
+  bool get _isArrange =>
+      _arrangeFlags.isNotEmpty &&
+      _currentIndex < _arrangeFlags.length &&
+      _arrangeFlags[_currentIndex];
+
+  void _setupArrange() {
+    if (!_isArrange || _dayData == null) return;
+    final words = _current.answers[0]
+        .split(' ')
+        .where((w) => w.trim().isNotEmpty)
+        .toList();
+    words.shuffle(Random());
+    setState(() {
+      _pool = words;
+      _picked = [];
+    });
+  }
+
+  void _pickWord(int i) {
+    if (_answered) return;
+    setState(() {
+      _picked.add(_pool.removeAt(i));
+    });
+  }
+
+  void _unpickWord(int i) {
+    if (_answered) return;
+    setState(() {
+      _pool.add(_picked.removeAt(i));
+    });
+  }
+
   void _checkAnswer() {
     if (_answered) return;
-    final input = _inputCtrl.text.trim();
+    final input = _isArrange ? _picked.join(' ') : _inputCtrl.text.trim();
     if (input.isEmpty) return;
 
     final result = AnswerChecker.check(
@@ -65,24 +113,14 @@ class _QuizScreenState extends State<QuizScreen> {
       naturalForm: _current.explanation,
     );
 
-    // 포인트 계산 (힌트 사용 여부에 따라 차등)
-    int earned = 0;
     if (result.isCorrect) {
       _correctCount++;
-      if (_hintUsed) {
-        earned = AppConstants.pointsCorrectWithHint;
-      } else {
-        earned = AppConstants.pointsCorrectFirst;
-      }
     }
 
     setState(() {
       _answered = true;
       _isCorrect = result.isCorrect;
       _feedback = result.feedback;
-      if (result.isCorrect && earned < AppConstants.pointsCorrectFirst && _hintUsed) {
-        _feedback += '\n💡 힌트 사용으로 ${AppConstants.pointsCorrectFirst - earned}점 감점';
-      }
     });
     _focusNode.unfocus();
     context.read<AppProvider>().recordQuizAnswered();
@@ -141,8 +179,13 @@ class _QuizScreenState extends State<QuizScreen> {
         _isCorrect = false;
         _feedback = '';
         _inputCtrl.clear();
+        _pool = [];
+        _picked = [];
       });
-      Future.delayed(const Duration(milliseconds: 100), () => _focusNode.requestFocus());
+      _setupArrange();
+      if (!_isArrange) {
+        Future.delayed(const Duration(milliseconds: 100), () => _focusNode.requestFocus());
+      }
     } else {
       // Day 완료
       final result = await context.read<AppProvider>().completeDay(
@@ -161,6 +204,7 @@ class _QuizScreenState extends State<QuizScreen> {
               correctCount: _correctCount,
               totalCount: _dayData!.questions.length,
               result: result,
+              mode: widget.mode,
             ),
           ),
         );
@@ -276,7 +320,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       });
                     },
                     icon: const Icon(Icons.lightbulb_outline, size: 16),
-                    label: Text(_showHint ? '힌트 숨기기' : '힌트 보기 (-${AppConstants.pointsCorrectFirst - AppConstants.pointsCorrectWithHint}점)'),
+                    label: Text(_showHint ? '힌트 숨기기' : '힌트 보기'),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: AppTheme.accent,
                       side: BorderSide(color: AppTheme.accent, width: 1),
@@ -301,31 +345,107 @@ class _QuizScreenState extends State<QuizScreen> {
 
                   const SizedBox(height: 16),
 
-                  // 입력창
-                  TextField(
-                    controller: _inputCtrl,
-                    focusNode: _focusNode,
-                    enabled: !_answered,
-                    maxLines: 3,
-                    minLines: 1,
-                    style: TextStyle(color: AppTheme.textPrimary, fontSize: 16),
-                    decoration: InputDecoration(
-                      hintText: '영어로 입력하세요...',
-                      hintStyle: TextStyle(color: AppTheme.textSecondary),
-                      filled: true,
-                      fillColor: AppTheme.card,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        borderSide: BorderSide.none,
+                  // 입력 영역: 직접 작문 or 순서 맞추기
+                  if (!_isArrange)
+                    TextField(
+                      controller: _inputCtrl,
+                      focusNode: _focusNode,
+                      enabled: !_answered,
+                      maxLines: 3,
+                      minLines: 1,
+                      style: TextStyle(color: AppTheme.textPrimary, fontSize: 16),
+                      decoration: InputDecoration(
+                        hintText: '영어로 입력하세요...',
+                        hintStyle: TextStyle(color: AppTheme.textSecondary),
+                        filled: true,
+                        fillColor: AppTheme.card,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: AppTheme.primary, width: 2),
+                        ),
                       ),
-                      focusedBorder: OutlineInputBorder(
+                      textInputAction: TextInputAction.done,
+                      onSubmitted: (_) => _checkAnswer(),
+                    )
+                  else ...[
+                    Container(
+                      width: double.infinity,
+                      constraints: const BoxConstraints(minHeight: 56),
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppTheme.card,
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: BorderSide(color: AppTheme.primary, width: 2),
+                        border: Border.all(color: AppTheme.primary.withOpacity(0.4)),
                       ),
+                      child: _picked.isEmpty
+                          ? Center(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                  '🧩 아래 단어를 순서대로 탭하세요',
+                                  style: TextStyle(
+                                      color: AppTheme.textSecondary, fontSize: 13),
+                                ),
+                              ),
+                            )
+                          : Wrap(
+                              spacing: 6,
+                              runSpacing: 6,
+                              children: [
+                                for (int i = 0; i < _picked.length; i++)
+                                  GestureDetector(
+                                    onTap: () => _unpickWord(i),
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 10, vertical: 6),
+                                      decoration: BoxDecoration(
+                                        color: AppTheme.primary.withOpacity(0.25),
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(
+                                            color: AppTheme.primary.withOpacity(0.6)),
+                                      ),
+                                      child: Text(
+                                        _picked[i],
+                                        style: TextStyle(
+                                            color: AppTheme.textPrimary,
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            ),
                     ),
-                    textInputAction: TextInputAction.done,
-                    onSubmitted: (_) => _checkAnswer(),
-                  ),
+                    const SizedBox(height: 10),
+                    Wrap(
+                      spacing: 6,
+                      runSpacing: 6,
+                      children: [
+                        for (int i = 0; i < _pool.length; i++)
+                          GestureDetector(
+                            onTap: () => _pickWord(i),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 12, vertical: 8),
+                              decoration: BoxDecoration(
+                                color: AppTheme.cardBright,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(color: Colors.white24),
+                              ),
+                              child: Text(
+                                _pool[i],
+                                style: TextStyle(
+                                    color: AppTheme.textPrimary, fontSize: 15),
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ],
 
                   const SizedBox(height: 12),
 
