@@ -77,11 +77,18 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void _setupArrange() {
     if (!_isArrange || _dayData == null) return;
+    // 문장부호를 떼어낸다 — 마지막 단어에만 마침표가 붙어 정답 위치가 노출되는 걸 방지
     final words = _current.answers[0]
         .split(' ')
-        .where((w) => w.trim().isNotEmpty)
+        .map((w) => w.replaceAll(RegExp(r'''[.,!?;:"]'''), '').trim())
+        .where((w) => w.isNotEmpty)
         .toList();
+    final original = List<String>.from(words);
     words.shuffle(Random());
+    // 섞은 결과가 원문 그대로면 한 번 더 섞는다
+    if (words.length > 1 && words.join(' ') == original.join(' ')) {
+      words.shuffle(Random());
+    }
     setState(() {
       _pool = words;
       _picked = [];
@@ -210,6 +217,28 @@ class _QuizScreenState extends State<QuizScreen> {
     });
     _focusNode.unfocus();
     context.read<AppProvider>().recordQuizAnswered();
+
+    // 힌트를 보고 맞힌 문제는 감점 없이 복습 목록에 담아 다시 만나게 한다
+    if (result.isCorrect && _hintUsed) {
+      context.read<AppProvider>().addWrongAnswer(
+            WrongAnswer(
+              level: widget.level,
+              day: widget.day,
+              korean: _current.korean,
+              answers: _current.answers,
+              hint: _current.hint,
+              explanation: _current.explanation,
+              keywords: _current.keywords,
+              addedAt: DateTime.now().millisecondsSinceEpoch,
+              nextReviewAt: DateTime.now()
+                  .add(const Duration(days: 1))
+                  .millisecondsSinceEpoch,
+            ),
+          );
+      setState(() {
+        _feedback = _feedback + '\n\n📌 힌트를 봤으니 복습 목록에 담아둘게요.';
+      });
+    }
 
     // 틀렸으면 wrongAnswers에 저장 (비동기, 화면 블로킹 없음)
     if (!result.isCorrect) {
