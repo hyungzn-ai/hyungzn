@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -6,6 +7,8 @@ import '../models/monster.dart';
 import '../models/wrong_answer.dart';
 import '../services/storage_service.dart';
 import '../services/daily_service.dart';
+import '../services/notification_service.dart';
+import '../services/word_service.dart';
 import '../data/monster_data.dart';
 import '../utils/constants.dart';
 import '../utils/theme.dart';
@@ -16,6 +19,10 @@ class AppProvider extends ChangeNotifier {
   bool _isLoaded = false;
   bool _devMode = false;
   String _quizMode = 'write'; // 'write' | 'arrange' | 'mixed'
+  bool _wordAlarmOn = false;
+  int _wordAlarmHour = 8;
+  int _wordAlarmMinute = 0;
+  int _wordsPerDay = 10;
   int _themeIndex = 0;
   late DailyService daily;
 
@@ -23,6 +30,11 @@ class AppProvider extends ChangeNotifier {
   bool get isLoaded => _isLoaded;
   bool get devMode => _devMode;
   String get quizMode => _quizMode;
+  bool get wordAlarmOn => _wordAlarmOn;
+  int get wordAlarmHour => _wordAlarmHour;
+  int get wordAlarmMinute => _wordAlarmMinute;
+  int get wordsPerDay => _wordsPerDay;
+  int get wordTotal => WordService.instance.total;
 
   /// Day 통과 기준 (5문제 중 정답 수)
   static const int dayPassCorrect = 2;
@@ -89,6 +101,15 @@ class AppProvider extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     _devMode = prefs.getBool('dev_mode') ?? false;
     _quizMode = prefs.getString('quiz_mode') ?? 'write';
+    _wordAlarmOn = prefs.getBool('word_alarm_on') ?? false;
+    _wordAlarmHour = prefs.getInt('word_alarm_hour') ?? 8;
+    _wordAlarmMinute = prefs.getInt('word_alarm_minute') ?? 0;
+    _wordsPerDay = prefs.getInt('words_per_day') ?? 10;
+    await WordService.instance.load();
+    if (_wordAlarmOn) {
+      // 앱을 열 때마다 앞으로 14일치 알림을 다시 채워둔다
+      unawaited(rescheduleWordAlarms());
+    }
     AppTheme.setTheme(_themeIndex);
 
     // 첫 실행 시 기본 몬스터 지급
@@ -417,6 +438,86 @@ class AppProvider extends ChangeNotifier {
     );
     await _storage.saveProgress(_progress);
     notifyListeners();
+  }
+
+  // ─────────────────────────────────────────────────────────────
+  // 오늘의 단어 알림
+  // ─────────────────────────────────────────────────────────────
+
+  Future<void> setWordAlarm({
+    bool? on,
+    int? hour,
+    int? minute,
+    int? perDay,
+  }) async {
+    final prefs = await SharedPreferences.getInstance();
+    if (on != null) {
+      _wordAlarmOn = on;
+      await prefs.setBool('word_alarm_on', on);
+    }
+    if (hour != null) {
+      _wordAlarmHour = hour;
+      await prefs.setInt('word_alarm_hour', hour);
+    }
+    if (minute != null) {
+      _wordAlarmMinute = minute;
+      await prefs.setInt('word_alarm_minute', minute);
+    }
+    if (perDay != null) {
+      _wordsPerDay = perDay;
+      await prefs.setInt('words_per_day', perDay);
+    }
+    notifyListeners();
+
+    if (_wordAlarmOn) {
+      final granted = await NotificationService.instance.requestPermission();
+      if (granted) {
+        await rescheduleWordAlarms();
+      }
+    } else {
+      await NotificationService.instance.cancelWordAlarms();
+    }
+  }
+
+  /// 현재 위치부터 14일치 단어 묶음을 만들어 알림으로 예약
+  Future<void> rescheduleWordAlarms() async {
+    final ws = WordService.instance;
+    await ws.load();
+    if (ws.total == 0) return;
+
+    final cursor = await ws.loadCursor();
+    final batches = <String>[];
+    for (int d = 0; d < NotificationService.wordDaysAhead; d++) {
+      final entries = ws.batchAt(cursor + d * _wordsPerDay, _wordsPerDay);
+      final lines = <String>[];
+      for (final e in entries) {
+        final ko = e.ko.isEmpty ? '(뜻 준비 중)' : e.ko;
+        lines.add('• ' + e.display + ' — ' + ko);
+      }
+      batches.add(lines.join('\n'));
+    }
+
+    await NotificationService.instance.scheduleWordAlarms(
+      hour: _wordAlarmHour,
+      minute: _wordAlarmMinute,
+      batches: batches,
+    );
+  }
+
+  /// 오늘 분량을 확인했으면 다음 단어로 진도를 넘긴다
+  Future<void> advanceWordCursor() async {
+    final ws = WordService.instance;
+    final cursor = await ws.loadCursor();
+    await ws.saveCursor(cursor + _wordsPerDay);
+    await rescheduleWordAlarms();
+    notifyListeners();
+  }
+
+  Future<List<WordEntry>> todaysWords() async {
+    final ws = WordService.instance;
+    await ws.load();
+    final cursor = await ws.loadCursor();
+    return ws.batchAt(cursor, _wordsPerDay);
   }
 
   // ─────────────────────────────────────────────────────────────
