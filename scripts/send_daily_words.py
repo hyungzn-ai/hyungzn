@@ -8,9 +8,9 @@
   KAKAO_CLIENT_SECRET : (클라이언트 시크릿을 켠 경우) 시크릿 코드
 
 동작:
-  1. state.json 의 cursor 부터 WORDS_PER_DAY 개를 꺼낸다
+  1. daily_config.json 의 난이도(levels)로 단어를 거르고, 아직 안 보낸 것부터 꺼낸다
   2. 뜻이 없으면 무료 사전/번역으로 채우고 meanings 캐시에 적립한다
-  3. 카카오톡으로 보내고 cursor 를 전진시킨 뒤 커밋한다
+  3. 카카오톡으로 보내고 보낸 단어를 기록한 뒤 커밋한다
 """
 import json
 import os
@@ -24,6 +24,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 WORDS_PATH = ROOT / 'assets' / 'data' / 'words.json'
 MEANINGS_PATH = ROOT / 'assets' / 'data' / 'word_meanings.json'
 STATE_PATH = ROOT / 'data' / 'daily_state.json'
+CONFIG_PATH = ROOT / 'data' / 'daily_config.json'
+
+ALL_LEVELS = ['B1', 'B2', 'C1']
+LEVEL_LABEL = {'B1': '중급', 'B2': '중상급', 'C1': '고급'}
 
 WORDS_PER_DAY = int(os.environ.get('WORDS_PER_DAY', '10'))
 REST_KEY = os.environ.get('KAKAO_REST_API_KEY', '')
@@ -168,17 +172,36 @@ def main():
         return 1
 
     meanings = load_json(MEANINGS_PATH, {})
-    state = load_json(STATE_PATH, {'cursor': 0, 'sentCount': 0})
-    cursor = int(state.get('cursor', 0))
 
-    if cursor >= len(words):
-        cursor = 0  # 한 바퀴 다 돌면 처음부터 복습
+    # ── 난이도 / 하루 개수 설정 ────────────────────────────────
+    config = load_json(CONFIG_PATH, {})
+    levels = [lv for lv in config.get('levels', ALL_LEVELS) if lv in ALL_LEVELS]
+    if not levels:
+        levels = ALL_LEVELS
+    per_day = int(config.get('perDay', WORDS_PER_DAY))
 
-    todays = words[cursor:cursor + WORDS_PER_DAY]
+    pool = [w for w in words
+            if (meanings.get(w, {}).get('level') or 'B1') in levels]
+    if not pool:
+        print('선택한 난이도에 해당하는 단어가 없습니다.')
+        return 1
 
-    lines = ['📚 오늘의 영단어 ' + str(len(todays)) + '개',
-             '(' + str(cursor + 1) + '~' + str(cursor + len(todays)) +
-             ' / ' + str(len(words)) + ')', '']
+    state = load_json(STATE_PATH, {})
+    sent = set(state.get('sent', []))
+
+    # 아직 안 보낸 단어부터 (난이도를 바꿔도 진도가 꼬이지 않는다)
+    remaining = [w for w in pool if w not in sent]
+    if not remaining:
+        sent = set()          # 한 바퀴 다 돌면 처음부터 복습
+        remaining = pool
+
+    todays = remaining[:per_day]
+
+    done = len(pool) - len(remaining)
+    label = '·'.join(LEVEL_LABEL[lv] for lv in levels)
+    lines = ['📚 오늘의 영단어 ' + str(len(todays)) + '개  [' + label + ']',
+             '(' + str(done + 1) + '~' + str(done + len(todays)) +
+             ' / ' + str(len(pool)) + ')', '']
     changed = False
     for i, w in enumerate(todays, 1):
         entry, was_new = enrich(w, meanings)
@@ -202,8 +225,9 @@ def main():
     result = send_to_me(access_token, text, 'https://github.com/hyungzn-ai/hyungzn')
     print('kakao result:', result)
 
-    state['cursor'] = cursor + len(todays)
-    state['sentCount'] = int(state.get('sentCount', 0)) + len(todays)
+    sent.update(todays)
+    state['sent'] = sorted(sent)
+    state['sentCount'] = len(sent)
     state['lastSent'] = time.strftime('%Y-%m-%d %H:%M:%S')
     save_json(STATE_PATH, state)
     if changed:
