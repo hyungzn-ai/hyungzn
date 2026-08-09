@@ -5,6 +5,7 @@
 필요한 GitHub Secrets:
   KAKAO_REST_API_KEY  : 카카오 개발자 앱의 REST API 키
   KAKAO_REFRESH_TOKEN : talk_message 동의를 마친 리프레시 토큰
+  KAKAO_CLIENT_SECRET : (클라이언트 시크릿을 켠 경우) 시크릿 코드
 
 동작:
   1. state.json 의 cursor 부터 WORDS_PER_DAY 개를 꺼낸다
@@ -27,6 +28,7 @@ STATE_PATH = ROOT / 'data' / 'daily_state.json'
 WORDS_PER_DAY = int(os.environ.get('WORDS_PER_DAY', '10'))
 REST_KEY = os.environ.get('KAKAO_REST_API_KEY', '')
 REFRESH_TOKEN = os.environ.get('KAKAO_REFRESH_TOKEN', '')
+CLIENT_SECRET = os.environ.get('KAKAO_CLIENT_SECRET', '')
 
 
 def http_post(url, data, headers=None):
@@ -118,13 +120,17 @@ def enrich(word, meanings):
 # ── 카카오 ─────────────────────────────────────────────────────
 
 def get_access_token():
+    params = {
+        'grant_type': 'refresh_token',
+        'client_id': REST_KEY,
+        'refresh_token': REFRESH_TOKEN,
+    }
+    # 앱에서 '클라이언트 시크릿'을 켠 경우 반드시 함께 보내야 한다
+    if CLIENT_SECRET:
+        params['client_secret'] = CLIENT_SECRET
     res = http_post(
         'https://kauth.kakao.com/oauth/token',
-        {
-            'grant_type': 'refresh_token',
-            'client_id': REST_KEY,
-            'refresh_token': REFRESH_TOKEN,
-        },
+        params,
         {'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'},
     )
     return res.get('access_token'), res.get('refresh_token')
