@@ -23,6 +23,14 @@ class AppProvider extends ChangeNotifier {
   bool get isLoaded => _isLoaded;
   bool get devMode => _devMode;
   String get quizMode => _quizMode;
+
+  /// Day 통과 기준 (5문제 중 정답 수)
+  static const int dayPassCorrect = 2;
+  /// 이미 완료한 Day 재도전 시 보상 비율
+  static const double replayRewardRate = 0.3;
+  /// Day 완료 시 지급되는 진화 포인트
+  static const int evolutionPointsPerDay = 15;
+  static const int evolutionPointsPerReplay = 5;
   int get themeIndex => _themeIndex;
   ThemeData get currentTheme => AppTheme.buildTheme(AppTheme.allThemes[_themeIndex]);
 
@@ -102,42 +110,57 @@ class AppProvider extends ChangeNotifier {
     required int correctCount,
   }) async {
     final alreadyCompleted = _progress.isDayCompleted(level, day);
+    final passed = correctCount >= dayPassCorrect;
 
+    // 기본 포인트 (통과해야 완료 보너스 지급)
     int dayPoints = (correctCount * AppConstants.pointsCorrectFirst) +
-        AppConstants.pointsDayComplete;
+        (passed ? AppConstants.pointsDayComplete : 0);
 
-    // 연속 학습 스트릭 갱신 + 보너스
-    int streakAfter = daily.currentStreak;
-    int streakBonus = 0;
-    if (!alreadyCompleted) {
-      streakAfter = daily.registerDayComplete();
-      streakBonus = (streakAfter > 10 ? 10 : streakAfter) * 2;
-      dayPoints += streakBonus;
+    // 스트릭·미션은 재도전에도 반영 (완주 후에도 스트릭이 끊기지 않도록)
+    final streakAfter = daily.registerDayComplete();
+    int streakBonus = (streakAfter > 10 ? 10 : streakAfter) * 2;
+
+    // 이미 완료한 Day는 복습 보상(30%)
+    if (alreadyCompleted) {
+      dayPoints = (dayPoints * replayRewardRate).round();
+      streakBonus = (streakBonus * replayRewardRate).round();
+    }
+    dayPoints += streakBonus;
+
+    if (passed) {
+      _progress.completedDays[level]!.add(day);
+      if (!alreadyCompleted) _progress.totalCompletedDays++;
+      // 최고 점수만 갱신 (재도전으로 별 등급 개선 가능)
+      final prev = _progress.dayScores[level]![day] ?? 0;
+      if (correctCount > prev) {
+        _progress.dayScores[level]![day] = correctCount;
+      }
     }
 
-    _progress.completedDays[level]!.add(day);
-    if (!alreadyCompleted) {
-      _progress.totalCompletedDays++;
-      _progress.totalPoints += dayPoints;
-      _progress.dayScores[level]![day] = correctCount;
+    final evoGain = alreadyCompleted
+        ? evolutionPointsPerReplay
+        : evolutionPointsPerDay;
+    _progress.evolutionPoints += evoGain;
+    _progress.totalPoints += dayPoints;
 
-      // 활성 몬스터 포인트 누적 (참고용, 진화는 진화 포인트로 수동 실행)
-      final activeId = _progress.activeMonsterSpeciesId;
-      _progress.monsters[activeId] ??= UserMonsterProgress();
-      _progress.monsters[activeId]!.points += dayPoints;
-    }
+    final activeId = _progress.activeMonsterSpeciesId;
+    _progress.monsters[activeId] ??= UserMonsterProgress();
+    _progress.monsters[activeId]!.points += dayPoints;
 
     await _storage.saveProgress(_progress);
     notifyListeners();
 
     return DayCompleteResult(
-      pointsEarned: alreadyCompleted ? 0 : dayPoints,
+      pointsEarned: dayPoints,
       evolved: false,
       evolvedMonsterName: null,
       unlockedMonster: null,
       totalPoints: _progress.totalPoints,
       streakAfter: streakAfter,
-      streakBonus: alreadyCompleted ? 0 : streakBonus,
+      streakBonus: streakBonus,
+      passed: passed,
+      evolutionPointsEarned: evoGain,
+      alreadyCompleted: alreadyCompleted,
     );
   }
 
@@ -177,13 +200,13 @@ class AppProvider extends ChangeNotifier {
   //
   // 비용: 1회 100pt, 10회 900pt
   // 확률:
-  //   히든 몬스터 (환상/무지개/빛/어둠/혼돈/우주/요정) 7종 × 각 3% = 총 21%
-  //   일반 몬스터 18종이 나머지 79% 균등 배분 (~4.4%씩)
+  //   히든 몬스터 (무지개/빛/어둠/혼돈/요정) 5종 × 각 3% = 총 15%
+  //   일반 몬스터 11종이 나머지 85% 균등 배분 (~7.7%씩)
   // 중복 획득: +50 진화 포인트 지급
   // ─────────────────────────────────────────────────────────────
   static const int gachaCostSingle = 100;
   static const int gachaCost10x = 900;
-  static const int gachaDuplicateEvolutionPoints = 50; // 중복 시 진화 포인트 지급
+  static const int gachaDuplicateEvolutionPoints = 100; // 중복 시 진화 포인트 지급
   static const double _hiddenProbability = 0.03; // 히든 몬스터 각 3%
 
   GachaResult? performGacha({required int count}) {
@@ -245,8 +268,8 @@ class AppProvider extends ChangeNotifier {
   // ─────────────────────────────────────────────────────────────
   // 진화 시스템 — 진화 포인트 200 소비
   // ─────────────────────────────────────────────────────────────
-  static const int evolutionCost = 200;
-  static const int evolutionCostPoints = 300; // 일반 포인트 진화 비용
+  static const int evolutionCost = 150;
+  static const int evolutionCostPoints = 250; // 일반 포인트 진화 비용
 
   bool canEvolveMonster(String speciesId) {
     final mp = _progress.monsters[speciesId];
@@ -397,6 +420,20 @@ class AppProvider extends ChangeNotifier {
   }
 
   // ─────────────────────────────────────────────────────────────
+  // 백업 / 복원
+  // ─────────────────────────────────────────────────────────────
+
+  String exportProgress() => _storage.exportJson(_progress);
+
+  Future<bool> importProgress(String raw) async {
+    final restored = await _storage.importJson(raw);
+    if (restored == null) return false;
+    _progress = restored;
+    notifyListeners();
+    return true;
+  }
+
+  // ─────────────────────────────────────────────────────────────
   // 진행 초기화
   // ─────────────────────────────────────────────────────────────
   Future<void> resetProgress() async {
@@ -420,6 +457,9 @@ class DayCompleteResult {
   final int totalPoints;
   final int streakAfter; // 완료 후 연속 학습 일수
   final int streakBonus; // 스트릭 보너스 포인트
+  final bool passed; // 통과 여부 (다음 Day 해금 기준)
+  final int evolutionPointsEarned; // 획득한 진화 포인트
+  final bool alreadyCompleted; // 재도전 여부
 
   const DayCompleteResult({
     required this.pointsEarned,
@@ -429,6 +469,9 @@ class DayCompleteResult {
     required this.totalPoints,
     this.streakAfter = 0,
     this.streakBonus = 0,
+    this.passed = true,
+    this.evolutionPointsEarned = 0,
+    this.alreadyCompleted = false,
   });
 }
 
