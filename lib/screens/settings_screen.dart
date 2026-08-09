@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_provider.dart';
@@ -36,7 +37,7 @@ class SettingsScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'v1.0.0',
+                  'v1.2.0',
                   style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                 ),
                 const SizedBox(height: 24),
@@ -121,6 +122,36 @@ class SettingsScreen extends StatelessWidget {
           // ── 진행 관리 ────────────────────────────────────────
           _SectionHeader(label: '진행 관리'),
 
+          // 학습 기록 백업
+          _ActionTile(
+            icon: Icons.backup_rounded,
+            iconColor: AppTheme.primary,
+            title: '학습 기록 백업',
+            subtitle: '기록을 클립보드에 복사합니다. 메모장 등에 붙여넣어 보관하세요',
+            onTap: () async {
+              final data = provider.exportProgress();
+              await Clipboard.setData(ClipboardData(text: data));
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: const Text('📋 백업 데이터를 클립보드에 복사했어요!'),
+                    backgroundColor: AppTheme.success,
+                    behavior: SnackBarBehavior.floating,
+                  ),
+                );
+              }
+            },
+          ),
+
+          // 학습 기록 복원
+          _ActionTile(
+            icon: Icons.settings_backup_restore_rounded,
+            iconColor: AppTheme.accent,
+            title: '학습 기록 복원',
+            subtitle: '클립보드에 복사해 둔 백업 데이터로 되돌립니다',
+            onTap: () => _confirmRestore(context, provider),
+          ),
+
           // 틀린 문제 초기화
           _ActionTile(
             icon: Icons.delete_sweep_rounded,
@@ -144,10 +175,10 @@ class SettingsScreen extends StatelessWidget {
 
           // ── 앱 정보 ──────────────────────────────────────────
           _SectionHeader(label: '앱 정보'),
-          _InfoRow(icon: '📱', label: '버전', value: '1.0.0'),
+          _InfoRow(icon: '📱', label: '버전', value: '1.2.0'),
           _InfoRow(icon: '🛠️', label: '개발', value: '영작몬 팀'),
           _InfoRow(icon: '📚', label: '총 학습 문제', value: '750문제 (3레벨 × 50일 × 5문제)'),
-          _InfoRow(icon: '🐾', label: '총 몬스터', value: '12종'),
+          _InfoRow(icon: '🐾', label: '총 몬스터', value: '16종 (히든 5종)'),
           const SizedBox(height: 24),
 
           // ── 문의 ─────────────────────────────────────────────
@@ -184,6 +215,48 @@ class SettingsScreen extends StatelessWidget {
           ).animate().fadeIn(delay: 200.ms),
 
           const SizedBox(height: 40),
+        ],
+      ),
+    );
+  }
+
+  void _confirmRestore(BuildContext context, AppProvider provider) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        backgroundColor: AppTheme.card,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Text('학습 기록 복원',
+            style: TextStyle(
+                color: AppTheme.textPrimary, fontWeight: FontWeight.bold)),
+        content: Text(
+          '클립보드의 백업 데이터로 현재 기록을 덮어씁니다.\n지금 진행상황은 사라져요. 계속할까요?',
+          style: TextStyle(color: AppTheme.textSecondary, height: 1.5),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('취소', style: TextStyle(color: AppTheme.textSecondary)),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              Navigator.pop(context);
+              final clip = await Clipboard.getData(Clipboard.kTextPlain);
+              final ok = await provider.importProgress(clip?.text ?? '');
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(ok
+                        ? '✅ 학습 기록을 복원했어요!'
+                        : '❌ 클립보드에서 올바른 백업 데이터를 찾지 못했어요.'),
+                    backgroundColor: ok ? AppTheme.success : AppTheme.error,
+                    behavior: SnackBarBehavior.floating,
+                  ),
+                );
+              }
+            },
+            child: const Text('복원'),
+          ),
         ],
       ),
     );
@@ -251,7 +324,7 @@ class SettingsScreen extends StatelessWidget {
           '• 획득한 포인트\n'
           '• 해금된 몬스터\n'
           '• 틀린 문제 목록\n\n'
-          '이 작업은 되돌릴 수 없습니다. 정말 초기화하시겠어요?',
+          '테마·알림 설정은 그대로 유지됩니다.\n이 작업은 되돌릴 수 없어요. 정말 초기화할까요?',
           style: TextStyle(color: AppTheme.textSecondary, height: 1.6),
         ),
         actions: [
