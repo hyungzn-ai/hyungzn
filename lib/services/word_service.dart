@@ -7,16 +7,26 @@ class WordEntry {
   final String ko;
   final String pos;
   final String example;
+  final String level; // B1 / B2 / C1
 
   const WordEntry({
     required this.word,
     required this.ko,
     this.pos = '',
     this.example = '',
+    this.level = '',
   });
 
   String get display => pos.isEmpty ? word : word + ' (' + pos + ')';
 }
+
+/// 난이도 라벨
+const Map<String, String> kLevelLabel = {
+  'B1': '중급',
+  'B2': '중상급',
+  'C1': '고급',
+};
+const List<String> kAllLevels = ['B1', 'B2', 'C1'];
 
 /// 빈도순 영단어 풀과 뜻 사전을 관리한다.
 class WordService {
@@ -56,18 +66,37 @@ class WordService {
         ko: (m['ko'] ?? '') as String,
         pos: (m['pos'] ?? '') as String,
         example: (m['ex'] ?? '') as String,
+        level: (m['level'] ?? '') as String,
       );
     }
     return WordEntry(word: word, ko: '');
   }
 
+  String levelOf(String word) {
+    final m = _meanings[word];
+    if (m is Map) return (m['level'] ?? '') as String;
+    return '';
+  }
+
+  /// 선택한 난이도에 해당하는 단어만 추린다
+  List<String> wordsForLevels(Set<String> levels) {
+    if (levels.isEmpty || levels.length == kAllLevels.length) return _words;
+    return _words.where((w) {
+      final lv = levelOf(w);
+      return levels.contains(lv.isEmpty ? 'B1' : lv);
+    }).toList();
+  }
+
+  int countForLevels(Set<String> levels) => wordsForLevels(levels).length;
+
   /// 지정한 위치부터 count개를 가져온다 (끝에 도달하면 처음으로 순환)
-  List<WordEntry> batchAt(int cursor, int count) {
-    if (_words.isEmpty) return [];
+  List<WordEntry> batchAt(int cursor, int count, {Set<String>? levels}) {
+    final pool = levels == null ? _words : wordsForLevels(levels);
+    if (pool.isEmpty) return [];
     final out = <WordEntry>[];
     for (int i = 0; i < count; i++) {
-      final idx = (cursor + i) % _words.length;
-      out.add(entryFor(_words[idx]));
+      final idx = (cursor + i) % pool.length;
+      out.add(entryFor(pool[idx]));
     }
     return out;
   }
