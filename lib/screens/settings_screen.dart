@@ -113,11 +113,90 @@ class SettingsScreen extends StatelessWidget {
                     fontSize: 14),
               ),
               subtitle: Text(
-                '빈도순 ' + provider.wordTotal.toString() + '개 단어를 매일 조금씩',
+                '실생활 중급 이상 단어를 매일 조금씩',
                 style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
               ),
             ),
           ),
+          // 난이도 선택
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 14),
+            decoration: BoxDecoration(
+              color: AppTheme.card,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.signal_cellular_alt_rounded,
+                        color: AppTheme.secondary, size: 18),
+                    const SizedBox(width: 8),
+                    Text('난이도',
+                        style: TextStyle(
+                            color: AppTheme.textPrimary,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14)),
+                    const Spacer(),
+                    Text(provider.wordTotal.toString() + '개',
+                        style: TextStyle(
+                            color: AppTheme.textSecondary, fontSize: 12)),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    for (final lv in kAllLevels)
+                      Expanded(
+                        child: GestureDetector(
+                          onTap: () => provider.toggleWordLevel(lv),
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 180),
+                            margin: const EdgeInsets.only(right: 8),
+                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                              color: provider.wordLevels.contains(lv)
+                                  ? AppTheme.secondary.withOpacity(0.2)
+                                  : AppTheme.surface,
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: provider.wordLevels.contains(lv)
+                                    ? AppTheme.secondary
+                                    : Colors.white10,
+                                width: provider.wordLevels.contains(lv) ? 2 : 1,
+                              ),
+                            ),
+                            child: Column(
+                              children: [
+                                Text(lv,
+                                    style: TextStyle(
+                                      color: provider.wordLevels.contains(lv)
+                                          ? AppTheme.secondary
+                                          : AppTheme.textSecondary,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    )),
+                                Text(kLevelLabel[lv] ?? '',
+                                    style: TextStyle(
+                                        color: AppTheme.textSecondary,
+                                        fontSize: 10)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Text('난이도를 바꾸면 진도가 처음부터 다시 시작돼요',
+                    style:
+                        TextStyle(color: AppTheme.textSecondary, fontSize: 10)),
+              ],
+            ),
+          ),
+
           _ActionTile(
             icon: Icons.schedule_rounded,
             iconColor: AppTheme.accent,
@@ -369,6 +448,12 @@ class SettingsScreen extends StatelessWidget {
                       Text(e.ko.isEmpty ? '(뜻 준비 중)' : e.ko,
                           style: TextStyle(
                               color: AppTheme.textSecondary, fontSize: 13)),
+                      if (e.example.isNotEmpty)
+                        Text('💬 ' + e.example,
+                            style: TextStyle(
+                                color: AppTheme.textSecondary,
+                                fontSize: 11,
+                                fontStyle: FontStyle.italic)),
                     ],
                   ),
                 ),
