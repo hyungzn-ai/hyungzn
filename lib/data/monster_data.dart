@@ -3,7 +3,7 @@ import '../models/monster.dart';
 
 class MonsterData {
   // ─────────────────────────────────────────────────────────────
-  // 17종 몬스터 (11 common + 6 hidden)
+  // 16종 몬스터 (11 common + 5 hidden)
   // hidden 조건: 이름에 '환상', '무지개', '빛', '어둠', '혼돈', '우주', '요정' 포함
   // ─────────────────────────────────────────────────────────────
   static const List<MonsterSpecies> allSpecies = [
@@ -119,7 +119,7 @@ class MonsterData {
       rarity: MonsterRarity.common,
     ),
 
-    // ── Hidden (6종, 각 3%) ────────────────────────────────────
+    // ── Hidden (5종, 각 3%) ────────────────────────────────────
     // 이름에 '환상', '무지개', '빛', '어둠' 포함 → 히든 몬스터
     MonsterSpecies(
       id: 'phoenixling',
@@ -158,16 +158,6 @@ class MonsterData {
       evolutionNames: ['혼돈의씨앗', '혼돈의정령', '혼돈의마왕', '혼돈의지배자', '혼돈의신', '혼돈의창조자'],
       evolutionEmojis: ['🌀', '🌪️', '💢', '🔥', '💥', '🌀'],
       description: '✨ 히든 ✨ 혼돈 그 자체에서 탄생한 원초적 존재. 모든 질서를 무너뜨리는 파괴의 화신.',
-      unlockDay: 999,
-      rarity: MonsterRarity.hidden,
-    ),
-    MonsterSpecies(
-      id: 'cosmosling',
-      name: '우주의지배자',
-      element: '우주',
-      evolutionNames: ['우주의싹', '우주의정령', '우주의현자', '우주의군주', '우주의지배자', '우주의신'],
-      evolutionEmojis: ['🌌', '🌟', '🪐', '🌠', '✨', '🌌'],
-      description: '✨ 히든 ✨ 우주의 탄생과 함께 깨어난 초월적 존재. 별들을 손에 쥐고 은하를 다스린다.',
       unlockDay: 999,
       rarity: MonsterRarity.hidden,
     ),
