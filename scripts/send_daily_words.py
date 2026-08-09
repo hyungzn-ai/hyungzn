@@ -97,22 +97,24 @@ def fetch_korean(word):
 
 def enrich(word, meanings):
     """캐시에 없으면 채워 넣고, 채운 항목을 반환한다."""
-    entry = meanings.get(word)
-    if entry and entry.get('ko'):
+    entry = dict(meanings.get(word) or {})
+    if entry.get('ko'):
         return entry, False
 
+    # 사전(Oxford)에서 미리 넣어 둔 품사·예문·레벨은 그대로 두고 빈 곳만 채운다
     eng = fetch_english_def(word)
     time.sleep(0.4)
     ko = fetch_korean(word)
     time.sleep(0.4)
 
-    entry = {
-        'ko': ko or '(뜻 미등록)',
-        'pos': eng['pos'],
-        'def': eng['def'][:160],
-        'ex': eng['ex'][:120],
-        'auto': True,   # 자동 생성 표시 — 직접 작성한 항목은 auto 가 없다
-    }
+    entry['ko'] = ko or '(뜻 미등록)'
+    if not entry.get('pos'):
+        entry['pos'] = eng['pos']
+    if not entry.get('ex') and eng['ex']:
+        entry['ex'] = eng['ex'][:120]
+    if eng['def']:
+        entry['def'] = eng['def'][:160]
+    entry['auto'] = True   # 자동 생성 표시 — 직접 작성한 항목엔 없다
     meanings[word] = entry
     return entry, True
 
@@ -182,7 +184,8 @@ def main():
         entry, was_new = enrich(w, meanings)
         changed = changed or was_new
         pos = (' (' + entry['pos'] + ')') if entry.get('pos') else ''
-        lines.append(str(i) + '. ' + w + pos)
+        lvl = (' · ' + entry['level']) if entry.get('level') else ''
+        lines.append(str(i) + '. ' + w + pos + lvl)
         lines.append('   → ' + entry.get('ko', ''))
         if entry.get('ex'):
             lines.append('   💬 ' + entry['ex'])
