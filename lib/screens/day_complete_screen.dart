@@ -194,6 +194,26 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                             '총 ${widget.result.totalPoints} 포인트',
                             style: TextStyle(color: AppTheme.textSecondary, fontSize: 13),
                           ),
+                          if (widget.result.evolutionPointsEarned > 0) ...[
+                            const SizedBox(height: 6),
+                            Text(
+                              '💎 진화 포인트 +' +
+                                  widget.result.evolutionPointsEarned
+                                      .toString(),
+                              style: TextStyle(
+                                  color: const Color(0xFF7EC8E3),
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                          if (widget.result.alreadyCompleted) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              '(복습이라 보상은 30%예요)',
+                              style: TextStyle(
+                                  color: AppTheme.textSecondary, fontSize: 11),
+                            ),
+                          ],
                           if (widget.result.streakAfter > 0) ...[
                             const SizedBox(height: 12),
                             Container(
@@ -322,7 +342,52 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                   const SizedBox(height: 40),
 
                   // 버튼들
-                  if (widget.day < 50) ...[
+                  if (!widget.result.passed) ...[
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(14),
+                      margin: const EdgeInsets.only(bottom: 12),
+                      decoration: BoxDecoration(
+                        color: AppTheme.error.withOpacity(0.12),
+                        borderRadius: BorderRadius.circular(14),
+                        border:
+                            Border.all(color: AppTheme.error.withOpacity(0.4)),
+                      ),
+                      child: Text(
+                        '아직 통과 전이에요. 5문제 중 ' +
+                            AppProvider.dayPassCorrect.toString() +
+                            '개 이상 맞히면 이 Day가 완료돼요!',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: AppTheme.error, fontSize: 13),
+                      ),
+                    ),
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => QuizScreen(
+                                level: widget.level,
+                                day: widget.day,
+                              ),
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.secondary,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                        ),
+                        child: const Text('🔁 이 Day 다시 도전하기',
+                            style: TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
+
+                  if (widget.day < 50 && widget.result.passed) ...[
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -333,7 +398,7 @@ class _DayCompleteScreenState extends State<DayCompleteScreen> {
                               builder: (_) => QuizScreen(
                                 level: widget.level,
                                 day: widget.day + 1,
-                                mode: widget.mode,
+                                // 모드는 설정값을 따른다
                               ),
                             ),
                           );
