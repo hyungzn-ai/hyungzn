@@ -229,6 +229,8 @@ class SettingsScreen extends StatelessWidget {
             subtitle: '지금 순서의 단어를 확인합니다',
             onTap: () => _showTodayWords(context, provider),
           ),
+          const SizedBox(height: 10),
+          const _KakaoLinkCard(),
           const SizedBox(height: 24),
 
           // ── 개발자 모드 ──────────────────────────────────────
@@ -877,6 +879,219 @@ class _QuizModePicker extends StatelessWidget {
             ),
           ),
       ],
+    );
+  }
+}
+
+
+// ─────────────────────────────────────────────────────────────
+// 카카오톡 발송 연동 (앱 설정을 GitHub 설정 파일로 반영)
+// ─────────────────────────────────────────────────────────────
+
+class _KakaoLinkCard extends StatefulWidget {
+  const _KakaoLinkCard();
+
+  @override
+  State<_KakaoLinkCard> createState() => _KakaoLinkCardState();
+}
+
+class _KakaoLinkCardState extends State<_KakaoLinkCard> {
+  final TextEditingController _ctrl = TextEditingController();
+  bool _busy = false;
+  bool _expanded = false;
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _link(AppProvider provider) async {
+    if (_ctrl.text.trim().isEmpty) return;
+    setState(() => _busy = true);
+    final err = await provider.linkKakaoConfig(_ctrl.text);
+    if (!mounted) return;
+    setState(() {
+      _busy = false;
+      if (err == null) {
+        _ctrl.clear();
+        _expanded = false;
+      }
+    });
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(err ?? '✅ 카톡 발송 설정과 연결됐어요!'),
+        backgroundColor: err == null ? AppTheme.success : AppTheme.error,
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  Future<void> _syncNow(AppProvider provider) async {
+    setState(() => _busy = true);
+    final err = await provider.syncKakaoConfig();
+    if (!mounted) return;
+    setState(() => _busy = false);
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(err ?? '✅ 카톡 발송 설정에 반영했어요!'),
+        backgroundColor: err == null ? AppTheme.success : AppTheme.error,
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final provider = context.watch<AppProvider>();
+    final linked = provider.kakaoLinked;
+
+    return Container(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 14),
+      decoration: BoxDecoration(
+        color: AppTheme.card,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: linked
+              ? AppTheme.success.withOpacity(0.4)
+              : AppTheme.accent.withOpacity(0.3),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Text(linked ? '💬' : '🔗', style: const TextStyle(fontSize: 16)),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  linked ? '카톡 발송과 연결됨' : '카톡 발송에도 적용하기',
+                  style: TextStyle(
+                      color: AppTheme.textPrimary,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14),
+                ),
+              ),
+              if (linked)
+                TextButton(
+                  onPressed: _busy ? null : () => provider.unlinkKakaoConfig(),
+                  child: Text('해제',
+                      style:
+                          TextStyle(color: AppTheme.textSecondary, fontSize: 12)),
+                ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            linked
+                ? '난이도·개수를 바꾸면 카톡 발송에도 자동으로 반영돼요.'
+                : '연결하면 위 난이도·개수 설정이 카톡 발송에도 똑같이 적용돼요.',
+            style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
+          ),
+          if (provider.syncStatus.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text(provider.syncStatus,
+                style: TextStyle(
+                    color: provider.syncStatus.contains('반영')
+                        ? AppTheme.success
+                        : AppTheme.accent,
+                    fontSize: 11)),
+          ],
+          const SizedBox(height: 10),
+          if (linked)
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                onPressed: _busy ? null : () => _syncNow(provider),
+                icon: const Icon(Icons.sync_rounded, size: 16),
+                label: Text(_busy ? '동기화 중...' : '지금 반영하기'),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: AppTheme.success,
+                  side: BorderSide(color: AppTheme.success.withOpacity(0.5)),
+                ),
+              ),
+            )
+          else if (!_expanded)
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () => setState(() => _expanded = true),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: AppTheme.accent,
+                  side: BorderSide(color: AppTheme.accent.withOpacity(0.5)),
+                ),
+                child: const Text('연결하기'),
+              ),
+            )
+          else ...[
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: AppTheme.surface,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('1. 아래 주소에서 토큰을 만들어요',
+                      style: TextStyle(
+                          color: AppTheme.textPrimary, fontSize: 12)),
+                  const SizedBox(height: 4),
+                  SelectableText(
+                    'github.com/settings/personal-access-tokens/new',
+                    style: TextStyle(
+                        color: AppTheme.primary,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '2. Repository access → hyungzn 선택\n'
+                    '3. Permissions → Contents 를 Read and write 로\n'
+                    '4. 만들어진 토큰을 아래에 붙여넣기',
+                    style: TextStyle(
+                        color: AppTheme.textSecondary,
+                        fontSize: 11,
+                        height: 1.5),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              controller: _ctrl,
+              obscureText: true,
+              style: TextStyle(color: AppTheme.textPrimary, fontSize: 13),
+              decoration: InputDecoration(
+                hintText: 'github_pat_... 붙여넣기',
+                hintStyle:
+                    TextStyle(color: AppTheme.textSecondary, fontSize: 12),
+                filled: true,
+                fillColor: AppTheme.surface,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+              ),
+            ),
+            const SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: _busy ? null : () => _link(provider),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.primary),
+                child: Text(_busy ? '연결 중...' : '연결하고 지금 반영'),
+              ),
+            ),
+          ],
+        ],
+      ),
     );
   }
 }
