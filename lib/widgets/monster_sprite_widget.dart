@@ -5,13 +5,14 @@ import 'package:flutter/material.dart';
 //
 // 개별 PNG 파일 방식으로 몬스터 스프라이트를 표시합니다.
 // assets/images/monsters_transparent/monster_{type}_stage{N}.png
+// 각 타입은 stage1~stage6 (6단계) 이미지를 갖습니다.
 //
 // 파일이 없거나 로드 실패 시 fallbackEmoji로 대체합니다.
 // ─────────────────────────────────────────────────────────────
 
 class MonsterSpriteWidget extends StatelessWidget {
   final String monsterId;
-  final int    stage;          // 0~4
+  final int    stage;          // 0~5
   final double size;
   final String fallbackEmoji;
   final bool   isGrayscale;
@@ -25,37 +26,33 @@ class MonsterSpriteWidget extends StatelessWidget {
     this.isGrayscale = false,
   });
 
-  // ── 몬스터 ID → 스프라이트 타입명 매핑 ─────────────────────
+  // ── 몬스터 ID → 스프라이트 타입명 매핑 (1:1) ────────────────
   static const Map<String, String> _idToSpriteType = {
     'flameling':    'fire',
     'aqualing':     'water',
     'thunderling':  'lightning',
     'crystaling':   'metal',
     'naturaling':   'grass',
-    'blossoling':   'grass',
-    'shadowling':   'dark',
-    'darkmaster':   'dark',
-    'phoenixling':  'rainbow',
     'ghostling':    'normal',
-    'lightling':    'light',
-    'lightguard':   'light',
     'cloudling':    'cloud',
     'frostling':    'ice',
     'terraling':    'earth',
-    'sandling':     'earth',
     'mushroomling': 'poison',
+    'windling':     'wind',
+    // 히든
+    'darkmaster':   'dark',
+    'phoenixling':  'rainbow',
+    'lightguard':   'light',
     'chaosling':    'chaos',
     'fairyling':    'fairy',
-    'windling':     'wind',
-    'stormling':    'wind',
   };
 
   // ── 개별 PNG 경로 계산 ──────────────────────────────────────
   String? get _assetPath {
     final type = _idToSpriteType[monsterId];
     if (type == null) return null;
-    final s = stage.clamp(0, 4) + 1;   // 0-indexed → 1-indexed 파일명 (5단계)
-    return 'assets/images/monsters_transparent/monster_${type}_stage$s.png';
+    final s = stage.clamp(0, 5) + 1;   // 0-indexed → 1-indexed 파일명 (6단계)
+    return 'assets/images/monsters_transparent/monster_' + type + '_stage' + s.toString() + '.png';
   }
 
   @override
