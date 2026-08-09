@@ -71,4 +71,55 @@ class NotificationService {
     await init();
     await _plugin.cancel(1001);
   }
+
+  // ── 오늘의 단어 알림 (2000번대 ID 사용) ────────────────────
+  static const int _wordIdBase = 2000;
+  static const int wordDaysAhead = 14; // 앞으로 14일치를 미리 예약
+
+  Future<void> cancelWordAlarms() async {
+    await init();
+    for (int i = 0; i < wordDaysAhead; i++) {
+      await _plugin.cancel(_wordIdBase + i);
+    }
+  }
+
+  /// [batches] 는 하루치씩의 알림 본문 목록. 오늘부터 하루 간격으로 예약된다.
+  Future<void> scheduleWordAlarms({
+    required int hour,
+    required int minute,
+    required List<String> batches,
+  }) async {
+    await init();
+    await cancelWordAlarms();
+
+    final now = DateTime.now();
+    var first = DateTime(now.year, now.month, now.day, hour, minute);
+    if (!first.isAfter(now)) {
+      first = first.add(const Duration(days: 1));
+    }
+
+    for (int i = 0; i < batches.length && i < wordDaysAhead; i++) {
+      final when = tz.TZDateTime.from(first.add(Duration(days: i)), tz.local);
+      await _plugin.zonedSchedule(
+        _wordIdBase + i,
+        '📚 오늘의 영단어',
+        batches[i],
+        when,
+        NotificationDetails(
+          android: AndroidNotificationDetails(
+            'daily_words',
+            '오늘의 단어',
+            channelDescription: '매일 정해진 시간에 영단어를 보내줍니다',
+            importance: Importance.high,
+            priority: Priority.high,
+            styleInformation: BigTextStyleInformation(batches[i]),
+          ),
+          iOS: const DarwinNotificationDetails(),
+        ),
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+      );
+    }
+  }
 }
