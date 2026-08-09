@@ -23,6 +23,7 @@ class AppProvider extends ChangeNotifier {
   int _wordAlarmHour = 8;
   int _wordAlarmMinute = 0;
   int _wordsPerDay = 10;
+  Set<String> _wordLevels = {'B1', 'B2', 'C1'};
   int _themeIndex = 0;
   late DailyService daily;
 
@@ -34,7 +35,8 @@ class AppProvider extends ChangeNotifier {
   int get wordAlarmHour => _wordAlarmHour;
   int get wordAlarmMinute => _wordAlarmMinute;
   int get wordsPerDay => _wordsPerDay;
-  int get wordTotal => WordService.instance.total;
+  Set<String> get wordLevels => _wordLevels;
+  int get wordTotal => WordService.instance.countForLevels(_wordLevels);
 
   /// Day 통과 기준 (5문제 중 정답 수)
   static const int dayPassCorrect = 2;
@@ -105,6 +107,10 @@ class AppProvider extends ChangeNotifier {
     _wordAlarmHour = prefs.getInt('word_alarm_hour') ?? 8;
     _wordAlarmMinute = prefs.getInt('word_alarm_minute') ?? 0;
     _wordsPerDay = prefs.getInt('words_per_day') ?? 10;
+    final savedLevels = prefs.getStringList('word_levels');
+    if (savedLevels != null && savedLevels.isNotEmpty) {
+      _wordLevels = savedLevels.toSet();
+    }
     await WordService.instance.load();
     if (_wordAlarmOn) {
       // 앱을 열 때마다 앞으로 14일치 알림을 다시 채워둔다
@@ -444,6 +450,24 @@ class AppProvider extends ChangeNotifier {
   // 오늘의 단어 알림
   // ─────────────────────────────────────────────────────────────
 
+  /// 난이도 토글 (최소 하나는 남긴다)
+  Future<void> toggleWordLevel(String level) async {
+    final next = Set<String>.from(_wordLevels);
+    if (next.contains(level)) {
+      if (next.length == 1) return; // 전부 끄는 건 막는다
+      next.remove(level);
+    } else {
+      next.add(level);
+    }
+    _wordLevels = next;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList('word_levels', next.toList());
+    // 난이도가 바뀌면 진도를 처음부터
+    await WordService.instance.saveCursor(0);
+    notifyListeners();
+    if (_wordAlarmOn) await rescheduleWordAlarms();
+  }
+
   Future<void> setWordAlarm({
     bool? on,
     int? hour,
@@ -483,12 +507,13 @@ class AppProvider extends ChangeNotifier {
   Future<void> rescheduleWordAlarms() async {
     final ws = WordService.instance;
     await ws.load();
-    if (ws.total == 0) return;
+    if (ws.countForLevels(_wordLevels) == 0) return;
 
     final cursor = await ws.loadCursor();
     final batches = <String>[];
     for (int d = 0; d < NotificationService.wordDaysAhead; d++) {
-      final entries = ws.batchAt(cursor + d * _wordsPerDay, _wordsPerDay);
+      final entries = ws.batchAt(cursor + d * _wordsPerDay, _wordsPerDay,
+          levels: _wordLevels);
       final lines = <String>[];
       for (final e in entries) {
         final ko = e.ko.isEmpty ? '(뜻 준비 중)' : e.ko;
@@ -517,7 +542,7 @@ class AppProvider extends ChangeNotifier {
     final ws = WordService.instance;
     await ws.load();
     final cursor = await ws.loadCursor();
-    return ws.batchAt(cursor, _wordsPerDay);
+    return ws.batchAt(cursor, _wordsPerDay, levels: _wordLevels);
   }
 
   // ─────────────────────────────────────────────────────────────
