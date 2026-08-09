@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_provider.dart';
+import '../services/word_service.dart';
 import '../utils/theme.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -82,6 +83,72 @@ class SettingsScreen extends StatelessWidget {
           _QuizModePicker(
             current: provider.quizMode,
             onChanged: (m) => provider.setQuizMode(m),
+          ),
+          const SizedBox(height: 24),
+
+          // ── 오늘의 단어 ──────────────────────────────────────
+          _SectionHeader(label: '오늘의 단어'),
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+            decoration: BoxDecoration(
+              color: AppTheme.card,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: provider.wordAlarmOn
+                    ? AppTheme.primary.withOpacity(0.5)
+                    : Colors.transparent,
+              ),
+            ),
+            child: SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: provider.wordAlarmOn,
+              onChanged: (v) => provider.setWordAlarm(on: v),
+              activeColor: AppTheme.primary,
+              title: Text(
+                '📚 매일 단어 알림',
+                style: TextStyle(
+                    color: AppTheme.textPrimary,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14),
+              ),
+              subtitle: Text(
+                '빈도순 ' + provider.wordTotal.toString() + '개 단어를 매일 조금씩',
+                style: TextStyle(color: AppTheme.textSecondary, fontSize: 11),
+              ),
+            ),
+          ),
+          _ActionTile(
+            icon: Icons.schedule_rounded,
+            iconColor: AppTheme.accent,
+            title: '받을 시간',
+            subtitle: _timeLabel(provider.wordAlarmHour, provider.wordAlarmMinute),
+            onTap: () async {
+              final picked = await showTimePicker(
+                context: context,
+                initialTime: TimeOfDay(
+                    hour: provider.wordAlarmHour,
+                    minute: provider.wordAlarmMinute),
+              );
+              if (picked != null) {
+                await provider.setWordAlarm(
+                    hour: picked.hour, minute: picked.minute);
+              }
+            },
+          ),
+          _ActionTile(
+            icon: Icons.numbers_rounded,
+            iconColor: AppTheme.primary,
+            title: '하루 단어 개수',
+            subtitle: '현재 ' + provider.wordsPerDay.toString() + '개씩',
+            onTap: () => _pickCount(context, provider),
+          ),
+          _ActionTile(
+            icon: Icons.menu_book_rounded,
+            iconColor: AppTheme.success,
+            title: '오늘의 단어 미리보기',
+            subtitle: '지금 순서의 단어를 확인합니다',
+            onTap: () => _showTodayWords(context, provider),
           ),
           const SizedBox(height: 24),
 
@@ -215,6 +282,112 @@ class SettingsScreen extends StatelessWidget {
           ).animate().fadeIn(delay: 200.ms),
 
           const SizedBox(height: 40),
+        ],
+      ),
+    );
+  }
+
+  static String _timeLabel(int h, int m) {
+    final ampm = h < 12 ? '오전' : '오후';
+    var hh = h % 12;
+    if (hh == 0) hh = 12;
+    final mm = m < 10 ? '0' + m.toString() : m.toString();
+    return '매일 ' + ampm + ' ' + hh.toString() + ':' + mm;
+  }
+
+  void _pickCount(BuildContext context, AppProvider provider) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppTheme.surface,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetCtx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: 14),
+            Text('하루에 받을 단어 개수',
+                style: TextStyle(
+                    color: AppTheme.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            for (final n in [5, 10, 20, 30])
+              ListTile(
+                title: Text(n.toString() + '개',
+                    style: TextStyle(
+                      color: provider.wordsPerDay == n
+                          ? AppTheme.primary
+                          : AppTheme.textPrimary,
+                      fontWeight: provider.wordsPerDay == n
+                          ? FontWeight.bold
+                          : FontWeight.normal,
+                    )),
+                trailing: provider.wordsPerDay == n
+                    ? Icon(Icons.check_rounded, color: AppTheme.primary)
+                    : null,
+                onTap: () {
+                  Navigator.pop(sheetCtx);
+                  provider.setWordAlarm(perDay: n);
+                },
+              ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showTodayWords(BuildContext context, AppProvider provider) async {
+    final words = await provider.todaysWords();
+    if (!context.mounted) return;
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        backgroundColor: AppTheme.card,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Text('오늘의 단어',
+            style: TextStyle(
+                color: AppTheme.textPrimary, fontWeight: FontWeight.bold)),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: ListView(
+            shrinkWrap: true,
+            children: [
+              for (final WordEntry e in words)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(e.display,
+                          style: TextStyle(
+                              color: AppTheme.textPrimary,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15)),
+                      Text(e.ko.isEmpty ? '(뜻 준비 중)' : e.ko,
+                          style: TextStyle(
+                              color: AppTheme.textSecondary, fontSize: 13)),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('닫기',
+                style: TextStyle(color: AppTheme.textSecondary)),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              Navigator.pop(context);
+              await provider.advanceWordCursor();
+            },
+            child: const Text('다 외웠어요 →'),
+          ),
         ],
       ),
     );
