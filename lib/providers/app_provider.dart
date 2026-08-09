@@ -7,6 +7,7 @@ import '../models/monster.dart';
 import '../models/wrong_answer.dart';
 import '../services/storage_service.dart';
 import '../services/daily_service.dart';
+import '../services/github_sync_service.dart';
 import '../services/notification_service.dart';
 import '../services/word_service.dart';
 import '../data/monster_data.dart';
@@ -24,6 +25,7 @@ class AppProvider extends ChangeNotifier {
   int _wordAlarmMinute = 0;
   int _wordsPerDay = 10;
   Set<String> _wordLevels = {'B1', 'B2', 'C1'};
+  String _syncStatus = '';
   int _themeIndex = 0;
   late DailyService daily;
 
@@ -36,6 +38,9 @@ class AppProvider extends ChangeNotifier {
   int get wordAlarmMinute => _wordAlarmMinute;
   int get wordsPerDay => _wordsPerDay;
   Set<String> get wordLevels => _wordLevels;
+  String get syncStatus => _syncStatus;
+  bool get kakaoLinked => GithubSyncService.instance.hasToken;
+  String get lastSync => GithubSyncService.instance.lastSync;
   int get wordTotal => WordService.instance.countForLevels(_wordLevels);
 
   /// Day 통과 기준 (5문제 중 정답 수)
@@ -112,6 +117,7 @@ class AppProvider extends ChangeNotifier {
       _wordLevels = savedLevels.toSet();
     }
     await WordService.instance.load();
+    await GithubSyncService.instance.load();
     if (_wordAlarmOn) {
       // 앱을 열 때마다 앞으로 14일치 알림을 다시 채워둔다
       unawaited(rescheduleWordAlarms());
@@ -466,6 +472,34 @@ class AppProvider extends ChangeNotifier {
     await WordService.instance.saveCursor(0);
     notifyListeners();
     if (_wordAlarmOn) await rescheduleWordAlarms();
+    unawaited(syncKakaoConfig());
+  }
+
+  /// GitHub 토큰 저장 후 즉시 한 번 동기화
+  Future<String?> linkKakaoConfig(String token) async {
+    await GithubSyncService.instance.saveToken(token);
+    notifyListeners();
+    return syncKakaoConfig();
+  }
+
+  Future<void> unlinkKakaoConfig() async {
+    await GithubSyncService.instance.clearToken();
+    _syncStatus = '';
+    notifyListeners();
+  }
+
+  /// 현재 난이도·개수를 카톡 발송 설정에 반영
+  Future<String?> syncKakaoConfig() async {
+    if (!GithubSyncService.instance.hasToken) return null;
+    _syncStatus = '동기화 중...';
+    notifyListeners();
+    final err = await GithubSyncService.instance.pushConfig(
+      levels: _wordLevels,
+      perDay: _wordsPerDay,
+    );
+    _syncStatus = err ?? ('카톡 설정 반영됨 · ' + GithubSyncService.instance.lastSync);
+    notifyListeners();
+    return err;
   }
 
   Future<void> setWordAlarm({
@@ -501,6 +535,8 @@ class AppProvider extends ChangeNotifier {
     } else {
       await NotificationService.instance.cancelWordAlarms();
     }
+
+    if (perDay != null) unawaited(syncKakaoConfig());
   }
 
   /// 현재 위치부터 14일치 단어 묶음을 만들어 알림으로 예약
