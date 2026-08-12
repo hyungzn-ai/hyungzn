@@ -1,5 +1,7 @@
 {
 "sent":[
+"ally",
+"assume",
 "attorney",
 "battle",
 "bite",
@@ -7,13 +9,18 @@
 "block",
 "buck",
 "bullet",
+"chase",
 "chest",
 "commander",
 "county",
+"crack",
 "devil",
+"divorce",
 "fake",
 "finding",
 "firm",
+"freedom",
+"funeral",
 "genius",
 "gentleman",
 "hook",
@@ -21,6 +28,7 @@
 "insurance",
 "junior",
 "justice",
+"lane",
 "local",
 "lonely",
 "loose",
@@ -36,9 +44,11 @@
 "radar",
 "scare",
 "screw",
+"senator",
 "settle",
 "shake",
 "shame",
+"sometime",
 "speed",
 "spell",
 "split",
@@ -51,6 +61,6 @@
 "ugly",
 "whom"
 ],
-"sentCount":50,
-"lastSent":"2026-08-11 22:51:20"
+"sentCount":60,
+"lastSent":"2026-08-12 22:50:16"
 }
