@@ -1823,12 +1823,18 @@
 "punk":{
 "pos":"n",
 "level":"B2",
-"ex":"a punk band"
+"ex":"a punk band",
+"ko":"펑크",
+"def":"A person used for sex, particularly:",
+"auto":true
 },
 "downtown":{
 "pos":"adj",
 "level":"B2",
-"ex":"a downtown store"
+"ex":"a downtown store",
+"ko":"다운타운",
+"def":"The main business part of a city or town, usually located at or near its center.",
+"auto":true
 },
 "political":{
 "pos":"adj",
@@ -1838,7 +1844,10 @@
 "panic":{
 "pos":"n",
 "level":"B2",
-"ex":"a moment of panic"
+"ex":"a moment of panic",
+"ko":"공황",
+"def":"Overpowering fright, often affecting groups of people or animals.",
+"auto":true
 },
 "performance":{
 "ko":"성능, 실적; 공연",
@@ -1849,12 +1858,18 @@
 "plain":{
 "pos":"adj",
 "level":"B2",
-"ex":"a plain but elegant dress"
+"ex":"a plain but elegant dress",
+"ko":"평범한",
+"def":"Flat, level.",
+"auto":true
 },
 "boom":{
 "pos":"n",
 "level":"C1",
-"ex":"Living standards improved rapidly during the post-war boom."
+"ex":"Living standards improved rapidly during the post-war boom.",
+"ko":"짠",
+"def":"A low-pitched, resonant sound, such as of an explosion.",
+"auto":true
 },
 "union":{
 "pos":"n",
@@ -1864,12 +1879,17 @@
 "cable":{
 "pos":"n",
 "level":"B2",
-"ex":"fibre-optic cable"
+"ex":"fibre-optic cable",
+"ko":"케이블",
+"def":"(material) A long object used to make a physical connection.",
+"auto":true
 },
 "objection":{
 "pos":"n",
 "level":"C1",
-"ex":"I'd like to come too, if you have no objection."
+"ex":"I'd like to come too, if you have no objection.",
+"ko":"이의제기",
+"auto":true
 },
 "separate":{
 "pos":"v",
@@ -1884,7 +1904,10 @@
 "cliff":{
 "pos":"n",
 "level":"B2",
-"ex":"the cliff edge/top"
+"ex":"the cliff edge/top",
+"ko":"절벽",
+"def":"A vertical (or nearly vertical) rock face.",
+"auto":true
 },
 "setting":{
 "pos":"n",
@@ -1900,12 +1923,18 @@
 "glory":{
 "pos":"n",
 "level":"C1",
-"ex":"Olympic glory in the 100 metres"
+"ex":"Olympic glory in the 100 metres",
+"ko":"영광",
+"def":"Great or overwhelming beauty or splendour.",
+"auto":true
 },
 "miserable":{
 "pos":"adj",
 "level":"B2",
-"ex":"We were cold, wet and thoroughly miserable."
+"ex":"We were cold, wet and thoroughly miserable.",
+"ko":"비참함",
+"def":"A miserable person; a wretch.",
+"auto":true
 },
 "squad":{
 "pos":"n",
