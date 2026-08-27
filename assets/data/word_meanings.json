@@ -1939,12 +1939,18 @@
 "squad":{
 "pos":"n",
 "level":"C1",
-"ex":"the drugs/fraud/bomb/riot squad "
+"ex":"the drugs/fraud/bomb/riot squad ",
+"ko":"분대",
+"def":"A group of people organized for some common purpose, usually of about ten members.",
+"auto":true
 },
 "victory":{
 "pos":"n",
 "level":"B2",
-"ex":"to win a narrow victory"
+"ex":"to win a narrow victory",
+"ko":"승리",
+"def":"An instance of having won a competition or battle or succeeded in an effort.",
+"auto":true
 },
 "embarrassed":{
 "pos":"adj",
@@ -1954,17 +1960,26 @@
 "creature":{
 "pos":"n",
 "level":"B2",
-"ex":"respect for all living creatures"
+"ex":"respect for all living creatures",
+"ko":"동물의",
+"def":"A living being; an animal or (sometimes derogatory) a human.",
+"auto":true
 },
 "deny":{
 "pos":"v",
 "level":"B2",
-"ex":" deny something to deny an allegation/a charge/an accusation"
+"ex":" deny something to deny an allegation/a charge/an accusation",
+"ko":"거부",
+"def":"To disallow or reject.",
+"auto":true
 },
 "mixed":{
 "pos":"adj",
 "level":"B2",
-"ex":"a mixed diet"
+"ex":"a mixed diet",
+"ko":"(뜻 미등록)",
+"def":"To stir together.",
+"auto":true
 },
 "rare":{
 "pos":"adj",
@@ -1974,7 +1989,10 @@
 "hidden":{
 "pos":"adj",
 "level":"B2",
-"ex":"Hidden dangers lurk in the ocean depths."
+"ex":"Hidden dangers lurk in the ocean depths.",
+"ko":"숨겨진",
+"def":"Located or positioned out of sight; not visually apparent.",
+"auto":true
 },
 "directly":{
 "pos":"adv",
@@ -1984,7 +2002,10 @@
 "progress":{
 "pos":"v",
 "level":"B2",
-"ex":"The course allows students to progress at their own speed."
+"ex":"The course allows students to progress at their own speed.",
+"ko":"진보",
+"def":"Movement or advancement through a series of events, or points in time; development through time.",
+"auto":true
 },
 "wave":{
 "pos":"v",
@@ -2004,7 +2025,10 @@
 "emotional":{
 "pos":"adj",
 "level":"B2",
-"ex":"emotional problems/stress"
+"ex":"emotional problems/stress",
+"ko":"감동적인",
+"def":"Of or relating to the emotions.",
+"auto":true
 },
 "highly":{
 "pos":"adv",
@@ -2014,12 +2038,18 @@
 "hunting":{
 "pos":"n",
 "level":"B2",
-"ex":"He goes hunting every weekend."
+"ex":"He goes hunting every weekend.",
+"ko":"사냥",
+"def":"The act of finding and killing a wild animal, either for sport or with the intention of using its parts to make food, clothes, etc.",
+"auto":true
 },
 "shadow":{
 "pos":"n",
 "level":"B2",
-"ex":"The children were having fun, chasing each other's shadows."
+"ex":"The children were having fun, chasing each other's shadows.",
+"ko":"그림자",
+"def":"A dark image projected onto a surface where light (or other radiation) is blocked by the shade of an object.",
+"auto":true
 },
 "estate":{
 "ko":"부동산, 재산",
