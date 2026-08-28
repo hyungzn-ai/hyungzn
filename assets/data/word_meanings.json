@@ -2060,17 +2060,26 @@
 "skip":{
 "pos":"v",
 "level":"C1",
-"ex":"She skipped happily along beside me."
+"ex":"She skipped happily along beside me.",
+"ko":"(뜻 미등록)",
+"def":"A leaping, jumping or skipping movement.",
+"auto":true
 },
 "horn":{
 "pos":"n",
 "level":"C1",
-"ex":"a large bull with curved horns"
+"ex":"a large bull with curved horns",
+"ko":"경적",
+"def":"A hard growth of keratin that protrudes from the top of the head of certain animals, usually paired.",
+"auto":true
 },
 "basement":{
 "pos":"n",
 "level":"B2",
-"ex":"Kitchen goods are sold in the basement."
+"ex":"Kitchen goods are sold in the basement.",
+"ko":"지하",
+"def":"A floor of a building below ground level.",
+"auto":true
 },
 "pleasant":{
 "pos":"adj",
@@ -2080,17 +2089,25 @@
 "approach":{
 "pos":"n",
 "level":"B2",
-"ex":"She took the wrong approach in her dealings with them."
+"ex":"She took the wrong approach in her dealings with them.",
+"ko":"접근 방식",
+"def":"The act of drawing near; a coming or advancing near.",
+"auto":true
 },
 "bug":{
 "pos":"n",
 "level":"B2",
-"ex":"There's a bug crawling up your arm."
+"ex":"There's a bug crawling up your arm.",
+"ko":"버그",
+"def":"An insect of the order Hemiptera (the “true bugs”).",
+"auto":true
 },
 "district":{
 "pos":"n",
 "level":"B2",
-"ex":"the City of London’s financial district"
+"ex":"the City of London’s financial district",
+"ko":"지역",
+"auto":true
 },
 "champion":{
 "pos":"n",
@@ -2100,7 +2117,10 @@
 "proceed":{
 "pos":"v",
 "level":"B2",
-"ex":"We're not sure whether we still want to proceed with the sale."
+"ex":"We're not sure whether we still want to proceed with the sale.",
+"ko":"처리",
+"def":"To move, pass, or go forward or onward; to advance; to carry on",
+"auto":true
 },
 "leading":{
 "pos":"adj",
@@ -2110,12 +2130,18 @@
 "presence":{
 "pos":"n",
 "level":"B2",
-"ex":"He hardly seemed to notice my presence."
+"ex":"He hardly seemed to notice my presence.",
+"ko":"임재",
+"def":"The fact or condition of being present, or of being within sight or call, or at hand.",
+"auto":true
 },
 "cure":{
 "pos":"n",
 "level":"B2",
-"ex":" cure for something the search for a cure for cancer"
+"ex":" cure for something the search for a cure for cancer",
+"ko":"낫게 하다",
+"def":"A method, device or medication that restores good health.",
+"auto":true
 },
 "capable":{
 "pos":"adj",
