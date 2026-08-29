@@ -1,6 +1,7 @@
 {
 "sent":[
 "affair",
+"alert",
 "ally",
 "ambulance",
 "amount",
@@ -13,6 +14,7 @@
 "barely",
 "basement",
 "basically",
+"bat",
 "battle",
 "bay",
 "beast",
@@ -26,6 +28,8 @@
 "bullet",
 "cable",
 "cancer",
+"capable",
+"casino",
 "cast",
 "charming",
 "chase",
@@ -36,6 +40,7 @@
 "complicated",
 "concern",
 "contract",
+"convinced",
 "county",
 "courage",
 "crack",
@@ -60,6 +65,7 @@
 "dump",
 "emotional",
 "estate",
+"fabulous",
 "failed",
 "fake",
 "fate",
@@ -165,6 +171,7 @@
 "senator",
 "senior",
 "sensitive",
+"sentence",
 "settle",
 "sexy",
 "shadow",
@@ -198,6 +205,8 @@
 "terms",
 "terribly",
 "terrific",
+"threat",
+"transfer",
 "trap",
 "truly",
 "ugly",
@@ -205,12 +214,13 @@
 "victory",
 "violence",
 "vision",
+"warrant",
 "wherever",
 "whom",
 "wire",
 "wise",
 "wound"
 ],
-"sentCount":210,
-"lastSent":"2026-08-28 06:03:22"
+"sentCount":220,
+"lastSent":"2026-08-29 03:38:37"
 }

@@ -2146,22 +2146,32 @@
 "capable":{
 "pos":"adj",
 "level":"B2",
-"ex":" capable of something You are capable of better work than this."
+"ex":" capable of something You are capable of better work than this.",
+"ko":"<PROTECTED> 가능",
+"def":"Able and efficient; having the ability needed for a specific task; having the disposition to do something; permitting or being susceptible to something.",
+"auto":true
 },
 "convinced":{
 "pos":"adj",
 "level":"B2",
-"ex":"Sam nodded but he didn't look convinced."
+"ex":"Sam nodded but he didn't look convinced.",
+"ko":"납득함",
+"auto":true
 },
 "warrant":{
 "pos":"n",
 "level":"C1",
-"ex":"an arrest warrant"
+"ex":"an arrest warrant",
+"ko":"영장",
+"def":"Authorization or certification; a sanction, as given by a superior.",
+"auto":true
 },
 "threat":{
 "pos":"n",
 "level":"B2",
-"ex":" threat against somebody/something to make threats against somebody"
+"ex":" threat against somebody/something to make threats against somebody",
+"ko":"위협",
+"auto":true
 },
 "therefore":{
 "pos":"adv",
@@ -2186,27 +2196,39 @@
 "bat":{
 "pos":"n",
 "level":"B2",
-"ex":"a baseball/cricket bat"
+"ex":"a baseball/cricket bat",
+"ko":"방망이",
+"auto":true
 },
 "alert":{
 "pos":"adj",
 "level":"C1",
-"ex":"Suddenly he found himself awake and fully alert."
+"ex":"Suddenly he found himself awake and fully alert.",
+"ko":"기민함",
+"auto":true
 },
 "transfer":{
 "pos":"n",
 "level":"B2",
-"ex":"electronic data transfer"
+"ex":"electronic data transfer",
+"ko":"이전",
+"def":"The act of conveying or removing something from one place, person or thing to another.",
+"auto":true
 },
 "sentence":{
 "pos":"v",
 "level":"B2",
-"ex":" sentence somebody to something He sentenced the defendant to life in prison."
+"ex":" sentence somebody to something He sentenced the defendant to life in prison.",
+"ko":"문장",
+"def":"The decision or judgement of a jury or court; a verdict.",
+"auto":true
 },
 "fabulous":{
 "pos":"adj",
 "level":"B2",
-"ex":"They put on a fabulous performance."
+"ex":"They put on a fabulous performance.",
+"ko":"정말 최고였어요",
+"auto":true
 },
 "nation":{
 "pos":"n",
@@ -2216,7 +2238,9 @@
 "casino":{
 "pos":"n",
 "level":"C1",
-"ex":"a new hotel and casino in Las Vegas"
+"ex":"a new hotel and casino in Las Vegas",
+"ko":"카지노",
+"auto":true
 },
 "sand":{
 "pos":"n",
