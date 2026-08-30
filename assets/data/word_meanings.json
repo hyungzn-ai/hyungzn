@@ -2250,12 +2250,17 @@
 "bow":{
 "pos":"n",
 "level":"C1",
-"ex":"She gave a slight bow of her head in greeting."
+"ex":"She gave a slight bow of her head in greeting.",
+"ko":"활",
+"auto":true
 },
 "desire":{
 "pos":"n",
 "level":"B2",
-"ex":"He now had enough money to satisfy all his desires."
+"ex":"He now had enough money to satisfy all his desires.",
+"ko":"욕구",
+"def":"Someone or something wished for.",
+"auto":true
 },
 "wing":{
 "pos":"n",
@@ -2270,37 +2275,55 @@
 "rip":{
 "pos":"v",
 "level":"C1",
-"ex":" rip (something) I ripped my jeans on the fence."
+"ex":" rip (something) I ripped my jeans on the fence.",
+"ko":"복사하다",
+"auto":true
 },
 "entirely":{
 "pos":"adv",
 "level":"B2",
-"ex":"The experience was entirely new to me."
+"ex":"The experience was entirely new to me.",
+"ko":"전적으로",
+"def":"To the full or entire extent.",
+"auto":true
 },
 "zone":{
 "pos":"n",
 "level":"B2",
-"ex":"a war/combat/demilitarized/exclusion zone"
+"ex":"a war/combat/demilitarized/exclusion zone",
+"ko":"영역",
+"auto":true
 },
 "spy":{
 "pos":"n",
 "level":"C1",
-"ex":"He was denounced as a foreign spy."
+"ex":"He was denounced as a foreign spy.",
+"ko":"스파이",
+"auto":true
 },
 "assure":{
 "pos":"v",
 "level":"B2",
-"ex":" assure somebody (that)… You think I did it deliberately, but I assure you (that) I did not."
+"ex":" assure somebody (that)… You think I did it deliberately, but I assure you (that) I did not.",
+"ko":"(뜻 미등록)",
+"def":"To make sure and secure.",
+"auto":true
 },
 "failure":{
 "pos":"n",
 "level":"B2",
-"ex":"The success or failure of the plan depends on you."
+"ex":"The success or failure of the plan depends on you.",
+"ko":"장애",
+"def":"State or condition of not meeting a desirable or intended objective, opposite of success.",
+"auto":true
 },
 "launch":{
 "pos":"n",
 "level":"B2",
-"ex":"a missile/rocket launch"
+"ex":"a missile/rocket launch",
+"ko":"론칭",
+"def":"The movement of a vessel from land into the water; especially, the sliding on ways from the stocks on which it is built. (Compare: to splash a ship.)",
+"auto":true
 },
 "print":{
 "ko":"인쇄하다; 인쇄물",
