@@ -2340,12 +2340,17 @@
 "fever":{
 "pos":"n",
 "level":"B2",
-"ex":"He has a high fever."
+"ex":"He has a high fever.",
+"ko":"발열",
+"def":"A higher than normal body temperature of a person (or, generally, a mammal), usually caused by disease.",
+"auto":true
 },
 "useless":{
 "pos":"adj",
 "level":"B2",
-"ex":"This pen is useless."
+"ex":"This pen is useless.",
+"ko":"~을 잘 못하는",
+"auto":true
 },
 "challenge":{
 "pos":"n",
@@ -2355,17 +2360,25 @@
 "loan":{
 "pos":"n",
 "level":"B2",
-"ex":"to take out/repay a loan (= to borrow money/pay it back)"
+"ex":"to take out/repay a loan (= to borrow money/pay it back)",
+"ko":"차관",
+"def":"An act or instance of lending, an act or instance of granting something for temporary use.",
+"auto":true
 },
 "shore":{
 "pos":"n",
 "level":"B2",
-"ex":"a rocky/sandy shore"
+"ex":"a rocky/sandy shore",
+"ko":"(뜻 미등록)",
+"auto":true
 },
 "routine":{
 "pos":"adj",
 "level":"B2",
-"ex":"routine enquiries/questions/tests/screening"
+"ex":"routine enquiries/questions/tests/screening",
+"ko":"루틴",
+"def":"A course of action to be followed regularly; a standard procedure.",
+"auto":true
 },
 "spoken":{
 "pos":"adj",
@@ -2375,7 +2388,9 @@
 "mask":{
 "pos":"n",
 "level":"C1",
-"ex":"The robbers wore stocking masks."
+"ex":"The robbers wore stocking masks.",
+"ko":"마스크",
+"auto":true
 },
 "passion":{
 "pos":"n",
@@ -2396,12 +2411,17 @@
 "recall":{
 "pos":"v",
 "level":"B2",
-"ex":" recall something She could not recall his name."
+"ex":" recall something She could not recall his name.",
+"ko":"회수",
+"def":"The action or fact of calling someone or something back.",
+"auto":true
 },
 "cabin":{
 "pos":"n",
 "level":"B2",
-"ex":"I lay in my cabin feeling miserably seasick."
+"ex":"I lay in my cabin feeling miserably seasick.",
+"ko":"선실",
+"auto":true
 },
 "mental":{
 "pos":"adj",
@@ -2421,7 +2441,10 @@
 "confidence":{
 "pos":"n",
 "level":"B2",
-"ex":"The president's actions hardly inspire confidence."
+"ex":"The president's actions hardly inspire confidence.",
+"ko":"자신감",
+"def":"Self-assurance.",
+"auto":true
 },
 "frankly":{
 "pos":"adv",
