@@ -2549,27 +2549,37 @@
 "ease":{
 "pos":"n",
 "level":"C1",
-"ex":" with ease He passed the exam with ease."
+"ex":" with ease He passed the exam with ease.",
+"ko":"휴식",
+"auto":true
 },
 "impressed":{
 "pos":"adj",
 "level":"B2",
-"ex":"I must admit I am impressed."
+"ex":"I must admit I am impressed.",
+"ko":"Impressed.",
+"auto":true
 },
 "treasure":{
 "pos":"n",
 "level":"B2",
-"ex":"buried treasure"
+"ex":"buried treasure",
+"ko":"보물",
+"auto":true
 },
 "revenge":{
 "pos":"n",
 "level":"C1",
-"ex":" revenge for something She is seeking revenge for the murder of her husband."
+"ex":" revenge for something She is seeking revenge for the murder of her husband.",
+"ko":"복수",
+"auto":true
 },
 "odds":{
 "pos":"n",
 "level":"C1",
-"ex":"The odds are very much in our favour (= we are likely to succeed)."
+"ex":"The odds are very much in our favour (= we are likely to succeed).",
+"ko":"배당률률",
+"auto":true
 },
 "nuclear":{
 "pos":"adj",
@@ -2579,7 +2589,9 @@
 "motion":{
 "pos":"n",
 "level":"B2",
-"ex":"What was Newton's first law of motion?"
+"ex":"What was Newton's first law of motion?",
+"ko":"운동",
+"auto":true
 },
 "mall":{
 "pos":"n",
@@ -2589,22 +2601,31 @@
 "scratch":{
 "pos":"n",
 "level":"B2",
-"ex":"Her hands were covered in scratches from the brambles."
+"ex":"Her hands were covered in scratches from the brambles.",
+"ko":"스크레치",
+"auto":true
 },
 "potential":{
 "pos":"adj",
 "level":"B2",
-"ex":"potential customers/buyers/investors/clients"
+"ex":"potential customers/buyers/investors/clients",
+"ko":"잠재력",
+"auto":true
 },
 "defend":{
 "pos":"v",
 "level":"B2",
-"ex":" defend somebody/something The role of the military is to defend the country."
+"ex":" defend somebody/something The role of the military is to defend the country.",
+"ko":"합동방어",
+"def":"To ward off attacks against; to fight to protect; to guard.",
+"auto":true
 },
 "contest":{
 "pos":"n",
 "level":"B2",
-"ex":"to hold a singing/talent contest"
+"ex":"to hold a singing/talent contest",
+"ko":"시합",
+"auto":true
 },
 "cap":{
 "pos":"n",
