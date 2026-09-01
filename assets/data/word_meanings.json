@@ -2449,27 +2449,39 @@
 "frankly":{
 "pos":"adv",
 "level":"C1",
-"ex":"He spoke frankly about the ordeal."
+"ex":"He spoke frankly about the ordeal.",
+"ko":"솔직히",
+"auto":true
 },
 "agency":{
 "pos":"n",
 "level":"B2",
-"ex":"She works for an advertising agency."
+"ex":"She works for an advertising agency.",
+"ko":"방법",
+"auto":true
 },
 "anger":{
 "pos":"n",
 "level":"B2",
-"ex":"She had to find a way to express her pent-up anger."
+"ex":"She had to find a way to express her pent-up anger.",
+"ko":"분노",
+"def":"A strong feeling of displeasure, hostility or antagonism towards someone or something, usually combined with an urge to harm.",
+"auto":true
 },
 "suffering":{
 "pos":"n",
 "level":"B2",
-"ex":"Death finally brought an end to her suffering."
+"ex":"Death finally brought an end to her suffering.",
+"ko":"고통",
+"def":"To undergo hardship.",
+"auto":true
 },
 "detail":{
 "pos":"v",
 "level":"B2",
-"ex":"The brochure details all the hotels in the area and their facilities."
+"ex":"The brochure details all the hotels in the area and their facilities.",
+"ko":"싶습니다.",
+"auto":true
 },
 "pipe":{
 "pos":"n",
@@ -2479,7 +2491,10 @@
 "trace":{
 "pos":"v",
 "level":"B2",
-"ex":"We finally traced him to an address in Chicago."
+"ex":"We finally traced him to an address in Chicago.",
+"ko":"흔적",
+"def":"An act of tracing.",
+"auto":true
 },
 "effort":{
 "pos":"n",
@@ -2504,22 +2519,32 @@
 "reputation":{
 "pos":"n",
 "level":"B2",
-"ex":"to have a good/bad reputation"
+"ex":"to have a good/bad reputation",
+"ko":"평판",
+"auto":true
 },
 "custody":{
 "pos":"n",
 "level":"C1",
-"ex":"Who will have custody of the children?"
+"ex":"Who will have custody of the children?",
+"ko":"커스터디",
+"auto":true
 },
 "trail":{
 "pos":"n",
 "level":"C1",
-"ex":"a trail of blood"
+"ex":"a trail of blood",
+"ko":"트레일",
+"def":"The track or indication marking the route followed by something that has passed, such as the footprints of animal on land or the contrail of an airplane in the ",
+"auto":true
 },
 "attempt":{
 "pos":"n",
 "level":"B2",
-"ex":"I passed my driving test at the first attempt."
+"ex":"I passed my driving test at the first attempt.",
+"ko":"시도",
+"def":"The action of trying at something.",
+"auto":true
 },
 "ease":{
 "pos":"n",
