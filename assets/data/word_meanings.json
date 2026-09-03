@@ -2746,22 +2746,30 @@
 "minister":{
 "pos":"n",
 "level":"B2",
-"ex":"the Minister of Education"
+"ex":"the Minister of Education",
+"ko":"장관",
+"auto":true
 },
 "steel":{
 "pos":"n",
 "level":"B2",
-"ex":"the iron and steel industry"
+"ex":"the iron and steel industry",
+"ko":"강철",
+"auto":true
 },
 "bound":{
 "pos":"adj",
 "level":"B2",
-"ex":"There are bound to be changes when the new system is introduced."
+"ex":"There are bound to be changes when the new system is introduced.",
+"ko":"뛰어오르다",
+"auto":true
 },
 "slave":{
 "pos":"n",
 "level":"B2",
-"ex":"A former slave, he graduated from Claflin University in South Carolina."
+"ex":"A former slave, he graduated from Claflin University in South Carolina.",
+"ko":"노예",
+"auto":true
 },
 "standard":{
 "ko":"기준, 표준; 표준의",
@@ -2772,12 +2780,16 @@
 "anniversary":{
 "pos":"n",
 "level":"B2",
-"ex":"on the anniversary of his wife’s death"
+"ex":"on the anniversary of his wife’s death",
+"ko":"기념일",
+"auto":true
 },
 "yell":{
 "pos":"v",
 "level":"C1",
-"ex":" yell (at somebody/something) He yelled at the other driver."
+"ex":" yell (at somebody/something) He yelled at the other driver.",
+"ko":"소리 치다",
+"auto":true
 },
 "shy":{
 "pos":"adj",
@@ -2792,22 +2804,30 @@
 "seek":{
 "pos":"v",
 "level":"B2",
-"ex":" seek something/somebody Drivers are advised to seek alternative routes."
+"ex":" seek something/somebody Drivers are advised to seek alternative routes.",
+"ko":"시도하다",
+"auto":true
 },
 "cancel":{
 "pos":"v",
 "level":"B2",
-"ex":"All flights have been cancelled because of bad weather."
+"ex":"All flights have been cancelled because of bad weather.",
+"ko":"취소하기",
+"auto":true
 },
 "prime":{
 "pos":"adj",
 "level":"B2",
-"ex":"My prime concern is to protect my property."
+"ex":"My prime concern is to protect my property.",
+"ko":"소수",
+"auto":true
 },
 "former":{
 "pos":"adj",
 "level":"B2",
-"ex":"This fine ruin was, in former times, a royal castle."
+"ex":"This fine ruin was, in former times, a royal castle.",
+"ko":"이전",
+"auto":true
 },
 "smooth":{
 "pos":"adj",
