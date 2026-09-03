@@ -2640,7 +2640,9 @@
 "interrupt":{
 "pos":"v",
 "level":"B2",
-"ex":"Sorry to interrupt, but there's someone to see you."
+"ex":"Sorry to interrupt, but there's someone to see you.",
+"ko":"중단",
+"auto":true
 },
 "latest":{
 "ko":"최신의, 가장 최근의",
@@ -2651,7 +2653,9 @@
 "cheer":{
 "pos":"n",
 "level":"B2",
-"ex":"A great cheer went up from the crowd."
+"ex":"A great cheer went up from the crowd.",
+"ko":"(뜻 미등록)",
+"auto":true
 },
 "supply":{
 "pos":"n",
@@ -2661,7 +2665,9 @@
 "surveillance":{
 "pos":"n",
 "level":"C1",
-"ex":"The police are keeping the suspects under constant surveillance."
+"ex":"The police are keeping the suspects under constant surveillance.",
+"ko":"감시",
+"auto":true
 },
 "ignore":{
 "pos":"v",
@@ -2676,17 +2682,23 @@
 "league":{
 "pos":"n",
 "level":"B2",
-"ex":"Castleford have led the league for most of the season."
+"ex":"Castleford have led the league for most of the season.",
+"ko":"리그",
+"auto":true
 },
 "vice":{
 "pos":"n",
 "level":"C1",
-"ex":"At the door were two plain-clothes detectives from the vice squad."
+"ex":"At the door were two plain-clothes detectives from the vice squad.",
+"ko":"마약수사관",
+"auto":true
 },
 "coincidence":{
 "pos":"n",
 "level":"B2",
-"ex":"a strange/an extraordinary/a remarkable coincidence"
+"ex":"a strange/an extraordinary/a remarkable coincidence",
+"ko":"우연일까?",
+"auto":true
 },
 "favour":{
 "pos":"n",
@@ -2702,7 +2714,10 @@
 "division":{
 "pos":"n",
 "level":"B2",
-"ex":"The organism begins as a single cell and grows by cell division."
+"ex":"The organism begins as a single cell and grows by cell division.",
+"ko":"구 분",
+"def":"The act or process of dividing anything.",
+"auto":true
 },
 "impression":{
 "pos":"n",
@@ -2717,12 +2732,16 @@
 "reasonable":{
 "pos":"adj",
 "level":"B2",
-"ex":" it is reasonable to do something It is reasonable to assume that he knew beforehand that this would happen."
+"ex":" it is reasonable to do something It is reasonable to assume that he knew beforehand that this would happen.",
+"ko":"이성",
+"auto":true
 },
 "therapy":{
 "pos":"n",
 "level":"B2",
-"ex":"He is receiving therapy for cancer."
+"ex":"He is receiving therapy for cancer.",
+"ko":"치료",
+"auto":true
 },
 "minister":{
 "pos":"n",
