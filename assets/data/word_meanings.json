@@ -2842,7 +2842,9 @@
 "lifetime":{
 "pos":"n",
 "level":"B2",
-"ex":"a lifetime of experience"
+"ex":"a lifetime of experience",
+"ko":"평생",
+"auto":true
 },
 "collection":{
 "pos":"n",
@@ -2852,7 +2854,9 @@
 "noon":{
 "pos":"n",
 "level":"C1",
-"ex":"We should be there by noon."
+"ex":"We should be there by noon.",
+"ko":"정오",
+"auto":true
 },
 "previously":{
 "pos":"adv",
@@ -2862,7 +2866,9 @@
 "reward":{
 "pos":"n",
 "level":"B2",
-"ex":"a financial reward"
+"ex":"a financial reward",
+"ko":"상이",
+"auto":true
 },
 "iron":{
 "pos":"n",
@@ -2872,12 +2878,17 @@
 "saint":{
 "pos":"n",
 "level":"C1",
-"ex":"St John"
+"ex":"St John",
+"ko":"성인",
+"def":"A person whom a church or another religious group has officially recognised as especially holy or godly; one eminent for piety and virtue.",
+"auto":true
 },
 "sacrifice":{
 "pos":"n",
 "level":"C1",
-"ex":"The makers of the product assured us that there had been no sacrifice of quality."
+"ex":"The makers of the product assured us that there had been no sacrifice of quality.",
+"ko":"희생",
+"auto":true
 },
 "assignment":{
 "pos":"n",
@@ -2887,27 +2898,39 @@
 "tunnel":{
 "pos":"n",
 "level":"B2",
-"ex":"a railway/railroad tunnel "
+"ex":"a railway/railroad tunnel ",
+"ko":"터널",
+"auto":true
 },
 "highway":{
 "pos":"n",
 "level":"B2",
-"ex":"Plans were being made for the construction of a new interstate highway system."
+"ex":"Plans were being made for the construction of a new interstate highway system.",
+"ko":"고속도로",
+"auto":true
 },
 "insist":{
 "pos":"v",
 "level":"B2",
-"ex":"I didn't really want to go but he insisted."
+"ex":"I didn't really want to go but he insisted.",
+"ko":"주장",
+"auto":true
 },
 "slide":{
 "pos":"n",
 "level":"B2",
-"ex":"Here's a slide showing target markets."
+"ex":"Here's a slide showing target markets.",
+"ko":"슬라이드",
+"def":"An item of play equipment that children can climb up and then slide down again.",
+"auto":true
 },
 "wrap":{
 "pos":"v",
 "level":"B2",
-"ex":" wrap something up He spent the evening wrapping up the Christmas presents."
+"ex":" wrap something up He spent the evening wrapping up the Christmas presents.",
+"ko":"감싸기",
+"def":"To enclose (an object) completely in any flexible, thin material such as fabric or paper.",
+"auto":true
 },
 "lack":{
 "pos":"n",
