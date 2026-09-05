@@ -2945,7 +2945,9 @@
 "kit":{
 "pos":"n",
 "level":"B2",
-"ex":"a drum kit"
+"ex":"a drum kit",
+"ko":"와이",
+"auto":true
 },
 "clue":{
 "pos":"n",
@@ -2955,12 +2957,16 @@
 "assault":{
 "pos":"n",
 "level":"C1",
-"ex":"Both men were charged with assault."
+"ex":"Both men were charged with assault.",
+"ko":"상세불명의 수단에 의한 가해",
+"auto":true
 },
 "temple":{
 "pos":"n",
 "level":"B2",
-"ex":"the Temple of Diana at Ephesus"
+"ex":"the Temple of Diana at Ephesus",
+"ko":"성전",
+"auto":true
 },
 "agreement":{
 "pos":"n",
@@ -2970,7 +2976,9 @@
 "darkness":{
 "pos":"n",
 "level":"B2",
-"ex":"After a few minutes our eyes got used to the darkness."
+"ex":"After a few minutes our eyes got used to the darkness.",
+"ko":"어둠",
+"auto":true
 },
 "flag":{
 "pos":"n",
@@ -2985,7 +2993,9 @@
 "remains":{
 "pos":"n",
 "level":"C1",
-"ex":"She fed the remains of her lunch to the dog."
+"ex":"She fed the remains of her lunch to the dog.",
+"ko":"나머지",
+"auto":true
 },
 "term":{
 "ko":"용어; 기간; 학기",
@@ -2996,22 +3006,30 @@
 "alien":{
 "pos":"n",
 "level":"B2",
-"ex":"an illegal alien"
+"ex":"an illegal alien",
+"ko":"외국인",
+"auto":true
 },
 "patch":{
 "pos":"n",
 "level":"C1",
-"ex":"a black dog with a white patch on its back"
+"ex":"a black dog with a white patch on its back",
+"ko":"(뜻 미등록)",
+"auto":true
 },
 "snap":{
 "pos":"v",
 "level":"C1",
-"ex":" snap something The wind had snapped the tree in two."
+"ex":" snap something The wind had snapped the tree in two.",
+"ko":"스냅",
+"auto":true
 },
 "bail":{
 "pos":"n",
 "level":"C1",
-"ex":"Can anyone put up bail for you?"
+"ex":"Can anyone put up bail for you?",
+"ko":"보석",
+"auto":true
 },
 "imagination":{
 "pos":"n",
